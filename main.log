@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.9.10)  11 SEP 2020 11:55
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.9.10)  13 OCT 2020 17:45
 entering extended mode
-**"c:/Users/Shaokang Jiang/Desktop/complex/Resume/Simple-CV/main.tex"
-("c:/Users/Shaokang Jiang/Desktop/complex/Resume/Simple-CV/main.tex"
+**./main.tex
+(main.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-09-03>
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\arti
@@ -372,138 +372,18 @@ fullpage.sty"
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip71
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
-hyperref.sty"
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefin
-ekeys\kvdefinekeys.sty"
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfesca
-pe\pdfescape.sty"
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\h
-ycolor.sty"
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmac
-ro\letltxmacro.sty"
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\a
-uxhook.sty"
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-\@linkdim=\dimen135
-\Hy@linkcounter=\count375
-\Hy@pagecounter=\count376
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
-pd1enc.def"
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc
-\intcalc.sty"
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmd
-s\etexcmds.sty"
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count377
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing OFF on input line 4484.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count378
-LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen136
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\
-bitset.sty"
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintc
-alc\bigintcalc.sty"
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
-))
-\Fld@menulength=\count379
-\Field@Width=\dimen137
-\Fld@charsize=\dimen138
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing OFF on input line 6362.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegsh
-i\atbegshi.sty"
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-)
-\Hy@abspage=\count380
-\c@Item=\count381
-\c@Hfootnote=\count382
-)
-Package hyperref Info: Driver (autodetected): hxetex.
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
-hxetex.def"
-File: hxetex.def 2020-05-15 v7.00e Hyperref driver for XeTeX
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
-puenc.def"
-File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/stringe
-nc\stringenc.sty"
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
-\pdfm@box=\box46
-\c@Hy@AnnotLevel=\count383
-\HyField@AnnotCount=\count384
-\Fld@listcount=\count385
-\c@bookmark@seq@number=\count386
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfile
-check\rerunfilecheck.sty"
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend
-\atveryend.sty"
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquec
-ounter\uniquecounter.sty"
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
-)
-\Hy@SectionHShift=\skip72
-)
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\
 titlesec.sty"
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box47
-\beforetitleunit=\skip73
-\aftertitleunit=\skip74
-\ttl@plus=\dimen139
-\ttl@minus=\dimen140
+\ttl@box=\box46
+\beforetitleunit=\skip72
+\aftertitleunit=\skip73
+\ttl@plus=\dimen135
+\ttl@minus=\dimen136
 \ttl@toksa=\toks16
-\titlewidth=\dimen141
-\titlewidthlast=\dimen142
-\titlewidthfirst=\dimen143
+\titlewidth=\dimen137
+\titlewidthlast=\dimen138
+\titlewidthfirst=\dimen139
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfiles\
 subfiles.sty"
@@ -516,27 +396,28 @@ Package: import 2020/04/01  v 6.2
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\mul
 ticol.sty"
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count387
-\mult@box=\box48
-\multicol@leftmargin=\dimen144
-\c@unbalance=\count388
-\c@collectmore=\count389
-\doublecol@number=\count390
-\multicoltolerance=\count391
-\multicolpretolerance=\count392
-\full@width=\dimen145
-\page@free=\dimen146
-\premulticols=\dimen147
-\postmulticols=\dimen148
-\multicolsep=\skip75
-\multicolbaselineskip=\skip76
-\partial@page=\box49
-\last@line=\box50
-\maxbalancingoverflow=\dimen149
-\mult@rightbox=\box51
-\mult@grightbox=\box52
-\mult@gfirstbox=\box53
-\mult@firstbox=\box54
+\c@tracingmulticols=\count375
+\mult@box=\box47
+\multicol@leftmargin=\dimen140
+\c@unbalance=\count376
+\c@collectmore=\count377
+\doublecol@number=\count378
+\multicoltolerance=\count379
+\multicolpretolerance=\count380
+\full@width=\dimen141
+\page@free=\dimen142
+\premulticols=\dimen143
+\postmulticols=\dimen144
+\multicolsep=\skip74
+\multicolbaselineskip=\skip75
+\partial@page=\box48
+\last@line=\box49
+\maxbalancingoverflow=\dimen145
+\mult@rightbox=\box50
+\mult@grightbox=\box51
+\mult@gfirstbox=\box52
+\mult@firstbox=\box53
+\@tempa=\box54
 \@tempa=\box55
 \@tempa=\box56
 \@tempa=\box57
@@ -573,16 +454,15 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box88
 \@tempa=\box89
 \@tempa=\box90
-\@tempa=\box91
-\c@minrows=\count393
-\c@columnbadness=\count394
-\c@finalcolumnbadness=\count395
-\last@try=\dimen150
-\multicolovershoot=\dimen151
-\multicolundershoot=\dimen152
-\mult@nat@firstbox=\box92
-\colbreak@box=\box93
-\mc@col@check@num=\count396
+\c@minrows=\count381
+\c@columnbadness=\count382
+\c@finalcolumnbadness=\count383
+\last@try=\dimen146
+\multicolovershoot=\dimen147
+\multicolundershoot=\dimen148
+\mult@nat@firstbox=\box91
+\colbreak@box=\box92
+\mc@col@check@num=\count384
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xc
 olor.sty"
@@ -615,12 +495,12 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\
 enumitem.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip77
-\enit@outerparindent=\dimen153
+\labelindent=\skip76
+\enit@outerparindent=\dimen149
 \enit@toks=\toks17
-\enit@inbox=\box94
-\enit@count@id=\count397
-\enitdp@description=\count398
+\enit@inbox=\box93
+\enit@count@id=\count385
+\enitdp@description=\count386
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lastpage\
 lastpage.sty"
@@ -630,15 +510,15 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 fancyhdr.sty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip78
-\f@nch@O@elh=\skip79
-\f@nch@O@erh=\skip80
-\f@nch@O@olh=\skip81
-\f@nch@O@orh=\skip82
-\f@nch@O@elf=\skip83
-\f@nch@O@erf=\skip84
-\f@nch@O@olf=\skip85
-\f@nch@O@orf=\skip86
+\f@nch@headwidth=\skip77
+\f@nch@O@elh=\skip78
+\f@nch@O@erh=\skip79
+\f@nch@O@olh=\skip80
+\f@nch@O@orh=\skip81
+\f@nch@O@elf=\skip82
+\f@nch@O@erf=\skip83
+\f@nch@O@olf=\skip84
+\f@nch@O@orf=\skip85
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
 abel.sty"
@@ -647,8 +527,8 @@ Package: babel 2020/09/01 3.48 The Babel package
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
 abel.def"
 File: babel.def 2020/09/01 3.48 Babel common definitions
-\babel@savecnt=\count399
-\U@D=\dimen154
+\babel@savecnt=\count387
+\U@D=\dimen150
 \l@babelnohyphens=\language80
 
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\x
@@ -657,7 +537,7 @@ ebabel.def"
 xtbabel.def"))
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count400
+\bbl@dirlevel=\count388
 
 *************************************
 * Local config file bblopts.cfg used
@@ -702,8 +582,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
 )
-\Gin@req@height=\dimen155
-\Gin@req@width=\dimen156
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
 \adjustbox.sty"
@@ -720,7 +600,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks18
 \XKV@tempa@toks=\toks19
 )
-\XKV@depth=\count401
+\XKV@depth=\count389
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
@@ -735,49 +615,49 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/collectbo
 x\collectbox.sty"
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box95
+\collectedbox=\box94
 )
-\tc@llx=\dimen157
-\tc@lly=\dimen158
-\tc@urx=\dimen159
-\tc@ury=\dimen160
+\tc@llx=\dimen153
+\tc@lly=\dimen154
+\tc@urx=\dimen155
+\tc@ury=\dimen156
 Package trimclip Info: Using driver 'tc-xetex.def'.
 
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
 \tc-xetex.def"
 File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 ))
-\adjbox@Width=\dimen161
-\adjbox@Height=\dimen162
-\adjbox@Depth=\dimen163
-\adjbox@Totalheight=\dimen164
-\adjbox@pwidth=\dimen165
-\adjbox@pheight=\dimen166
-\adjbox@pdepth=\dimen167
-\adjbox@ptotalheight=\dimen168
+\adjbox@Width=\dimen157
+\adjbox@Height=\dimen158
+\adjbox@Depth=\dimen159
+\adjbox@Totalheight=\dimen160
+\adjbox@pwidth=\dimen161
+\adjbox@pheight=\dimen162
+\adjbox@pdepth=\dimen163
+\adjbox@ptotalheight=\dimen164
 
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage
 \ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count402
+\c@checkoddpage=\count390
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\
 varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box96
-\sift@deathcycles=\count403
-\@vwid@loff=\dimen169
-\@vwid@roff=\dimen170
+\@vwid@box=\box95
+\sift@deathcycles=\count391
+\@vwid@loff=\dimen165
+\@vwid@roff=\dimen166
 ))
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
 csquotes.sty"
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
-\csq@reset=\count404
-\csq@gtype=\count405
-\csq@glevel=\count406
-\csq@qlevel=\count407
-\csq@maxlvl=\count408
-\csq@tshold=\count409
+\csq@reset=\count392
+\csq@gtype=\count393
+\csq@glevel=\count394
+\csq@qlevel=\count395
+\csq@maxlvl=\count396
+\csq@tshold=\count397
 \csq@ltx@everypar=\toks20
 
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
@@ -824,10 +704,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -854,40 +730,11 @@ Package biblatex Info: ... file 'main.bbl' not found.
 No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
-\AtBeginShipoutBox=\box97
-Package hyperref Info: Link coloring OFF on input line 20.
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
-nameref.sty"
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\
-refcount.sty"
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitl
-estring\gettitlestring.sty"
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count410
-)
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
- (main.out) (main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
-
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 20.
 Package csquotes Info: Redefining character " on input line 20.
- (sections/education.tex
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/stringe
-nc\se-ascii-print.def"
-File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
-
-)
+(sections/education.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -924,34 +771,18 @@ Overfull \hbox (6.37778pt too wide) in paragraph at lines 42--42
 AED: lastpage setting LastPage
 [1
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
- (main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 45.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6A9ED76850C188366998DFBC7B7D33CE;237.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+] (main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19573 strings out of 414480
- 325049 string characters out of 2900233
- 1082827 words of memory out of 3000000
- 36580 multiletter control sequences out of 15000+200000
- 538259 words of font info for 48 fonts, out of 3000000 for 9000
+ 12751 strings out of 414480
+ 228260 string characters out of 2900233
+ 977551 words of memory out of 3000000
+ 29830 multiletter control sequences out of 15000+200000
+ 537899 words of font info for 47 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 51i,11n,62p,1105b,3764s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,11n,49p,1048b,3762s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on main.pdf (1 page).

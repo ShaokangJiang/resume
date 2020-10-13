@@ -2,7 +2,6 @@
 
 % Packages
 \usepackage[cm]{fullpage}                   % Margins
-\usepackage[hidelinks]{hyperref}            % Hyperlinks
 \usepackage{titlesec}                       % Title formatting
 \usepackage{subfiles}                       % File importing
 \usepackage{multicol}                       % Multiple columns
@@ -30,7 +29,6 @@
 
 % Hyperlinks
 % \newcommand{\link}[2]{\href{#1}{\underline{\smash{#2}}}}
-\newcommand{\link}[2]{\href{#1}{#2}}
 
 % Define colors
 \definecolor{color-text}{gray}{0.10}    % light black
@@ -43,11 +41,6 @@
 \makeatother
 \AtBeginDocument{\globalcolor{color-text}}
 
-% Shorthand
-\newcommand{\github}[1]{\href{https://github.com/#1/}{github.com/#1}}
-\newcommand{\email}[1]{\href{mailto:#1}{#1}}
-\newcommand{\website}[1]{\href{https://#1/}{#1}}
-\newcommand{\linkedin}[1]{\href{https://www.linkedin.com/in/#1/}{#1}}
 
 % Dummy environment
 \newenvironment*{dummyenv}{}{}
