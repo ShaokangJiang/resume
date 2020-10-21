@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.9.10)  13 OCT 2020 17:45
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.9.10)  20 OCT 2020 20:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -367,23 +367,41 @@ File: biblatex.cfg
 )) (simplecv.sty
 Package: simplecv 
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/preprint\
-fullpage.sty"
-Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip71
+("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\
+geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\i
+fvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
+\Gm@cnth=\count375
+\Gm@cntv=\count376
+\c@Gm@tempcnt=\count377
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+
+("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/xelatex/xetexco
+nfig\geometry.cfg"))
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\
 titlesec.sty"
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box46
-\beforetitleunit=\skip72
-\aftertitleunit=\skip73
-\ttl@plus=\dimen135
-\ttl@minus=\dimen136
-\ttl@toksa=\toks16
-\titlewidth=\dimen137
-\titlewidthlast=\dimen138
-\titlewidthfirst=\dimen139
+\beforetitleunit=\skip71
+\aftertitleunit=\skip72
+\ttl@plus=\dimen143
+\ttl@minus=\dimen144
+\ttl@toksa=\toks17
+\titlewidth=\dimen145
+\titlewidthlast=\dimen146
+\titlewidthfirst=\dimen147
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfiles\
 subfiles.sty"
@@ -396,23 +414,23 @@ Package: import 2020/04/01  v 6.2
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\mul
 ticol.sty"
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count375
+\c@tracingmulticols=\count378
 \mult@box=\box47
-\multicol@leftmargin=\dimen140
-\c@unbalance=\count376
-\c@collectmore=\count377
-\doublecol@number=\count378
-\multicoltolerance=\count379
-\multicolpretolerance=\count380
-\full@width=\dimen141
-\page@free=\dimen142
-\premulticols=\dimen143
-\postmulticols=\dimen144
-\multicolsep=\skip74
-\multicolbaselineskip=\skip75
+\multicol@leftmargin=\dimen148
+\c@unbalance=\count379
+\c@collectmore=\count380
+\doublecol@number=\count381
+\multicoltolerance=\count382
+\multicolpretolerance=\count383
+\full@width=\dimen149
+\page@free=\dimen150
+\premulticols=\dimen151
+\postmulticols=\dimen152
+\multicolsep=\skip73
+\multicolbaselineskip=\skip74
 \partial@page=\box48
 \last@line=\box49
-\maxbalancingoverflow=\dimen145
+\maxbalancingoverflow=\dimen153
 \mult@rightbox=\box50
 \mult@grightbox=\box51
 \mult@gfirstbox=\box52
@@ -454,15 +472,15 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box88
 \@tempa=\box89
 \@tempa=\box90
-\c@minrows=\count381
-\c@columnbadness=\count382
-\c@finalcolumnbadness=\count383
-\last@try=\dimen146
-\multicolovershoot=\dimen147
-\multicolundershoot=\dimen148
+\c@minrows=\count384
+\c@columnbadness=\count385
+\c@finalcolumnbadness=\count386
+\last@try=\dimen154
+\multicolovershoot=\dimen155
+\multicolundershoot=\dimen156
 \mult@nat@firstbox=\box91
 \colbreak@box=\box92
-\mc@col@check@num=\count384
+\mc@col@check@num=\count387
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xc
 olor.sty"
@@ -495,12 +513,12 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\
 enumitem.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip76
-\enit@outerparindent=\dimen149
-\enit@toks=\toks17
+\labelindent=\skip75
+\enit@outerparindent=\dimen157
+\enit@toks=\toks18
 \enit@inbox=\box93
-\enit@count@id=\count385
-\enitdp@description=\count386
+\enit@count@id=\count388
+\enitdp@description=\count389
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lastpage\
 lastpage.sty"
@@ -510,15 +528,15 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 fancyhdr.sty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip77
-\f@nch@O@elh=\skip78
-\f@nch@O@erh=\skip79
-\f@nch@O@olh=\skip80
-\f@nch@O@orh=\skip81
-\f@nch@O@elf=\skip82
-\f@nch@O@erf=\skip83
-\f@nch@O@olf=\skip84
-\f@nch@O@orf=\skip85
+\f@nch@headwidth=\skip76
+\f@nch@O@elh=\skip77
+\f@nch@O@erh=\skip78
+\f@nch@O@olh=\skip79
+\f@nch@O@orh=\skip80
+\f@nch@O@elf=\skip81
+\f@nch@O@erf=\skip82
+\f@nch@O@olf=\skip83
+\f@nch@O@orf=\skip84
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
 abel.sty"
@@ -527,8 +545,8 @@ Package: babel 2020/09/01 3.48 The Babel package
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
 abel.def"
 File: babel.def 2020/09/01 3.48 Babel common definitions
-\babel@savecnt=\count387
-\U@D=\dimen150
+\babel@savecnt=\count390
+\U@D=\dimen158
 \l@babelnohyphens=\language80
 
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\x
@@ -537,7 +555,7 @@ ebabel.def"
 xtbabel.def"))
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count388
+\bbl@dirlevel=\count391
 
 *************************************
 * Local config file bblopts.cfg used
@@ -582,8 +600,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
 )
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
 \adjustbox.sty"
@@ -597,10 +615,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \xkeyval.tex"
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval
 \xkvutils.tex"
-\XKV@toks=\toks18
-\XKV@tempa@toks=\toks19
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
 )
-\XKV@depth=\count389
+\XKV@depth=\count392
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
@@ -617,48 +635,48 @@ x\collectbox.sty"
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box94
 )
-\tc@llx=\dimen153
-\tc@lly=\dimen154
-\tc@urx=\dimen155
-\tc@ury=\dimen156
+\tc@llx=\dimen161
+\tc@lly=\dimen162
+\tc@urx=\dimen163
+\tc@ury=\dimen164
 Package trimclip Info: Using driver 'tc-xetex.def'.
 
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
 \tc-xetex.def"
 File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 ))
-\adjbox@Width=\dimen157
-\adjbox@Height=\dimen158
-\adjbox@Depth=\dimen159
-\adjbox@Totalheight=\dimen160
-\adjbox@pwidth=\dimen161
-\adjbox@pheight=\dimen162
-\adjbox@pdepth=\dimen163
-\adjbox@ptotalheight=\dimen164
+\adjbox@Width=\dimen165
+\adjbox@Height=\dimen166
+\adjbox@Depth=\dimen167
+\adjbox@Totalheight=\dimen168
+\adjbox@pwidth=\dimen169
+\adjbox@pheight=\dimen170
+\adjbox@pdepth=\dimen171
+\adjbox@ptotalheight=\dimen172
 
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage
 \ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count390
+\c@checkoddpage=\count393
 )
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\
 varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box95
-\sift@deathcycles=\count391
-\@vwid@loff=\dimen165
-\@vwid@roff=\dimen166
+\sift@deathcycles=\count394
+\@vwid@loff=\dimen173
+\@vwid@roff=\dimen174
 ))
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
 csquotes.sty"
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
-\csq@reset=\count392
-\csq@gtype=\count393
-\csq@glevel=\count394
-\csq@qlevel=\count395
-\csq@maxlvl=\count396
-\csq@tshold=\count397
-\csq@ltx@everypar=\toks20
+\csq@reset=\count395
+\csq@gtype=\count396
+\csq@glevel=\count397
+\csq@qlevel=\count398
+\csq@maxlvl=\count399
+\csq@tshold=\count400
+\csq@ltx@everypar=\toks21
 
 ("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
 csquotes.def"
@@ -730,6 +748,39 @@ Package biblatex Info: ... file 'main.bbl' not found.
 No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=557.38951pt
+* \textheight=738.0645pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-80.81725pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 20.
@@ -747,22 +798,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 7.
 ) (sections/projects.tex
-Overfull \hbox (5.98094pt too wide) in paragraph at lines 15--15
+Overfull \hbox (5.5499pt too wide) in paragraph at lines 15--15
 [][] 
  []
 
 
-Overfull \hbox (5.98094pt too wide) in paragraph at lines 23--23
+Overfull \hbox (5.5499pt too wide) in paragraph at lines 23--23
 [][] 
  []
 
 
-Overfull \hbox (6.37778pt too wide) in paragraph at lines 34--34
+Overfull \hbox (5.5499pt too wide) in paragraph at lines 31--31
 [][] 
  []
 
 
-Overfull \hbox (6.37778pt too wide) in paragraph at lines 42--42
+Overfull \hbox (5.96808pt too wide) in paragraph at lines 42--42
+[][] 
+ []
+
+
+Overfull \hbox (5.96808pt too wide) in paragraph at lines 50--50
+[][] 
+ []
+
+
+Overfull \hbox (5.96808pt too wide) in paragraph at lines 58--58
 [][] 
  []
 
@@ -772,15 +833,18 @@ AED: lastpage setting LastPage
 [1
 
 ] (main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12751 strings out of 414480
- 228260 string characters out of 2900233
- 977551 words of memory out of 3000000
- 29830 multiletter control sequences out of 15000+200000
+ 13192 strings out of 414480
+ 234694 string characters out of 2900233
+ 990316 words of memory out of 3000000
+ 30268 multiletter control sequences out of 15000+200000
  537899 words of font info for 47 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  44i,11n,49p,1048b,3762s stack positions out of 5000i,500n,10000p,200000b,50000s

@@ -1,7 +1,8 @@
 \ProvidesPackage{simplecv}
 
 % Packages
-\usepackage[cm]{fullpage}                   % Margins
+\usepackage{geometry}
+\geometry{margin=1cm}
 \usepackage{titlesec}                       % Title formatting
 \usepackage{subfiles}                       % File importing
 \usepackage{multicol}                       % Multiple columns
@@ -84,7 +85,7 @@
 }
 
 % Section titles
-\titleformat{\section}{\vspace{-0.5em}
+\titleformat{\section}{\vspace{-1em}
     \scshape\raggedright\Large\color{color-title}}{}{0em}{}[\color{color-title}\titlerule
     \vspace{-\smallskipamount}]
 
