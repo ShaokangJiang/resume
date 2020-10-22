@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.9.10)  20 OCT 2020 20:27
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.9.10)  22 OCT 2020 10:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -833,9 +833,6 @@ AED: lastpage setting LastPage
 [1
 
 ] (main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
