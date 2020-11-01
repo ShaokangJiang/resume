@@ -1,132 +1,117 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.9.10)  22 OCT 2020 10:20
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.10.11)  1 NOV 2020 11:53
 entering extended mode
-**./main.tex
-(main.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-09-03>
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\arti
-cle.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size
-11.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count164
-\c@section=\count165
-\c@subsection=\count166
-\c@subsubsection=\count167
-\c@paragraph=\count168
-\c@subparagraph=\count169
-\c@figure=\count170
-\c@table=\count171
+\c@part=\count163
+\c@section=\count164
+\c@subsection=\count165
+\c@subsubsection=\count166
+\c@paragraph=\count167
+\c@subparagraph=\count168
+\c@figure=\count169
+\c@table=\count170
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\
-biblatex.sty"
-Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdftexc
-mds\pdftexcmds.sty"
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infware
-rr\infwarerr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\i
-ftex.sty"
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds
-\ltxcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\
-etoolbox.sty"
-Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count172
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count171
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
-keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks14
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions
-\kvoptions.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetke
-ys\kvsetkeys.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\lo
-greq.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count173
+\lrq@indent=\count172
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\lo
-greq.def"
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifth
-en.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.s
-ty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count174
-\c@listtotal=\count175
-\c@listcount=\count176
-\c@liststart=\count177
-\c@liststop=\count178
-\c@citecount=\count179
-\c@citetotal=\count180
-\c@multicitecount=\count181
-\c@multicitetotal=\count182
-\c@instcount=\count183
-\c@maxnames=\count184
-\c@minnames=\count185
-\c@maxitems=\count186
-\c@minitems=\count187
-\c@citecounter=\count188
-\c@maxcitecounter=\count189
-\c@savedcitecounter=\count190
-\c@uniquelist=\count191
-\c@uniquename=\count192
-\c@refsection=\count193
-\c@refsegment=\count194
-\c@maxextratitle=\count195
-\c@maxextratitleyear=\count196
-\c@maxextraname=\count197
-\c@maxextradate=\count198
-\c@maxextraalpha=\count199
-\c@abbrvpenalty=\count266
-\c@highnamepenalty=\count267
-\c@lownamepenalty=\count268
-\c@maxparens=\count269
-\c@parenlevel=\count270
-\blx@tempcnta=\count271
-\blx@tempcntb=\count272
-\blx@tempcntc=\count273
-\blx@maxsection=\count274
-\blx@maxsegment@0=\count275
-\blx@notetype=\count276
-\blx@parenlevel@text=\count277
-\blx@parenlevel@foot=\count278
-\blx@sectionciteorder@0=\count279
-\blx@entrysetcounter=\count280
-\blx@biblioinstance=\count281
+\c@tabx@nest=\count173
+\c@listtotal=\count174
+\c@listcount=\count175
+\c@liststart=\count176
+\c@liststop=\count177
+\c@citecount=\count178
+\c@citetotal=\count179
+\c@multicitecount=\count180
+\c@multicitetotal=\count181
+\c@instcount=\count182
+\c@maxnames=\count183
+\c@minnames=\count184
+\c@maxitems=\count185
+\c@minitems=\count186
+\c@citecounter=\count187
+\c@maxcitecounter=\count188
+\c@savedcitecounter=\count189
+\c@uniquelist=\count190
+\c@uniquename=\count191
+\c@refsection=\count192
+\c@refsegment=\count193
+\c@maxextratitle=\count194
+\c@maxextratitleyear=\count195
+\c@maxextraname=\count196
+\c@maxextradate=\count197
+\c@maxextraalpha=\count198
+\c@abbrvpenalty=\count199
+\c@highnamepenalty=\count266
+\c@lownamepenalty=\count267
+\c@maxparens=\count268
+\c@parenlevel=\count269
+\blx@tempcnta=\count270
+\blx@tempcntb=\count271
+\blx@tempcntc=\count272
+\blx@maxsection=\count273
+\blx@maxsegment@0=\count274
+\blx@notetype=\count275
+\blx@parenlevel@text=\count276
+\blx@parenlevel@foot=\count277
+\blx@sectionciteorder@0=\count278
+\blx@entrysetcounter=\count279
 \labelnumberwidth=\skip49
 \labelalphawidth=\skip50
 \biblabelsep=\skip51
@@ -137,89 +122,88 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip56
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\blx@langwohyphens=\language79
-\c@mincomprange=\count282
-\c@maxcomprange=\count283
-\c@mincompwidth=\count284
+\blx@langwohyphens=\language7
+\c@mincomprange=\count280
+\c@maxcomprange=\count281
+\c@mincompwidth=\count282
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\
-blx-dm.def"
-File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count285
-\c@savedafterword=\count286
-\c@annotator=\count287
-\c@savedannotator=\count288
-\c@author=\count289
-\c@savedauthor=\count290
-\c@bookauthor=\count291
-\c@savedbookauthor=\count292
-\c@commentator=\count293
-\c@savedcommentator=\count294
-\c@editor=\count295
-\c@savededitor=\count296
-\c@editora=\count297
-\c@savededitora=\count298
-\c@editorb=\count299
-\c@savededitorb=\count300
-\c@editorc=\count301
-\c@savededitorc=\count302
-\c@foreword=\count303
-\c@savedforeword=\count304
-\c@holder=\count305
-\c@savedholder=\count306
-\c@introduction=\count307
-\c@savedintroduction=\count308
-\c@namea=\count309
-\c@savednamea=\count310
-\c@nameb=\count311
-\c@savednameb=\count312
-\c@namec=\count313
-\c@savednamec=\count314
-\c@translator=\count315
-\c@savedtranslator=\count316
-\c@shortauthor=\count317
-\c@savedshortauthor=\count318
-\c@shorteditor=\count319
-\c@savedshorteditor=\count320
-\c@labelname=\count321
-\c@savedlabelname=\count322
-\c@institution=\count323
-\c@savedinstitution=\count324
-\c@lista=\count325
-\c@savedlista=\count326
-\c@listb=\count327
-\c@savedlistb=\count328
-\c@listc=\count329
-\c@savedlistc=\count330
-\c@listd=\count331
-\c@savedlistd=\count332
-\c@liste=\count333
-\c@savedliste=\count334
-\c@listf=\count335
-\c@savedlistf=\count336
-\c@location=\count337
-\c@savedlocation=\count338
-\c@organization=\count339
-\c@savedorganization=\count340
-\c@origlocation=\count341
-\c@savedoriglocation=\count342
-\c@origpublisher=\count343
-\c@savedorigpublisher=\count344
-\c@publisher=\count345
-\c@savedpublisher=\count346
-\c@language=\count347
-\c@savedlanguage=\count348
-\c@origlanguage=\count349
-\c@savedoriglanguage=\count350
-\c@pageref=\count351
-\c@savedpageref=\count352
+\c@afterword=\count283
+\c@savedafterword=\count284
+\c@annotator=\count285
+\c@savedannotator=\count286
+\c@author=\count287
+\c@savedauthor=\count288
+\c@bookauthor=\count289
+\c@savedbookauthor=\count290
+\c@commentator=\count291
+\c@savedcommentator=\count292
+\c@editor=\count293
+\c@savededitor=\count294
+\c@editora=\count295
+\c@savededitora=\count296
+\c@editorb=\count297
+\c@savededitorb=\count298
+\c@editorc=\count299
+\c@savededitorc=\count300
+\c@foreword=\count301
+\c@savedforeword=\count302
+\c@holder=\count303
+\c@savedholder=\count304
+\c@introduction=\count305
+\c@savedintroduction=\count306
+\c@namea=\count307
+\c@savednamea=\count308
+\c@nameb=\count309
+\c@savednameb=\count310
+\c@namec=\count311
+\c@savednamec=\count312
+\c@translator=\count313
+\c@savedtranslator=\count314
+\c@shortauthor=\count315
+\c@savedshortauthor=\count316
+\c@shorteditor=\count317
+\c@savedshorteditor=\count318
+\c@labelname=\count319
+\c@savedlabelname=\count320
+\c@institution=\count321
+\c@savedinstitution=\count322
+\c@lista=\count323
+\c@savedlista=\count324
+\c@listb=\count325
+\c@savedlistb=\count326
+\c@listc=\count327
+\c@savedlistc=\count328
+\c@listd=\count329
+\c@savedlistd=\count330
+\c@liste=\count331
+\c@savedliste=\count332
+\c@listf=\count333
+\c@savedlistf=\count334
+\c@location=\count335
+\c@savedlocation=\count336
+\c@organization=\count337
+\c@savedorganization=\count338
+\c@origlocation=\count339
+\c@savedoriglocation=\count340
+\c@origpublisher=\count341
+\c@savedorigpublisher=\count342
+\c@publisher=\count343
+\c@savedpublisher=\count344
+\c@language=\count345
+\c@savedlanguage=\count346
+\c@origlanguage=\count347
+\c@savedoriglanguage=\count348
+\c@pageref=\count349
+\c@savedpageref=\count350
 \shorthandwidth=\skip57
 \shortjournalwidth=\skip58
 \shortserieswidth=\skip59
@@ -237,112 +221,67 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\
-blx-unicode.def")
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-unicode.def)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\
-blx-compat.def"
-File: blx-compat.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\
-expl3.sty"
-Package: expl3 2020-09-03 L3 programming layer (loader) 
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend
-\l3backend-xetex.def"
-File: l3backend-xetex.def 2020-09-01 L3 backend support: XeTeX
-\g__graphics_track_int=\count353
-\l__pdf_internal_box=\box45
-\g__pdf_backend_object_int=\count354
-\g__pdf_backend_annotation_int=\count355
-))
-Package biblatex Info: expl3
-(biblatex)             2020-09-03 L3 programming layer (loader) 
-(biblatex)             is new enough (at least 2020/04/06),
-(biblatex)             setting 'casechanger=expl3'.
-Package biblatex Info: Trying to load expl3 case changing code...
-Package biblatex Info: ... file 'blx-case-expl3.def' found.
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\
-blx-case-expl3.def"
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3package
-s/xparse\xparse.sty"
-Package: xparse 2020-05-15 L3 Experimental document command parser
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3package
-s/xparse\xparse-generic.tex"
-\l__xparse_current_arg_int=\count356
-\g__xparse_grabber_int=\count357
-\l__xparse_m_args_int=\count358
-\l__xparse_v_nesting_int=\count359
-))
-File: blx-case-expl3 2020/08/23 v3.15a expl3 case changing code for biblatex
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\
-biblatex.def"
-File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
-\c@textcitecount=\count360
-\c@textcitetotal=\count361
-\c@textcitemaxnames=\count362
-\c@biburlbigbreakpenalty=\count363
-\c@biburlbreakpenalty=\count364
-\c@biburlnumpenalty=\count365
-\c@biburlucpenalty=\count366
-\c@biburllcpenalty=\count367
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count351
+\c@textcitetotal=\count352
+\c@textcitemaxnames=\count353
+\c@biburlbigbreakpenalty=\count354
+\c@biburlbreakpenalty=\count355
+\c@biburlnumpenalty=\count356
+\c@biburlucpenalty=\count357
+\c@biburllcpenalty=\count358
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count368
+\c@smartand=\count359
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex-
-ieee\ieee.bbx"
-File: ieee.bbx 2020/08/31 v1.3c biblatex bibliography style
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2019/06/19 v1.3a biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/
-bbx\numeric-comp.bbx"
-File: numeric-comp.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/
-bbx\numeric.bbx"
-File: numeric.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/
-bbx\standard.bbx"
-File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count369
-\c@bbx:relatedtotal=\count370
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count360
+\c@bbx:relatedtotal=\count361
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex-
-ieee\ieee.cbx"
-File: ieee.cbx 2020/08/31 v1.3c biblatex citation style
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2019/06/19 v1.3a biblatex citation style
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/
-cbx\numeric-comp.cbx"
-File: numeric-comp.cbx 2020/08/23 v3.15a biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count371
-\c@cbx@tempcntb=\count372
-\c@cbx@tempcntc=\count373
-\c@cbx@tempcntd=\count374
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count362
+\c@cbx@tempcntb=\count363
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -361,23 +300,20 @@ Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\
-biblatex.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-)) (simplecv.sty
+))
+(./simplecv.sty
 Package: simplecv 
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\
-geometry.sty"
+ (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\i
-fvtex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count375
-\Gm@cntv=\count376
-\c@Gm@tempcnt=\count377
+\Gm@cnth=\count364
+\Gm@cntv=\count365
+\c@Gm@tempcnt=\count366
 \Gm@bindingoffset=\dimen135
 \Gm@wd@mp=\dimen136
 \Gm@odd@mp=\dimen137
@@ -386,55 +322,50 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen140
 \Gm@layouthoffset=\dimen141
 \Gm@layoutvoffset=\dimen142
-\Gm@dimlist=\toks16
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/xelatex/xetexco
-nfig\geometry.cfg"))
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\
-titlesec.sty"
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box46
+\ttl@box=\box45
 \beforetitleunit=\skip71
 \aftertitleunit=\skip72
 \ttl@plus=\dimen143
 \ttl@minus=\dimen144
-\ttl@toksa=\toks17
+\ttl@toksa=\toks16
 \titlewidth=\dimen145
 \titlewidthlast=\dimen146
 \titlewidthfirst=\dimen147
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfiles\
-subfiles.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/import\im
-port.sty"
-Package: import 2020/04/01  v 6.2
+(/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
 ))
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\mul
-ticol.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count378
-\mult@box=\box47
+\c@tracingmulticols=\count367
+\mult@box=\box46
 \multicol@leftmargin=\dimen148
-\c@unbalance=\count379
-\c@collectmore=\count380
-\doublecol@number=\count381
-\multicoltolerance=\count382
-\multicolpretolerance=\count383
+\c@unbalance=\count368
+\c@collectmore=\count369
+\doublecol@number=\count370
+\multicoltolerance=\count371
+\multicolpretolerance=\count372
 \full@width=\dimen149
 \page@free=\dimen150
 \premulticols=\dimen151
 \postmulticols=\dimen152
 \multicolsep=\skip73
 \multicolbaselineskip=\skip74
-\partial@page=\box48
-\last@line=\box49
+\partial@page=\box47
+\last@line=\box48
 \maxbalancingoverflow=\dimen153
-\mult@rightbox=\box50
-\mult@grightbox=\box51
-\mult@gfirstbox=\box52
-\mult@firstbox=\box53
+\mult@rightbox=\box49
+\mult@grightbox=\box50
+\mult@gfirstbox=\box51
+\mult@firstbox=\box52
+\@tempa=\box53
 \@tempa=\box54
 \@tempa=\box55
 \@tempa=\box56
@@ -471,31 +402,27 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box87
 \@tempa=\box88
 \@tempa=\box89
-\@tempa=\box90
-\c@minrows=\count384
-\c@columnbadness=\count385
-\c@finalcolumnbadness=\count386
+\c@minrows=\count373
+\c@columnbadness=\count374
+\c@finalcolumnbadness=\count375
 \last@try=\dimen154
 \multicolovershoot=\dimen155
 \multicolundershoot=\dimen156
-\mult@nat@firstbox=\box91
-\colbreak@box=\box92
-\mc@col@check@num=\count387
+\mult@nat@firstbox=\box90
+\colbreak@box=\box91
+\mc@col@check@num=\count376
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xc
-olor.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
-cfg\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
 Package xcolor Info: Driver file: xetex.def on input line 225.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
-def\xetex.def"
-File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -506,26 +433,22 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
-dvipsnam.def"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\
-enumitem.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip75
 \enit@outerparindent=\dimen157
-\enit@toks=\toks18
-\enit@inbox=\box93
-\enit@count@id=\count388
-\enitdp@description=\count389
+\enit@toks=\toks17
+\enit@inbox=\box92
+\enit@count@id=\count377
+\enitdp@description=\count378
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lastpage\
-lastpage.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\
-fancyhdr.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip76
@@ -538,64 +461,46 @@ s
 \f@nch@O@olf=\skip83
 \f@nch@O@orf=\skip84
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
-abel.sty"
-Package: babel 2020/09/01 3.48 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
-abel.def"
-File: babel.def 2020/09/01 3.48 Babel common definitions
-\babel@savecnt=\count390
-\U@D=\dimen158
-\l@babelnohyphens=\language80
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\x
-ebabel.def"
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\t
-xtbabel.def"))
-\bbl@readstream=\read3
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
-\bbl@dirlevel=\count391
-
-*************************************
-* Local config file bblopts.cfg used
-*
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bbl
-opts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-rus
-sian\russianb.ldf"
-Language: russian 2017/08/12 1.3j Russian support for the Babel system
-Package babel Info: Making " an active character on input line 120.
-Package babel Info: Default for \cyrdash is provided on input line 157.
-)
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-eng
-lish\english.ldf"
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count379
+\U@D=\dimen158
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
+\bbl@readstream=\read3
+\bbl@dirlevel=\count380
+)
+Package babel Info: \l@british = using hyphenrules for english
+(babel)             (\language0) on input line 82.
+Package babel Info: \l@UKenglish = using hyphenrules for english
+(babel)             (\language0) on input line 83.
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language73) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language73) on input line 108.
+Package babel Info: \l@australian = using hyphenrules for english
+(babel)             (\language0) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for english
+(babel)             (\language0) on input line 108.
 ))
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
-graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
-graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
-trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
-cfg\graphics.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
@@ -603,37 +508,30 @@ Package graphics Info: Driver file: xetex.def on input line 105.
 \Gin@req@height=\dimen159
 \Gin@req@width=\dimen160
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
-\adjustbox.sty"
-Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\x
-keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval
-\xkeyval.tex"
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval
-\xkvutils.tex"
-\XKV@toks=\toks19
-\XKV@tempa@toks=\toks20
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
 )
-\XKV@depth=\count392
+\XKV@depth=\count381
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
-\adjcalc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
-\trimclip.sty"
-Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/collectbo
-x\collectbox.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box94
+\collectedbox=\box93
 )
 \tc@llx=\dimen161
 \tc@lly=\dimen162
@@ -641,8 +539,7 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@ury=\dimen164
 Package trimclip Info: Using driver 'tc-xetex.def'.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox
-\tc-xetex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-xetex.def
 File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 ))
 \adjbox@Width=\dimen165
@@ -654,39 +551,34 @@ File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 \adjbox@pdepth=\dimen171
 \adjbox@ptotalheight=\dimen172
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage
-\ifoddpage.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count393
+\c@checkoddpage=\count382
 )
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\
-varwidth.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box95
-\sift@deathcycles=\count394
+\@vwid@box=\box94
+\sift@deathcycles=\count383
 \@vwid@loff=\dimen173
 \@vwid@roff=\dimen174
 ))
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
-csquotes.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
-\csq@reset=\count395
-\csq@gtype=\count396
-\csq@glevel=\count397
-\csq@qlevel=\count398
-\csq@maxlvl=\count399
-\csq@tshold=\count400
-\csq@ltx@everypar=\toks21
+\csq@reset=\count384
+\csq@gtype=\count385
+\csq@glevel=\count386
+\csq@qlevel=\count387
+\csq@maxlvl=\count388
+\csq@tshold=\count389
+\csq@ltx@everypar=\toks20
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
-csquotes.def"
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
-csquotes.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
@@ -696,7 +588,15 @@ Package csquotes Info: Allocating character ".
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (main.aux)
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def
+File: l3backend-xdvipdfmx.def 2020-02-03 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count390
+\l__pdf_internal_box=\box95
+\g__pdf_backend_object_int=\count391
+\g__pdf_backend_annotation_int=\count392
+)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -710,9 +610,7 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 0.
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1c
-mr.fd"
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 20.
@@ -725,16 +623,8 @@ LaTeX Font Info:    ... okay on input line 20.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/
-lbx\english.lbx"
-File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load language 'russian'...
-Package biblatex Info: ... file 'russian.lbx' found.
-
-("C:\Users\Shaokang Jiang\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/
-lbx\russian.lbx"
-File: russian.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
@@ -748,9 +638,10 @@ Package biblatex Info: ... file 'main.bbl' not found.
 No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
-*geometry* detected driver: pdftex
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: xetex
 * paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -784,66 +675,66 @@ Package biblatex Info: Reference segment=0 on input line 20.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 20.
-Package csquotes Info: Redefining character " on input line 20.
-(sections/education.tex
+Package csquotes Info: Making character " active on input line 20.
+(./sections/education.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 13.
-) (sections/skills.tex
+) (./sections/skills.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 7.
-) (sections/projects.tex
-Overfull \hbox (5.5499pt too wide) in paragraph at lines 15--15
+) (./sections/projects.tex
+Overfull \hbox (5.5499pt too wide) in paragraph at lines 16--16
 [][] 
  []
 
 
-Overfull \hbox (5.5499pt too wide) in paragraph at lines 23--23
+Overfull \hbox (5.5499pt too wide) in paragraph at lines 24--24
 [][] 
  []
 
 
-Overfull \hbox (5.5499pt too wide) in paragraph at lines 31--31
+Overfull \hbox (5.5499pt too wide) in paragraph at lines 33--33
 [][] 
  []
 
 
-Overfull \hbox (5.96808pt too wide) in paragraph at lines 42--42
+Overfull \hbox (5.96808pt too wide) in paragraph at lines 44--44
 [][] 
  []
 
 
-Overfull \hbox (5.96808pt too wide) in paragraph at lines 50--50
+Overfull \hbox (5.96808pt too wide) in paragraph at lines 52--52
 [][] 
  []
 
 
-Overfull \hbox (5.96808pt too wide) in paragraph at lines 58--58
+Overfull \hbox (5.96808pt too wide) in paragraph at lines 60--60
 [][] 
  []
 
-) (sections/experience.tex) (sections/awards.tex)
+) (./sections/experience.tex) (./sections/awards.tex)
 
 AED: lastpage setting LastPage
 [1
 
-] (main.aux)
+] (./main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13192 strings out of 414480
- 234694 string characters out of 2900233
- 990316 words of memory out of 3000000
- 30268 multiletter control sequences out of 15000+200000
- 537899 words of font info for 47 fonts, out of 3000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 44i,11n,49p,1048b,3762s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 12287 strings out of 481772
+ 214996 string characters out of 5936450
+ 910509 words of memory out of 5000000
+ 29116 multiletter control sequences out of 15000+600000
+ 535149 words of font info for 42 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 40i,11n,49p,873b,3758s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (1 page).
