@@ -1,6 +1,6 @@
 // JavaScript Document
 
-$(window).load(function () {
+$(window).load(function() {
     "use strict";
     // makes sure the whole site is loaded
     $('#status').fadeOut(); // will first fade out the loading animation
@@ -10,7 +10,7 @@ $(window).load(function () {
     });
 })
 
-$(document).ready(function () {
+$(document).ready(function() {
     "use strict";
 
     // scroll menu
@@ -18,10 +18,10 @@ $(document).ready(function () {
         nav = $('.navbar-fixed-top,footer'),
         nav_height = nav.outerHeight();
 
-    $(window).on('scroll', function () {
+    $(window).on('scroll', function() {
         var cur_pos = $(this).scrollTop();
 
-        sections.each(function () {
+        sections.each(function() {
             var top = $(this).offset().top - nav_height,
                 bottom = top + $(this).outerHeight();
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
         });
     });
 
-    nav.find('a').on('click', function () {
+    nav.find('a').on('click', function() {
         var $el = $(this),
             id = $el.attr('href');
 
@@ -53,7 +53,7 @@ $(document).ready(function () {
     } else {
         $(".navbar-fixed-top").removeClass("bg-nav");
     }
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(window).scrollTop() > 80) {
             $(".navbar-fixed-top").addClass("bg-nav");
         } else {
@@ -64,11 +64,11 @@ $(document).ready(function () {
 
 
     // Parallax
-    var parallax = function () {
+    var parallax = function() {
         $(window).stellar();
     };
 
-    $(function () {
+    $(function() {
         parallax();
     });
 
@@ -80,13 +80,13 @@ $(document).ready(function () {
     });
 
     //  isotope
-    $('#projects').waitForImages(function () {
+    $('#projects').waitForImages(function() {
         var $container = $('.portfolio_container');
         $container.isotope({
             filter: '*',
         });
 
-        $('.portfolio_filter a').click(function () {
+        $('.portfolio_filter a').click(function() {
             $('.portfolio_filter .active').removeClass('active');
             $(this).addClass('active');
 
@@ -109,7 +109,7 @@ $(document).ready(function () {
     // Contact Form 	
 
     // validate contact form
-    $(function () {
+    $(function() {
         $('#contact-form').validate({
             rules: {
                 name: {
@@ -139,25 +139,27 @@ $(document).ready(function () {
                     required: "This field is required"
                 }
             },
-            submitHandler: function (form) {
-                $(form).ajaxSubmit({
-                    type: "POST",
-                    data: $(form).serialize(),
-                    url: "process.php",
-                    success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor', 'default');
-                            $('#success').fadeIn();
-                        });
-                    },
-                    error: function () {
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $('#error').fadeIn();
-                        });
-                    }
+            submitHandler: function(form) {
+                let request = JSON.stringify({
+                    'content': $(form).serialize(),
                 });
+                let serve = await fetch("https://pointing-system.1442334619.workers.dev/sendmail", {
+                    method: 'POST',
+                    body: request
+                })
+                if (serve.ok) {
+                    $('#contact :input').attr('disabled', 'disabled');
+                    $('#contact').fadeTo("slow", 1, function() {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor', 'default');
+                        $('#success').fadeIn();
+                    });
+                } else {
+                    $('#contact').fadeTo("slow", 1, function() {
+                        $('#error').fadeIn();
+                    });
+                }
+
             }
         });
 
