@@ -139,7 +139,7 @@ $(document).ready(function() {
                     required: "This field is required"
                 }
             },
-            submitHandler: function(form) {
+            submitHandler: async function(form) {
                 let request = JSON.stringify({
                     'content': $(form).serialize(),
                 });
@@ -147,7 +147,9 @@ $(document).ready(function() {
                     method: 'POST',
                     body: request
                 })
+                console.log(serve);
                 if (serve.ok) {
+                    console.log(await serve.json());
                     $('#contact :input').attr('disabled', 'disabled');
                     $('#contact').fadeTo("slow", 1, function() {
                         $(this).find(':input').attr('disabled', 'disabled');
@@ -155,6 +157,7 @@ $(document).ready(function() {
                         $('#success').fadeIn();
                     });
                 } else {
+                    console.log(await serve.json());
                     $('#contact').fadeTo("slow", 1, function() {
                         $('#error').fadeIn();
                     });
