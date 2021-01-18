@@ -590,37 +590,45 @@
             document.body.clientHeight;
 
         $(document).ready(function() {
-            document.getElementById("model-custom-content").style.height = height - 1 + "px";
+            document.getElementById("model-custom-content").style.height = height + "px";
             document.getElementById("demo01").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokang.ga/2020/projects/Publication-of-Financial-website/" style="border:none;" title="Financial web app"></iframe>'
             });
             document.getElementById("demo02").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokang.ga/2020/Financial-organization-phone-application/" style="border:none;"></iframe>'
             });
             document.getElementById("demo03").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokang.ga/2021/projects/Simple-Chat-App/" style="border:none;"></iframe>'
             });
             document.getElementById("demo04").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokang.ga/2020/Energy-smulation-website/" style="border:none;"></iframe>'
             });
             document.getElementById("demo05").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokang.ga/2020/projects/Energy-simulation-JavaFx-ver/" style="border:none;"></iframe>'
             });
             document.getElementById("demo06").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokang.ga/2019/projects/AutoCommenter/" style="border:none;"></iframe>'
             });
             document.getElementById("demo07").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokang.ga/2017/projects/Website%20for%20CS100%20project/" style="border:none;"></iframe>'
             });
 
             document.getElementById("demo08").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "auto"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = `
                 <div class="modal-content">
@@ -638,6 +646,7 @@
                 `
             });
             document.getElementById("demo09").addEventListener("click", function() {
+                document.getElementById("animatedModal").style.overflowY = "auto"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = `
                 <div class="modal-content">
