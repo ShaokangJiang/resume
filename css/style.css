@@ -322,6 +322,7 @@ a.active {
     padding: 100px 0;
 }
 
+
 /* education section
 ==================================================*/
 
@@ -354,6 +355,7 @@ a.active {
     color: #000;
     font-size: 17px;
 }
+
 
 /* experience section
 ==================================================*/
@@ -652,7 +654,30 @@ a.active {
     right: 14px;
 }
 
+.popup-modal1 {
+    background: #fff;
+}
+
+.close-popup-modal1 {
+    float: right;
+    margin: 20px;
+    font-size: 22px;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s;
+    position: fixed;
+    z-index: 100000;
+    right: 14px;
+}
+
 .animatedModal-on .close-popup-modal {
+    opacity: 1;
+}
+
+.animatedModal1-on .close-popup-modal1 {
     opacity: 1;
 }
 
