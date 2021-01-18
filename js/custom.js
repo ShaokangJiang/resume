@@ -144,12 +144,12 @@ $(document).ready(function() {
                     'content': $(form).serialize(),
                 });
                 let serve = await fetch("https://pointing-system.1442334619.workers.dev/sendmail", {
-                    method: 'POST',
-                    body: request
-                })
-                console.log(serve);
+                        method: 'POST',
+                        body: request
+                    })
+                    //console.log(serve);
                 if (serve.ok) {
-                    console.log(await serve.json());
+                    //console.log(await serve.json());
                     $('#contact :input').attr('disabled', 'disabled');
                     $('#contact').fadeTo("slow", 1, function() {
                         $(this).find(':input').attr('disabled', 'disabled');
@@ -157,12 +157,11 @@ $(document).ready(function() {
                         $('#success').fadeIn();
                     });
                 } else {
-                    console.log(await serve.json());
+                    alert(await serve.json());
                     $('#contact').fadeTo("slow", 1, function() {
                         $('#error').fadeIn();
                     });
                 }
-
             }
         });
 
