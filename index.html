@@ -142,6 +142,50 @@
         .show>.btn-outline-primary.dropdown-toggle:focus {
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
         }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            background-color: #818181;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
     </style>
 
 </head>
@@ -161,10 +205,22 @@
 
     <!-- header -->
     <header class="navbar-fixed-top">
+        <div id="mySidenav" class="sidenav">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#education" onclick="closeNav()">education</a>
+            <a href="#skills" onclick="closeNav()">skill</a>
+            <a href="#experience" onclick="closeNav()">experience</a>
+            <a href="#projects" onclick="closeNav()">projects</a>
+            <a href="#contact" onclick="closeNav()">contact</a>
+        </div>
         <nav>
+
             <div style="display: flex;flex-direction: row;justify-content: space-around;">
-                <div style="display: flex;align-items: center;"> <a type="button" class="btn btn-outline-primary btn-lg" href="https://shaokang.ga">⬅️ To My Blog </a></div>
-                <ul>
+                <div id="touch_menu" class="visible-xs" style="display: flex;align-items: center;min-height: 40px;margin-top: 20px;">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+                <div style="display: flex;align-items: center;min-height: 70px;"> <button type="button" class="btn btn-outline-primary btn-lg" onclick="window.location.href='https://shaokang.ga'">⬅️ To My Blog </button></div>
+                <ul class="hidden-xs">
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">education</a></li>
                     <li><a href="#skills">skill</a></li>
@@ -172,8 +228,8 @@
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
-                <div style="display: flex;align-items: center;">
-                    <a type="button" class="btn btn-outline-primary btn-lg" href="./pdf.html">PDF verison ➡️</a>
+                <div style="display: flex;align-items: center;min-height: 70px;">
+                    <button type="button" class="btn btn-outline-primary btn-lg" onclick="window.location.href='./pdf.html'">PDF verison ➡️</button>
                     <!--substitute with correct way in final version-->
                 </div>
             </div>
@@ -586,12 +642,37 @@
     <!--  main script  -->
     <script src="js/custom.js"></script>
     <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
         const width = window.innerWidth || document.documentElement.clientWidth ||
             document.body.clientWidth;
         const height = window.innerHeight || document.documentElement.clientHeight ||
             document.body.clientHeight;
 
         $(document).ready(function() {
+            document.body.onclick = function(e) {
+                var e = e || window.event;
+                var elem = e.target;
+                var targetArea = document.getElementById('mySidenav');
+                if (targetArea.contains(elem)) {
+                    //alert("inside");
+                } else {
+                    if (document.getElementById("touch_menu").contains(elem)) {
+
+                    } else {
+                        //console.log("outsided")
+                        if (document.getElementById("mySidenav").style.width != 0) {
+                            document.getElementById("mySidenav").style.width = "0";
+                        }
+                    }
+                }
+            }
+
             document.getElementById("model-custom-content").style.height = height + "px";
             document.getElementById("demo01").addEventListener("click", function() {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
