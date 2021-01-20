@@ -191,6 +191,22 @@
 </head>
 
 <body>
+<script>
+
+if (window.ActiveXObject || "ActiveXObject" in window){
+
+//alert("ie")
+alert("This site doesn't support IE. It Will direct you to the pdf version to download.")
+window.location.href='./Resume.pdf'
+
+
+}else{
+
+//alert("not ie")
+
+}
+
+</script>
 
     <!-- Preloader -->
     <div id="preloader">
