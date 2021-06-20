@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.6.14)  17 JUN 2021 15:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.6.14)  17 JUN 2021 16:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -675,7 +675,7 @@ Package logreq Info: Writing requests to 'Resume.run.xml'.
 Here is how much of TeX's memory you used:
  13008 strings out of 477676
  231713 string characters out of 5838345
- 1053264 words of memory out of 5000000
+ 1053267 words of memory out of 5000000
  33233 multiletter control sequences out of 15000+600000
  406241 words of font info for 45 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
