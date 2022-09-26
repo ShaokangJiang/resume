@@ -1,17 +1,17 @@
 # Fdb version 3
-["biber Resume"] 1664162069 "Resume.bcf" "Resume.bbl" "Resume" 1664162454
-  "Resume.bcf" 1664162451 106689 db863b3c3e445524932b7af68a54eef4 "pdflatex"
+["biber Resume"] 1664162069 "Resume.bcf" "Resume.bbl" "Resume" 1664162925
+  "Resume.bcf" 1664162925 106689 db863b3c3e445524932b7af68a54eef4 "pdflatex"
   (generated)
-  "Resume.bbl"
   "Resume.blg"
-["pdflatex"] 1664162449 "c:/Users/huang/Desktop/resume/Resume.tex" "Resume.pdf" "Resume" 1664162454
-  "Resume.aux" 1664162451 1426 1796043fb9a856844f2d24da4d86e7dd "pdflatex"
+  "Resume.bbl"
+["pdflatex"] 1664162922 "c:/Users/huang/Desktop/resume/Resume.tex" "Resume.pdf" "Resume" 1664162925
+  "Resume.aux" 1664162925 1426 5d19d7ae48369d4980f7f51da159b024 "pdflatex"
   "Resume.bbl" 1664162104 486 f7f239c736cf01ac6ce7bd829f9b3c7b "biber Resume"
-  "Resume.run.xml" 1664162451 2412 b0a2c859e62926b3e60915975e683f4a "pdflatex"
-  "Resume.tex" 1664162453 1225 d78c1f5356d2654fd4769cc2b18bb88c ""
+  "Resume.run.xml" 1664162925 2412 b0a2c859e62926b3e60915975e683f4a "pdflatex"
+  "Resume.tex" 1664162921 1226 6905c0b46eede7fb7812593229a96133 ""
   "c:/Users/huang/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1629808723 11524 95eb59cf6ba2171292bf5bffb6f8e56f ""
   "c:/Users/huang/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk" 1629808723 12644 1eccb6b148a0e40ad8cdc6adc920b8b6 ""
-  "c:/Users/huang/Desktop/resume/Resume.tex" 1664162453 1225 d78c1f5356d2654fd4769cc2b18bb88c ""
+  "c:/Users/huang/Desktop/resume/Resume.tex" 1664162921 1226 6905c0b46eede7fb7812593229a96133 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1624295604 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1624295604 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1624295522 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -104,13 +104,13 @@
   "c:/texlive/2021/texmf.cnf" 1624296407 713 e69b156964470283e0530f5060668171 ""
   "sections/awards.tex" 1664162379 450 35a2100a4f950de64a16de16fe339e90 ""
   "sections/education.tex" 1664162349 520 7e9660f8fce8bd72a79d1b023af27d8c ""
-  "sections/experience.tex" 1664162448 1242 becd70d6f30bedd8f1b03ff00a3207b1 ""
-  "sections/projects.tex" 1623916384 1580 7d1d91ccf9149b0fd54cbbf51613071c ""
+  "sections/experience.tex" 1664162867 1238 aadfce77c1e714724e1314067a82ab5e ""
+  "sections/projects.tex" 1664162902 1600 992c7587e4de1865ee85bca9ce2101e0 ""
   "sections/skills.tex" 1623916384 295 14190293cfaf3a8f56cffaaf06a0eefd ""
   "simplecv.sty" 1623916384 4253 49a11fc28a80101622dce361e545a8ae ""
   (generated)
+  "Resume.pdf"
+  "Resume.run.xml"
   "Resume.aux"
   "Resume.bcf"
   "Resume.log"
-  "Resume.pdf"
-  "Resume.run.xml"
