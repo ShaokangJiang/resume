@@ -1,0 +1,9 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'Resume.blg'
+[261] biber-MSWIN32:340> INFO - === 
+[337] Biber.pm:415> INFO - Reading 'Resume.bcf'
+[539] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[549] Utils.pm:395> WARN - The file 'Resume.bcf' does not contain any citations!
+[565] bbl.pm:654> INFO - Writing 'Resume.bbl' with encoding 'UTF-8'
+[565] bbl.pm:757> INFO - Output to Resume.bbl
+[565] Biber.pm:128> INFO - WARNINGS: 1
