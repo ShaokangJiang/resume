@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber Resume"] 1701166091 "Resume.bcf" "Resume.bbl" "Resume" 1701225943 0
-  "Resume.bcf" 1701225943 107531 0c026df1648e753145b95988d9863d83 "pdflatex"
+["biber Resume"] 1701166091 "Resume.bcf" "Resume.bbl" "Resume" 1701560831 0
+  "Resume.bcf" 1701560830 107531 0c026df1648e753145b95988d9863d83 "pdflatex"
   (generated)
   "Resume.bbl"
   "Resume.blg"
   (rewritten before read)
-["pdflatex"] 1701225939 "c:/Users/shaokang/Desktop/resume/Resume.tex" "Resume.pdf" "Resume" 1701225943 0
+["pdflatex"] 1701560827 "c:/Users/shaokang/Desktop/resume/Resume.tex" "Resume.pdf" "Resume" 1701560831 0
   "C:/Users/shaokang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1699982297 182779 f15895add0c592d38a0f1bbbc3a9e07f ""
   "C:/Users/shaokang/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1698707218 11548 2afd23996e1c650393791769343482e9 ""
   "C:/Users/shaokang/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1698707220 12668 a0a5756cedb18394a52844306ba1f65b ""
@@ -104,13 +104,13 @@
   "C:/Users/shaokang/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/shaokang/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/shaokang/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Resume.aux" 1701225943 1060 4232bb57f8facbd025e699395e90de79 "pdflatex"
+  "Resume.aux" 1701560830 1060 4232bb57f8facbd025e699395e90de79 "pdflatex"
   "Resume.bbl" 1701166149 486 ee04f40f768daeed26442158e95aba61 "biber Resume"
-  "Resume.run.xml" 1701225943 2412 b0a2c859e62926b3e60915975e683f4a "pdflatex"
+  "Resume.run.xml" 1701560830 2412 b0a2c859e62926b3e60915975e683f4a "pdflatex"
   "Resume.tex" 1701138924 1286 a1a01b546ee49ecf94c6949e2b82e8e6 ""
   "c:/Users/shaokang/Desktop/resume/Resume.tex" 1701138924 1286 a1a01b546ee49ecf94c6949e2b82e8e6 ""
   "sections/ResearchEx.tex" 1701225935 3638 229ffc1d7c626e24dcefd4cfcc2865a0 ""
-  "sections/TeachEx.tex" 1701143800 2482 c86b732a9e9db04a09cd949bfef99374 ""
+  "sections/TeachEx.tex" 1701560828 2483 9c705e481d286201e94bbb65e9f3bd70 ""
   "sections/awards.tex" 1701143886 538 d8c2ed1ac51576ba181c96e1a30661b0 ""
   "sections/education.tex" 1701142259 576 f8a2201d9483eb5a9725c1682705d37e ""
   "sections/projects.tex" 1701166312 2063 4baeb8fdda78b2e67458bda758ade9ce ""
