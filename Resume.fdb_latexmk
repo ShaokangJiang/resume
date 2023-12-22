@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Resume"] 1701166091 "Resume.bcf" "Resume.bbl" "Resume" 1701560831 0
-  "Resume.bcf" 1701560830 107531 0c026df1648e753145b95988d9863d83 "pdflatex"
+["biber Resume"] 1701592030 "Resume.bcf" "Resume.bbl" "Resume" 1701892567 0
+  "Resume.bcf" 1701892567 107531 0c026df1648e753145b95988d9863d83 "pdflatex"
   (generated)
   "Resume.bbl"
   "Resume.blg"
   (rewritten before read)
-["pdflatex"] 1701560827 "c:/Users/shaokang/Desktop/resume/Resume.tex" "Resume.pdf" "Resume" 1701560831 0
-  "C:/Users/shaokang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1699982297 182779 f15895add0c592d38a0f1bbbc3a9e07f ""
+["pdflatex"] 1701892564 "c:/Users/shaokang/Desktop/resume/Resume.tex" "Resume.pdf" "Resume" 1701892567 0
+  "C:/Users/shaokang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1701890194 182779 f15895add0c592d38a0f1bbbc3a9e07f ""
   "C:/Users/shaokang/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1698707218 11548 2afd23996e1c650393791769343482e9 ""
   "C:/Users/shaokang/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1698707220 12668 a0a5756cedb18394a52844306ba1f65b ""
   "C:/Users/shaokang/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1695972100 24143365 3f90ada2f80ed0db63635612b5396c15 ""
@@ -104,19 +104,19 @@
   "C:/Users/shaokang/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/shaokang/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/shaokang/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Resume.aux" 1701560830 1060 4232bb57f8facbd025e699395e90de79 "pdflatex"
-  "Resume.bbl" 1701166149 486 ee04f40f768daeed26442158e95aba61 "biber Resume"
-  "Resume.run.xml" 1701560830 2412 b0a2c859e62926b3e60915975e683f4a "pdflatex"
-  "Resume.tex" 1701138924 1286 a1a01b546ee49ecf94c6949e2b82e8e6 ""
-  "c:/Users/shaokang/Desktop/resume/Resume.tex" 1701138924 1286 a1a01b546ee49ecf94c6949e2b82e8e6 ""
-  "sections/ResearchEx.tex" 1701225935 3638 229ffc1d7c626e24dcefd4cfcc2865a0 ""
-  "sections/TeachEx.tex" 1701560828 2483 9c705e481d286201e94bbb65e9f3bd70 ""
+  "Resume.aux" 1701892567 1060 4232bb57f8facbd025e699395e90de79 "pdflatex"
+  "Resume.bbl" 1701592038 486 ee04f40f768daeed26442158e95aba61 "biber Resume"
+  "Resume.run.xml" 1701892567 2412 b0a2c859e62926b3e60915975e683f4a "pdflatex"
+  "Resume.tex" 1701592023 1292 ef788e5f7c79148d93f26ea6ba66fd08 ""
+  "c:/Users/shaokang/Desktop/resume/Resume.tex" 1701592023 1292 ef788e5f7c79148d93f26ea6ba66fd08 ""
+  "sections/ResearchEx.tex" 1701892541 3641 418a773932a12fad8503a3d293059c15 ""
+  "sections/TeachEx.tex" 1701892561 2486 2d8e33d206f5afa0a874783782ec5ee1 ""
   "sections/awards.tex" 1701143886 538 d8c2ed1ac51576ba181c96e1a30661b0 ""
-  "sections/education.tex" 1701142259 576 f8a2201d9483eb5a9725c1682705d37e ""
+  "sections/education.tex" 1701892252 576 d5a6a2b21692e2c9922885ec02f931be ""
   "sections/projects.tex" 1701166312 2063 4baeb8fdda78b2e67458bda758ade9ce ""
   "sections/pub.tex" 1701138478 255 5db3df3be0285c70a40e494ad021d3a5 ""
   "sections/skills.tex" 1698707633 309 36ce08d7e2f3cb05153553aa904d53ec ""
-  "simplecv.sty" 1701121739 4413 d7ac2499db89f2fe5db36d063b9d23b5 ""
+  "simplecv.sty" 1701564310 4413 940b879c2676d25f55853a85963318a9 ""
   (generated)
   "Resume.aux"
   "Resume.bcf"
