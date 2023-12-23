@@ -32,7 +32,7 @@
             height: 40px;
             transform: translateY(-80px) translateX(-50%) rotate(45deg);
         }
-        
+
         .scrolldown span {
             position: absolute;
             top: 0;
@@ -45,33 +45,35 @@
             animation: animate1 1.5s linear infinite;
             opacity: 0;
         }
-        
+
         .scrolldown span:nth-child(1) {
             transform: translate(-15px, -15px);
             animation-delay: -0.4s;
         }
-        
+
         .scrolldown span:nth-child(2) {
             transform: translate(0px, 0px);
             animation-delay: -0.2s;
         }
-        
+
         .scrolldown span:nth-child(3) {
             transform: translate(15px, 15px);
             animation-delay: 0s;
         }
-        
+
         @keyframes animate1 {
             0% {
                 top: -5px;
                 left: -5px;
                 opacity: 0;
             }
+
             25% {
                 top: 0px;
                 left: 0px;
                 opacity: 1;
             }
+
             50%,
             100% {
                 top: 5px;
@@ -79,7 +81,7 @@
                 opacity: 0;
             }
         }
-        
+
         .btn {
             display: inline-block;
             font-weight: 400;
@@ -98,36 +100,36 @@
             border-radius: 0.25rem;
             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
-        
+
         .btn-lg,
         .btn-group-lg>.btn {
             padding: 0.5rem 1rem;
             font-size: 1.5rem;
             border-radius: 0.3rem;
         }
-        
+
         .btn-outline-primary {
             color: #425BB5;
             border-color: #425BB5;
         }
-        
+
         .btn-outline-primary:hover {
             color: #fff;
             background-color: #425BB5;
             border-color: #425BB5;
         }
-        
+
         .btn-outline-primary:focus,
         .btn-outline-primary.focus {
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
         }
-        
+
         .btn-outline-primary.disabled,
         .btn-outline-primary:disabled {
             color: #425BB5;
             background-color: transparent;
         }
-        
+
         .btn-outline-primary:not(:disabled):not(.disabled):active,
         .btn-outline-primary:not(:disabled):not(.disabled).active,
         .show>.btn-outline-primary.dropdown-toggle {
@@ -135,13 +137,13 @@
             background-color: #425BB5;
             border-color: #425BB5;
         }
-        
+
         .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
         .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
         .show>.btn-outline-primary.dropdown-toggle:focus {
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
         }
-        
+
         .sidenav {
             height: 100%;
             width: 0;
@@ -154,7 +156,7 @@
             transition: 0.5s;
             padding-top: 60px;
         }
-        
+
         .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
@@ -163,11 +165,11 @@
             display: block;
             transition: 0.3s;
         }
-        
+
         .sidenav a:hover {
             color: #f1f1f1;
         }
-        
+
         .sidenav .closebtn {
             position: absolute;
             top: 0;
@@ -176,11 +178,12 @@
             margin-left: 50px;
             background-color: #818181;
         }
-        
+
         @media screen and (max-height: 450px) {
             .sidenav {
                 padding-top: 15px;
             }
+
             .sidenav a {
                 font-size: 18px;
             }
@@ -230,19 +233,25 @@
         <nav>
 
             <div style="display: flex;flex-direction: row;justify-content: space-around;">
-                <div id="touch_menu" class="visible-xs" style="display: flex;align-items: center;min-height: 40px;margin-top: 20px;">
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
-                <div style="display: flex;align-items: center;min-height: 70px;"> <button type="button" class="btn btn-outline-primary btn-lg" onclick="window.location.href='https://shaokangjiang.github.io'">⬅️ To My Blog </button></div>
+                <div id="touch_menu" class="visible-xs"
+                    style="display: flex;align-items: center;min-height: 40px;margin-top: 20px;">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
+                <div style="display: flex;align-items: center;min-height: 70px;"> <button type="button"
+                        class="btn btn-outline-primary btn-lg"
+                        onclick="window.location.href='https://shaokangjiang.github.io'">⬅️ To My Blog </button></div>
                 <ul class="hidden-xs">
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">education</a></li>
                     <li><a href="#skills">skill</a></li>
                     <li><a href="#experience">experience</a></li>
+                    <li><a href="#Publications">publications</a></li>
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
                 <div style="display: flex;align-items: center;min-height: 70px;">
-                    <button type="button" class="btn btn-outline-primary btn-lg" onclick="window.location.href='./pdf.html'">PDF verison ➡️</button>
+                    <button type="button" class="btn btn-outline-primary btn-lg"
+                        onclick="window.location.href='./pdf.html'">PDF verison ➡️</button>
                     <!--substitute with correct way in final version-->
                 </div>
             </div>
@@ -276,11 +285,22 @@
                 <h4>01</h4>
                 <h1 class="size-50">About me</h1>
                 <div class="h-50"></div>
-                <p>I am a Master student from Deparrment of Computer Science and Engineering at University of California, San Diego and located at San Diego, CA currently. Individuals across various disciplines often struggle both with programming and learning to use modern software effectively. For example, Java's inheritance increases code reusability but may also be challenging to learn. My observation of programmers experiencing confusion while programming in my previous research and teaching experiences collectively drives my passion to continuously enhance the programming environment. This motivates my pursuit of a Ph.D. in software engineering, human-computer interaction, and programming languages. In the short term, I'm focused on applying HCI concepts to enhance programming experiences, and exploring language features for industry benefits, while my long-term goal is to make programming accessible to diverse groups through interdisciplinary tools and addressing cultural and policy considerations.</p>
+                <p>I am a Master student from Deparrment of Computer Science and Engineering at University of
+                    California, San Diego and located at San Diego, CA currently. Individuals across various disciplines
+                    often struggle both with programming and learning to use modern software effectively. For example,
+                    Java's inheritance increases code reusability but may also be challenging to learn. My observation
+                    of programmers experiencing confusion while programming in my previous research and teaching
+                    experiences collectively drives my passion to continuously enhance the programming environment. This
+                    motivates my pursuit of a Ph.D. in software engineering, human-computer interaction, and programming
+                    languages. In the short term, I'm focused on applying HCI concepts to enhance programming
+                    experiences, and exploring language features for industry benefits, while my long-term goal is to
+                    make programming accessible to diverse groups through interdisciplinary tools and addressing
+                    cultural and policy considerations.</p>
             </div>
             <div class="col-md-6 about-img-div hidden-xs">
                 <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
-                <img src="img/228.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
+                <img src="img/228.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right"
+                    data-aos-delay="0" />
             </div>
         </div>
     </div>
@@ -291,7 +311,7 @@
         <div class="container">
             <div class="col-md-12">
                 <h4>02</h4>
-                <h1 class="size-50">Education <br /> Experience</h1>
+                <h1 class="size-50">Education Experience</h1>
                 <div class="h-50"></div>
             </div>
             <div class="col-md-12">
@@ -316,7 +336,8 @@
                             <h4>B.S. in Computer Science</h4>
                             <p><strong>GPA: 4.00/4.00, Madison, WI</strong>
                                 <br>Dean's List of College of Letters & Science at UW-Madison, <strong>Fall 2019 - Fall
-                                    2020</strong></p>
+                                    2020</strong>
+                            </p>
                         </div>
 
                     </li>
@@ -327,69 +348,71 @@
     <!-- ./education -->
 
 
-    <!-- skills -->
-    <div class="section" id="skills">
-        <div class="container">
-            <h4>03</h4>
-            <h1 class="size-50">Skills</h1>
-            <h5>Proficient in the following skills, but know more than this. And I could adjust and learn new skills fast. </h5>
-            <div class="h-50"></div>
-            <div class="col-md-6" data-aos="fade-up">
-
-
-                <h3>Coding</h3>
-                <div>
-                    <img src="https://api.iconify.design/logos:java.svg" width="50px" referrerpolicy="no-referrer" alt="Java" title="Java"> &nbsp;&nbsp; <img src="https://api.iconify.design/logos:python.svg" width="50px" referrerpolicy="no-referrer" alt="Python"
-                        title="Python"> &nbsp;&nbsp; <img src="https://api.iconify.design/vscode-icons:file-type-c.svg" width="50px" referrerpolicy="no-referrer" alt="C" title="C"> &nbsp;&nbsp; <img src="https://api.iconify.design/logos:html-5.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="HTML" title="HTML"> &nbsp;&nbsp; <img src="https://api.iconify.design/el:css.svg" referrerpolicy="no-referrer" width="50px" alt="CSS" title="CSS"> &nbsp;&nbsp; <img src="https://api.iconify.design/ion:logo-javascript.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Javascript" title="Javascript"> &nbsp;&nbsp; <img src="https://api.iconify.design/vscode-icons:file-type-jsp.svg" referrerpolicy="no-referrer" width="50px" alt="Jsp" title="Jsp"> &nbsp;&nbsp;
-                    <img src="https://api.iconify.design/mdi:git.svg" referrerpolicy="no-referrer" width="50px" alt="Git" title="Git"> &nbsp;&nbsp; <img src="https://api.iconify.design/file-icons:latex.svg" referrerpolicy="no-referrer" width="50px" alt="Latex"
-                        title="Latex"> &nbsp;&nbsp; <img src="https://api.iconify.design/file-icons:gams.svg" referrerpolicy="no-referrer" width="50px" alt="GAMS" title="GAMS"> &nbsp;&nbsp; <img src="https://api.iconify.design/ion:logo-markdown.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="Markdown" title="Markdown"> &nbsp;&nbsp; <img src="https://api.iconify.design/logos:react.svg" referrerpolicy="no-referrer" width="50px" alt="React" title="React"> &nbsp;&nbsp; <img src="https://api.iconify.design/logos:react.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="React Native" title="React Native"> &nbsp;&nbsp;
-                    <img src="https://api.iconify.design/vscode-icons:file-type-light-expo.svg" referrerpolicy="no-referrer" width="50px" alt="Expo" title="Expo"> &nbsp;&nbsp; <img src="https://api.iconify.design/file-icons:ejs.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="ejs" title="ejs">&nbsp;&nbsp;<img src="https://api.iconify.design/mdi:bash.svg" referrerpolicy="no-referrer" width="50px" alt="bash" title="bash">
-
-                </div>
-
-            </div>
-            <div class="col-md-6" data-aos="fade-up">
-                <h3>Environment</h3>
-                <div>
-                    <img src="https://api.iconify.design/logos:microsoft-windows.svg" referrerpolicy="no-referrer" width="50px" alt="Windows" title="Windows"> &nbsp;&nbsp;<img src="https://api.iconify.design/logos:linux-tux.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="Linux" title="Linux"> &nbsp;&nbsp;<img src="https://api.iconify.design/carbon:sql.svg" referrerpolicy="no-referrer" width="50px" alt="SQL" title="SQL"> &nbsp;&nbsp;<img src="https://api.iconify.design/mdi:github.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Github" title="Github"> &nbsp;&nbsp;<img src="https://api.iconify.design/logos:cloudflare.svg" referrerpolicy="no-referrer" width="50px" alt="Cloudflare worker/wrangler" title="Cloudflare worker/wrangler">                    &nbsp;&nbsp;<img src="https://api.iconify.design/logos:azure-icon.svg" referrerpolicy="no-referrer" width="50px" alt="Azure" title="Azure"> &nbsp;&nbsp;<img src="https://api.iconify.design/logos:jira.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="JIRA" title="JIRA"> &nbsp;&nbsp;<img src="https://api.iconify.design/logos:trello.svg" referrerpolicy="no-referrer" width="50px" alt="Trello" title="Trello"> &nbsp;&nbsp;<img src="https://api.iconify.design/simple-icons:azuredevops.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="DevOps" title="DevOps"> &nbsp;&nbsp;<img src="https://shaokangjiang.github.io/agility.png" referrerpolicy="no-referrer" width="50px" alt="Agility" title="Agility"> &nbsp;&nbsp;<img src="https://api.iconify.design/carbon:watson.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Watson" title="Watson"> &nbsp;&nbsp;<img src="https://api.iconify.design/simple-icons:dialogflow.svg" referrerpolicy="no-referrer" width="50px" alt="dialogflow" title="dialogflow"> &nbsp;&nbsp;
-                    <img src="https://api.iconify.design/file-icons:adobe-xd.svg" referrerpolicy="no-referrer" width="50px" alt="Adobe XD" title="Adobe XD">&nbsp;&nbsp;<img src="https://api.iconify.design/vscode-icons:file-type-bitbucketpipeline.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Bitbucket" title="Bitbucket"></div>
-            </div>
-        </div>
-    </div>
-    <!-- ./skills -->
-
     <!-- experience  -->
     <div class="section" id="experience">
         <div class="container">
             <div class="col-md-12">
-                <h4>04</h4>
+                <h4>03</h4>
                 <h1 class="size-50">Experience</h1>
+                <p>Only paid experiences are included here. Please refer to the PDF for the complete list of experiences.</p>
                 <div class="h-50"></div>
             </div>
             <div class="col-md-12">
                 <ul class="timeline">
+
+                    
                     <li class="timeline-event" data-aos="fade-up">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Sept 2023 - now</p>
+                            <h3>Teaching Assistant</h3>
+                            <h4>University of California San Diego</h4>
+                            <p>Sole Ta worked with Michael Coblenz for the usability of the programming language course (CSE291) for one quarter. <br /> Had discussions with the professor about the content of this course, graded assignments, hosted some discussions
+                                during the main lecture covering specific course content, and provided personalized advice to individual students.</p>
+                        </div>
+                    </li>
+
+                    
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Jan 2023 - Sept 2023</p>
+                            <h3>Graduate student researcher</h3>
+                            <h4>University of California San Diego</h4>
+                            <p>Worked with Michael Coblenz on the usability analysis of autocomplete. <br /> Designed and executed an experiment with 32 participants using an eye tracker to evaluate the costs and benefits of
+                                IDE-based autocomplete features to programmers who use an unfamiliar API; analyzed data using JMP; and wrote a
+                                paper for the study. <br /> Found that participants who used autocomplete learned more about the API while spending less time reading the
+                                documentation; found autocomplete did not significantly reduce the number of keystrokes required to finish tasks.</p>
+                        </div>
+                    </li>
+
+                    
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Jan 2023 - Jun 2023</p>
+                            <h3>Teaching Assistant</h3>
+                            <h4>University of California San Diego</h4>
+                            <p>Major Ta worked with Soohyun Liao for Java and data structure courses (DSC30) for two quarters. <br /> Proposed, designed, and developed entirely new and innovative assignments and projects for the entire course, most of
+                                which had never been used elsewhere, in collaboration with the professor. Graded students' assignments. Collaborated
+                                with team members to discuss and refine the content of the course.</p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".6">
                         <label class="timeline-event-icon"></label>
                         <div class="timeline-event-copy">
                             <p class="timeline-event-thumbnail">Aug 2018 - May 2019</p>
                             <h3>Teaching Assistant</h3>
                             <h4>Illinois Institute of Technology</h4>
-                            <p>Instructed students in lab sessions of Java courses and held oﬀice hours to help students best understand class content <br /> Checked their homework regularly and had discussions with the professor and collaborated with team
+                            <p>Instructed students in lab sessions of Java courses and held oﬀice hours to help students
+                                best understand class content <br /> Checked their homework regularly and had
+                                discussions with the professor and collaborated with team
                                 members aboutways to improve this course and solve the major problems of students.</p>
                         </div>
                     </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
+
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".8">
                         <label class="timeline-event-icon"></label>
                         <div class="timeline-event-copy">
                             <p class="timeline-event-thumbnail">Jan 2019 - May 2019</p>
@@ -398,30 +421,124 @@
                             <p>Tutoring and teaching students with their coursework related to computer science</p>
                         </div>
                     </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay="1">
                         <label class="timeline-event-icon"></label>
                         <div class="timeline-event-copy">
                             <p class="timeline-event-thumbnail">Jan 2019 - May 2019</p>
                             <h3>Research Assistant</h3>
                             <h4>Illinois Institute of Technology</h4>
-                            <p>Implemented POW(Bitcoin) blockchain and POS(EOSIO) blockchain system on a blockchain emulator to help themmeasure the performance of the emulator</p>
+                            <p>Modified POW (Bitcoin) and POS (EOSIO) blockchain source code for execution on a blockchain emulator, facilitating
+                                performance measurement for researchers.</p>
                         </div>
                     </li>
                 </ul>
+            </div>
+            <div class="col-md-12" data-aos="fade-up" style="padding-top: 100px;" id="Publications">
+                <h4>04</h4>
+                <h1 class="size-50">Publications</h1>
+            </div>
+            <div class="col-md-12" data-aos="fade-up">
+                Shaokang Jiang and Michael Coblenz. <b>An Analysis of the Costs and Benefits of Autocomplete in IDEs</b>. In review, ACM International Symposium on Foundations of Software Engineering (FSE 2024)
             </div>
         </div>
     </div>
     <!-- ./experience -->
 
+
+    <!-- skills -->
+    <div class="section" id="skills">
+        <div class="container">
+            <h4>05</h4>
+            <h1 class="size-50">Skills</h1>
+            <h5>Proficient in the following skills, but know more than this. And I could adjust and learn new skills
+                fast. </h5>
+            <div class="h-50"></div>
+            <div class="col-md-6" data-aos="fade-up">
+
+
+                <h3>Coding</h3>
+                <div>
+                    <img src="https://api.iconify.design/logos:java.svg" width="50px" referrerpolicy="no-referrer"
+                        alt="Java" title="Java"> &nbsp;&nbsp; <img src="https://api.iconify.design/logos:python.svg"
+                        width="50px" referrerpolicy="no-referrer" alt="Python" title="Python"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/vscode-icons:file-type-c.svg" width="50px"
+                        referrerpolicy="no-referrer" alt="C" title="C"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/logos:html-5.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="HTML" title="HTML"> &nbsp;&nbsp; <img src="https://api.iconify.design/teenyicons/rust-outline.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="Rust" title="Rust"> &nbsp;&nbsp; <img src="https://api.iconify.design/el:css.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="CSS" title="CSS"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/ion:logo-javascript.svg" referrerpolicy="no-referrer"
+                        width="50px" alt="Javascript" title="Javascript"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/vscode-icons:file-type-jsp.svg" referrerpolicy="no-referrer"
+                        width="50px" alt="Jsp" title="Jsp"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/mdi:git.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="Git" title="Git"> &nbsp;&nbsp; <img src="https://api.iconify.design/file-icons:latex.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="Latex" title="Latex"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/file-icons:gams.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="GAMS" title="GAMS"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/ion:logo-markdown.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="Markdown" title="Markdown"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/logos:react.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="React" title="React">  &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-light-expo.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="Expo" title="Expo"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/file-icons:ejs.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="ejs" title="ejs">&nbsp;&nbsp;<img src="https://api.iconify.design/mdi:bash.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="bash" title="bash">
+                        
+                        
+
+                </div>
+
+            </div>
+            <div class="col-md-6" data-aos="fade-up" style="padding-bottom: 100px;">
+                <h3>Environment</h3>
+                <div>
+                    <img src="https://api.iconify.design/logos:microsoft-windows.svg" referrerpolicy="no-referrer"
+                        width="50px" alt="Windows" title="Windows"> &nbsp;&nbsp;<img
+                        src="https://api.iconify.design/logos:linux-tux.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="Linux" title="Linux"> &nbsp;&nbsp;<img src="https://api.iconify.design/carbon:sql.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="SQL" title="SQL"> &nbsp;&nbsp;<img
+                        src="https://api.iconify.design/mdi:github.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="Github" title="Github"> &nbsp;&nbsp;<img
+                        src="https://api.iconify.design/logos:cloudflare.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="Cloudflare worker/wrangler" title="Cloudflare worker/wrangler"> &nbsp;&nbsp;<img
+                        src="https://api.iconify.design/logos:azure-icon.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="Azure" title="Azure"> &nbsp;&nbsp;<img src="https://api.iconify.design/logos:jira.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="JIRA" title="JIRA"> &nbsp;&nbsp;<img
+                        src="https://api.iconify.design/logos:trello.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="Trello" title="Trello"> &nbsp;&nbsp;<img
+                        src="https://api.iconify.design/simple-icons:azuredevops.svg" referrerpolicy="no-referrer"
+                        width="50px" alt="DevOps" title="DevOps"> &nbsp;&nbsp;<img
+                        src="https://shaokangjiang.github.io/agility.png" referrerpolicy="no-referrer" width="50px"
+                        alt="Agility" title="Agility"> &nbsp;&nbsp;<img
+                        src="https://api.iconify.design/carbon:watson.svg" referrerpolicy="no-referrer" width="50px"
+                        alt="Watson" title="Watson"> &nbsp;&nbsp;<img
+                        src="https://api.iconify.design/simple-icons:dialogflow.svg" referrerpolicy="no-referrer"
+                        width="50px" alt="dialogflow" title="dialogflow"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/file-icons:adobe-xd.svg" referrerpolicy="no-referrer"
+                        width="50px" alt="Adobe XD" title="Adobe XD">&nbsp;&nbsp;<img
+                        src="https://api.iconify.design/vscode-icons:file-type-bitbucketpipeline.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="Bitbucket" title="Bitbucket">&nbsp;&nbsp;
+                        <img src="./img/JMP.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="JMP" title="JMP">
+                        &nbsp;&nbsp;<img src="https://api.iconify.design/teenyicons/docker-outline.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="docker" title="docker">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./skills -->
+
+
     <!-- projects -->
     <div class="section" id="projects">
         <div class="container">
             <div class="col-md-12">
-                <h4>05</h4>
+                <h4>06</h4>
                 <h1 class="size-50">Projects</h1>
-                <h5>The following are selected projects based on my learning progress since freshman. They are intended to represent a journey of my self learning in programming. To see full list of projects, which has more meaningful and interesting projects,
-                    please go to <a href="https://shaokangjiang.github.io/projects/" target="_blank">my blog</a> or on my
-                    <a href="https://github.com/shaokangJiang/" target="_blank">Github</a><br />Click each widget to see the detail.</h5>
+                <h5>The following projects are selected based on my learning progress during undergraduate studies. They are intended to represent the journey of my self-learning in programming. To view the full list of projects, which includes more meaningful and interesting projects from both undergraduate and graduate studies, please visit <a href="https://shaokangjiang.github.io/projects/" target="_blank">my blog</a> or my <a href="https://github.com/shaokangJiang/" target="_blank">GitHub</a>. <br />Click each widget to see the detail.
+                </h5>
             </div>
             <!-- main container -->
             <div class="main-container portfolio-inner clearfix">
@@ -448,11 +565,13 @@
                         <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 website">
-                                <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/01.png" alt="image" class="img-responsive" />
+                                <a id="demo01" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/01.png" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>Financial Web App</span>
-                                                <em>(HTML/ejs/Worker/Hexo, 2020)</em> </div>
+                                                <em>(HTML/ejs/Worker/Hexo, 2020)</em>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -461,11 +580,13 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 mobile">
-                                <a id="demo02" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/02.jpg" alt="image" class="img-responsive" />
+                                <a id="demo02" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/02.jpg" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>Financial Organization App</span>
-                                                <em>(Expo/NLP.js, 2020)</em> </div>
+                                                <em>(Expo/NLP.js, 2020)</em>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -474,11 +595,13 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 mobile">
-                                <a id="demo03" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/03.jpg" alt="image" class="img-responsive" />
+                                <a id="demo03" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/03.jpg" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>Simple Chat App</span>
-                                                <em>(Expo/NLP.js, 2020)</em> </div>
+                                                <em>(Expo/NLP.js, 2020)</em>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -487,7 +610,8 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 website">
-                                <a id="demo04" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/04.jpg" alt="image" class="img-responsive" />
+                                <a id="demo04" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/04.jpg" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>Energy Simulator Website App</span>
@@ -501,7 +625,8 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 desktop">
-                                <a id="demo05" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/05.jpg" alt="image" class="img-responsive" />
+                                <a id="demo05" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/05.jpg" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>Energy Simulator Java</span>
@@ -515,11 +640,13 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 desktop">
-                                <a id="demo06" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/06.png" alt="image" class="img-responsive" />
+                                <a id="demo06" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/06.png" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>An Auto Comment Writer</span>
-                                                <em>(Java, 2019)</em> </div>
+                                                <em>(Java, 2019)</em>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -528,7 +655,8 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 website">
-                                <a id="demo07" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/07.png" alt="image" class="img-responsive" />
+                                <a id="demo07" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/07.png" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>HateFate Website</span> <em>(Azure/Jsp/SQL,
@@ -542,7 +670,8 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 desktop">
-                                <a id="demo08" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/08.jpg" alt="image" class="img-responsive" />
+                                <a id="demo08" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/08.jpg" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>Library Management Software</span> <em>(Java,
@@ -556,7 +685,8 @@
 
                             <!-- single work -->
                             <div class="col-md-4 col-sm-6 desktop">
-                                <a id="demo09" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/09.jpg" alt="image" class="img-responsive" />
+                                <a id="demo09" href="#animatedModal" class="portfolio_item"> <img
+                                        src="img/portfolio/09.jpg" alt="image" class="img-responsive" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info"> <span>A computer manage program</span> <em>(C,
@@ -583,16 +713,16 @@
     <div class="section" id="contact">
         <div class="container">
             <div class="col-md-12">
-                <h4>06</h4>
+                <h4>07</h4>
                 <h1 class="size-50">Contact Me</h1>
                 <div class="h-50"></div>
             </div>
             <div class="col-md-4">
 
                 <h3>Phone Number</h3>
-                <p>(608)-236-3860</p>
+                <p>(858)-319-7385</p>
                 <h3>Email</h3>
-                <p>sjiang97@wisc.edu </p>
+                <p>shj002@ucsd.edu </p>
                 <h3>GitHub</h3>
                 <p>ShaokangJiang</p>
 
@@ -604,7 +734,8 @@
                     <li><a href="https://www.linkedin.com/in/shaokang-jiang-0a66461a2/" title="LinkedIn"><i
                                 class="ion-social-linkedin"></i></a></li>
                     <li><a href="https://shaokangjiang.github.io" title="Blog"><i class="ion-ios-book"></i></a></li>
-                    <li><a href="https://shaokangjiang.github.io/rss2.xml" title="Rss"><i class="ion-social-rss"></i></a></li>
+                    <li><a href="https://shaokangjiang.github.io/rss2.xml" title="Rss"><i
+                                class="ion-social-rss"></i></a></li>
                     <li><a href="mailto:huangsk100@gmail.com" title="Email"><i class="ion-email"></i></a></li>
                 </ul>
                 <div class="clearfix"></div>
@@ -615,10 +746,12 @@
                     <input type="text" name="name" class="form-control" placeholder="Your Name" />
                     <input type="email" name="email" class="form-control" placeholder="Your E-mail" />
                     <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
-                    <textarea name="message" class="form-control" placeholder="Your Message" style="height:120px"></textarea>
+                    <textarea name="message" class="form-control" placeholder="Your Message"
+                        style="height:120px"></textarea>
                     <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
                     <div id="success">
-                        <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I can. </p>
+                        <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I
+                            can. </p>
                     </div>
                     <div id="error">
                         <p> Something went wrong, try refreshing and submitting the form again. </p>
@@ -663,8 +796,8 @@
         const height = window.innerHeight || document.documentElement.clientHeight ||
             document.body.clientHeight;
 
-        $(document).ready(function() {
-            document.body.onclick = function(e) {
+        $(document).ready(function () {
+            document.body.onclick = function (e) {
                 var e = e || window.event;
                 var elem = e.target;
                 var targetArea = document.getElementById('mySidenav');
@@ -683,49 +816,49 @@
             }
 
             document.getElementById("model-custom-content").style.height = height + "px";
-            document.getElementById("demo01").addEventListener("click", function() {
+            document.getElementById("demo01").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2020/projects/Publication-of-Financial-website/" style="border:none;" title="Financial web app"></iframe>'
             });
-            document.getElementById("demo02").addEventListener("click", function() {
+            document.getElementById("demo02").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2020/Financial-organization-phone-application/" style="border:none;"></iframe>'
             });
-            document.getElementById("demo03").addEventListener("click", function() {
+            document.getElementById("demo03").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2021/projects/Simple-Chat-App/" style="border:none;"></iframe>'
             });
-            document.getElementById("demo04").addEventListener("click", function() {
+            document.getElementById("demo04").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2020/Energy-smulation-website/" style="border:none;"></iframe>'
             });
-            document.getElementById("demo05").addEventListener("click", function() {
+            document.getElementById("demo05").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2020/projects/Energy-simulation-JavaFx-ver/" style="border:none;"></iframe>'
             });
-            document.getElementById("demo06").addEventListener("click", function() {
+            document.getElementById("demo06").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2019/projects/AutoCommenter/" style="border:none;"></iframe>'
             });
-            document.getElementById("demo07").addEventListener("click", function() {
+            document.getElementById("demo07").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2017/projects/Website%20for%20CS100%20project/" style="border:none;"></iframe>'
             });
 
-            document.getElementById("demo08").addEventListener("click", function() {
+            document.getElementById("demo08").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2021/projects/Additional-Work/index.html#LibraryManagementSoftware" style="border:none;"></iframe>'
-                    //id=
+                //id=
             });
-            document.getElementById("demo09").addEventListener("click", function() {
+            document.getElementById("demo09").addEventListener("click", function () {
                 document.getElementById("animatedModal").style.overflowY = "hidden"
                 document.getElementById("model-custom-content").innerHTML = ""
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2018/projects/A-computer-manage-program/" style="border:none;"></iframe>'
