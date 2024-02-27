@@ -1,6 +1,6 @@
-PWD c:\Users\shaokang\Desktop\resume
+PWD c:\Users\shaokang\Desktop\resume-2\resume
 INPUT C:\Users\shaokang\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\shaokang\Desktop\resume\Resume.tex
+INPUT c:\Users\shaokang\Desktop\resume-2\resume\Resume.tex
 OUTPUT Resume.log
 INPUT C:\Users\shaokang\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\shaokang\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls

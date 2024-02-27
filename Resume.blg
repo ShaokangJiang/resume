@@ -1,9 +1,9 @@
-[1] Config.pm:307> INFO - This is Biber 2.19
-[1] Config.pm:310> INFO - Logfile is 'Resume.blg'
-[336] biber-MSWIN64:340> INFO - === 
-[446] Biber.pm:419> INFO - Reading 'Resume.bcf'
-[686] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[715] bbl.pm:660> INFO - Writing 'Resume.bbl' with encoding 'UTF-8'
-[715] bbl.pm:763> INFO - Output to Resume.bbl
-[716] Biber.pm:131> WARN - The file 'Resume.bcf' does not contain any citations!
-[716] Biber.pm:133> INFO - WARNINGS: 1
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Resume.blg'
+[304] biber-MSWIN64:340> INFO - === 
+[392] Biber.pm:419> INFO - Reading 'Resume.bcf'
+[779] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[805] bbl.pm:660> INFO - Writing 'Resume.bbl' with encoding 'UTF-8'
+[805] bbl.pm:763> INFO - Output to Resume.bbl
+[806] Biber.pm:131> WARN - The file 'Resume.bcf' does not contain any citations!
+[806] Biber.pm:133> INFO - WARNINGS: 1
