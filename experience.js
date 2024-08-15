@@ -266,6 +266,6 @@ function convertToLatex(source) {
     return latexContent;
 }
 
-const latexContent = convertToLatex(filterAndCombine(source, job, new Date("January 2021")));
+const latexContent = convertToLatex(filterAndCombine(source, research, new Date("January 2021")));
 
-fs.writeFileSync('Experience.tex', latexContent);
+fs.writeFileSync('Experience_.tex', latexContent);
