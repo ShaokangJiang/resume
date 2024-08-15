@@ -22,8 +22,8 @@ let source = [
         "end_date": "now",
         "details": [
             "Worked with Kristen Vaccaro and Deepak Kumar, and collaborated with two other group members to assess political bias in YouTube's recommendation system.",
-            "Developed a method to match long and short items using a newly developed matching algorithm, and devised a mixed design to measure, collect, and evaluate outcome variables.",
-            "Evaluated methods to measure the current political leaning of media outlets based on AllSides and other existing models."
+            "Developed a novel matching algorithm to pair long and short videos, outperforming all known approaches for our planned analysis. Designed a mixed-method approach to measure, collect, and evaluate outcome variables.",
+            "Assessed methods for measuring the political leanings of media houses, utilizing AllSides and other existing models."
         ]
     },
     {
@@ -33,8 +33,9 @@ let source = [
         "start_date": "April 2024",
         "end_date": "now",
         "details": [
-            "Worked with Jude Abishek Rayan under the guidance of Steven Dow on improving conference communication protocols for projects CueHub and conference management.",
-            "Built and tested software based on the discussion results, and assisted in designing the entire research workflow."
+            "Worked with Jude Abishek Rayan under the guidance of Steven Dow on improving workshop communication protocols for projects CueHub and workshop management.",
+            "For the CueHub project, I built, redesigned and tested a customized online meeting platform with automatic cue support and integrated monitoring tools based on the discussion results. Utilized GPTs to provide cues during meetings to improve communication. Wrote design decisions and implementation sections in the paper, and assisted in designing, engaging in discussions throughout the entire research workflow, and data analysis.",
+            "For workshop management project, I designed and developed a 4-component workshop management system for real-time user engagement using prompt-engineered GPTs to foster better and more diversified idea generation via cues and discussed ways to improve communication for all groups during meetings."
         ]
     },
     {
@@ -44,8 +45,8 @@ let source = [
         "start_date": "April 2024",
         "end_date": "now",
         "details": [
-            "Worked with Jimmy Koppel on comparing and analyzing the advantages of using tutorials over the Cody system.",
-            "Evaluated interview results using thematic analysis to identify themes and compare them between groups."
+            "Worked with Jimmy Koppel on comparing and analyzing the advantages and disadvatanges of using tutorials over the Cody system.",
+            "Discuss, design, and implement an analysis plan to examine the data and write a paper."
         ]
     },
     {
@@ -57,8 +58,8 @@ let source = [
         "details": [
             "Worked with Michael Coblenz on the usability analysis of autocomplete.",
             "Designed and executed an experiment with 32 participants using an eye tracker to evaluate the costs and benefits of IDE-based autocomplete features for programmers using an unfamiliar API, analyzed data using JMP, performed thementic analysis, and published a paper on the Foundations of Software Engineering.",
-            "Found that participants who used autocomplete learned more about the API while spending less time reading documentation, although autocomplete did not significantly reduce the number of keystrokes required to complete tasks.",
-            "Designed and implemented a consumer-level eye-tracking platform for web based VSCode and a Chrome extension to collect data."
+            "Found that participants who used autocomplete learned more while spending less time reading documentation, although autocomplete did not significantly reduce the number of keystrokes required to complete tasks.",
+            "Designed and implemented a consumer-level eye-tracking platform for web based VSCode, a Chrome extension, and a VSCode extension to collect data."
         ]
     },
     {
@@ -174,12 +175,12 @@ let source = [
         "start_date": "June 2024",
         "end_date": "now",
         "details": [
-            "Worked closely with Jago, the founder and CEO, to discuss, suggest, design, and implement the system structure for the blog and website system for the organization, aiming to create an easy-to-maintain structure that is fast for user to access it and optimized for SEO.",
-            "Utilized Nginx and Docker to deploy the system on a cloud server and implemented the CI/CD pipeline using GitHub Actions.",
-            "Deployed and integrated the Matomo tracking system with a focus on privacy concerns.",
-            "Collaborated closely with the team and provided guidance in implementing the website system.",
-            "Implemented a payment system using Stripe and authentication using Auth0 on the existing website using Vue.",
-            "Worked with the design team to create and implement the blog site, embedding the abstract content into the main website and iOS app."
+            "Worked closely with Jago, the founder and CEO, to discuss, suggest, design, and implement the system structure for the organization's blog and shopping website, including both the customer and supplier end. The aim was to create an easy-to-maintain structure that is fast for users to access and optimized for SEO.",
+            "Utilized Nginx and Docker to deploy the system on a server with CI/CD pipeline spported by GitHub Actions.",
+            "Deployed and integrated the Matomo tracking system with a focus on privacy concerns and wrote unit tests.",
+            "Collaborated closely with the team and provided guidance in implementing the website.",
+            "Integrated Stripe for payment processing and Auth0 with JWT for authentication into the website, and wrote tests.",
+            "Worked with the design team to create and implement the blog site, embedding the abstract content into the main website and iOS app. Wrote unit tests for them."
         ]
     }
 ]
@@ -206,7 +207,7 @@ let source_combined = {
             "details": [
                 "Worked with Michael Coblenz on the usability analysis of autocomplete, designed, executed an experiment with 32 participants and published on the Foundations of Software Engineering.",
                 "Worked with Michael Coblenz on the usability analysis of Copilot. Designed an experiment and executing it now.",
-                "Designed and implemented a consumer-level universe eye-tracking platform for both web and native based VSCode and a Chrome extension to collect data.",
+                "Designed and implemented a consumer-level universe eye-tracking platform for both web and native based VSCode, a Chrome extension and a VSCode extension to collect data.",
                 "Worked with Kristen Vaccaro and Deepak Kumar, and collaborated with two other group members to assess political bias in YouTube's recommendation system.",
                 "Developed a method to match long and short items using a newly developed matching algorithm, and devised a mixed design to measure, collect, and evaluate outcome variables.",
                 "Worked with Jude Abishek Rayan under the guidance of Steven Dow on improving conference communication protocols for projects CueHub and conference management.",
@@ -225,8 +226,7 @@ let source_combined = {
                 "Major TA for Java and Data Structure courses (DSC30) with Soohyun Liao for two quarters.",
                 "Sole TA for the Usability of Programming Languages course (CSE291) with Michael Coblenz for one quarter and TA for the same course for another quarter.",
                 "Sole TA for Compilers (CSE 131) with Yufei Ding for one quarter, and Introduction to Data Visualization (DSC 106) with Sam Lau for another quarter.",
-                "Guided group projects on programming languages and software engineering topics, and proposed, designed, and developed innovative course assignments.", "Conducted office hours and discussion sections to assist students and deepen their understanding.",
-                "Managed course logistics, graded assignments, and collaborated with the professor and team members to refine course content.",
+                "Guided group projects on programming languages and software engineering topics, and proposed, designed, and developed innovative course assignments.", "Managed course logistics, graded assignments, and collaborated with the professor and team members to refine course content. Conducted office hours and discussion sections to assist students and deepen their understanding.",
                 "Received an 'Excellent' rating from the instructor, and over 90\\% of the students gave a 'recommendation' rating in the course evaluations."
             ]
         }
@@ -240,10 +240,10 @@ const research = ["Research", "TA-combined", "Work"];
 
 function filterAndCombine(source, config, startTime) {
     let combined = [];
-    for(let i of config){
-        if(i.includes("-combined")){
+    for (let i of config) {
+        if (i.includes("-combined")) {
             combined = combined.concat(source_combined[i.split("-")[0]]);
-        }else{
+        } else {
             combined = combined.concat(source.filter(entry => entry.type === i && new Date(entry.start_date) >= startTime));
         }
     }
@@ -266,6 +266,6 @@ function convertToLatex(source) {
     return latexContent;
 }
 
-const latexContent = convertToLatex(filterAndCombine(source, research, new Date("January 2021")));
+const latexContent = convertToLatex(filterAndCombine(source, job, new Date("January 2021")));
 
 fs.writeFileSync('Experience.tex', latexContent);
