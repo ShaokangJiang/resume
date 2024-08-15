@@ -1,0 +1,23 @@
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.gz
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.xdv
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.ps
+*.spl
+*.aux

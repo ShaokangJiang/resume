@@ -1,47 +1,161 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
-% Choose bibliography style for formatting list of publications
-\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
-\bibliography{papers}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{import}
 
-% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue, Orchid
-\def\theme{black}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
 
-% More predefined colors can be found in 
-% https://en.wikibooks.org/wiki/LaTeX/Colors
-% Example photograph taken from Wikimedia Commons
-% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
-\usepackage{simplecv}
 
-\boldname{Jiang}{Shaokang}{}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\setlist[itemize]{left=1em} % Adjust the value as needed
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-% Heading
-\headinginline{Shaokang Jiang}{
-    Tel: (858)-319-7385 \\
-    GitHub: ShaokangJiang \\
-    Email: shj002@ucsd.edu \\
-    Website: resume.shaokang.me
-}{\small La Jolla, CA}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-% \headingphoto{Name Surname}{
-%     Website: \website{example.com} \\ 
-%     Email: \email{example@example.edu} \\
-%     LinkedIn: \linkedin{name-surname} \\
-%     GitHub: \github{example}
-% }{photo.jpg}
+\begin{center}
+    \textbf{\Huge \scshape Shaokang Jiang} \\ \vspace{1pt}
+    \small (858)-319-7385 $|$ \href{mailto:shj002@ucsd.edu}{\underline{shj002@ucsd.edu}} $|$ 
+    \href{https://resume.shaokang.me}{\underline{resume.shaokang.me}} $|$
+    \href{https://github.com/ShaokangJiang}{\underline{github.com/ShaokangJiang}}
+\end{center}
 
-% Page One
-\import{sections/}{education.tex}
-\import{sections/}{skills.tex}
-\import{sections/}{projects.tex}
-\import{sections/}{Experience.tex}
-% \import{sections/}{TeachEx.tex}
-% \import{sections/}{ResearchEx.tex}
-\import{sections/}{pub.tex}
-\import{sections/}{awards.tex}
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California San Diego}{La Jolla, CA}
+      {M.S. in Computer Science and Engineering, Advised by Michael Coblenz}{2022-2024 (expected)}
+    \resumeSubheading
+      {University of Wisconsin-Madison}{Madison, WI}
+      {B.S. in Computer Science, GPA: 4.00/4.00, graduated with distinction in the major}{Graduated 2021}
+  \resumeSubHeadingListEnd
+
+  
+%-----------EXPERIENCE-----------
+\import{}{Experience.tex}
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+See full list of projects on shaokang.me/projects/ or on my Github
+\vspace{0.5em}
+\import{}{Projects.tex}
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
 \end{document}

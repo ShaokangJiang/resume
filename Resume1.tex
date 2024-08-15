@@ -1,0 +1,47 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue, Orchid
+\def\theme{black}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+
+\boldname{Jiang}{Shaokang}{}
+
+\begin{document}
+
+% Heading
+\headinginline{Shaokang Jiang}{
+    Tel: (858)-319-7385 \\
+    GitHub: ShaokangJiang \\
+    Email: shj002@ucsd.edu \\
+    Website: resume.shaokang.me
+}{\small La Jolla, CA}
+
+% \headingphoto{Name Surname}{
+%     Website: \website{example.com} \\ 
+%     Email: \email{example@example.edu} \\
+%     LinkedIn: \linkedin{name-surname} \\
+%     GitHub: \github{example}
+% }{photo.jpg}
+
+% Page One
+\import{sections/}{education.tex}
+\import{sections/}{skills.tex}
+\import{sections/}{projects.tex}
+\import{sections/}{Experience.tex}
+% \import{sections/}{TeachEx.tex}
+% \import{sections/}{ResearchEx.tex}
+\import{sections/}{pub.tex}
+\import{sections/}{awards.tex}
+
+\end{document}
