@@ -3,24 +3,14 @@ const fs = require('fs');
 let source = [
   {
     "title": "Pullscription websites",
-    "technologies": ["Vue", "Typescript", "Vitest", "Auth0", "Docker", "Nginx", "Matomo", "Stripe", "Blogger"],
+    "technologies": ["Nuxt", "Vue", "Typescript", "Vitest", "Auth0", "Docker", "Nginx", "Matomo", "Stripe", "Blogger"],
     "level": "normal",
     "include": ["Research", "Job"],
     "year": 2024,
     "description": [
       "Architected and implemented various components of a modern comic book shopping site, including the shopper and supplier interfaces, and a blog. Configured CI/CD pipelines using GitHub Actions and a cloud server with Nginx.",
+      "Discussed and determined the system architecture, selected dependencies, and aimed to build a maintainable, easily migratable codebase.",
       "Integrated Stripe payment solutions and Auth0, and deployed and integrated Matomo tracking for analytics. Collaborated with the design team to develop the blog using Blogger's template language and embedded its content into both the website and iOS app. Built tests using Vitest and updated Docker for the entire system.",
-    ]
-  },
-  {
-    "title": "Video matching and leaning rating system",
-    "technologies": ["HTML", "JS", "Node.js", "Oracle cloud", "Worker"],
-    "level": "normal",
-    "include": ["Research", "Job"],
-    "year": 2024,
-    "description": [
-      "Developed a text-based algorithm in Node.js to identify matched pairs between any two videos, paired with a concurrent pool management tool to fully leverage a multicore cloud server, surpassing any existing video matching algorithms in internal tests.",
-      "Created an anonymous rating system with a front end built using pure HTML and JS, and a RESTful API backend deployed on Cloudflare Workers as an intermediary server for data recording. With the rating system, users can manually compare two randomly selected matched videos from a pool, manually label any bias for analysis."
     ]
   },
   {
@@ -43,7 +33,7 @@ let source = [
     "include": ["Research", "Job"],
     "level": "normal",
     "year": 2024,
-    "description": ["An Electron-based markdown editor designed with basic operations like reading from and writing to disk, and a floating menu for easy access to titles and editing them, packaged for multiple platforms",
+    "description": ["An Electron-based markdown editor designed with basic operations like reading from and writing to disk, and a floating menu for easy access to titles and editing them, packaged for multiple platforms.",
       "Frontend developed with React, featuring a custom-built lexer and parser for markdown; backend implemented in JavaScript to handle file reading and writing from local storage."]
   },
   {
@@ -58,6 +48,17 @@ let source = [
       "Built and deployed both serverless and server-based backend services using Python with Flask and Javascript to handle audio creation as needed by the frontend.",
       "Fixed several critical bugs left by previous development teams that could exceed Firebase quota limits, improved the overall user experience, and enhanced the robustness of the entire program.",
       "Successfully conducted 60 meetings on the platform without any errors."
+    ]
+  },
+  {
+    "title": "Video matching and leaning rating system",
+    "technologies": ["HTML", "JS", "Node.js", "Oracle cloud", "Worker"],
+    "level": "normal",
+    "include": ["Research", "Job"],
+    "year": 2024,
+    "description": [
+      "Developed a text-based algorithm in Node.js to identify matched pairs between any two videos, paired with a concurrent pool management tool to fully leverage a multicore cloud server, surpassing any existing video matching algorithms in internal tests.",
+      "Created an anonymous rating system with a front end built using pure HTML and JS, and a RESTful API backend deployed on Cloudflare Workers as an intermediary server for data recording. With the rating system, users can manually compare two randomly selected matched videos from a pool, manually label any bias for analysis."
     ]
   },
   {
@@ -106,7 +107,7 @@ let source = [
     "level": "normal",
     "year": [2023, 2024],
     "description": [
-      "Developed a universal platform for tracking eye movement in VSCode, integrating the Tobii Eye Tracker 5.",
+      "Developed a universal user interaction tracking platform that includes eye movement tracking during coding in VSCode. Integrated the Tobii Eye Tracker 5 to link eye movement data with in-editor events while ensuring compliance with legal requirements.",
 
       "The 2023 edition tracks specific window appearances and user interactions in the web-based version of VSCode. The frontend is built with JavaScript and deployed as a Chrome extension, while the backend is developed in C\\#. Both ends communicate using Chrome native messaging. The system successfully ran for 80 hours of user testing with 33 different users without any issues.",
 
@@ -164,9 +165,9 @@ let source = [
     "technologies": ["JavaScript", "Tampermonkey"],
     "include": ["Research"],
     "level": "normal",
-    "year": 2020,
+    "year": 2019,
     "description": [
-      "Designed and developed an interface on Tampermonkey using the Web Speech API to read screen content according to user-defined rules."
+      "Designed and developed an interface using the Web Speech API to read screen content based on user-defined rules, and deployed it on Tampermonkey."
     ]
   },
   {

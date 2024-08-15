@@ -46,7 +46,7 @@ let source = [
         "end_date": "now",
         "details": [
             "Worked with Jimmy Koppel on comparing and analyzing the advantages and disadvatanges of using tutorials over the Cody system.",
-            "Discuss, design, and implement an analysis plan to examine the data and write a paper."
+            "Discuss, design, and implement an analysis plan to examine the data and write a paper right now."
         ]
     },
     {
@@ -195,7 +195,7 @@ let source_combined = {
             "end_date": "now",
             "details": [
                 "Worked with Jimmy Koppel on comparing and analyzing the advantages and disadvatanges of using tutorials over the Cody system.",
-                "Discuss, design, and implement an analysis plan to examine the data and write a paper."
+                "Discuss, design, and implement an analysis plan to examine the data and write a paper right now."
             ]
         },
         {
