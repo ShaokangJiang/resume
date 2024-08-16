@@ -76,6 +76,16 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingtwo}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+      \textit{\small #5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -123,10 +133,11 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingtwo
       {University of California San Diego}{La Jolla, CA}
       {M.S. in Computer Science and Engineering, Advised by Michael Coblenz}{2022-2024 (expected)}
-    \resumeSubheading
+      {Planned thesis: Usability analysis of coding assistant tools}{}
+      \resumeSubheading
       {University of Wisconsin-Madison}{Madison, WI}
       {B.S. in Computer Science, GPA: 4.00/4.00, graduated with distinction in the major}{Graduated 2021}
   \resumeSubHeadingListEnd
@@ -134,17 +145,20 @@
 
   
 %-----------EXPERIENCE-----------
-\import{}{Experience_.tex}
+\import{}{Experience_Research.tex}
 
 % 
 % %-----------PUBLICATIONS-----------
 \import{}{Publications.tex}
 
 
+
+%-----------EXPERIENCE-----------
+\import{}{Experience_Other.tex}
+
 %
 %-----------PROGRAMMING SKILLS-----------
 \import{}{Skills.tex}
-
 
 %-----------PROJECTS-----------
 \section{Projects}

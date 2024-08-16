@@ -188,7 +188,7 @@ let source = [
     "year": 2020,
     "description": [
       "Developed an app to help individuals organize expenses and income using voice interaction and simple chat, utilizing a local natural language understanding engine for Capital One.",
-      "Built with Expo and packaged for both Android and iOS. Users can import and export their data in JSON format, allowing for migration or synchronization between devices. The app does not upload any data, addressing privacy concerns."
+      "Built with Expo, packaged, and tested for both Android and iOS, the app enables users to sync data between devices via JSON import/export, with all data stored locally for privacy."
     ]
   },
   {
@@ -245,7 +245,7 @@ let source = [
   {
     "title": "Seat Arrangement Problem",
     "technologies": ["GAMS", "Cplex"],
-    "include": [],
+    "include": ["Research"],
     "level": "sub",
     "year": 2019,
     "description": [
@@ -325,4 +325,13 @@ fs.writeFile('./Projects.tex', convertToLatex(filter(source, ["normal", "sub"], 
     return;
   }
   console.log('Projects.tex file has been created!');
+});
+
+
+fs.writeFile('./Projects_.tex', convertToLatex(filter(source, ["normal", "sub"], "Research", false)), (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('Projects_.tex file has been created!');
 });
