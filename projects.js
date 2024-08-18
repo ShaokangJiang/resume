@@ -6,6 +6,45 @@ let source = [
     "technologies": ["Nuxt", "Vue", "Typescript", "Vitest", "Auth0", "Docker", "Nginx", "Matomo", "Stripe", "Blogger"],
     "level": "normal",
     "include": ["Research", "Job"],
+    "loc": {
+      "pss-images-and-config": {
+        "Contributes": {
+          "loc": 35,
+        },
+        "Shell Script": 334,
+        "SQL": 49,
+        "Markdown": 55,
+        "Properties": 87,
+        "HTML": 15
+      },
+      "web": {
+        "Contributes": {
+          "loc": 300,
+        },
+        "vue": 1340,
+        "TypeScript": 217,
+        "CSS": 174,
+        "YAML": 103,
+        "Markdown": 76,
+        "JavaScript": 26
+      },
+      "training": {
+        "HTML": 1525,
+        "JavaScript": 152,
+        "vue": 1480,
+        "TypeScript": 131,
+        "JSON": 98,
+        "Markdown": 46,
+        "JSON with Comments": 15,
+        "XML": 2
+      },
+      "blog": {
+        "Contributes": {
+          "loc": 30,
+        },
+        "Blogger template language": 4713
+      }
+    },
     "year": 2024,
     "description": [
       "Architected and implemented various components of a modern comic book shopping site, including the shopper and supplier interfaces, and a blog. Configured CI/CD pipelines using GitHub Actions and a cloud server with Nginx.",
@@ -18,6 +57,25 @@ let source = [
     "technologies": ["Electron", "React", "Socket.io", "HTTPS", "DDNS", "GPTs", "Worker", "MailJet"],
     "include": ["Research", "Job"],
     "level": "normal",
+    "loc": {
+      "ci-main": {
+        "JavaScript": 499,
+        "JavaScript JSX": 247,
+        "HTML": 11,
+        "CSS": 8
+      },
+      "ci-phone": {
+        "JavaScript": 348,
+        "CSS": 53,
+        "Markdown": 71,
+        "HTML": 44,
+        "YAML": 21,
+        "XML": 1
+      },
+      "ciinfo": {
+        "JavaScript": 380,
+      }
+    },
     "year": 2024,
     "description": [
       "Designed and developed a 4-component workshop management system for real-time user engagement to foster idea generation and improve communication during meetings, capable of hosting at least 50 concurrent participants.",
@@ -32,6 +90,15 @@ let source = [
     "technologies": ["Electron", "JavaScript"],
     "include": ["Research", "Job"],
     "level": "normal",
+    "loc": {
+      "electron": {
+        "JavaScript": 470,
+        "JavaScript JSX": 223,
+        "CSS": 13,
+        "HTML": 14,
+        "Markdown": 1
+      }
+    },
     "year": 2024,
     "description": ["An Electron-based markdown editor designed with basic operations like reading from and writing to disk, and a floating menu for easy access to titles and editing them, packaged for multiple platforms.",
       "Frontend developed with React, featuring a custom-built lexer and parser for markdown; backend implemented in JavaScript to handle file reading and writing from local storage."]
@@ -41,6 +108,22 @@ let source = [
     "technologies": ["React", "Firebase", "Python", "Flask", "Daily.js", "GPTs"],
     "include": ["Research", "Job"],
     "level": "sub",
+    "loc": {
+      "client": {
+        "JavaScript JSX": 4126,
+        "CSS": 221,
+        "HTML": 106,
+        "TypeScript JSX": 134,
+        "Python": 45,
+        "JavaScript": 36,
+        "YAML": 32,
+        "Markdown": 11
+      },
+      "server": {
+        "Python": 45,
+        "JavaScript": 100
+      }
+    },
     "year": 2024,
     "description": [
       "Updated, redesigned, and deployed an online meeting platform with support for user communication and ideation. Provided separate interfaces for facilitators (monitors) and participants (ideators), using React for the frontend.",
@@ -55,6 +138,22 @@ let source = [
     "technologies": ["HTML", "JS", "Node.js", "Oracle cloud", "Worker"],
     "level": "normal",
     "include": ["Research", "Job"],
+    "loc": {
+      "final-pairing": {
+        "JavaScript": 798,
+        "Markdown": 43,
+        "Python": 47
+      },
+      "final-source-fetch": {
+        "JavaScript": 205,
+        "Python": 73,
+        "Batch": 13
+      },
+      "published": {
+        "JavaScript": 100,
+        "HTML": 300,
+      }
+    },
     "year": 2024,
     "description": [
       "Developed a text-based algorithm in Node.js to identify matched pairs between any two videos, paired with a concurrent pool management tool to fully leverage a multicore cloud server, surpassing any existing video matching algorithms in internal tests.",
@@ -67,6 +166,28 @@ let source = [
     "include": ["Research", "Job"],
     "level": "normal",
     "year": 2024,
+    "loc": {
+      "chatServer": {
+        "JavaScript": 506,
+        "Markdown": 121,
+        "YAML": 62,
+        "JSON": 43
+      },
+      "HealthBot": {
+        "JavaScript": 2106,
+        "JSON": 169,
+        "YAML": 178,
+        "Markdown": 34,
+        "Properties": 3
+      },
+      "azure-server": {
+        "Contributes": {
+          "loc": 10,
+        },
+        "JavaScript": 65,
+        "Markdown": 25,
+      }
+    },
     "description": [
       "Led a team of five to create a chatbot with CI/CD pipelines using Agile methodologies. Self-delegate leadership roles when necessary. Consulted with experts in health care to understand their needs and requirements.",
 
@@ -82,6 +203,13 @@ let source = [
     "technologies": ["Java Server Page", "Servlets", "Java", "Azure"],
     "include": ["Research", "Job"],
     "level": "normal",
+    "loc": {
+      "src": {
+        "Java": 1161,
+        "JSP": 86,
+        "XML": 57
+      }
+    },
     "year": 2023,
     "description": [
       "Developed an interactive shell that allows users to run Java source code online in a fully Java environment without accessing the actual source code, ideal for demonstrating command-line Java programs.",
@@ -96,6 +224,18 @@ let source = [
     "technologies": ["Shell", "Java", "Docker"],
     "include": ["Research"],
     "level": "sub",
+    "loc": {
+      "Dockerfile": {
+        "Shell Script": 30
+      },
+      "plugin": {
+        "Java": 3142,
+        "YAML": 285,
+        "Properties": 90,
+        "Batch": 92,
+        "Markdown": 48
+      }
+    },
     "year": 2023,
     "description": ["Modified the CS61B version of the code style checker for IntelliJ.",
       "Used a process to run a super Java program that captures and analyzes the output."]
@@ -105,6 +245,91 @@ let source = [
     "technologies": ["C\\#", "JS", "Tampermonkey", "Chrome extension", "WebSockets"],
     "include": ["Research", "Job"],
     "level": "normal",
+    "loc": {
+      "2024-back": {
+        "C\\#": 1705,
+        "XML": 108
+      },
+      "2024-front": {
+        "JavaScript": 543,
+        "Markdown": 280
+      },
+      "2023-back": {
+        "C\\#": 1649,
+        "XML": 169
+      },
+      "2023-extension": {
+        "JavaScript": 837,
+        "HTML": 78
+      },
+      "vscode": {
+        "Contributes": {
+          "loc": 100,
+        },
+        "TypeScript": 1294353,
+        "JavaScript": 43506,
+        "CSS": 27261,
+        "Rust": 17151,
+        "HTML": 7541,
+        "YAML": 6509,
+        "XML": 2626,
+        "Code Snippets": 1661,
+        "Shell Script": 2000,
+        "Markdown": 2156,
+        "Batch": 616,
+        "SCSS": 356,
+        "PowerShell": 303,
+        "CUDA C++": 150,
+        "Groovy": 220,
+        "Python": 98,
+        "C++": 92,
+        "Makefile": 96,
+        "Diff": 59,
+        "Perl": 77,
+        "reStructuredText": 99,
+        "Less": 64,
+        "Handlebars": 54,
+        "PHP": 60,
+        "TypeScript JSX": 44,
+        "Clojure": 52,
+        "Razor": 46,
+        "Objective-C++": 53,
+        "Objective-C": 53,
+        "CoffeeScript": 44,
+        "Pug": 30,
+        "C": 30,
+        "C#": 32,
+        "Ruby": 46,
+        "JavaScript JSX": 35,
+        "Java": 43,
+        "Julia": 27,
+        "Go": 26,
+        "Docker": 30,
+        "Raku": 28,
+        "TeX": 20,
+        "LaTeX": 20,
+        "Visual Basic": 25,
+        "BibTeX": 23,
+        "Dart": 19,
+        "ShaderLab": 15,
+        "Swift": 14,
+        "F#": 18,
+        "R": 25,
+        "HLSL": 13,
+        "Lua": 12,
+        "Log": 9,
+        "Git Rebase Message": 16,
+        "Ini": 10,
+        "SQL": 6,
+        "Git Commit Message": 13
+      },
+      "Chromium": {
+        "Contributes": {
+          "loc": 100,
+        },
+        "Chromium": 33027478
+      }
+    },
     "year": [2023, 2024],
     "description": [
       "Developed a universal user interaction tracking platform that includes eye movement tracking during coding in VSCode. Integrated the Tobii Eye Tracker 5 to link eye movement data with in-editor events while ensuring compliance with legal requirements.",
@@ -118,6 +343,11 @@ let source = [
     "title": "Interactive Haskell Game",
     "technologies": ["Haskell"],
     "include": ["Research"],
+    "loc": {
+      "src": {
+        "Haskell": 652
+      }
+    },
     "level": "normal",
     "year": 2023,
     "description": [
@@ -125,10 +355,54 @@ let source = [
     ]
   },
   {
+    "title": "Shopping store",
+    "technologies": ["Next, React"],
+    "include": ["Research", "Job"],
+    "loc": {
+      "src": {
+        "Contributes": {
+          "loc": 720,
+        },
+        "TypeScript JSX": 5808,
+        "TypeScript": 2287,
+        "Markdown": 354,
+        "JSON": 70,
+        "CSS": 83,
+        "JavaScript": 65,
+        "JSON with Comments": 32,
+        "XML": 2
+      }
+    },
+    "level": "normal",
+    "year": 2023,
+    "description": [
+      "A multi page application built with react and Next framework."
+    ]
+  },
+  {
     "title": "VSCode Experiment helper",
     "technologies": ["Typescript", "Fiddler"],
     "include": ["Research", "Job"],
     "level": "normal",
+    "loc": {
+      "checking-correctness": {
+        "TypeScript": 284,
+        "Markdown": 60,
+        "JavaScript": 48,
+        "JSON with Comments": 17
+      },
+      "browser-plugin": {
+        "Contributes": {
+          "loc": 30,
+        },
+        "TypeScript": 955,
+        "JSON": 189,
+        "CSS": 187,
+        "Markdown": 192,
+        "JavaScript": 119,
+        "JSON with Comments": 47
+      }
+    },
     "year": [2022, 2024],
     "description": [
       "Designed and developed two VSCode extensions to monitor user interactions, upload collected data, and enhance the development experience using pure VSCode without requiring viewing any outside window.",
@@ -144,6 +418,19 @@ let source = [
     "include": ["Research", "Job"],
     "level": "normal",
     "year": 2022,
+    "loc": {
+      "checking-correctness": {
+        "JavaScript": 151,
+        "YAML": 40,
+        "GAMS": 143,
+      },
+      "python-version": {
+        "Contributes": {
+          "loc": 3,
+        },
+        "Python": 220,
+      }
+    },
     "description": [
       "Automatically scraped computer components' performance data weekly using Puppeteer, with GitHub Actions and a cron scheduler, by simulating user behavior.",
 
@@ -156,6 +443,11 @@ let source = [
     "include": ["Research", "Job"],
     "level": "normal",
     "year": 2021,
+    "loc": {
+      "Javascript": {
+        "JavaScript": 220,
+      }
+    },
     "description": [
       "Developed and deployed a Tampermonkey script to expedite grading by suggesting scores based on length, N-gram analysis, and topic relevance for dictation questions, using the TensorFlow. The entire system operates locally."
     ]
@@ -165,6 +457,11 @@ let source = [
     "technologies": ["JavaScript", "Tampermonkey"],
     "include": ["Research"],
     "level": "normal",
+    "loc": {
+      "Javascript": {
+        "JavaScript": 180,
+      }
+    },
     "year": 2019,
     "description": [
       "Designed and developed an interface using the Web Speech API to read screen content based on user-defined rules, and deployed it on Tampermonkey."
@@ -175,6 +472,14 @@ let source = [
     "technologies": ["Node.js", "Puppeteer"],
     "include": ["Research", "Job"],
     "level": "sub",
+    "loc": {
+      "email-covid-forward": {
+        "JavaScript": 515,
+      },
+      "Daily-report": {
+        "JavaScript": 742,
+      }
+    },
     "year": 2021,
     "description": [
       "Automatically scraped COVID data from various official sites, analyzed each site to extract relevant data, and delivered filtered results to subscribed users daily. This process was automated using Node.js with Puppeteer on a server, simulating user behavior when visiting websites, with the help of GitHub Actions and a cron scheduler."
@@ -186,6 +491,13 @@ let source = [
     "include": ["Research", "Job"],
     "level": "normal",
     "year": 2020,
+    "loc": {
+      "App": {
+        "JavaScript": 1991,
+        "YAML": 22,
+        "Markdown": 19
+      }
+    },
     "description": [
       "Developed an app to help individuals organize expenses and income using voice interaction and simple chat, utilizing a local natural language understanding engine for Capital One.",
       "Built with Expo, packaged, and tested for both Android and iOS, the app enables users to sync data between devices via JSON import/export, with all data stored locally for privacy."
@@ -196,6 +508,47 @@ let source = [
     "technologies": ["HTML", "Embedded JavaScript", "Worker", "JavaScript", "echarts"],
     "include": ["Research", "Job"],
     "level": "normal",
+    "loc": {
+      "pointing-system": {
+        "JavaScript": 494
+      },
+      "Quiz": {
+        "JavaScript": 1376
+      },
+      "Main": {
+        "Contributes": {
+          "loc": 4600,
+        },
+        "JavaScript": 16,
+        "HTML": 5231,
+        "XML": 73
+      },
+      "Wiki": {
+        "Contributes": {
+          "loc": 300,
+        },
+        "JavaScript": 15655,
+        "Less": 8435,
+        "HTML": 2032,
+        "Markdown": 903,
+        "YAML": 800,
+        "CSS": 671,
+        "XML": 414,
+        "Shell Script": 4
+      },
+      "Passage": {
+        "Contributes": {
+          "loc": 300,
+        },
+        "JavaScript": 15655,
+        "Less": 8435,
+        "HTML": 2011,
+        "Markdown": 1207,
+        "YAML": 821,
+        "CSS": 671, "XML": 414, "Shell Script": 20
+      }
+
+    },
     "year": 2020,
     "description": [
       "Designed and led a team to develop a static financial education website for Capital One. The site includes interactive learning tools, such as quizzes and a self-built, stateless learning progress tracking system. It also has various utilities, including a yearly budgeting tool.",
@@ -213,6 +566,16 @@ let source = [
     "title": "Energy Simulator",
     "technologies": ["HTML", "WebGL", "JS", "Java", "JavaFX", "Three.js", "echarts"],
     "include": ["Research", "Job"],
+    "loc": {
+      "energy": {
+        "HTML": 8139
+      },
+      "energy-java": {
+        "Java": 1861,
+        "XML": 373,
+        "Markdown": 4
+      }
+    },
     "level": "normal",
     "year": 2020,
     "description": [
@@ -237,6 +600,11 @@ let source = [
     "include": ["Research", "Job"],
     "level": "normal",
     "year": 2019,
+    "loc": {
+      "Main": {
+        "Java": 1263
+      },
+    },
     "description": [
       "Designed and developed a local utility program in Java with JFrame to analyze Java code based on preset rules and semi-automatically add comments.",
       "Integrates user input through typing or voice commands when necessary, with voice recognition powered by the iFlyTek API and translation supported by the Baidu Translation API."
@@ -247,6 +615,12 @@ let source = [
     "technologies": ["GAMS", "Cplex"],
     "include": ["Research"],
     "level": "sub",
+    "loc": {
+      "Main": {
+        "GAMS": 200,
+        "Python": 100
+      }
+    },
     "year": 2019,
     "description": [
       "Decision-making script that solves a problem about how to arrange seats in an imaginary library",
@@ -259,12 +633,38 @@ let source = [
     "include": ["Research", "Job"],
     "level": "normal",
     "year": 2017,
+    "loc": {
+      "Main": {
+        "JSP": 4495,
+        "Java": 2068,
+        "Markdown": 37,
+        "XML": 13
+      }
+    },
     "description": [
       "Led a four-person team in developing a social networking website that connects users based on shared dislikes, with features including login, email-verified signup, and user pairing. Utilized Material design to create the interface.",
       "Developed the frontend using HTML and JavaServer Pages (JSP) and built the backend with JSP and SQL for data storage. Deployed on the Azure cloud with an Azure SQL database.",
       "Developed multiple login methods and utilized cookies to store user information, enabling automatic session recovery. Designed and integrated a custom mail system to handle email verification, password resets, and new match notifications using SMTP.",
       "Secured the website with SSL encryption and employed a combination of MD5, public/private key encryption, and AES for data security during page forwarding and email verification.",
       "Achieved first place in the class project demo."
+    ]
+  },
+  {
+    "title": "CS 425 Website",
+    "technologies": ["HTML", "Java Server Page", "SQL", "Java"],
+    "include": [],
+    "level": "normal",
+    "year": 2018,
+    "loc": {
+      "Main": {
+        "JSP": 9432,
+        "Java": 119,
+        "Markdown": 95,
+        "XML": 2
+      }
+    },
+    "description": [
+      "Led a four-person team in developing a social "
     ]
   }
 ]
