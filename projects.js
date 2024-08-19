@@ -589,9 +589,68 @@ let source = [
     "technologies": ["Java", "JavaFX"],
     "include": [],
     "level": "normal",
+    "loc": {
+      "Main": {
+        "Java": 5439
+      },
+    },
     "year": 2020,
     "description": [
       "Developed a Java GUI program to manage and look up data among different hypothetical farms by reading CSVs."
+    ]
+  },
+  {
+    "title": "Small course projects",
+    "technologies": [],
+    "include": [],
+    "level": "normal",
+    "loc": {
+      "react_native2_beta": {
+        "JavaScript": 2464
+      },
+      "react1-beta-ShaokangJiang": {
+        "JavaScript": 832,
+        "HTML": 39
+      },
+      "js-beta": {
+        "JavaScript": 15,
+        "HTML": 375
+      },
+      "react2-beta": {
+        "JavaScript": 1590,
+        "HTML": 39
+      },
+      "react2-beta": {
+        "JavaScript": 397,
+      },
+      "CS115Activity2-master": {
+        "Java": 3073
+      },
+      "CS115Activity3-master": {
+        "Java": 126
+      },
+      "CS115Competition2-master": {
+        "Java": 960
+      },
+      "cs351": {
+        "C": 4066,
+        "Makefile": 221,
+        "Perl": 221,
+        "C++": 273,
+        "Shell Script": 102,
+        "Python": 139,
+      },
+      "2011": {
+        "Turbo Pascal": 370,
+      },
+      "2016": {
+        "vb6.0": 180,
+        "Quick Basic": 450,
+      }
+    },
+    "year": 2020,
+    "description": [
+      "Still exclude any assignment."
     ]
   },
   {
@@ -666,6 +725,42 @@ let source = [
     "description": [
       "Led a four-person team in developing a social "
     ]
+  }, {
+    "title": "Bitcoin Research",
+    "technologies": [],
+    "include": [],
+    "level": "normal",
+    "year": 2018,
+    "loc": {
+      "Main": {
+        "Contributed": {
+          "loc": 300,
+        },
+        "C": 237691,
+        "C++": 178062,
+        "XML": 14471,
+        "C#": 14352,
+        "PHP": 3638,
+        "Makefile": 2685,
+        "Log": 1084,
+        "Python": 1168,
+        "Shell Script": 990,
+        "YAML": 509,
+        "HTML": 276,
+        "Perl": 298,
+        "Markdown": 234,
+        "CSS": 191,
+        "BibTeX": 58,
+        "Properties": 54,
+        "Ruby": 39,
+        "Ini": 27,
+        "Docker": 23,
+        "JSON": 14
+      }
+    },
+    "description": [
+      "Integrate bitcoin into a customized minichain "
+    ]
   }
 ]
 
@@ -675,6 +770,30 @@ let source = [
 // }, new Set());
 
 // console.log(technologies);
+
+// For all entries, sum up the code wrote based on programming language, if an entry contains "Contribute", ignore its content but count as a special pl
+let totalLOC = source.reduce((acc, project) => {
+  if (project.loc) {
+    for (let key in project.loc) {
+      if (Object.keys(project.loc[key]).includes("Contributes")) {
+        acc["Special"] += project.loc[key]["Contributes"].loc;
+      } else {
+        for (let lang in project.loc[key]) {
+          if (acc[lang]) {
+            acc[lang] += project.loc[key][lang];
+          } else {
+            acc[lang] = project.loc[key][lang];
+          }
+        }
+      }
+    }
+  }
+  return acc;
+}, { "Special": 0 });
+// sort totalloc by the value
+totalLOC = Object.entries(totalLOC).sort((a, b) => b[1] - a[1]);
+
+console.log(totalLOC);
 
 
 /**
