@@ -212,6 +212,10 @@ const source_combined = {
                 "Developed a method to match long and short items using a novel matching algorithm, and devised a mixed design to measure, collect, and evaluate outcome variables, such as the video leaning.",
                 "Worked with Jude Abishek Rayan under the guidance of Steven Dow on improving conference communication protocols for projects CueHub and a conference management system.",
                 "Designed, implemented, tested, and deployed software using React, Firebase, Flask, GitHub Actions, Cloudflare, and Oracle Cloud, based on the weekly discussion results. Improved the product in a rapid process and assisted in designing the entire research workflow."
+            ], 
+            "work_details": [
+                "Worked with several professors and researchers on various projects. Published paper at the Foundations of Software Engineering.",
+
             ]
         }
     ],
@@ -228,6 +232,10 @@ const source_combined = {
                 "Sole TA for Compilers (CSE 131) with Yufei Ding for one quarter, and Introduction to Data Visualization (DSC 106) with Sam Lau for another quarter.",
                 "Guided group projects on programming languages and software engineering topics, and proposed, designed, and developed innovative course assignments.", "Managed course logistics, graded assignments, and collaborated with the professor and team members to refine course content. Conducted office hours and discussion sections to assist students and deepen their understanding.",
                 "Received an 'Excellent' rating from the instructor, and over 90\\% of the students gave a 'recommend' rating in the course evaluations."
+            ], 
+            "work_details": [
+                "Sole TA or major TA for several courses, including Java and Data Structure, Usability of Programming Languages, and Compilers. Received an 'Excellent' rating from the instructor and over 90\\% of the students gave a 'recommend' rating in the course evaluations.", 
+                "Developed several different unit tests using junit for courses using Docker. Also built an interactive console with frontend as Java Server Page and backend as Servlets for students to interactive play with solution. Develop templates and help code merge process."
             ]
         }
     ]

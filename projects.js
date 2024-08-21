@@ -725,7 +725,24 @@ let source = [
     "description": [
       "Led a four-person team in developing a social "
     ]
-  }, {
+  }, 
+  {
+    "title": "Eye tracker analysis",
+    "technologies": ["HTML", "Java Server Page", "SQL", "Java"],
+    "include": [],
+    "level": "normal",
+    "year": 2023,
+    "loc": {
+      "Main": {
+        "JavaScript": 1587,
+        "Java": 505,
+        "Markdown": 61,
+      }
+    },
+    "description": [
+      "Led a four-person team in developing a social "
+    ]
+  },{
     "title": "Bitcoin Research",
     "technologies": [],
     "include": [],
@@ -733,7 +750,7 @@ let source = [
     "year": 2018,
     "loc": {
       "Main": {
-        "Contributed": {
+        "Contributes": {
           "loc": 300,
         },
         "C": 237691,
@@ -774,9 +791,16 @@ let source = [
 // For all entries, sum up the code wrote based on programming language, if an entry contains "Contribute", ignore its content but count as a special pl
 let totalLOC = source.reduce((acc, project) => {
   if (project.loc) {
-    for (let key in project.loc) {
+    for (let key of Object.keys(project.loc)) {
       if (Object.keys(project.loc[key]).includes("Contributes")) {
-        acc["Special"] += project.loc[key]["Contributes"].loc;
+        let open = project.loc[key];
+        let loc = Object.keys(open).filter(a => a !== "Contributes").reduce((acc, key) => acc + open[key], 0);
+        acc["Special"].push({
+          "title": project.title + "-" + key,
+          "loc": loc, 
+          "Contributed": open["Contributes"].loc
+        });
+        acc["Total"] += open["Contributes"].loc;
       } else {
         for (let lang in project.loc[key]) {
           if (acc[lang]) {
@@ -784,16 +808,29 @@ let totalLOC = source.reduce((acc, project) => {
           } else {
             acc[lang] = project.loc[key][lang];
           }
+          acc["Total"] += project.loc[key][lang];
         }
       }
     }
   }
   return acc;
-}, { "Special": 0 });
+}, { "Special": [], "Total": 0 });
 // sort totalloc by the value
+//sort totalLOC["Special"] object by its .loc
+totalLOC["Special"] = totalLOC["Special"].sort((a, b) => b.loc - a.loc);
 totalLOC = Object.entries(totalLOC).sort((a, b) => b[1] - a[1]);
+// sort totalloc special by loc
+// Write the result to a file
+fs.writeFile('./LOC.json', JSON.stringify(totalLOC, null, 2), (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('LOC.json file has been created!');
+});
 
-console.log(totalLOC);
+// list the projext that I contributed to 
+
 
 
 /**

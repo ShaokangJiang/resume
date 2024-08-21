@@ -1,0 +1,188 @@
+[
+  [
+    "Special",
+    [
+      {
+        "title": "Eyetracker Monitoring Platform-Chromium",
+        "loc": 33027478,
+        "Contributed": 100
+      },
+      {
+        "title": "Eyetracker Monitoring Platform-vscode",
+        "loc": 1407985,
+        "Contributed": 100
+      },
+      {
+        "title": "Bitcoin Research-Main",
+        "loc": 455864,
+        "Contributed": 300
+      },
+      {
+        "title": "Financial Tutoring website-Passage",
+        "loc": 29234,
+        "Contributed": 300
+      },
+      {
+        "title": "Financial Tutoring website-Wiki",
+        "loc": 28914,
+        "Contributed": 300
+      },
+      {
+        "title": "Shopping store-src",
+        "loc": 8701,
+        "Contributed": 720
+      },
+      {
+        "title": "Financial Tutoring website-Main",
+        "loc": 5320,
+        "Contributed": 4600
+      },
+      {
+        "title": "Pullscription websites-blog",
+        "loc": 4713,
+        "Contributed": 30
+      },
+      {
+        "title": "Pullscription websites-web",
+        "loc": 1936,
+        "Contributed": 300
+      },
+      {
+        "title": "VSCode Experiment helper-browser-plugin",
+        "loc": 1689,
+        "Contributed": 30
+      },
+      {
+        "title": "Pullscription websites-pss-images-and-config",
+        "loc": 540,
+        "Contributed": 35
+      },
+      {
+        "title": "An economical computer-python-version",
+        "loc": 220,
+        "Contributed": 3
+      },
+      {
+        "title": "HealthCare Chatbot-azure-server",
+        "loc": 90,
+        "Contributed": 10
+      }
+    ]
+  ],
+  [
+    "Total",
+    89748
+  ],
+  [
+    "Java",
+    19717
+  ],
+  [
+    "JavaScript",
+    18092
+  ],
+  [
+    "JSP",
+    14013
+  ],
+  [
+    "HTML",
+    10631
+  ],
+  [
+    "JavaScript JSX",
+    4596
+  ],
+  [
+    "C",
+    4066
+  ],
+  [
+    "C\\#",
+    3354
+  ],
+  [
+    "vue",
+    1480
+  ],
+  [
+    "Markdown",
+    931
+  ],
+  [
+    "XML",
+    725
+  ],
+  [
+    "Haskell",
+    652
+  ],
+  [
+    "YAML",
+    640
+  ],
+  [
+    "Quick Basic",
+    450
+  ],
+  [
+    "Python",
+    449
+  ],
+  [
+    "TypeScript",
+    415
+  ],
+  [
+    "Turbo Pascal",
+    370
+  ],
+  [
+    "GAMS",
+    343
+  ],
+  [
+    "JSON",
+    310
+  ],
+  [
+    "CSS",
+    295
+  ],
+  [
+    "C++",
+    273
+  ],
+  [
+    "Makefile",
+    221
+  ],
+  [
+    "Perl",
+    221
+  ],
+  [
+    "vb6.0",
+    180
+  ],
+  [
+    "TypeScript JSX",
+    134
+  ],
+  [
+    "Shell Script",
+    132
+  ],
+  [
+    "Batch",
+    105
+  ],
+  [
+    "Properties",
+    93
+  ],
+  [
+    "JSON with Comments",
+    32
+  ]
+]
