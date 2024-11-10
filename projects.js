@@ -163,7 +163,7 @@ let source = [
   {
     "title": "HealthCare Chatbot",
     "technologies": ["Expo", "Worker", "GitHub", "Jest", "Vitest", "Figma"],
-    "include": ["Research", "Job"],
+    "include": ["Research", "Job", "Web"],
     "level": "normal",
     "year": 2024,
     "loc": {
@@ -201,7 +201,7 @@ let source = [
   {
     "title": "Online interactive shell",
     "technologies": ["Java Server Page", "Servlets", "Java", "Azure"],
-    "include": ["Research", "Job"],
+    "include": ["Research", "Job", "Java"],
     "level": "normal",
     "loc": {
       "src": {
@@ -212,11 +212,7 @@ let source = [
     },
     "year": 2023,
     "description": [
-      "Developed an interactive shell that allows users to run Java source code online in a fully Java environment without accessing the actual source code, ideal for demonstrating command-line Java programs.",
-
-      "The frontend was built using Java Server Page and Servlets, while the backend was developed in Java, featuring a custom-built pool management utility to manage connections, preserving resources by terminate connection at the right time. This allows multiple users to interact with the system at the same time.",
-
-      "The entire tool was deployed on Azure under a free plan, successfully supported 30  users simultaneously."
+      "Developed an interactive shell using JSP and Servlets deployed on Azure, enabling students to run Java source code online without accessing the source code, while supporting over 30 users simultaneously. The backend featured a custom connection session management utility to optimize resource usage and ensure seamless session handling."
     ]
   },
   {
@@ -242,7 +238,7 @@ let source = [
   },
   {
     "title": "Eyetracker Monitoring Platform",
-    "technologies": ["C\\#", "JS", "Tampermonkey", "Chrome extension", "WebSockets"],
+    "technologies": ["C\\#", "JS", "Tampermonkey", "Chrome", "WebSockets", "VSCode"],
     "include": ["Research", "Job"],
     "level": "normal",
     "loc": {
@@ -334,7 +330,7 @@ let source = [
     "description": [
       "Developed a universal user interaction tracking platform that includes eye movement tracking during coding in VSCode. Integrated the Tobii Eye Tracker 5 to link eye movement data with in-editor events while ensuring compliance with legal requirements.",
 
-      "The 2023 edition tracks specific window appearances and user interactions in the web-based version of VSCode. The frontend is built with JavaScript and deployed as a Chrome extension, while the backend is developed in C\\#. Both ends communicate using Chrome native messaging. The system successfully ran for 80 hours of user testing with 33 different users without any issues.",
+      "The 2023 edition tracks specific window appearances and user interactions in the web-based version of VSCode. The frontend is built with JavaScript and deployed as a Chrome extension, while the backend is developed in C\\#. Reduced the latency of communication between eye tracker and VSCode to one tenth compared with existed solution, tested over 80 hours with 33 users.",
 
       "The 2024 edition tracks the entire window arrangement and user interactions in VSCode, with the ability to define and track additional events as needed. The frontend is built with JavaScript and deployed as a script in VSCode, while the backend is developed in C\\#. Both ends communicate using WebSockets."
     ]
@@ -488,7 +484,7 @@ let source = [
   {
     "title": "Financial Organization App",
     "technologies": ["Expo", "NLP.js"],
-    "include": ["Research", "Job"],
+    "include": [],
     "level": "normal",
     "year": 2020,
     "loc": {
@@ -504,9 +500,9 @@ let source = [
     ]
   },
   {
-    "title": "Financial Tutoring website",
-    "technologies": ["HTML", "Embedded JavaScript", "Worker", "JavaScript", "echarts"],
-    "include": ["Research", "Job"],
+    "title": "Financial Tutoring website and app",
+    "technologies": ["HTML", "Ejs", "Worker", "JavaScript", "echarts", "Expo", "NLP"],
+    "include": ["Research", "Job", "Web", "Java"],
     "level": "normal",
     "loc": {
       "pointing-system": {
@@ -522,6 +518,11 @@ let source = [
         "JavaScript": 16,
         "HTML": 5231,
         "XML": 73
+      },
+      "App": {
+        "JavaScript": 1991,
+        "YAML": 22,
+        "Markdown": 19
       },
       "Wiki": {
         "Contributes": {
@@ -551,21 +552,17 @@ let source = [
     },
     "year": 2020,
     "description": [
-      "Designed and led a team to develop a static financial education website for Capital One. The site includes interactive learning tools, such as quizzes and a self-built, stateless learning progress tracking system. It also has various utilities, including a yearly budgeting tool.",
-
-      "Built front end using embedded JavaScript for the main site and HTML with JavaScript for utility tools. Developed backend with JavaScript and deployed on Cloudflare Workers to handle requests, including the encryption and decryption of learning stage information using AES and crypto and a dynamically rendered quiz system. Users can download their encrypted learning progress and upload it to decode and resume learning, or use the same browser to continue learning. No data is stored on the server.",
-
-      "Created detailed implementation guidance for group members and a user manual for the website and learning content. Integrated everything to automatically build and deploy using GitHub Actions.",
-
-      "Followed Agile methodologies and communicated with stakeholders to understand their needs.",
-
-      "Interacted with mentors from Capital One to discuss and understand the software development stages."
+      "Designed and led a team to develop a static financial education website for Capital One. The site includes interactive learning tools, such as quizzes and a self-built, stateless learning progress tracking system. It also has various utilities, including a personal expense management app.",
+      "Created detailed implementation guidance for group members and a user manual for the website and learning content. Build CI/CD pipelines and deployed them with GitHub Actions.",
+      "Built front end using embedded JavaScript for the main site and HTML with JavaScript for utility tools. Developed backend with JavaScript and deployed on Cloudflare Workers to handle requests, including the encryption and decryption of learning stage information using AES and crypto and a dynamically rendered quiz system. Users can download their encrypted learning progress and upload it to decode and resume learning, or use the same browser to continue learning. No data is stored on the server considering privacy and budget.",
+      "Developed a cross-platform personal finance app for Capital One that enables users to manage expenses and income via voice and chat interfaces using a local NLU engine, built with Expo for Android and iOS, tested and packaged for both platforms; Designed with JSON import/export for secure, local-only data storage and syncing.",
+      "Followed Agile methodologies, discussed with mentors and communicated with stakeholders to understand their needs and software development stages."
     ]
   },
   {
     "title": "Energy Simulator",
     "technologies": ["HTML", "WebGL", "JS", "Java", "JavaFX", "Three.js", "echarts"],
-    "include": ["Research", "Job"],
+    "include": ["Research", "Job", "Java"],
     "loc": {
       "energy": {
         "HTML": 8139
@@ -579,8 +576,7 @@ let source = [
     "level": "normal",
     "year": 2020,
     "description": [
-      "Designed and developed a web-based energy simulation tool using jsLPSolver to optimize energy sources based on historical data and project future trends using linear regression. Demonstrated the results with a pure static website built with HTML and JavaScript, showcasing the energy usage of a hypothetical energy system in a 3D environment using WebGL and JavaScript, with full support for modern browsers and partial support for IE 11.",
-      "Supports interactive 3D models using A-Frame with Three.js, AR functionalities via QR codes, dynamic data visualization, and lightweight localization.",
+      "Designed and developed a web-based energy simulation tool utilizing jsLPSolver to optimize energy sources based on historical data and project future trends via linear regression.", "Presented results on a static website built with HTML and JavaScript, featuring a 3D energy system simulation using A-Frame and Three.js, with AR functionalities via QR codes, dynamic data visualization, and lightweight localization. Ensured full support for modern browsers and partial support for IE 11.",
       "Reimplemented most functionalities in JavaFX without 3D representation."
     ]
   },
@@ -656,7 +652,7 @@ let source = [
   {
     "title": "AutoCommenter",
     "technologies": ["Java", "JFrame"],
-    "include": ["Research", "Job"],
+    "include": ["Research", "Job", "Java"],
     "level": "normal",
     "year": 2019,
     "loc": {
@@ -665,8 +661,7 @@ let source = [
       },
     },
     "description": [
-      "Designed and developed a local utility program in Java with JFrame to analyze Java code based on preset rules and semi-automatically add comments.",
-      "Integrates user input through typing or voice commands when necessary, with voice recognition powered by the iFlyTek API and translation supported by the Baidu Translation API."
+      "Designed and developed a local utility program in Java with JFrame to analyze Java code on preset rules and semi-automatically add comments by integrating user input through typing or voice, with voice recognition powered by the iFlyTek API and translation supported by the Baidu Translation API."
     ]
   },
   {
@@ -688,8 +683,8 @@ let source = [
   },
   {
     "title": "HateFate Website",
-    "technologies": ["HTML", "Java Server Page", "SQL", "Java"],
-    "include": ["Research", "Job"],
+    "technologies": ["HTML", "Java Server Page", "SQL", "Java", "Servlets"],
+    "include": ["Research", "Job", "Java", "Web"],
     "level": "normal",
     "year": 2017,
     "loc": {
@@ -705,7 +700,6 @@ let source = [
       "Developed the frontend using HTML and JavaServer Pages (JSP) and built the backend with JSP and SQL for data storage. Deployed on the Azure cloud with an Azure SQL database.",
       "Developed multiple login methods and utilized cookies to store user information, enabling automatic session recovery. Designed and integrated a custom mail system to handle email verification, password resets, and new match notifications using SMTP.",
       "Secured the website with SSL encryption and employed a combination of MD5, public/private key encryption, and AES for data security during page forwarding and email verification.",
-      "Achieved first place in the class project demo."
     ]
   },
   {
@@ -725,7 +719,7 @@ let source = [
     "description": [
       "Led a four-person team in developing a social "
     ]
-  }, 
+  },
   {
     "title": "Eye tracker analysis",
     "technologies": ["HTML", "Java Server Page", "SQL", "Java"],
@@ -742,7 +736,7 @@ let source = [
     "description": [
       "Led a four-person team in developing a social "
     ]
-  },{
+  }, {
     "title": "Bitcoin Research",
     "technologies": [],
     "include": [],
@@ -791,15 +785,17 @@ let source = [
 // For all entries, sum up the code wrote based on programming language, if an entry contains "Contribute", ignore its content but count as a special pl
 let totalLOC = source.reduce((acc, project) => {
   if (project.loc) {
+    let mylines = 0;
     for (let key of Object.keys(project.loc)) {
       if (Object.keys(project.loc[key]).includes("Contributes")) {
         let open = project.loc[key];
         let loc = Object.keys(open).filter(a => a !== "Contributes").reduce((acc, key) => acc + open[key], 0);
         acc["Special"].push({
           "title": project.title + "-" + key,
-          "loc": loc, 
+          "loc": loc,
           "Contributed": open["Contributes"].loc
         });
+        mylines += open["Contributes"].loc;
         acc["Total"] += open["Contributes"].loc;
       } else {
         for (let lang in project.loc[key]) {
@@ -808,16 +804,22 @@ let totalLOC = source.reduce((acc, project) => {
           } else {
             acc[lang] = project.loc[key][lang];
           }
+          mylines += project.loc[key][lang];
           acc["Total"] += project.loc[key][lang];
         }
       }
     }
+    acc["All"].push({
+      "title": project.title,
+      "loc": mylines
+    });
   }
   return acc;
-}, { "Special": [], "Total": 0 });
+}, { "Special": [], "Total": 0, "All": [] });
 // sort totalloc by the value
 //sort totalLOC["Special"] object by its .loc
 totalLOC["Special"] = totalLOC["Special"].sort((a, b) => b.loc - a.loc);
+totalLOC["All"] = totalLOC["All"].sort((a, b) => b.loc - a.loc);
 totalLOC = Object.entries(totalLOC).sort((a, b) => b[1] - a[1]);
 // sort totalloc special by loc
 // Write the result to a file
@@ -875,7 +877,15 @@ function convertToLatex(source) {
 }
 
 
-fs.writeFile('./Projects.tex', convertToLatex(filter(source, ["normal", "sub"], "Job", false)), (err) => {
+fs.writeFile('./Projects_webOrSystem.tex', convertToLatex(filter(source, ["normal", "sub"], "Web", false)), (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('Projects.tex file has been created!');
+});
+
+fs.writeFile('./Projects_JavaOr.tex', convertToLatex(filter(source, ["normal", "sub"], "Java", false)), (err) => {
   if (err) {
     console.error(err);
     return;

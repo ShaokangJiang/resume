@@ -53,9 +53,7 @@
 \resumeProjectHeading
     {\textbf{Online interactive shell} $|$ \emph{Java Server Page, Servlets, Java, Azure}}{2023}
     \resumeItemListStart
-      \resumeItem{Developed an interactive shell that allows users to run Java source code online in a fully Java environment without accessing the actual source code, ideal for demonstrating command-line Java programs.}
-\resumeItem{The frontend was built using Java Server Page and Servlets, while the backend was developed in Java, featuring a custom-built pool management utility to manage connections, preserving resources by terminate connection at the right time. This allows multiple users to interact with the system at the same time.}
-\resumeItem{The entire tool was deployed on Azure under a free plan, successfully supported 30  users simultaneously.}
+      \resumeItem{Developed an interactive shell using JSP and Servlets deployed on Azure, enabling students to run Java source code online without accessing the source code, while supporting over 30 users simultaneously. The backend featured a custom connection session management utility to optimize resource usage and ensure seamless session handling.}
     \resumeItemListEnd
 
 \resumeProjectHeading
@@ -66,10 +64,10 @@
     \resumeItemListEnd
 
 \resumeProjectHeading
-    {\textbf{Eyetracker Monitoring Platform} $|$ \emph{C\#, JS, Tampermonkey, Chrome extension, WebSockets}}{2023, 2024}
+    {\textbf{Eyetracker Monitoring Platform} $|$ \emph{C\#, JS, Tampermonkey, Chrome, WebSockets, VSCode}}{2023, 2024}
     \resumeItemListStart
       \resumeItem{Developed a universal user interaction tracking platform that includes eye movement tracking during coding in VSCode. Integrated the Tobii Eye Tracker 5 to link eye movement data with in-editor events while ensuring compliance with legal requirements.}
-\resumeItem{The 2023 edition tracks specific window appearances and user interactions in the web-based version of VSCode. The frontend is built with JavaScript and deployed as a Chrome extension, while the backend is developed in C\#. Both ends communicate using Chrome native messaging. The system successfully ran for 80 hours of user testing with 33 different users without any issues.}
+\resumeItem{The 2023 edition tracks specific window appearances and user interactions in the web-based version of VSCode. The frontend is built with JavaScript and deployed as a Chrome extension, while the backend is developed in C\#. Reduced the latency of communication between eye tracker and VSCode to one tenth compared with existed solution, tested over 80 hours with 33 users.}
 \resumeItem{The 2024 edition tracks the entire window arrangement and user interactions in VSCode, with the ability to define and track additional events as needed. The frontend is built with JavaScript and deployed as a script in VSCode, while the backend is developed in C\#. Both ends communicate using WebSockets.}
     \resumeItemListEnd
 
@@ -113,27 +111,20 @@
     \resumeItemListEnd
 
 \resumeProjectHeading
-    {\textbf{Financial Organization App} $|$ \emph{Expo, NLP.js}}{2020}
+    {\textbf{Financial Tutoring website and app} $|$ \emph{HTML, Ejs, Worker, JavaScript, echarts, Expo, NLP}}{2020}
     \resumeItemListStart
-      \resumeItem{Developed an app to help individuals organize expenses and income using voice interaction and simple chat, utilizing a local natural language understanding engine for Capital One.}
-\resumeItem{Built with Expo, packaged, and tested for both Android and iOS, the app enables users to sync data between devices via JSON import/export, with all data stored locally for privacy.}
-    \resumeItemListEnd
-
-\resumeProjectHeading
-    {\textbf{Financial Tutoring website} $|$ \emph{HTML, Embedded JavaScript, Worker, JavaScript, echarts}}{2020}
-    \resumeItemListStart
-      \resumeItem{Designed and led a team to develop a static financial education website for Capital One. The site includes interactive learning tools, such as quizzes and a self-built, stateless learning progress tracking system. It also has various utilities, including a yearly budgeting tool.}
-\resumeItem{Built front end using embedded JavaScript for the main site and HTML with JavaScript for utility tools. Developed backend with JavaScript and deployed on Cloudflare Workers to handle requests, including the encryption and decryption of learning stage information using AES and crypto and a dynamically rendered quiz system. Users can download their encrypted learning progress and upload it to decode and resume learning, or use the same browser to continue learning. No data is stored on the server.}
-\resumeItem{Created detailed implementation guidance for group members and a user manual for the website and learning content. Integrated everything to automatically build and deploy using GitHub Actions.}
-\resumeItem{Followed Agile methodologies and communicated with stakeholders to understand their needs.}
-\resumeItem{Interacted with mentors from Capital One to discuss and understand the software development stages.}
+      \resumeItem{Designed and led a team to develop a static financial education website for Capital One. The site includes interactive learning tools, such as quizzes and a self-built, stateless learning progress tracking system. It also has various utilities, including a personal expense management app.}
+\resumeItem{Created detailed implementation guidance for group members and a user manual for the website and learning content. Build CI/CD pipelines and deployed them with GitHub Actions.}
+\resumeItem{Built front end using embedded JavaScript for the main site and HTML with JavaScript for utility tools. Developed backend with JavaScript and deployed on Cloudflare Workers to handle requests, including the encryption and decryption of learning stage information using AES and crypto and a dynamically rendered quiz system. Users can download their encrypted learning progress and upload it to decode and resume learning, or use the same browser to continue learning. No data is stored on the server considering privacy and budget.}
+\resumeItem{Developed a cross-platform personal finance app for Capital One that enables users to manage expenses and income via voice and chat interfaces using a local NLU engine, built with Expo for Android and iOS, tested and packaged for both platforms; Designed with JSON import/export for secure, local-only data storage and syncing.}
+\resumeItem{Followed Agile methodologies, discussed with mentors and communicated with stakeholders to understand their needs and software development stages.}
     \resumeItemListEnd
 
 \resumeProjectHeading
     {\textbf{Energy Simulator} $|$ \emph{HTML, WebGL, JS, Java, JavaFX, Three.js, echarts}}{2020}
     \resumeItemListStart
-      \resumeItem{Designed and developed a web-based energy simulation tool using jsLPSolver to optimize energy sources based on historical data and project future trends using linear regression. Demonstrated the results with a pure static website built with HTML and JavaScript, showcasing the energy usage of a hypothetical energy system in a 3D environment using WebGL and JavaScript, with full support for modern browsers and partial support for IE 11.}
-\resumeItem{Supports interactive 3D models using A-Frame with Three.js, AR functionalities via QR codes, dynamic data visualization, and lightweight localization.}
+      \resumeItem{Designed and developed a web-based energy simulation tool utilizing jsLPSolver to optimize energy sources based on historical data and project future trends via linear regression.}
+\resumeItem{Presented results on a static website built with HTML and JavaScript, featuring a 3D energy system simulation using A-Frame and Three.js, with AR functionalities via QR codes, dynamic data visualization, and lightweight localization. Ensured full support for modern browsers and partial support for IE 11.}
 \resumeItem{Reimplemented most functionalities in JavaFX without 3D representation.}
     \resumeItemListEnd
 
@@ -146,8 +137,7 @@
 \resumeProjectHeading
     {\textbf{AutoCommenter} $|$ \emph{Java, JFrame}}{2019}
     \resumeItemListStart
-      \resumeItem{Designed and developed a local utility program in Java with JFrame to analyze Java code based on preset rules and semi-automatically add comments.}
-\resumeItem{Integrates user input through typing or voice commands when necessary, with voice recognition powered by the iFlyTek API and translation supported by the Baidu Translation API.}
+      \resumeItem{Designed and developed a local utility program in Java with JFrame to analyze Java code on preset rules and semi-automatically add comments by integrating user input through typing or voice, with voice recognition powered by the iFlyTek API and translation supported by the Baidu Translation API.}
     \resumeItemListEnd
 
 \resumeProjectHeading
@@ -158,12 +148,11 @@
     \resumeItemListEnd
 
 \resumeProjectHeading
-    {\textbf{HateFate Website} $|$ \emph{HTML, Java Server Page, SQL, Java}}{2017}
+    {\textbf{HateFate Website} $|$ \emph{HTML, Java Server Page, SQL, Java, Servlets}}{2017}
     \resumeItemListStart
       \resumeItem{Led a four-person team in developing a social networking website that connects users based on shared dislikes, with features including login, email-verified signup, and user pairing. Utilized Material design to create the interface.}
 \resumeItem{Developed the frontend using HTML and JavaServer Pages (JSP) and built the backend with JSP and SQL for data storage. Deployed on the Azure cloud with an Azure SQL database.}
 \resumeItem{Developed multiple login methods and utilized cookies to store user information, enabling automatic session recovery. Designed and integrated a custom mail system to handle email verification, password resets, and new match notifications using SMTP.}
 \resumeItem{Secured the website with SSL encryption and employed a combination of MD5, public/private key encryption, and AES for data security during page forwarding and email verification.}
-\resumeItem{Achieved first place in the class project demo.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd

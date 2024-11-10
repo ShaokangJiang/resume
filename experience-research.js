@@ -40,3 +40,6 @@ function convertToLatex(source, types) {
 fs.writeFileSync('Experience_Other.tex', convertToLatex(filterAndCombine(source, research.slice(1), new Date("January 2017")), "Other"));
 
 fs.writeFileSync('Experience_Research.tex', convertToLatex(filterAndCombine(source, ["Research-all", "Research-class"], new Date("January 2017")), "Research"));
+
+
+fs.writeFileSync('Experience_TA.tex', convertToLatex(filterAndCombine(source, ["Research-combined", "TA"], new Date("January 2020")), ""));

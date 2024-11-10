@@ -112,6 +112,17 @@ const source = [
     {
         "position": "Teaching Assistant",
         "institution": "University of California San Diego",
+        "start_date": "September 2024",
+        "type": "TA",
+        "end_date": "now",
+        "details": [
+            "TA for the Usability of Programming Languages course (CSE291) with Michael Coblenz for one quarter.",
+            "Lead class, discussions and office hours, graded assignments, and provided personalized advice to students.",
+        ]
+    },
+    {
+        "position": "Teaching Assistant",
+        "institution": "University of California San Diego",
         "start_date": "September 2023",
         "type": "TA",
         "end_date": "December 2023",
@@ -180,24 +191,13 @@ const source = [
             "Deployed and integrated the Matomo tracking system with a focus on privacy concerns and wrote unit tests.",
             "Collaborated closely with the team and provided guidance in implementing the website.",
             "Integrated Stripe for payment processing and Auth0 with JWT for authentication into the website, and wrote tests.",
-            "Worked with the design team to create and implement the blog site, embedding the abstract content into the main website and iOS app. Wrote unit tests for them."
+            "Worked with the design team to create and implement a blog site using Nuxt with TypeScript and a shopping site for publishing and managing comic books, embedding abstract content of weekly news into the main website."
         ]
     }
 ]
 
 const source_combined = {
     "Research": [
-        {
-            "position": "Researcher",
-            "institution": "Independent",
-            "type": "Research",
-            "start_date": "April 2024",
-            "end_date": "now",
-            "details": [
-                "Worked with Jimmy Koppel on comparing and analyzing the advantages and disadvatanges of using tutorials over the LLM system in helping experienced programmers in coding, especially in learning new, unfamiliar material.",
-                "Discuss, design, and implement an analysis plan to examine the data and write a paper right now."
-            ]
-        },
         {
             "position": "Graduate Student Researcher",
             "institution": "University of California San Diego",
@@ -214,8 +214,10 @@ const source_combined = {
                 "Designed, implemented, tested, and deployed software using React, Firebase, Flask, GitHub Actions, Cloudflare, and Oracle Cloud, based on the weekly discussion results. Improved the product in a rapid process and assisted in designing the entire research workflow."
             ], 
             "work_details": [
-                "Worked with several professors and researchers on various projects. Published paper at the Foundations of Software Engineering.",
-
+                "Worked with professors and researchers on projects. Published paper at FSE 2024. Submitted to CSCW 2026.",
+                "Developed an universal user interaction tracking platform for VSCode, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
+                "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video is a clip of another, outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server.", 
+                "Worked on and deployed an online meeting platform left by a previous team, adding separate interfaces for facilitators and participants, Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues, resolving critical bugs and enabling 86 meetings."
             ]
         }
     ],
@@ -231,11 +233,12 @@ const source_combined = {
                 "Sole TA for the Usability of Programming Languages course (CSE291) with Michael Coblenz for one quarter and TA for the same course for another quarter.",
                 "Sole TA for Compilers (CSE 131) with Yufei Ding for one quarter, and Introduction to Data Visualization (DSC 106) with Sam Lau for another quarter.",
                 "Guided group projects on programming languages and software engineering topics, and proposed, designed, and developed innovative course assignments.", "Managed course logistics, graded assignments, and collaborated with the professor and team members to refine course content. Conducted office hours and discussion sections to assist students and deepen their understanding.",
-                "Received an 'Excellent' rating from the instructor, and over 90\\% of the students gave a 'recommend' rating in the course evaluations."
+                "Received 'Excellent' ratings from instructors and a 90\\%+ student recommendation rate in course evaluations."
             ], 
             "work_details": [
-                "Sole TA or major TA for several courses, including Java and Data Structure, Usability of Programming Languages, and Compilers. Received an 'Excellent' rating from the instructor and over 90\\% of the students gave a 'recommend' rating in the course evaluations.", 
-                "Developed several different unit tests using junit for courses using Docker. Also built an interactive console with frontend as Java Server Page and backend as Servlets for students to interactive play with solution. Develop templates and help code merge process."
+                "Served as the sole or lead TA for several courses, including Java and Data Structures, Usability of Programming Languages, and Compilers. Received 'Excellent' ratings from instructors and a 90\\%+ student recommendation rate.", 
+                "Developed several assignment and unit tests using JUnit on Docker, created templates with GitHub Actions, and helped students with the code merge process.",
+                "Developed an interactive shell with session management using JSP and Servlets deployed on Azure, allowing students to try solutions online without exposing the source code. Successfully supported 30+ users simultaneously.",
             ]
         }
     ]

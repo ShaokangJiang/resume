@@ -25,9 +25,16 @@ function convertToLatex(source) {
     let latexContent = "\\section{Experience}\n  \\resumeSubHeadingListStart\n";
     source.forEach(entry => {
         latexContent += `\n    \\resumeSubheading\n      {${entry.position}}{${entry.start_date} -- ${entry.end_date}}\n      {${entry.institution}}{}\n      \\resumeItemListStart\n`;
-        entry.details.forEach(task => {
-            latexContent += `        \\resumeItem{${task}}\n`;
-        });
+        // if an experience has a work_details field, use that instead
+        if (entry.work_details) {
+            entry.work_details.forEach(task => {
+                latexContent += `        \\resumeItem{${task}}\n`;
+            });
+        } else {
+            entry.details.forEach(task => {
+                latexContent += `        \\resumeItem{${task}}\n`;
+            });
+        }
         latexContent += "      \\resumeItemListEnd\n";
     });
     latexContent += "  \\resumeSubHeadingListEnd\n";
@@ -36,4 +43,4 @@ function convertToLatex(source) {
 
 const latexContent = convertToLatex(filterAndCombine(source, job, new Date("January 2021")));
 
-fs.writeFileSync('Experience.tex', latexContent);
+fs.writeFileSync('Experience_work.tex', latexContent);

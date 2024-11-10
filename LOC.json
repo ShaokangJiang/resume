@@ -18,12 +18,12 @@
         "Contributed": 300
       },
       {
-        "title": "Financial Tutoring website-Passage",
+        "title": "Financial Tutoring website and app-Passage",
         "loc": 29234,
         "Contributed": 300
       },
       {
-        "title": "Financial Tutoring website-Wiki",
+        "title": "Financial Tutoring website and app-Wiki",
         "loc": 28914,
         "Contributed": 300
       },
@@ -33,7 +33,7 @@
         "Contributed": 720
       },
       {
-        "title": "Financial Tutoring website-Main",
+        "title": "Financial Tutoring website and app-Main",
         "loc": 5320,
         "Contributed": 4600
       },
@@ -71,15 +71,128 @@
   ],
   [
     "Total",
-    89748
+    91780
+  ],
+  [
+    "All",
+    [
+      {
+        "title": "Small course projects",
+        "loc": 14303
+      },
+      {
+        "title": "Energy Simulator",
+        "loc": 10377
+      },
+      {
+        "title": "CS 425 Website",
+        "loc": 9648
+      },
+      {
+        "title": "Financial Tutoring website and app",
+        "loc": 9102
+      },
+      {
+        "title": "HateFate Website",
+        "loc": 6613
+      },
+      {
+        "title": "Eyetracker Monitoring Platform",
+        "loc": 5569
+      },
+      {
+        "title": "A JavaFx program",
+        "loc": 5439
+      },
+      {
+        "title": "Cue Hub",
+        "loc": 4856
+      },
+      {
+        "title": "Pullscription websites",
+        "loc": 3814
+      },
+      {
+        "title": "Java code style checker on gradescope",
+        "loc": 3687
+      },
+      {
+        "title": "HealthCare Chatbot",
+        "loc": 3232
+      },
+      {
+        "title": "Eye tracker analysis",
+        "loc": 2153
+      },
+      {
+        "title": "Financial Organization App",
+        "loc": 2032
+      },
+      {
+        "title": "Workshop Manager",
+        "loc": 1683
+      },
+      {
+        "title": "Video matching and leaning rating system",
+        "loc": 1579
+      },
+      {
+        "title": "Online interactive shell",
+        "loc": 1304
+      },
+      {
+        "title": "AutoCommenter",
+        "loc": 1263
+      },
+      {
+        "title": "Covid data report",
+        "loc": 1257
+      },
+      {
+        "title": "Cross platform Markdown app",
+        "loc": 721
+      },
+      {
+        "title": "Shopping store",
+        "loc": 720
+      },
+      {
+        "title": "Interactive Haskell Game",
+        "loc": 652
+      },
+      {
+        "title": "VSCode Experiment helper",
+        "loc": 439
+      },
+      {
+        "title": "An economical computer",
+        "loc": 337
+      },
+      {
+        "title": "Seat Arrangement Problem",
+        "loc": 300
+      },
+      {
+        "title": "Bitcoin Research",
+        "loc": 300
+      },
+      {
+        "title": "Wise grader",
+        "loc": 220
+      },
+      {
+        "title": "Screen Reader",
+        "loc": 180
+      }
+    ]
+  ],
+  [
+    "JavaScript",
+    20083
   ],
   [
     "Java",
     19717
-  ],
-  [
-    "JavaScript",
-    18092
   ],
   [
     "JSP",
@@ -107,19 +220,19 @@
   ],
   [
     "Markdown",
-    931
+    950
   ],
   [
     "XML",
     725
   ],
   [
-    "Haskell",
-    652
+    "YAML",
+    662
   ],
   [
-    "YAML",
-    640
+    "Haskell",
+    652
   ],
   [
     "Quick Basic",
