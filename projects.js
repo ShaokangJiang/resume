@@ -5,7 +5,7 @@ let source = [
     "title": "Pullscription websites",
     "technologies": ["Nuxt", "Vue", "Typescript", "Vitest", "Auth0", "Docker", "Nginx", "Matomo", "Stripe", "Blogger"],
     "level": "normal",
-    "include": ["Research", "Job"],
+    "include": ["Job"],
     "loc": {
       "pss-images-and-config": {
         "Contributes": {
@@ -55,7 +55,7 @@ let source = [
   {
     "title": "Workshop Manager",
     "technologies": ["Electron", "React", "Socket.io", "HTTPS", "DDNS", "GPTs", "Worker", "MailJet"],
-    "include": ["Research", "Job"],
+    "include": ["Job"],
     "level": "normal",
     "loc": {
       "ci-main": {
@@ -88,7 +88,7 @@ let source = [
   {
     "title": "Cross platform Markdown app",
     "technologies": ["Electron", "JavaScript"],
-    "include": ["Research", "Job"],
+    "include": ["Job"],
     "level": "normal",
     "loc": {
       "electron": {
@@ -106,7 +106,7 @@ let source = [
   {
     "title": "Cue Hub",
     "technologies": ["React", "Firebase", "Python", "Flask", "Daily.js", "GPTs"],
-    "include": ["Research", "Job"],
+    "include": [ "Job"],
     "level": "sub",
     "loc": {
       "client": {
@@ -137,7 +137,7 @@ let source = [
     "title": "Video matching and leaning rating system",
     "technologies": ["HTML", "JS", "Node.js", "Oracle cloud", "Worker"],
     "level": "normal",
-    "include": ["Research", "Job"],
+    "include": ["Job"],
     "loc": {
       "final-pairing": {
         "JavaScript": 798,
@@ -218,7 +218,7 @@ let source = [
   {
     "title": "Java code style checker on gradescope",
     "technologies": ["Shell", "Java", "Docker"],
-    "include": ["Research"],
+    "include": [],
     "level": "sub",
     "loc": {
       "Dockerfile": {
@@ -239,7 +239,7 @@ let source = [
   {
     "title": "Eyetracker Monitoring Platform",
     "technologies": ["C\\#", "JS", "Tampermonkey", "Chrome", "WebSockets", "VSCode"],
-    "include": ["Research", "Job"],
+    "include": ["Job"],
     "level": "normal",
     "loc": {
       "2024-back": {
@@ -338,7 +338,7 @@ let source = [
   {
     "title": "Interactive Haskell Game",
     "technologies": ["Haskell"],
-    "include": ["Research"],
+    "include": [],
     "loc": {
       "src": {
         "Haskell": 652
@@ -353,7 +353,7 @@ let source = [
   {
     "title": "Shopping store",
     "technologies": ["Next, React"],
-    "include": ["Research", "Job"],
+    "include": ["Job"],
     "loc": {
       "src": {
         "Contributes": {
@@ -378,7 +378,7 @@ let source = [
   {
     "title": "VSCode Experiment helper",
     "technologies": ["Typescript", "Fiddler"],
-    "include": ["Research", "Job"],
+    "include": ["Job"],
     "level": "normal",
     "loc": {
       "checking-correctness": {
@@ -451,7 +451,7 @@ let source = [
   {
     "title": "Screen Reader",
     "technologies": ["JavaScript", "Tampermonkey"],
-    "include": ["Research"],
+    "include": [],
     "level": "normal",
     "loc": {
       "Javascript": {
@@ -466,7 +466,7 @@ let source = [
   {
     "title": "Covid data report",
     "technologies": ["Node.js", "Puppeteer"],
-    "include": ["Research", "Job"],
+    "include": ["Job"],
     "level": "sub",
     "loc": {
       "email-covid-forward": {
@@ -667,7 +667,7 @@ let source = [
   {
     "title": "Seat Arrangement Problem",
     "technologies": ["GAMS", "Cplex"],
-    "include": ["Research"],
+    "include": [],
     "level": "sub",
     "loc": {
       "Main": {

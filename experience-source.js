@@ -8,10 +8,10 @@ const source = [
         "start_date": "April 2024",
         "end_date": "now",
         "details": [
-            "Worked with Michael Coblenz on the usability analysis of Copilot.",
-            "Designed an experiment using an eye tracker to evaluate the costs and benefits of Copilot for programmers new to React. Piloted it with 5 programmers, incorporating iterative improvements. The full study is underway.",
-
-            "Designed and implemented a more universal eye-tracking platform for native VSCode to collect user interaction data and developed a VSCode extension to assist with the experiment."
+            "Worked with Michael Coblenz on two projects: a usability analysis of Copilot with a paper targeting ICSE 2026, and a separate project leveraging LLMs to assist novice programmers in detecting security risks.",
+            "Designed an experiment using an eye tracker to evaluate the costs and benefits of Copilot for programmers new to React. Piloted it with 5 programmers, incorporating iterative improvements. The full study is undergoing.",
+            "Designed and implemented a more universal eye-tracking platform for native VSCode to collect user interaction data across in-editor events and developed a VSCode extension to assist with the experiment.",
+            "Developed VSCode extensions utilizing prompt-engineered GPTs that integrates static security analysis, user background, and project structure as inputs, producing two visual interfaces to assist novice programmers in detecting and understanding OWASP risks in code. The extension is undergoing iterative internal design.",
         ]
     },
     {
@@ -21,21 +21,23 @@ const source = [
         "start_date": "April 2024",
         "end_date": "now",
         "details": [
-            "Worked with Kristen Vaccaro and Deepak Kumar, and collaborated with two other group members to assess bias in YouTube's recommendation system.",
-            "Developed a novel matching algorithm to pair long and short videos, outperforming all known approaches for our planned analysis. Designed a mixed-method approach to measure, collect, and evaluate outcome variables.",
+            "Worked with Jude Abishek Rayan under the guidance of Steven Dow, and collaborting with 4 others on leveraging LLM in helping group communication by inspiring people in generating more diversified, in depth ideas for CueHub project and workshop management project.",
+            "Redesigned and deployed an online meeting platform for the CueHub project, building on a previous team's work. Implemented separate interfaces for facilitators and participants, integrated Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues. Resolved critical bugs and iteratively refined the platform based on pilot feedback, enabling 86 meetings.", 
+            "Co-authored on a paper submitted to CSCW 2026. Iteratively designed the platform. Designed and performed data analysis and wrote it. Wrote design decisions and implementation sections in the paper.",
+            "For workshop management project, designed and developed a 4-component workshop management system for real-time user engagement with socket.io, electron, DDNS, MailJet and prompt-engineered GPTs to foster a better, more engaging conversation experience."
+        ]
+    },
+    {
+        "position": "Graduate Student Researcher",
+        "institution": "University of California San Diego",
+        "type": "Research",
+        "start_date": "April 2024",
+        "end_date": "now",
+        "details": [
+            "Worked with Kristen Vaccaro and Deepak Kumar, and collaborated with three other group members to assess political polarization on YouTube shorts and longs. The paper is planned for submission to CSCW 2026.",
+            "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video (a short-form video) is a clip of another (a long-form video), outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server using Javascript.",
+            "Developed a stateless interactive rating and data collection system with CI/CD integration using GitHub Actions and Cloudflare Workers for data storage, enabling users to label the political leaning of long and short videos based on transcripts and some pairing information.",
             "Assessed methods for measuring the leanings of media houses, utilizing AllSides and other existing models."
-        ]
-    },
-    {
-        "position": "Graduate Student Researcher",
-        "institution": "University of California San Diego",
-        "type": "Research",
-        "start_date": "April 2024",
-        "end_date": "now",
-        "details": [
-            "Worked with Jude Abishek Rayan under the guidance of Steven Dow on improving workshop communication protocols for projects CueHub and workshop management.",
-            "For the CueHub project, I built, redesigned and tested a customized online meeting platform with automatic cue support and integrated monitoring tools based on the discussion results. Utilized GPTs to provide cues during meetings to improve communication. Wrote design decisions and implementation sections in the paper, and assisted in designing, engaging in discussions throughout the entire research workflow, and data analysis.",
-            "For workshop management project, I designed and developed a 4-component workshop management system for real-time user engagement using prompt-engineered GPTs to foster better and more diversified idea generation via cues and discussed ways to improve communication for all groups during meetings."
         ]
     },
     {
@@ -46,7 +48,7 @@ const source = [
         "end_date": "now",
         "details": [
             "Worked with Jimmy Koppel on comparing and analyzing the advantages and disadvatanges of using tutorials over the LLM system in helping experienced programmers in coding, especially in learning new, unfamiliar material.",
-            "Discuss, design, and implement an analysis plan to examine the data and write a paper right now."
+            "Discuss, design, and implement an analysis plan to code data and write a paper right now."
         ]
     },
     {
@@ -56,10 +58,11 @@ const source = [
         "start_date": "January 2023",
         "end_date": "September 2023",
         "details": [
-            "Worked with Michael Coblenz on the usability analysis of autocomplete.",
-            "Designed and executed an experiment with 32 participants using an eye tracker to evaluate the costs and benefits of IDE-based autocomplete features for programmers using an unfamiliar API, analyzed data using JMP, performed thementic analysis, and published a paper on the Foundations of Software Engineering.",
+            "Worked with Michael Coblenz on the usability analysis of autocomplete. Paper published at FSE 2024.",
+            "Designed and executed an experiment with 32 participants using an eye tracker to assess the costs and benefits of IDE-based autocomplete for programmers working with an unfamiliar API. Implemented algorithms from prior research in custom-built analysis scripts and used JMP to analyze the data. Performed open-coded analysis.",
             "Found that participants who used autocomplete learned more while spending less time reading documentation, although autocomplete did not significantly reduce the number of keystrokes required to complete tasks.",
-            "Designed and implemented an eye-tracking platform for web-based VSCode, a Chrome extension, and a VSCode extension to collect data. Developed several scripts and algorithms for automatic and semi-automatic data analysis."
+            "Developed an user interaction tracking platform for VSCode for the web, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
+            // "Designed and implemented a VSCode extension for running experiment."
         ]
     },
     {
@@ -71,8 +74,7 @@ const source = [
         "details": [
             "Investigated whether Python Type Hints are helpful for competitive programmers.",
             "Designed and executed an experiment, containing tasks and interview, with 4 participants.",
-            "Found that Python type hints were not significantly more useful for competitive programmers in terms of task completion time and debugging time.",
-            "Thematic analysis of interview results and transcripts indicated programmers feel adding type hints and the popped out autocomplete suggestions to be annoying."
+            "Found that Python type hints were not significantly more useful for competitive programmers in terms of task completion time and debugging time. Open coded of interview results and transcripts indicated programmers feel adding type hints and the popped out autocomplete suggestions to be annoying."
         ]
     },
     {
@@ -82,7 +84,7 @@ const source = [
         "start_date": "September 2023",
         "end_date": "December 2023",
         "details": [
-            "Investigated whether an avatar appearing in the ChatGPT interface would help create a better communication environment between humans and machines, particularly in terms of alleviating loneliness."
+            "Investigated whether an avatar appearing in the ChatGPT interface would help create a better communication environment between humans and machines, particularly in terms of alleviating loneliness. Added an avatar to the ChatGPT interface and found no significant difference in a 10 people pilot study",
         ]
     },
     {
@@ -104,9 +106,8 @@ const source = [
         "end_date": "June 2024",
         "details": [
             "Sole TA for Compilers (CSE 131) with Yufei Ding for one quarter, and Introduction to Data Visualization (DSC 106) with Sam Lau for another quarter.",
-            "Worked on designing course components, creating assignments, building grading scripts, making and grading exams, homework, and projects. Provided suggestions for course content and collected student feedback.",
-            "Managed infrastructure and logistics, discussed course content, designed, refined, and graded homework, held office hours and discussion sections, and engaged students in discussions.",
-            "Received an 'Excellent' rating from the instructor for both courses, and over 90\\% of the students gave a 'recommend' rating in the course evaluations."
+            "Designed course components, created assignments, built grading scripts, made and graded exams, homework, and projects. Provided suggestions for course content and collected student feedback. Managed course logistics.",
+            "Received an 'Excellent' rating from the instructor for both courses, and a 90\\%+ student recommendation rate."
         ]
     },
     {
@@ -128,9 +129,8 @@ const source = [
         "end_date": "December 2023",
         "details": [
             "Sole TA for the Usability of Programming Languages course (CSE291) with Michael Coblenz for one quarter.",
-            "Discussed course content with the professor, graded assignments, led discussions during lectures on specific course content, and provided personalized advice to students.",
-            "Guided group projects on various topics related to the usability of programming languages or software engineering. Conducted office hours to assist students and gain insights through discussions.",
-            "Received a 100\\% 'recommend' rating from students in the course evaluations, while the professor rating was not applicable."
+            "Discussed course content with the professor, graded assignments, led discussions during lectures on specific course content, and provided personalized advice to students.", "Guided group projects on various topics related to the usability of programming languages or software engineering and gain insights through discussions. Conducted office hours to assist students.",
+            "A 100\\% student recommendation rate, while the professor rating was not applicable."
         ]
     },
     {
@@ -141,9 +141,8 @@ const source = [
         "end_date": "June 2023",
         "details": [
             "Major TA for Java and Data Structure courses (DSC30) with Soohyun Liao for two quarters.",
-            "Proposed, designed, and developed new and innovative assignments and projects for the course, in collaboration with the professor. Graded students' assignments and collaborated with team members to discuss and refine course content.",
-            "Held office hours and conducted all discussion sections to assist students in gaining a deeper understanding of course topics. Taught additional, non-required concepts during discussion sections.",
-            "Received a 90\\% 'recommend' rating from students in the course evaluations, while the professor rating was not applicable."
+            "Proposed, and developed new and innovative assignments and projects for the course, in collaboration with the professor. Graded students' assignments, held office hours and conducted all discussion sections. Taught additional, non-required concepts during discussion sections.",
+            "A 90\\%+ student recommendation rate, while the professor rating was not applicable."
         ]
     },
     {
@@ -184,7 +183,7 @@ const source = [
         "institution": "Pullscription",
         "type": "Work",
         "start_date": "June 2024",
-        "end_date": "now",
+        "end_date": "September 2024",
         "details": [
             "Worked closely with Jago, the founder and CEO, to discuss, suggest, design, and implement the system structure for the organization's blog and shopping website, including both the customer and supplier end. The aim was to create an easy-to-maintain structure that is fast for users to access and optimized for SEO.",
             "Utilized Nginx and Docker to deploy the system on a server with CI/CD pipeline spported by GitHub Actions.",
@@ -217,7 +216,8 @@ const source_combined = {
                 "Worked with professors and researchers on projects. Published paper at FSE 2024. Submitted to CSCW 2026.",
                 "Developed an universal user interaction tracking platform for VSCode, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
                 "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video is a clip of another, outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server.", 
-                "Worked on and deployed an online meeting platform left by a previous team, adding separate interfaces for facilitators and participants, Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues, resolving critical bugs and enabling 86 meetings."
+                "Worked on and deployed an online meeting platform left by a previous team, adding separate interfaces for facilitators and participants, Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues, resolving critical bugs and enabling 86 meetings.",
+                "Developed a workshop management system for real-time user engagement with socket.io, electron, DDNS, MailJet, reverse proxy, and prompt-engineered GPTs to foster a better conversation."
             ]
         }
     ],
