@@ -23,7 +23,7 @@ const source = [
         "details": [
             "Worked with Jude Abishek Rayan under the guidance of Steven Dow, and collaborting with 4 others on leveraging LLM in helping group communication by inspiring people in generating more diversified, in depth ideas for CueHub project and workshop management project.",
             "Redesigned and deployed an online meeting platform for the CueHub project, building on a previous team's work. Implemented separate interfaces for facilitators and participants, integrated Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues. Resolved critical bugs and iteratively refined the platform based on pilot feedback, enabling 86 meetings.", 
-            "Iteratively designed the platform. Helped with conducting and organizing data for a 172 participants study. Designed and performed data analysis. Co-authored on a paper submitted to CSCW 2026. Wrote design decisions, implementation, and data analysis sections in the paper. ",
+            "Iteratively designed the platform. Helped with conducting and organizing data for a 172 participants study. Designed and performed data analysis. Co-authored on a paper submitted to CSCW 2025. Wrote design decisions, implementation, and data analysis sections in the paper. ",
             "For workshop management project, designed and developed a 4-component workshop management system for real-time user engagement with socket.io, electron, DDNS, MailJet and prompt-engineered GPTs to foster a better, more engaging conversation experience."
         ]
     },
@@ -213,7 +213,7 @@ const source_combined = {
                 "Designed, implemented, tested, and deployed software using React, Firebase, Flask, GitHub Actions, Cloudflare, and Oracle Cloud, based on the weekly discussion results. Improved the product in a rapid process and assisted in designing the entire research workflow."
             ], 
             "work_details": [
-                "Worked with professors and researchers on projects. Published paper at FSE 2024. Submitted to CSCW 2026.",
+                "Worked with professors and researchers on projects. Published paper at FSE 2024. Submitted to CSCW 2025.",
                 "Developed an universal user interaction tracking platform for VSCode, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
                 "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video is a clip of another, outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server.", 
                 "Worked on and deployed an online meeting platform left by a previous team, adding separate interfaces for facilitators and participants, Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues, resolving critical bugs and enabling 86 meetings.",
