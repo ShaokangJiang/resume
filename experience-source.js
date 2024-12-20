@@ -4,11 +4,11 @@ const source = [
     {
         "position": "Graduate Student Researcher",
         "type": "Research",
-        "institution": "University of California San Diego",
+        "institution": "University of California San Diego (supervised by Michael Coblenz)",
         "start_date": "April 2024",
         "end_date": "now",
         "details": [
-            "Worked with Michael Coblenz on two projects: a usability analysis of Copilot with a paper targeting ICSE 2026, and a separate project leveraging LLMs to assist novice programmers in detecting security risks.",
+            "A usability analysis of Copilot with a paper targeting ICSE 2026, and a separate project leveraging LLMs to assist novice programmers in detecting security risks.",
             "Designed an experiment using an eye tracker to evaluate the costs and benefits of Copilot for programmers new to React. Piloted it with 5 programmers, incorporating iterative improvements. The full study is undergoing.",
             "Designed and implemented a more universal eye-tracking platform for native VSCode to collect user interaction data across in-editor events and developed a VSCode extension to assist with the experiment.",
             "Developed VSCode extensions utilizing prompt-engineered GPTs that integrates static security analysis, user background, and project structure as inputs, producing two visual interfaces to assist novice programmers in detecting and understanding OWASP risks in code. The extension is undergoing iterative internal design.",
@@ -16,25 +16,25 @@ const source = [
     },
     {
         "position": "Graduate Student Researcher",
-        "institution": "University of California San Diego",
+        "institution": "University of California San Diego (supervised by Steven Dow)",
         "type": "Research",
         "start_date": "April 2024",
-        "end_date": "now",
+        "end_date": "October 2024",
         "details": [
-            "Worked with Jude Abishek Rayan under the guidance of Steven Dow, and collaborting with 4 others on leveraging LLM in helping group communication by inspiring people in generating more diversified, in depth ideas for CueHub project and workshop management project.",
-            "Redesigned and deployed an online meeting platform for the CueHub project, building on a previous team's work. Implemented separate interfaces for facilitators and participants, integrated Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues. Resolved critical bugs and iteratively refined the platform based on pilot feedback, enabling 86 meetings.", 
-            "Iteratively designed the platform. Helped with conducting and organizing data for a 172 participants study. Designed and performed data analysis. Co-authored on a paper submitted to CSCW 2025. Wrote design decisions, implementation, and data analysis sections in the paper. ",
-            "For workshop management project, designed and developed a 4-component workshop management system for real-time user engagement with socket.io, electron, DDNS, MailJet and prompt-engineered GPTs to foster a better, more engaging conversation experience."
+            "Found LLM-driven conversational cues significantly increased the topical diversity of generated ideas and conversations, while modality had no significant impact. The paper was submitted to \\textbf{CSCW 2025}.",
+            "Redesigned and deployed an online meeting platform. Implemented separate interfaces for facilitators and participants, integrated Firebase for real-time communication, Daily.js for meetings, and GPT-based cues. Resolved bugs left by previous teams and iteratively refined the platform based on pilot feedback, enabling 86 meetings.", 
+            "Organized and transcribed data for a 2 (cue vs. no cue) x 2 (in-person vs. remote) experiment with 172 participants. Worked closely with Jude and other group members. Led and performed quantitative data analysis on the generated ideas and conversations. Wrote the design decisions, implementation, and data analysis sections of the paper.",
+            "For another workshop management project, designed and developed a 4-component workshop management system for real-time user engagement with socket.io, electron, DDNS, MailJet and prompt-engineered GPTs to foster a better, more engaging conversation experience."
         ]
     },
     {
         "position": "Graduate Student Researcher",
-        "institution": "University of California San Diego",
+        "institution": "University of California San Diego (supervised by Kristen Vaccaro and Deepak Kumar)",
         "type": "Research",
         "start_date": "April 2024",
         "end_date": "now",
         "details": [
-            "Worked with Kristen Vaccaro and Deepak Kumar, and collaborated with three other group members to assess political polarization on YouTube shorts and longs. The paper is planned for submission to CSCW 2026.",
+            "Collaborated with three other group members to assess political polarization on YouTube shorts and longs.",
             "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video (a short-form video) is a clip of another (a long-form video), outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server using Javascript.",
             "Developed a stateless interactive rating and data collection system with CI/CD integration using GitHub Actions and Cloudflare Workers for data storage, enabling users to label the political leaning of long and short videos based on transcripts and some pairing information.",
             "Assessed methods for measuring the leanings of media houses, utilizing AllSides and other existing models."
@@ -42,24 +42,26 @@ const source = [
     },
     {
         "position": "Researcher",
-        "institution": "Independent",
+        "institution": "Independent (supervised by Jimmy Koppel and Michael Coblenz)",
         "type": "Research",
         "start_date": "April 2024",
         "end_date": "now",
         "details": [
-            "Worked with Jimmy Koppel on comparing and analyzing the advantages and disadvatanges of using tutorials over the LLM system in helping experienced programmers in coding, especially in learning new, unfamiliar material.",
-            "Discuss, design, and implement an analysis plan to code data and write a paper right now."
+            "Found that users assisted by LLM chatbots were less confident and more confused, while those using tutorials had a better understanding of the code structure but struggled with low-level coding challenges based on the survey.",
+            "A between-subjects study involving 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",
+            "Restructured the study, discussed, designed, and implemented an analysis plan with both qualitative and quantitative components, transcribed, coded, and utilized NLP to analyze the recordings, and wrote and submitted a paper to \\textbf{Plateau 2025}."
         ]
     },
     {
         "position": "Graduate Student Researcher",
-        "institution": "University of California San Diego",
+        "institution": "University of California San Diego (supervised by Michael Coblenz)",
         "type": "Research",
         "start_date": "January 2023",
         "end_date": "September 2023",
         "details": [
-            "Worked with Michael Coblenz on the usability analysis of autocomplete. Paper published at FSE 2024.",
-            "Designed and executed an experiment with 32 participants using an eye tracker to assess the costs and benefits of IDE-based autocomplete for programmers working with an unfamiliar API. Implemented algorithms from prior research in custom-built analysis scripts and used JMP to analyze the data. Performed open-coded analysis.",
+            "Found that autocomplete speeds up information acquisition but may not increase productivity. Published and presented the paper at \\textbf{FSE 2024}.",
+            "Assessed the costs and benefits of IDE-based autocomplete for programmers working with an unfamiliar API.",
+            "Designed and executed a between-subject experiment with 32 participants using an eye tracker.",
             "Found that participants who used autocomplete learned more while spending less time reading documentation, although autocomplete did not significantly reduce the number of keystrokes required to complete tasks.",
             "Developed an user interaction tracking platform for VSCode for the web, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
             // "Designed and implemented a VSCode extension for running experiment."
@@ -84,7 +86,7 @@ const source = [
         "start_date": "September 2023",
         "end_date": "December 2023",
         "details": [
-            "Investigated whether an avatar appearing in the ChatGPT interface would help create a better communication environment between humans and machines, particularly in terms of alleviating loneliness. Added an avatar to the ChatGPT interface and found no significant difference in a 10 people pilot study",
+            "Investigated whether an avatar appearing in the ChatGPT interface would help create a better communication environment between humans and machines, particularly in terms of alleviating loneliness. Added an avatar to the ChatGPT interface and found no significant difference in a 10 people pilot study. ",
         ]
     },
     {
@@ -117,8 +119,9 @@ const source = [
         "type": "TA",
         "end_date": "now",
         "details": [
-            "TA for the Usability of Programming Languages course (CSE291) with Michael Coblenz for one quarter.",
+            "TA for the Usability of Programming Languages course (CSE291) with Michael Coblenz for one quarter. And TA for the Antisocial Computing (CSE 291) with Kristen Vaccaro for one quarter.",
             "Lead class, discussions and office hours, graded assignments, and provided personalized advice to students.",
+            "Received an 'Excellent' rating from the instructor for both courses, and a 90\\%+ student recommendation rate."
         ]
     },
     {
