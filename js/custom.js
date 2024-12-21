@@ -79,6 +79,14 @@ $(document).ready(function() {
         disable: 'mobile'
     });
 
+    
+    $('.portfolio_filter1 a').click(function() {
+        $('.portfolio_filter1 .active').removeClass('active');
+        $(this).addClass('active');
+
+        return false;
+    });
+
     //  isotope
     $('#projects').waitForImages(function() {
         var $container = $('.portfolio_container');
@@ -100,6 +108,7 @@ $(document).ready(function() {
             });
             return false;
         });
+        
 
     });
 

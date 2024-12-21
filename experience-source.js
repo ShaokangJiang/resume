@@ -45,7 +45,7 @@ const source = [
         "institution": "Independent (supervised by Jimmy Koppel and Michael Coblenz)",
         "type": "Research",
         "start_date": "April 2024",
-        "end_date": "now",
+        "end_date": "October 2024",
         "details": [
             "Found that users assisted by LLM chatbots were less confident and more confused, while those using tutorials had a better understanding of the code structure but struggled with low-level coding challenges based on the survey.",
             "A between-subjects study involving 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",

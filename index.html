@@ -16,6 +16,7 @@
     <link href="css/aos.css" rel="stylesheet">
     <!-- main style -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="./experience-source.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -188,8 +189,12 @@
                 font-size: 18px;
             }
         }
-    </style>
 
+        #publications {
+            padding-top: 100px;
+            background: #f3f3f3;
+        }
+    </style>
 </head>
 
 <body>
@@ -238,20 +243,20 @@
                     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                 </div>
                 <div style="display: flex;align-items: center;min-height: 70px;"> <button type="button"
-                        class="btn btn-outline-primary btn-lg"
-                        onclick="window.location.href='https://shaokang.me'">⬅️ To My Blog </button></div>
+                        class="btn btn-outline-primary btn-lg" onclick="window.location.href='https://shaokang.me'">⬅️
+                        To My Blog </button></div>
                 <ul class="hidden-xs">
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">education</a></li>
                     <li><a href="#skills">skill</a></li>
                     <li><a href="#experience">experience</a></li>
-                    <li><a href="#Publications">publications</a></li>
+                    <li><a href="#publications">publications</a></li>
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
                 <div style="display: flex;align-items: center;min-height: 70px;">
                     <button type="button" class="btn btn-outline-primary btn-lg"
-                        onclick="window.location.href='./pdf.html'">PDF verison ➡️</button>
+                        onclick="window.location.href='./pdf.html'">PDF version ➡️</button>
                     <!--substitute with correct way in final version-->
                 </div>
             </div>
@@ -266,6 +271,8 @@
                 <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
                     <h4>Shaokang Jiang</h4>
                     <h1>Resume</h1>
+                    <b>Researcher on computer supported collaboration work, software engineering, HCI, and social
+                        computing. </b>
                 </div>
             </div>
         </div>
@@ -285,9 +292,21 @@
                 <h4>01</h4>
                 <h1 class="size-50">About me</h1>
                 <div class="h-50"></div>
-                <p>I am a Master student from Deparrment of Computer Science and Engineering at University of
-                    California, San Diego and located at San Diego, CA currently. During my studies, I explored and undertook projects in various areas of computer science. These projects ranged from decision-making processes, handling natural language processing, enhancing user experience, automating and integrating continuous deployment, and conducting software engineering research. During my previous research experience, I designed and conducted user studies for software engineers to assess the usability of programming tools. In a recent project aimed at delivering health information to college students, I led a team of four in developing a cross-platform application. We utilized Cloudflare, GitHub Actions, Expo, and more to provide health information to college students, following agile procedures. I am eager to learn and understand the nature of real-world, industry-standard software engineering soon by taking a job in software engineering. My goal is to apply my knowledge in designing and developing applications, with the hope of improving group work communications. 
-                    </p>
+                <p>I am a Master student from CSE at University of
+                    California, San Diego and located at San Diego, CA currently.
+                    Individuals and groups often struggle with programming, collaboration, learning and using software
+                    or systems effectively and equitably. Observing programmers struggle to start with new codebases
+                    drives my passion for improving the programming environment. This motivates my pursuit of a Ph.D. in
+                    computer supported collaboration work, software engineering, HCI, and social computing.
+                </p>
+                <p>My previous research focuses on human-computer interaction, software engineering, and social
+                    computing. I designed and conducted an eye-tracking study integrated with a VSCode-based platform to
+                    evaluate autocomplete features, finding they improve information acquisition but do not necessarily
+                    boost productivity, and published the results at <b>FSE 2024</b>. I collaborated with others on a
+                    large-scale experiment with 172 participants to explore how LLM-driven conversational cues influence
+                    idea generation, submitted to <b>CSCW 2025</b>. Additionally, I found LLM chatbots made experienced
+                    programmers feel confused, accepted at <b>PLATEAU 2025</b>. I also work on auditing YouTube's
+                    recommendation systems to assess the impact of long and short videos on content delivery.</p>
             </div>
             <div class="col-md-6 about-img-div hidden-xs">
                 <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
@@ -311,14 +330,14 @@
                     <li class="timeline-event" data-aos="fade-up">
                         <label class="timeline-event-icon"></label>
                         <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">Sept 2022 - Jun 2024 (expected)</p>
+                            <p class="timeline-event-thumbnail">Sept 2022 - March 2025 (expected)</p>
                             <h3>University of California San Diego</h3>
                             <h4>M.S. in Computer Science and Engineering</h4>
                             <p><b>San Diego, CA</b><br>Planned Thesis: “Usability analysis of autocomplete”
                                 <br>Advised by Michael Coblenz
+                                <br>Also supervised by Kristen Vaccaro, Deepak Kumar, and Steven Dow
                             </p>
                         </div>
-
                     </li>
                     <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
                         <label class="timeline-event-icon"></label>
@@ -345,92 +364,105 @@
         <div class="container">
             <div class="col-md-12">
                 <h4>03</h4>
-                <h1 class="size-50">Experience</h1>
-                <p>Only paid experiences are included here. Please refer to the PDF for the complete list of experiences.</p>
+                <h1 class="size-50">Research Experience</h1>
+                
+                <div class="categories-grid wow fadeInLeft">
+                    <nav class="categories">
+                        <ul class="portfolio_filter1">
+                            <li><a href="#" class="active">Selected</a></li>
+                            <li><a href="#" >desktop</a></li>
+                            <li><a href="#" >Mobile</a></li>
+                            <li><a href="#" >Website</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                
                 <div class="h-50"></div>
             </div>
             <div class="col-md-12">
-                <ul class="timeline">
+                <ul class="timeline" id="experience-timeline">
 
-                    
-                    <li class="timeline-event" data-aos="fade-up">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">Sept 2023 - now</p>
-                            <h3>Teaching Assistant</h3>
-                            <h4>University of California San Diego</h4>
-                            <p>Sole Ta worked with Michael Coblenz for the usability of the programming language course (CSE291) for one quarter. <br /> Had discussions with the professor about the content of this course, graded assignments, hosted some discussions
-                                during the main lecture covering specific course content, and provided personalized advice to individual students.</p>
-                        </div>
-                    </li>
+                    <script>
+                        function filterAndCombine(source, config, startTime) {
+                            let combined = [];
+                            for (let i of config) {
+                                if (i.includes("-combined")) {
+                                    combined = combined.concat(source_combined[i.split("-")[0]]);
+                                } else {
+                                    combined = combined.concat(source.filter(entry => entry.type === i && new Date(entry.start_date) >= startTime));
+                                }
+                            }
+                            combined.sort((a, b) => {
+                                const startDateComparison = new Date(b.start_date) - new Date(a.start_date);
+                                if (startDateComparison !== 0) {
+                                    return startDateComparison;
+                                }
+                                if (b.end_date === "now") return 1;
+                                if (a.end_date === "now") return -1;
+                                return new Date(b.end_date) - new Date(a.end_date);
+                            });
+                            return combined;
+                        }
 
-                    
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">Jan 2023 - Sept 2023</p>
-                            <h3>Graduate student researcher</h3>
-                            <h4>University of California San Diego</h4>
-                            <p>Worked with Michael Coblenz on the usability analysis of autocomplete. <br /> Designed and executed an experiment with 32 participants using an eye tracker to evaluate the costs and benefits of
-                                IDE-based autocomplete features to programmers who use an unfamiliar API; analyzed data using JMP; and wrote a
-                                paper for the study. <br /> Found that participants who used autocomplete learned more about the API while spending less time reading the
-                                documentation; found autocomplete did not significantly reduce the number of keystrokes required to finish tasks.</p>
-                        </div>
-                    </li>
 
-                    
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">Jan 2023 - Jun 2023</p>
-                            <h3>Teaching Assistant</h3>
-                            <h4>University of California San Diego</h4>
-                            <p>Major Ta worked with Soohyun Liao for Java and data structure courses (DSC30) for two quarters. <br /> Proposed, designed, and developed entirely new and innovative assignments and projects for the entire course, most of
-                                which had never been used elsewhere, in collaboration with the professor. Graded students' assignments. Collaborated
-                                with team members to discuss and refine the content of the course.</p>
-                        </div>
-                    </li>
+                        let count = 0;
+                        filterAndCombine(source, ["Research"], new Date("January 2021")).forEach(entry => {
+                            entry.details = entry.details.map(detail => {
+                                return detail
+                                    .replace(/\\textbf{([^}]*)}/g, '<b>$1</b>')
+                                    .replace(/\\textit{([^}]*)}/g, '<i>$1</i>')
+                                    .replace(/\\underline{([^}]*)}/g, '<u>$1</u>')
+                                    .replace(/\\section{([^}]*)}/g, '<h2>$1</h2>')
+                                    .replace(/\\subsection{([^}]*)}/g, '<h3>$1</h3>')
+                                    .replace(/\\subsubsection{([^}]*)}/g, '<h4>$1</h4>')
+                                    .replace(/\\emph{([^}]*)}/g, '<em>$1</em>')
+                                    .replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1">$2</a>')
+                                    .replace(/\\url{([^}]*)}/g, '<a href="$1">$1</a>')
+                                    .replace(/\\texttt{([^}]*)}/g, '<code>$1</code>')
+                                    .replace("\\%", "%");
+                            });
 
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".6">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">Aug 2018 - May 2019</p>
-                            <h3>Teaching Assistant</h3>
-                            <h4>Illinois Institute of Technology</h4>
-                            <p>Instructed students in lab sessions of Java courses and held oﬀice hours to help students
-                                best understand class content <br /> Checked their homework regularly and had
-                                discussions with the professor and collaborated with team
-                                members aboutways to improve this course and solve the major problems of students.</p>
-                        </div>
-                    </li>
+                            const li = document.createElement('li');
+                            li.className = 'timeline-event';
+                            li.setAttribute('data-aos', 'fade-up');
+                            li.setAttribute('data-aos-delay', `${parseInt(count / 2) * 0.2}`);
 
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".8">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">Jan 2019 - May 2019</p>
-                            <h3>Student Assistant at ARC</h3>
-                            <h4>Illinois Institute of Technology</h4>
-                            <p>Tutoring and teaching students with their coursework related to computer science</p>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay="1">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">Jan 2019 - May 2019</p>
-                            <h3>Research Assistant</h3>
-                            <h4>Illinois Institute of Technology</h4>
-                            <p>Modified POW (Bitcoin) and POS (EOSIO) blockchain source code for execution on a blockchain emulator, facilitating
-                                performance measurement for researchers.</p>
-                        </div>
-                    </li>
+                            const label = document.createElement('label');
+                            label.className = 'timeline-event-icon';
+                            li.appendChild(label);
+
+                            const div = document.createElement('div');
+                            div.className = 'timeline-event-copy';
+
+                            const p = document.createElement('p');
+                            p.className = 'timeline-event-thumbnail';
+                            p.textContent = `${entry.start_date} - ${entry.end_date}`;
+                            div.appendChild(p);
+
+                            const h3 = document.createElement('h3');
+                            h3.textContent = entry.position;
+                            div.appendChild(h3);
+
+                            const h4 = document.createElement('h4');
+                            h4.textContent = entry.institution;
+                            div.appendChild(h4);
+
+                            const ul = document.createElement('ul');
+                            entry.details.forEach(detail => {
+                                const liDetail = document.createElement('li');
+                                liDetail.innerHTML = detail;
+                                ul.appendChild(liDetail);
+                            });
+                            div.appendChild(ul);
+
+                            li.appendChild(div);
+                            document.getElementById('experience-timeline').appendChild(li);
+                            count++;
+                        });
+                    </script>
+
                 </ul>
-            </div>
-            <div class="col-md-12" data-aos="fade-up" style="padding-top: 100px;" id="Publications">
-                <h4>04</h4>
-                <h1 class="size-50">Publications</h1>
-            </div>
-            <div class="col-md-12" data-aos="fade-up">
-                Shaokang Jiang and Michael Coblenz. <b>An Analysis of the Costs and Benefits of Autocomplete in IDEs</b>. In review, ACM International Symposium on Foundations of Software Engineering (FSE 2024)
             </div>
         </div>
     </div>
@@ -456,11 +488,12 @@
                         src="https://api.iconify.design/vscode-icons:file-type-c.svg" width="50px"
                         referrerpolicy="no-referrer" alt="C" title="C"> &nbsp;&nbsp; <img
                         src="https://api.iconify.design/logos:html-5.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="HTML" title="HTML"> &nbsp;&nbsp; <img src="https://api.iconify.design/teenyicons/rust-outline.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Rust" title="Rust"> &nbsp;&nbsp; <img src="https://api.iconify.design/el:css.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="CSS" title="CSS"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/ion:logo-javascript.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="Javascript" title="Javascript"> &nbsp;&nbsp; <img
+                        alt="HTML" title="HTML"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/teenyicons/rust-outline.svg" referrerpolicy="no-referrer"
+                        width="50px" alt="Rust" title="Rust"> &nbsp;&nbsp; <img
+                        src="https://api.iconify.design/el:css.svg" referrerpolicy="no-referrer" width="50px" alt="CSS"
+                        title="CSS"> &nbsp;&nbsp; <img src="https://api.iconify.design/ion:logo-javascript.svg"
+                        referrerpolicy="no-referrer" width="50px" alt="Javascript" title="Javascript"> &nbsp;&nbsp; <img
                         src="https://api.iconify.design/vscode-icons:file-type-jsp.svg" referrerpolicy="no-referrer"
                         width="50px" alt="Jsp" title="Jsp"> &nbsp;&nbsp;
                     <img src="https://api.iconify.design/mdi:git.svg" referrerpolicy="no-referrer" width="50px"
@@ -471,14 +504,14 @@
                         src="https://api.iconify.design/ion:logo-markdown.svg" referrerpolicy="no-referrer" width="50px"
                         alt="Markdown" title="Markdown"> &nbsp;&nbsp; <img
                         src="https://api.iconify.design/logos:react.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="React" title="React">  &nbsp;&nbsp;
+                        alt="React" title="React"> &nbsp;&nbsp;
                     <img src="https://api.iconify.design/vscode-icons:file-type-light-expo.svg"
                         referrerpolicy="no-referrer" width="50px" alt="Expo" title="Expo"> &nbsp;&nbsp; <img
                         src="https://api.iconify.design/file-icons:ejs.svg" referrerpolicy="no-referrer" width="50px"
                         alt="ejs" title="ejs">&nbsp;&nbsp;<img src="https://api.iconify.design/mdi:bash.svg"
                         referrerpolicy="no-referrer" width="50px" alt="bash" title="bash">
-                        
-                        
+
+
 
                 </div>
 
@@ -501,9 +534,8 @@
                         src="https://api.iconify.design/logos:trello.svg" referrerpolicy="no-referrer" width="50px"
                         alt="Trello" title="Trello"> &nbsp;&nbsp;<img
                         src="https://api.iconify.design/simple-icons:azuredevops.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="DevOps" title="DevOps"> &nbsp;&nbsp;<img
-                        src="https://shaokang.me/agility.png" referrerpolicy="no-referrer" width="50px"
-                        alt="Agility" title="Agility"> &nbsp;&nbsp;<img
+                        width="50px" alt="DevOps" title="DevOps"> &nbsp;&nbsp;<img src="https://shaokang.me/agility.png"
+                        referrerpolicy="no-referrer" width="50px" alt="Agility" title="Agility"> &nbsp;&nbsp;<img
                         src="https://api.iconify.design/carbon:watson.svg" referrerpolicy="no-referrer" width="50px"
                         alt="Watson" title="Watson"> &nbsp;&nbsp;<img
                         src="https://api.iconify.design/simple-icons:dialogflow.svg" referrerpolicy="no-referrer"
@@ -512,9 +544,8 @@
                         width="50px" alt="Adobe XD" title="Adobe XD">&nbsp;&nbsp;<img
                         src="https://api.iconify.design/vscode-icons:file-type-bitbucketpipeline.svg"
                         referrerpolicy="no-referrer" width="50px" alt="Bitbucket" title="Bitbucket">&nbsp;&nbsp;
-                        <img src="./img/JMP.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="JMP" title="JMP">
-                        &nbsp;&nbsp;<img src="https://api.iconify.design/teenyicons/docker-outline.svg"
+                    <img src="./img/JMP.svg" referrerpolicy="no-referrer" width="50px" alt="JMP" title="JMP">
+                    &nbsp;&nbsp;<img src="https://api.iconify.design/teenyicons/docker-outline.svg"
                         referrerpolicy="no-referrer" width="50px" alt="docker" title="docker">
                 </div>
             </div>
@@ -529,7 +560,10 @@
             <div class="col-md-12">
                 <h4>06</h4>
                 <h1 class="size-50">Projects</h1>
-                <h5>The following projects are selected based on my learning progress during undergraduate studies. They are intended to represent the journey of my self-learning in programming. To view the full list of projects, which includes more meaningful and interesting projects from both undergraduate and graduate studies, please visit <a href="https://shaokang.me/projects/" target="_blank">my blog</a> or my <a href="https://github.com/shaokangJiang/" target="_blank">GitHub</a>. <br />Click each widget to see the detail.
+                <h5>The following projects are selected based on my learning progress during undergraduate studies. They
+                    are intended to represent the journey of my self-learning in programming. To view the code, visit my
+                    <a href="https://github.com/shaokangJiang/" target="_blank">GitHub</a>. <br />Click each
+                    widget to see the detail.
                 </h5>
             </div>
             <!-- main container -->
@@ -726,8 +760,7 @@
                     <li><a href="https://www.linkedin.com/in/shaokang-jiang-0a66461a2/" title="LinkedIn"><i
                                 class="ion-social-linkedin"></i></a></li>
                     <li><a href="https://shaokang.me" title="Blog"><i class="ion-ios-book"></i></a></li>
-                    <li><a href="https://shaokang.me/rss2.xml" title="Rss"><i
-                                class="ion-social-rss"></i></a></li>
+                    <li><a href="https://shaokang.me/rss2.xml" title="Rss"><i class="ion-social-rss"></i></a></li>
                     <li><a href="mailto:huangsk100@gmail.com" title="Email"><i class="ion-email"></i></a></li>
                 </ul>
                 <div class="clearfix"></div>
