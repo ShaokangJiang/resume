@@ -22,7 +22,7 @@ const source = [
         "end_date": "October 2024",
         "details": [
             "Found LLM-driven conversational cues significantly increased the topical diversity of generated ideas and conversations, while modality had no significant impact. The paper was submitted to \\textbf{CSCW 2025}.",
-            "Redesigned and deployed an online meeting platform. Implemented separate interfaces for facilitators and participants, integrated Firebase for real-time communication, Daily.js for meetings, and GPT-based cues. Resolved bugs left by previous teams and iteratively refined the platform based on pilot feedback, enabling 86 meetings.", 
+            "Redesigned and deployed an online meeting platform. Implemented separate interfaces for facilitators and participants, integrated Firebase for real-time communication, Daily.js for meetings, and GPT-based cues. Resolved bugs left by previous teams and iteratively refined the platform based on pilot feedback, enabling 86 meetings.",
             "Organized and transcribed data for a 2 (cue vs. no cue) x 2 (in-person vs. remote) experiment with 172 participants. Worked closely with Jude and other group members. Led and performed quantitative data analysis on the generated ideas and conversations. Wrote the design decisions, implementation, and data analysis sections of the paper.",
             "For another workshop management project, designed and developed a 4-component workshop management system for real-time user engagement with socket.io, electron, DDNS, MailJet and prompt-engineered GPTs to foster a better, more engaging conversation experience."
         ]
@@ -38,6 +38,15 @@ const source = [
             "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video (a short-form video) is a clip of another (a long-form video), outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server using Javascript.",
             "Developed a stateless interactive rating and data collection system with CI/CD integration using GitHub Actions and Cloudflare Workers for data storage, enabling users to label the political leaning of long and short videos based on transcripts and some pairing information.",
             "Assessed methods for measuring the leanings of media houses, utilizing AllSides and other existing models."
+        ],
+        "link": [
+            { description: "Early stage metadata visualization", link: "https://information.1442334619.workers.dev/" }, 
+            {
+                description: "Manually labelling system", link: "https://yt.shaokang.me/"
+            },
+            {
+                description: "Sample matched pairs", link: "https://yt.shaokang.me/0612"
+            }
         ]
     },
     {
@@ -50,7 +59,8 @@ const source = [
             "Found that users assisted by LLM chatbots were less confident and more confused, while those using tutorials had a better understanding of the code structure but struggled with low-level coding challenges based on the survey.",
             "A between-subjects study involving 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",
             "Restructured the study, discussed, designed, and implemented an analysis plan with both qualitative and quantitative components, transcribed, coded, and utilized NLP to analyze the recordings, and wrote and submitted a paper to \\textbf{Plateau 2025}."
-        ]
+        ],
+        "link": [{ description: "Accepted paper", link: "https://resume.shaokang.me/papers/chatbotvstutorial.pdf" }]
     },
     {
         "position": "Graduate Student Researcher",
@@ -65,7 +75,26 @@ const source = [
             "Found that participants who used autocomplete learned more while spending less time reading documentation, although autocomplete did not significantly reduce the number of keystrokes required to complete tasks.",
             "Developed an user interaction tracking platform for VSCode for the web, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
             // "Designed and implemented a VSCode extension for running experiment."
-        ]
+        ],
+        "link": [{
+            description: "Blog post - paper",
+            link: "https://shaokang.me/2023/Usability-analysis-of-autocomplete/"
+        }, {
+            description: "Blog post - fixation algorithm",
+            link: "https://shaokang.me/2023/Eye-tracking-fixation-algorithm/"
+        }, {
+            description: "Blog post - VSCode extension",
+            link: "https://shaokang.me/2022/Build-VSCode-extension/"
+        }, {
+            description: "Published paper",
+            link: "https://dl.acm.org/doi/abs/10.1145/3660765"
+        }, {
+            description: "Published artifact",
+            link: "https://dl.acm.org/do/10.1145/3580435/full/"
+        }, {
+            description: "Poster",
+            link: "https://resume.shaokang.me/papers/autocomplete-poster.pdf"
+        }]
     },
     {
         "position": "Usability of PL Course Project",
@@ -77,6 +106,9 @@ const source = [
             "Investigated whether Python Type Hints are helpful for competitive programmers.",
             "Designed and executed an experiment, containing tasks and interview, with 4 participants.",
             "Found that Python type hints were not significantly more useful for competitive programmers in terms of task completion time and debugging time. Open coded of interview results and transcripts indicated programmers feel adding type hints and the popped out autocomplete suggestions to be annoying."
+        ],
+        "link": [
+            { description: "Blog post", link: "https://shaokang.me/2022/Whether-Python-Type-Hints-are-helpful-for-competitive-programmers-CP/" }
         ]
     },
     {
@@ -87,7 +119,8 @@ const source = [
         "end_date": "December 2023",
         "details": [
             "Investigated whether an avatar appearing in the ChatGPT interface would help create a better communication environment between humans and machines, particularly in terms of alleviating loneliness. Added an avatar to the ChatGPT interface and found no significant difference in a 10 people pilot study. ",
-        ]
+        ],
+        "link": [{ description: "Blog post", link: "https://shaokang.me/2023/Fighting-loneliness-using-generative-AI-with-avatar/" }]
     },
     {
         "position": "Research Assistant",
@@ -145,8 +178,11 @@ const source = [
         "details": [
             "Major TA for Java and Data Structure courses (DSC30) with Soohyun Liao for two quarters.",
             "Proposed, and developed new and innovative assignments and projects for the course, in collaboration with the professor. Graded students' assignments, held office hours and conducted all discussion sections. Taught additional, non-required concepts during discussion sections.",
-            "A 90\\%+ student recommendation rate, while the professor rating was not applicable."
-        ]
+            "A 90\\%+ student recommendation rate, while the professor rating was not applicable.", 
+            "Designed and developed an interactive shell with session management using JSP and Servlets deployed on Azure, allowing students to try solutions online without exposing the source code. Successfully supported 30+ users simultaneously."
+        ],
+        "link": [{ description: "Blog post", link: "https://shaokang.me/2023/JSP-java-emulator/" }]
+
     },
     {
         "position": "Volunteer Tutor",
@@ -214,11 +250,11 @@ const source_combined = {
                 "Developed a method to match long and short items using a novel matching algorithm, and devised a mixed design to measure, collect, and evaluate outcome variables, such as the video leaning.",
                 "Worked with Jude Abishek Rayan under the guidance of Steven Dow on improving conference communication protocols for projects CueHub and a conference management system.",
                 "Designed, implemented, tested, and deployed software using React, Firebase, Flask, GitHub Actions, Cloudflare, and Oracle Cloud, based on the weekly discussion results. Improved the product in a rapid process and assisted in designing the entire research workflow."
-            ], 
+            ],
             "work_details": [
                 "Worked with professors and researchers on projects. Published paper at FSE 2024. Submitted to CSCW 2025.",
                 "Developed an universal user interaction tracking platform for VSCode, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
-                "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video is a clip of another, outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server.", 
+                "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video is a clip of another, outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server.",
                 "Worked on and deployed an online meeting platform left by a previous team, adding separate interfaces for facilitators and participants, Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues, resolving critical bugs and enabling 86 meetings.",
                 "Developed a workshop management system for real-time user engagement with socket.io, electron, DDNS, MailJet, reverse proxy, and prompt-engineered GPTs to foster a better conversation."
             ]
@@ -237,9 +273,9 @@ const source_combined = {
                 "Sole TA for Compilers (CSE 131) with Yufei Ding for one quarter, and Introduction to Data Visualization (DSC 106) with Sam Lau for another quarter.",
                 "Guided group projects on programming languages and software engineering topics, and proposed, designed, and developed innovative course assignments.", "Managed course logistics, graded assignments, and collaborated with the professor and team members to refine course content. Conducted office hours and discussion sections to assist students and deepen their understanding.",
                 "Received 'Excellent' ratings from instructors and a 90\\%+ student recommendation rate in course evaluations."
-            ], 
+            ],
             "work_details": [
-                "Served as the sole or lead TA for several courses, including Java and Data Structures, Usability of Programming Languages, and Compilers. Received 'Excellent' ratings from instructors and a 90\\%+ student recommendation rate.", 
+                "Served as the sole or lead TA for several courses, including Java and Data Structures, Usability of Programming Languages, and Compilers. Received 'Excellent' ratings from instructors and a 90\\%+ student recommendation rate.",
                 "Developed several assignment and unit tests using JUnit on Docker, created templates with GitHub Actions, and helped students with the code merge process.",
                 "Developed an interactive shell with session management using JSP and Servlets deployed on Azure, allowing students to try solutions online without exposing the source code. Successfully supported 30+ users simultaneously.",
             ]
