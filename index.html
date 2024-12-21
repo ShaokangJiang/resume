@@ -364,103 +364,24 @@
         <div class="container">
             <div class="col-md-12">
                 <h4>03</h4>
-                <h1 class="size-50">Research Experience</h1>
-                
+                <h1 class="size-50" id="experience-title">Research Experience</h1>
+
                 <div class="categories-grid wow fadeInLeft">
                     <nav class="categories">
                         <ul class="portfolio_filter1">
-                            <li><a href="#" class="active">Selected</a></li>
-                            <li><a href="#" >desktop</a></li>
-                            <li><a href="#" >Mobile</a></li>
-                            <li><a href="#" >Website</a></li>
+                            <li><a href="#" onclick="render(['Research', 'TA', 'Work'])">All</a></li>
+                            <li><a href="#" class="active" onclick="render(['Research'])">Research</a></li>
+                            <li><a href="#" onclick="render(['TA', 'Work'])">TA & work</a></li>
                         </ul>
                     </nav>
                 </div>
 
-                
+
                 <div class="h-50"></div>
             </div>
             <div class="col-md-12">
                 <ul class="timeline" id="experience-timeline">
 
-                    <script>
-                        function filterAndCombine(source, config, startTime) {
-                            let combined = [];
-                            for (let i of config) {
-                                if (i.includes("-combined")) {
-                                    combined = combined.concat(source_combined[i.split("-")[0]]);
-                                } else {
-                                    combined = combined.concat(source.filter(entry => entry.type === i && new Date(entry.start_date) >= startTime));
-                                }
-                            }
-                            combined.sort((a, b) => {
-                                const startDateComparison = new Date(b.start_date) - new Date(a.start_date);
-                                if (startDateComparison !== 0) {
-                                    return startDateComparison;
-                                }
-                                if (b.end_date === "now") return 1;
-                                if (a.end_date === "now") return -1;
-                                return new Date(b.end_date) - new Date(a.end_date);
-                            });
-                            return combined;
-                        }
-
-
-                        let count = 0;
-                        filterAndCombine(source, ["Research"], new Date("January 2021")).forEach(entry => {
-                            entry.details = entry.details.map(detail => {
-                                return detail
-                                    .replace(/\\textbf{([^}]*)}/g, '<b>$1</b>')
-                                    .replace(/\\textit{([^}]*)}/g, '<i>$1</i>')
-                                    .replace(/\\underline{([^}]*)}/g, '<u>$1</u>')
-                                    .replace(/\\section{([^}]*)}/g, '<h2>$1</h2>')
-                                    .replace(/\\subsection{([^}]*)}/g, '<h3>$1</h3>')
-                                    .replace(/\\subsubsection{([^}]*)}/g, '<h4>$1</h4>')
-                                    .replace(/\\emph{([^}]*)}/g, '<em>$1</em>')
-                                    .replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1">$2</a>')
-                                    .replace(/\\url{([^}]*)}/g, '<a href="$1">$1</a>')
-                                    .replace(/\\texttt{([^}]*)}/g, '<code>$1</code>')
-                                    .replace("\\%", "%");
-                            });
-
-                            const li = document.createElement('li');
-                            li.className = 'timeline-event';
-                            li.setAttribute('data-aos', 'fade-up');
-                            li.setAttribute('data-aos-delay', `${parseInt(count / 2) * 0.2}`);
-
-                            const label = document.createElement('label');
-                            label.className = 'timeline-event-icon';
-                            li.appendChild(label);
-
-                            const div = document.createElement('div');
-                            div.className = 'timeline-event-copy';
-
-                            const p = document.createElement('p');
-                            p.className = 'timeline-event-thumbnail';
-                            p.textContent = `${entry.start_date} - ${entry.end_date}`;
-                            div.appendChild(p);
-
-                            const h3 = document.createElement('h3');
-                            h3.textContent = entry.position;
-                            div.appendChild(h3);
-
-                            const h4 = document.createElement('h4');
-                            h4.textContent = entry.institution;
-                            div.appendChild(h4);
-
-                            const ul = document.createElement('ul');
-                            entry.details.forEach(detail => {
-                                const liDetail = document.createElement('li');
-                                liDetail.innerHTML = detail;
-                                ul.appendChild(liDetail);
-                            });
-                            div.appendChild(ul);
-
-                            li.appendChild(div);
-                            document.getElementById('experience-timeline').appendChild(li);
-                            count++;
-                        });
-                    </script>
 
                 </ul>
             </div>
@@ -471,7 +392,7 @@
 
     <!-- skills -->
     <div class="section" id="skills">
-        <div class="container">
+        <div class="container" style="padding-bottom: 100px;">
             <h4>05</h4>
             <h1 class="size-50">Skills</h1>
             <h5>Proficient in the following skills, but know more than this. And I could adjust and learn new skills
@@ -479,74 +400,153 @@
             <div class="h-50"></div>
             <div class="col-md-6" data-aos="fade-up">
 
-
-                <h3>Coding</h3>
+                <h3>Languages</h3>
                 <div>
-                    <img src="https://api.iconify.design/logos:java.svg" width="50px" referrerpolicy="no-referrer"
-                        alt="Java" title="Java"> &nbsp;&nbsp; <img src="https://api.iconify.design/logos:python.svg"
-                        width="50px" referrerpolicy="no-referrer" alt="Python" title="Python"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/vscode-icons:file-type-c.svg" width="50px"
-                        referrerpolicy="no-referrer" alt="C" title="C"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/logos:html-5.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="HTML" title="HTML"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/teenyicons/rust-outline.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="Rust" title="Rust"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/el:css.svg" referrerpolicy="no-referrer" width="50px" alt="CSS"
-                        title="CSS"> &nbsp;&nbsp; <img src="https://api.iconify.design/ion:logo-javascript.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Javascript" title="Javascript"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/vscode-icons:file-type-jsp.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="Jsp" title="Jsp"> &nbsp;&nbsp;
-                    <img src="https://api.iconify.design/mdi:git.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="Git" title="Git"> &nbsp;&nbsp; <img src="https://api.iconify.design/file-icons:latex.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Latex" title="Latex"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/file-icons:gams.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="GAMS" title="GAMS"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/ion:logo-markdown.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="Markdown" title="Markdown"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/logos:react.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="React" title="React"> &nbsp;&nbsp;
-                    <img src="https://api.iconify.design/vscode-icons:file-type-light-expo.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Expo" title="Expo"> &nbsp;&nbsp; <img
-                        src="https://api.iconify.design/file-icons:ejs.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="ejs" title="ejs">&nbsp;&nbsp;<img src="https://api.iconify.design/mdi:bash.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="bash" title="bash">
-
-
-
+                    <img src="https://api.iconify.design/logos:java.svg" width="50px" alt="Java" title="Java">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:python.svg" width="50px" alt="Python" title="Python">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/teenyicons/rust-outline.svg" width="50px" alt="Rust"
+                        title="Rust"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-c.svg" width="50px" alt="C" title="C">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-cpp.svg" width="50px" alt="C++"
+                        title="C++"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-csharp.svg" width="50px" alt="C#"
+                        title="C#"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:html-5.svg" width="50px" alt="HTML" title="HTML">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/el:css.svg" width="50px" alt="CSS" title="CSS"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/ion:logo-javascript.svg" width="50px" alt="JavaScript"
+                        title="JavaScript"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:typescript-icon.svg" width="50px" alt="TypeScript"
+                        title="TypeScript"> &nbsp;&nbsp;
+                    <img src="./img/MATLAB.svg" width="50px" alt="Matlab" title="Matlab">
+                        &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/file-icons:latex.svg" width="50px" alt="LaTeX" title="LaTeX">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/file-icons:gams.svg" width="50px" alt="GAMS" title="GAMS">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/ion:logo-markdown.svg" width="50px" alt="Markdown"
+                        title="Markdown"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:haskell.svg" width="50px" alt="Haskell" title="Haskell">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/carbon:sql.svg" width="50px" alt="SQL" title="SQL">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/file-icons:ejs.svg" width="50px" alt="Embedded JavaScript"
+                        title="Embedded JavaScript"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/simple-icons:blogger.svg" width="50px"
+                        alt="Blogger Template Language" title="Blogger Template Language"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/mdi:bash.svg" width="50px" alt="Shell" title="Shell">
                 </div>
-
             </div>
-            <div class="col-md-6" data-aos="fade-up" style="padding-bottom: 100px;">
-                <h3>Environment</h3>
+            <div class="col-md-6" data-aos="fade-up">
+                <h3>Frameworks</h3>
                 <div>
-                    <img src="https://api.iconify.design/logos:microsoft-windows.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="Windows" title="Windows"> &nbsp;&nbsp;<img
-                        src="https://api.iconify.design/logos:linux-tux.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="Linux" title="Linux"> &nbsp;&nbsp;<img src="https://api.iconify.design/carbon:sql.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="SQL" title="SQL"> &nbsp;&nbsp;<img
-                        src="https://api.iconify.design/mdi:github.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="Github" title="Github"> &nbsp;&nbsp;<img
-                        src="https://api.iconify.design/logos:cloudflare.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="Cloudflare worker/wrangler" title="Cloudflare worker/wrangler"> &nbsp;&nbsp;<img
-                        src="https://api.iconify.design/logos:azure-icon.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="Azure" title="Azure"> &nbsp;&nbsp;<img src="https://api.iconify.design/logos:jira.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="JIRA" title="JIRA"> &nbsp;&nbsp;<img
-                        src="https://api.iconify.design/logos:trello.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="Trello" title="Trello"> &nbsp;&nbsp;<img
-                        src="https://api.iconify.design/simple-icons:azuredevops.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="DevOps" title="DevOps"> &nbsp;&nbsp;<img src="https://shaokang.me/agility.png"
-                        referrerpolicy="no-referrer" width="50px" alt="Agility" title="Agility"> &nbsp;&nbsp;<img
-                        src="https://api.iconify.design/carbon:watson.svg" referrerpolicy="no-referrer" width="50px"
-                        alt="Watson" title="Watson"> &nbsp;&nbsp;<img
-                        src="https://api.iconify.design/simple-icons:dialogflow.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="dialogflow" title="dialogflow"> &nbsp;&nbsp;
-                    <img src="https://api.iconify.design/file-icons:adobe-xd.svg" referrerpolicy="no-referrer"
-                        width="50px" alt="Adobe XD" title="Adobe XD">&nbsp;&nbsp;<img
-                        src="https://api.iconify.design/vscode-icons:file-type-bitbucketpipeline.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="Bitbucket" title="Bitbucket">&nbsp;&nbsp;
-                    <img src="./img/JMP.svg" referrerpolicy="no-referrer" width="50px" alt="JMP" title="JMP">
-                    &nbsp;&nbsp;<img src="https://api.iconify.design/teenyicons/docker-outline.svg"
-                        referrerpolicy="no-referrer" width="50px" alt="docker" title="docker">
+                    <img src="https://api.iconify.design/logos:react.svg" width="50px" alt="React" title="React">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:nuxt-icon.svg" width="50px" alt="Nuxt" title="Nuxt">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:nodejs-icon.svg" width="50px" alt="Node.js"
+                        title="Node.js"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:vue.svg" width="50px" alt="Vue" title="Vue"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:jest.svg" width="50px" alt="Jest" title="Jest">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:vitest.svg" width="50px" alt="Vitest" title="Vitest">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-jsp.svg" width="50px"
+                        alt="JavaServer Pages" title="JavaServer Pages"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:flask.svg" width="50px" alt="Flask" title="Flask">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-light-expo.svg" width="50px" alt="Expo"
+                        title="Expo"> &nbsp;&nbsp;
+                    <img src="./img/JUnit.svg" width="50px" alt="JUnit" title="JUnit">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:svelte-icon.svg" width="50px" alt="Svelte"
+                        title="Svelte"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:vitejs.svg" width="50px" alt="VitePress"
+                        title="VitePress"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:hexo.svg" width="50px" alt="Hexo" title="Hexo">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:electron.svg" width="50px" alt="Electron"
+                        title="Electron"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:chrome.svg" width="50px" alt="Chrome Extensions"
+                        title="Chrome Extensions"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:visual-studio-code.svg" width="50px"
+                        alt="VSCode Extensions" title="VSCode Extensions"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:puppeteer.svg" width="50px" alt="Puppeteer"
+                        title="Puppeteer"> &nbsp;&nbsp;
+                    <img src="./img/tamper.png" width="50px" alt="Tampermonkey"
+                        title="Tampermonkey"> &nbsp;&nbsp;
+                    <img src="./img/javafx.png" width="50px" alt="JavaFX" title="JavaFX">
+                    &nbsp;&nbsp;
+                    <img src="./img/servletslogo.webp" width="50px" alt="Servlets"
+                        title="Servlets">
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+
+                <h3>Platforms/Tools</h3>
+                <div>
+                    <img src="https://api.iconify.design/logos:git-icon.svg" width="50px" alt="Git" title="Git">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:docker-icon.svg" width="50px" alt="Docker"
+                        title="Docker"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:github-icon.svg" width="50px" alt="GitHub"
+                        title="GitHub"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:google-cloud.svg" width="50px" alt="Google Cloud"
+                        title="Google Cloud"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:azure-icon.svg" width="50px" alt="Azure" title="Azure">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:cloudflare.svg" width="50px" alt="Cloudflare"
+                        title="Cloudflare"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:firebase.svg" width="50px" alt="Firebase"
+                        title="Firebase"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:oracle.svg" width="50px" alt="Oracle Cloud"
+                        title="Oracle Cloud"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:visual-studio-code.svg" width="50px" alt="VS Code"
+                        title="VS Code"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:visual-studio.svg" width="50px" alt="Visual Studio"
+                        title="Visual Studio"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:intellij-idea.svg" width="50px" alt="IntelliJ"
+                        title="IntelliJ"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:eclipse.svg" width="50px" alt="Eclipse" title="Eclipse">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:nginx.svg" width="50px" alt="Nginx" title="Nginx">
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+                <h3>Other Platforms</h3>
+                <div>
+                    <img src="https://api.iconify.design/logos:microsoft-windows.svg" width="50px" alt="Windows"
+                        title="Windows"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:linux-tux.svg" width="50px" alt="Linux" title="Linux">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:jira.svg" width="50px" alt="JIRA" title="JIRA">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:trello.svg" width="50px" alt="Trello" title="Trello">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/simple-icons:azuredevops.svg" width="50px" alt="DevOps"
+                        title="DevOps"> &nbsp;&nbsp;
+                    <img src="./img/agility.png" width="50px" alt="Agile" title="Agile">
+                    &nbsp;&nbsp;
+                    <img src="./img/JMP.svg" width="50px" alt="JMP" title="JMP"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:figma.svg" width="50px" alt="Figma" title="Figma">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:adobe-photoshop.svg" width="50px" alt="Photoshop"
+                        title="Photoshop"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:adobe-premiere.svg" width="50px" alt="Premiere"
+                        title="Premiere"> &nbsp;&nbsp;
+                    <img src="./img/adobeaudition.svg" width="50px" alt="Audition"
+                        title="Audition"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:blender.svg" width="50px" alt="Blender" title="Blender">
+                    &nbsp;&nbsp;
+                    <img src="./img/icons8-excel.svg" width="50px" alt="Excel"
+                        title="Excel"> &nbsp;&nbsp;
+                    <img src="./img/icons8-word.svg" width="50px" alt="Word" title="Word">
+                    &nbsp;&nbsp;
+                    <img src="./img/icons8-powerpoint.svg" width="50px" alt="PowerPoint"
+                        title="PowerPoint">
                 </div>
             </div>
         </div>
@@ -560,10 +560,9 @@
             <div class="col-md-12">
                 <h4>06</h4>
                 <h1 class="size-50">Projects</h1>
-                <h5>The following projects are selected based on my learning progress during undergraduate studies. They
-                    are intended to represent the journey of my self-learning in programming. To view the code, visit my
+                <h5>The following projects represent my self-learning journey in programming. Most of them are not related to any course. To view the code, visit my
                     <a href="https://github.com/shaokangJiang/" target="_blank">GitHub</a>. <br />Click each
-                    widget to see the detail.
+                    widget to see the details.
                 </h5>
             </div>
             <!-- main container -->
@@ -889,6 +888,90 @@
                 document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokang.me/2018/projects/A-computer-manage-program/" style="border:none;"></iframe>'
             });
         });
+
+        function filterAndCombine(source, config, startTime) {
+            let combined = [];
+            for (let i of config) {
+                if (i.includes("-combined")) {
+                    combined = combined.concat(source_combined[i.split("-")[0]]);
+                } else {
+                    combined = combined.concat(source.filter(entry => entry.type === i && new Date(entry.start_date) >= startTime));
+                }
+            }
+            combined.sort((a, b) => {
+                const startDateComparison = new Date(b.start_date) - new Date(a.start_date);
+                if (startDateComparison !== 0) {
+                    return startDateComparison;
+                }
+                if (b.end_date === "now") return 1;
+                if (a.end_date === "now") return -1;
+                return new Date(b.end_date) - new Date(a.end_date);
+            });
+            return combined;
+        }
+
+
+        function render(category) {
+            document.getElementById('experience-timeline').innerHTML = '';
+            document.getElementById('experience-title').textContent = category.length == 3 ? "Experience" : category.join(', ') + ' Experience';
+
+            let count = 0;
+            filterAndCombine(source, category, new Date("January 2021")).forEach(entry => {
+                entry.details = entry.details.map(detail => {
+                    return detail
+                        .replace(/\\textbf{([^}]*)}/g, '<b>$1</b>')
+                        .replace(/\\textit{([^}]*)}/g, '<i>$1</i>')
+                        .replace(/\\underline{([^}]*)}/g, '<u>$1</u>')
+                        .replace(/\\section{([^}]*)}/g, '<h2>$1</h2>')
+                        .replace(/\\subsection{([^}]*)}/g, '<h3>$1</h3>')
+                        .replace(/\\subsubsection{([^}]*)}/g, '<h4>$1</h4>')
+                        .replace(/\\emph{([^}]*)}/g, '<em>$1</em>')
+                        .replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1">$2</a>')
+                        .replace(/\\url{([^}]*)}/g, '<a href="$1">$1</a>')
+                        .replace(/\\texttt{([^}]*)}/g, '<code>$1</code>')
+                        .replace("\\%", "%");
+                });
+
+                const li = document.createElement('li');
+                li.className = 'timeline-event';
+                li.setAttribute('data-aos', 'fade-up');
+                li.setAttribute('data-aos-delay', `${parseInt(count / 2) * 0.2}`);
+
+                const label = document.createElement('label');
+                label.className = 'timeline-event-icon';
+                li.appendChild(label);
+
+                const div = document.createElement('div');
+                div.className = 'timeline-event-copy';
+
+                const p = document.createElement('p');
+                p.className = 'timeline-event-thumbnail';
+                p.textContent = `${entry.start_date} - ${entry.end_date}`;
+                div.appendChild(p);
+
+                const h3 = document.createElement('h3');
+                h3.textContent = entry.position;
+                div.appendChild(h3);
+
+                const h4 = document.createElement('h4');
+                h4.textContent = entry.institution;
+                div.appendChild(h4);
+
+                const ul = document.createElement('ul');
+                entry.details.forEach(detail => {
+                    const liDetail = document.createElement('li');
+                    liDetail.innerHTML = detail;
+                    ul.appendChild(liDetail);
+                });
+                div.appendChild(ul);
+
+                li.appendChild(div);
+                document.getElementById('experience-timeline').appendChild(li);
+                count++;
+            });
+
+        }
+        render(["Research"]);
     </script>
 </body>
 
