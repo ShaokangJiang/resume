@@ -971,7 +971,7 @@
 
         function render(category) {
             document.getElementById('experience-timeline').innerHTML = '';
-            document.getElementById('experience-title').textContent = category.length == 3 ? "Experience" : category.join(', ') + ' Experience';
+            document.getElementById('experience-title').textContent = category.length == 3 ? "Experience" : category[0] == "Research" ? "Research Experience" : category.join(', ') + ' Experience';
 
             let count = 0;
             filterAndCombine(source, category, new Date("January 2021")).forEach(entry => {
@@ -987,7 +987,8 @@
                         .replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1">$2</a>')
                         .replace(/\\url{([^}]*)}/g, '<a href="$1">$1</a>')
                         .replace(/\\texttt{([^}]*)}/g, '<code>$1</code>')
-                        .replace("\\%", "%");
+                        .replace("\\%", "%")
+                        .replace("\\#", "#");
                 });
 
                 const li = document.createElement('li');
@@ -1049,6 +1050,12 @@
             console.log(source);
             document.getElementById('project-timeline').innerHTML = '';
 
+            source.sort((a, b) => {
+                const yearA = Array.isArray(a.year) ? a.year[0] : a.year;
+                const yearB = Array.isArray(b.year) ? b.year[0] : b.year;
+                return yearB - yearA;
+            });
+
             source.forEach(project => {
                 project.description = project.description.map(detail => {
                     return detail
@@ -1062,7 +1069,8 @@
                         .replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1">$2</a>')
                         .replace(/\\url{([^}]*)}/g, '<a href="$1">$1</a>')
                         .replace(/\\texttt{([^}]*)}/g, '<code>$1</code>')
-                        .replace("\\%", "%");
+                        .replace("\\%", "%")
+                        .replace("\\#", "#");
                 });
                 const li = document.createElement('li');
                 li.className = 'timeline-event';
