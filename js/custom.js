@@ -95,10 +95,18 @@ $(document).ready(function() {
         });
 
         $('.portfolio_filter a').click(function() {
+            var selector = $(this).attr('data-filter');
+            console.log(selector); 
+            if (selector == '.all') {
+                $('html, body').animate({
+                    scrollTop: $('#allprojects').offset().top - nav_height + 2
+                }, 600);
+                return false;
+            }
+
             $('.portfolio_filter .active').removeClass('active');
             $(this).addClass('active');
 
-            var selector = $(this).attr('data-filter');
             $container.isotope({
                 filter: selector,
                 animationOptions: {
