@@ -181,8 +181,7 @@ const source = [
             "A 90\\%+ student recommendation rate, while the professor rating was not applicable.", 
             "Designed and developed an interactive shell with session management using JSP and Servlets deployed on Azure, allowing students to try solutions online without exposing the source code. Successfully supported 30+ users simultaneously."
         ],
-        "link": [{ description: "Blog post", link: "https://shaokang.me/2023/JSP-java-emulator/" }]
-
+        "link": [{ description: "Interactive shell", link: "https://shaokang.me/2023/JSP-java-emulator/" }]
     },
     {
         "position": "Volunteer Tutor",

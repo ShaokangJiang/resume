@@ -1003,6 +1003,16 @@
                 });
 
                 // if the item contains a link, add it to the end of the details
+                if (entry.link) {
+                    const liDetail = document.createElement('li');
+                    entry.link.forEach(link => {
+                        const a = document.createElement('a');
+                        a.href = link.link;
+                        a.textContent = `[${link.description}] `;
+                        liDetail.appendChild(a);
+                    });
+                    ul.appendChild(liDetail);
+                }
 
                 div.appendChild(ul);
 
