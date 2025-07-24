@@ -24,6 +24,21 @@ function filterAndCombine(source, config, startTime) {
 function convertToLatex(source, types) {
     // Sort the source by start_date
     source.sort((a, b) => new Date(b.start_date) - new Date(a.start_date));
+    // for anything have the same start date, sort by end_date, now is the latest
+    source.sort((a, b) => {
+        if (new Date(a.start_date).getTime() === new Date(b.start_date).getTime()) {
+            let endA = a.end_date;
+            let endB = b.end_date;
+            if (endA === "now") {
+                endA = new Date().toISOString();
+            }
+            if (endB === "now") {
+                endB = new Date().toISOString();
+            }
+            return new Date(endB).getTime() - new Date(endA).getTime();
+        }
+        return 0;
+    });
 
     let latexContent = `\\section{${types} Experience}\n  \\resumeSubHeadingListStart\n`;
     source.forEach(entry => {

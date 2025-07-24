@@ -8,7 +8,7 @@ const source = [
         "start_date": "April 2024",
         "end_date": "now",
         "details": [
-            "A usability analysis of Copilot with a paper targeting ICSE 2026, and a separate project leveraging LLMs to assist novice programmers in detecting security risks.",
+            "A usability analysis of Copilot with a paper submitted to ICSE 2026, and a separate project leveraging LLMs to assist novice programmers in detecting security risks.",
             "Designed an experiment using an eye tracker to evaluate the costs and benefits of Copilot for programmers new to React. Piloted it with 5 programmers, incorporating iterative improvements. The full study is undergoing.",
             "Designed and implemented a more universal eye-tracking platform for native VSCode to collect user interaction data across in-editor events and developed a VSCode extension to assist with the experiment.",
             "Developed VSCode extensions utilizing prompt-engineered GPTs that integrates static security analysis, user background, and project structure as inputs, producing two visual interfaces to assist novice programmers in detecting and understanding OWASP risks in code. The extension is undergoing iterative internal design.",
@@ -54,7 +54,7 @@ const source = [
         "institution": "Independent (supervised by Jimmy Koppel and Michael Coblenz)",
         "type": "Research",
         "start_date": "April 2024",
-        "end_date": "October 2024",
+        "end_date": "December 2024",
         "details": [
             "Found that users assisted by LLM chatbots were less confident and more confused, while those using tutorials had a better understanding of the code structure but struggled with low-level coding challenges based on the survey.",
             "A between-subjects study involving 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",
@@ -150,11 +150,10 @@ const source = [
         "institution": "University of California San Diego",
         "start_date": "September 2024",
         "type": "TA",
-        "end_date": "now",
+        "end_date": "March 2025",
         "details": [
             "TA for the Usability of Programming Languages course (CSE291) with Michael Coblenz for one quarter. And TA for the Antisocial Computing (CSE 291) with Kristen Vaccaro for one quarter.",
             "Lead class, discussions and office hours, graded assignments, and provided personalized advice to students.",
-            "Received an 'Excellent' rating from the instructor for both courses, and a 90\\%+ student recommendation rate."
         ]
     },
     {
