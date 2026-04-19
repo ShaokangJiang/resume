@@ -71,7 +71,7 @@
   ],
   [
     "Total",
-    91780
+    97159
   ],
   [
     "All",
@@ -103,6 +103,10 @@
       {
         "title": "A JavaFx program",
         "loc": 5439
+      },
+      {
+        "title": "Monitoring Extension",
+        "loc": 5379
       },
       {
         "title": "Cue Hub",
@@ -188,7 +192,7 @@
   ],
   [
     "JavaScript",
-    20083
+    24209
   ],
   [
     "Java",
@@ -200,7 +204,7 @@
   ],
   [
     "HTML",
-    10631
+    10737
   ],
   [
     "JavaScript JSX",
@@ -220,7 +224,7 @@
   ],
   [
     "Markdown",
-    950
+    1137
   ],
   [
     "XML",
@@ -233,6 +237,10 @@
   [
     "Haskell",
     652
+  ],
+  [
+    "Rust",
+    543
   ],
   [
     "Quick Basic",
@@ -251,16 +259,20 @@
     370
   ],
   [
+    "JSON",
+    364
+  ],
+  [
     "GAMS",
     343
   ],
   [
-    "JSON",
-    310
-  ],
-  [
     "CSS",
     295
+  ],
+  [
+    "PostCSS",
+    279
   ],
   [
     "C++",
@@ -279,16 +291,16 @@
     180
   ],
   [
-    "TypeScript JSX",
-    134
-  ],
-  [
     "Shell Script",
-    132
+    174
   ],
   [
     "Batch",
-    105
+    147
+  ],
+  [
+    "TypeScript JSX",
+    134
   ],
   [
     "Properties",

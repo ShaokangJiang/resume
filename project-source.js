@@ -1,4 +1,35 @@
 const projects_all = [
+  {
+      "title": "Monitoring Extension",
+      "technologies": ["JavaScript", "Rust", "Chrome Extension", "Apps Script", "Express.js", "Multimodal LLM"],
+      "level": "normal",
+      "include": ["Research", "Job"],
+      "loc": {
+        "extension": {
+          "JavaScript": 1957,
+          "PostCSS": 279,
+          "Markdown": 187,
+          "HTML": 106,
+        },
+        "microservice": {
+          "JavaScript": 2169,
+          "JSON": 27,
+        },
+        "native-host": {
+          "Rust": 543,
+          "Shell Script": 42,
+          "Batch": 42,
+          "JSON": 27,
+        }
+      },
+      "year": 2026,
+      "description": [
+        "Designed and developed a Chrome extension to monitor real-time user interactions, utilizing a JavaScript frontend bundled with rollup, a Rust-based multi-threads native host for cross-platform communication and high-fidelity image/data logging, and an Express.js backend bundled with SEA for asynchronous, streaming data processing.",
+        "Designed and implemented a privacy-first LLM automation pipeline using Gemini to passively detect and automate recurring user patterns through action abstraction, pattern mining, and program generation. Developed a stateless architecture utilizing local-only contextual memory and user-controlled telemetry to ensure full data sovereignty.",
+        "Optimized multimodal AI performance with reasoning (chain-of-thought, self-reflection, programming-as-reasoning, planning, and cross-verification) to analyze inputs from network events, user interactions, and screenshots.",
+        // "Built a decentralized, privacy-first data pipeline with in-memory processing and local-only storage; ensured data sovereignty via automatic password filtering, user-controlled pauses, and URL blacklists."
+      ]
+    },
     {
       "title": "Pullscription websites",
       "technologies": ["Nuxt", "Vue", "Typescript", "Vitest", "Auth0", "Docker", "Nginx", "Matomo", "Stripe", "Blogger"],
@@ -53,7 +84,7 @@ const projects_all = [
     {
       "title": "Workshop Manager",
       "technologies": ["Electron", "React", "Socket.io", "HTTPS", "DDNS", "GPTs", "Worker", "MailJet"],
-      "include": ["Job"],
+      "include": ["Research", "Job"],
       "level": "normal",
       "loc": {
         "ci-main": {
@@ -77,10 +108,9 @@ const projects_all = [
       "year": 2024,
       "description": [
         "Designed and developed a 4-component workshop management system for real-time user engagement to foster idea generation and improve communication during meetings, capable of hosting at least 50 concurrent participants.",
-        "Entire build To be used as a component in the Collective Intelligence-2025 conference.",
         "Pre-conference component: Created a registration system utilizing a RESTful API backend with Worker for user verification and sending invitation emails via Mailjet. The frontend was developed using a simple HTML page.",
         "In-conference Management Component: Uses DDNS to dynamically bind to a subdomain of shaokang.me. Developed with Electron as the main platform, with React for the frontend and a JavaScript backend running an HTTPS WebSocket server. The management system will communicate with and broadcast guidance to all participants with the help of GPT services for hint generation, while also updating the main screen with large-screen guidance.",
-        "In-conference Client-side Ideation and Discussion Components: Both components allow participants to submit ideas in real-time during small group discussions and facilitate large group discussions on the submitted ideas in a subsequent phase. They were developed using React and Socket Client for real-time communication..",
+        "In-conference Client-side Ideation and Discussion Components: Both components allow participants to submit ideas in real-time during small group discussions and facilitate large group discussions on the submitted ideas in a subsequent phase. They were developed using React and Socket Client for real-time communication.",
       ]
     },
     {

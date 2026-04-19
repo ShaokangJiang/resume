@@ -431,11 +431,12 @@ a.active {
 
 .timeline-event-copy h3 {
     font-size: 1.75em;
+    margin-top: -0.05em;
 }
 
 .timeline-event-copy h4 {
     font-size: 1.2em;
-    margin-bottom: 1.2em;
+    margin-bottom: 0.8em;
 }
 
 .timeline-event-copy strong {
@@ -443,7 +444,7 @@ a.active {
 }
 
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
-    padding-bottom: 1.2em;
+    margin-bottom: -2em;
 }
 
 .timeline-event-icon {

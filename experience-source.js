@@ -4,11 +4,29 @@ const source = [
     {
         "position": "Graduate Student Researcher",
         "type": "Research",
+        "institution": "University of California, Irvine (supervised by Daye Nam)",
+        "start_date": "August 2025",
+        "end_date": "now",
+        "details": [
+            "Analyzed human-AI collaboration using Cursor rules as a proxy, identifying four primary categories (Project, Convention, Guideline, LLM Directive) and revealing that developers adapt context types by programming language while applying traditional human-to-human documentation strategies to instruct AI. Published at \\textbf{MSR 2026}.",
+            "Designed and implemented a pipeline to collect and analyze Cursor rules from 401 GitHub repositories, leveraging prompted LLMs to scale up the qualitative coding process.",
+            "Developed an ambient automation discovery system utilizing LLMs to passively observe web behavior and generate personalized programs, validated via an 8-person empirical study, revealing users inherently fail to recognize over 94\\% of their own automatable actions. Submitted to \\textbf{UIST 2026}.",
+            "Designed and implemented an asynchronous, natively cross-platform multimodal discovery agent (Rust, JavaScript, Chrome APIs) utilizing contextual memory and different LLM reasoning (e.g.,chain-of-thought, self-reflection, programming-as-reasoning, planning, and cross-verification) to mine web interactions into patterns. The system designs and generates scripts following human feedback, showing a 93\\% usefulness rating for all viewed patterns."
+        ],
+        "link": [
+            { description: "MSR26 Presentation Video", link: "https://youtu.be/xuvGhq15Da4" }, 
+            { description: "MSR26 Paper", link: "https://doi.org/10.1145/3793302.3793367" },
+            { description: "MSR26 Artifact", link: "https://doi.org/10.5281/zenodo.18313203" },
+        ]
+    },
+    {
+        "position": "Graduate Student Researcher",
+        "type": "Research",
         "institution": "University of California San Diego (supervised by Michael Coblenz)",
         "start_date": "April 2024",
         "end_date": "May 2025",
         "details": [
-            "Conducted a usability analysis of GitHub Copilot, with a paper submitted to \\textbf{TOSEM}, finding that the tool helps users focus more on learning while significantly increasing overall productivity.",
+            "Found Copilot helps users focus on learning while increasing productivity; revealed developers prefer analyzing generated code over explanations, yet still rely on search engines for conceptual questions. Submitted to \\textbf{TOSEM}.",
             "Designed an eye-tracking experiment to evaluate the costs and benefits of Copilot for novice programmers, developing a universal eye-tracking platform for native VSCode to capture user interaction data across in-editor events.",
             // "Developed VSCode extensions utilizing prompt-engineered GPTs that integrates static security analysis, user background, and project structure as inputs, producing two visual interfaces to assist novice programmers in detecting and understanding OWASP risks in code. The extension is undergoing iterative internal design.",
         ]
@@ -33,7 +51,7 @@ const source = [
         "end_date": "May 2025",
         "details": [
             "Audited YouTube's recommendation strategies for short and long-form content; discovered that long-form algorithms reinforce partisan echo chambers by aligning with seed videos, while short-form algorithms prioritize engagement by exposing users to more right-leaning content. Published at \\textbf{WWW 2026}.",
-            "Co-designed and implemented a pipeline of seeds collecting, matching, recommendation collecting, and political assessing, leveraging Puppeteer to harvest recommendations, git-diff for video matching, and prompt-engineered GPTs and BERT for accurate political labeling.",
+            "Designed and implemented a pipeline of seeds collecting, matching, recommendation collecting, and political assessing, leveraging Puppeteer to harvest recommendations, git-diff for video matching, and prompt-engineered GPTs and BERT for political labeling.",
         ],
         "link": [
             { description: "Early stage metadata visualization", link: "https://information.1442334619.workers.dev/" }, 
@@ -52,7 +70,7 @@ const source = [
         "start_date": "April 2024",
         "end_date": "December 2024",
         "details": [
-            "Evaluated the impact of AI assistance on code comprehension among 15 experienced engineers, finding that LLM chatbots increased user confusion, while traditional tutorials improved high-level structural understanding but lacked low-level coding support; published at \\textbf{Plateau 2025}.",
+            "Evaluated the impact of AI assistance on code comprehension among 15 experienced engineers, finding that LLM chatbots increased user confusion, while traditional tutorials improved high-level structural understanding but lacked low-level coding support. Published at \\textbf{Plateau 2025}.",
             // "A between-subjects study with 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",
             // "Restructured the study, discussed, designed, and implemented an analysis plan with both qualitative and quantitative components, transcribed, coded, and utilized NLP to analyze the recordings, and wrote and submitted ."
         ],

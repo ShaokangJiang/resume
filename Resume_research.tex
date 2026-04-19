@@ -20,6 +20,11 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 \usepackage{import}
+\usepackage[backend=biber,style=ieee,url=false,doi=false,isbn=false,eprint=false,maxbibnames=99,sorting=none,dashed=false]{biblatex}
+\AtEveryBibitem{%
+  \clearname{editor}
+}
+\addbibresource{pub.bib}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -108,7 +113,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -166,7 +171,7 @@
 %-----------PROJECTS-----------
 \section{Projects}
 
-Highlighted below are selected projects. For a comprehensive portfolio, visit resume.shaokang.me.
+Highlighted below are selected projects. For a comprehensive portfolio, visit \href{https://shaokangjiang.github.io/resume/}{\underline{shaokangjiang.github.io/resume/}}.
 \vspace{0.5em}
 \import{}{Projects_.tex}
 
