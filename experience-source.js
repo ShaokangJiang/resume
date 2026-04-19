@@ -6,12 +6,11 @@ const source = [
         "type": "Research",
         "institution": "University of California San Diego (supervised by Michael Coblenz)",
         "start_date": "April 2024",
-        "end_date": "now",
+        "end_date": "May 2025",
         "details": [
-            "A usability analysis of Copilot with a paper submitted to ICSE 2026, and a separate project leveraging LLMs to assist novice programmers in detecting security risks.",
-            "Designed an experiment using an eye tracker to evaluate the costs and benefits of Copilot for programmers new to React. Piloted it with 5 programmers, incorporating iterative improvements. The full study is undergoing.",
-            "Designed and implemented a more universal eye-tracking platform for native VSCode to collect user interaction data across in-editor events and developed a VSCode extension to assist with the experiment.",
-            "Developed VSCode extensions utilizing prompt-engineered GPTs that integrates static security analysis, user background, and project structure as inputs, producing two visual interfaces to assist novice programmers in detecting and understanding OWASP risks in code. The extension is undergoing iterative internal design.",
+            "Conducted a usability analysis of GitHub Copilot, with a paper submitted to \\textbf{TOSEM}, finding that the tool helps users focus more on learning while significantly increasing overall productivity.",
+            "Designed an eye-tracking experiment to evaluate the costs and benefits of Copilot for novice programmers, developing a universal eye-tracking platform for native VSCode to capture user interaction data across in-editor events.",
+            // "Developed VSCode extensions utilizing prompt-engineered GPTs that integrates static security analysis, user background, and project structure as inputs, producing two visual interfaces to assist novice programmers in detecting and understanding OWASP risks in code. The extension is undergoing iterative internal design.",
         ]
     },
     {
@@ -21,10 +20,9 @@ const source = [
         "start_date": "April 2024",
         "end_date": "October 2024",
         "details": [
-            "Found LLM-driven conversational cues significantly increased the topical diversity of generated ideas and conversations, while modality had no significant impact. The paper was submitted to \\textbf{CSCW 2025}.",
-            "Redesigned and deployed an online meeting platform. Implemented separate interfaces for facilitators and participants, integrated Firebase for real-time communication, Daily.js for meetings, and GPT-based cues. Resolved bugs left by previous teams and iteratively refined the platform based on pilot feedback, enabling 86 meetings.",
-            "Organized and transcribed data for a 2 (cue vs. no cue) x 2 (in-person vs. remote) experiment with 172 participants. Worked closely with Jude and other group members. Led and performed quantitative data analysis on the generated ideas and conversations. Wrote the design decisions, implementation, and data analysis sections of the paper.",
-            "For another workshop management project, designed and developed a 4-component workshop management system for real-time user engagement with socket.io, electron, DDNS, MailJet and prompt-engineered GPTs to foster a better, more engaging conversation experience."
+            "Found LLM-driven conversational cues significantly increased the topical diversity of generated ideas and conversations. Published at \\textbf{CI 2025}.",
+            "Designed and deployed a meeting platform with prompt-engineered GPT conversational cues, Firebase and Daily.js.",
+            "Led quantitative analysis evaluating the impact of AI-generated cues in a 172-participant 2x2 experiment, authoring the design, implementation, and data analysis sections for publication.",
         ]
     },
     {
@@ -32,12 +30,10 @@ const source = [
         "institution": "University of California San Diego (supervised by Kristen Vaccaro and Deepak Kumar)",
         "type": "Research",
         "start_date": "April 2024",
-        "end_date": "now",
+        "end_date": "May 2025",
         "details": [
-            "Collaborated with three other group members to assess political polarization on YouTube shorts and longs.",
-            "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video (a short-form video) is a clip of another (a long-form video), outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server using Javascript.",
-            "Developed a stateless interactive rating and data collection system with CI/CD integration using GitHub Actions and Cloudflare Workers for data storage, enabling users to label the political leaning of long and short videos based on transcripts and some pairing information.",
-            "Assessed methods for measuring the leanings of media houses, utilizing AllSides and other existing models."
+            "Audited YouTube's recommendation strategies for short and long-form content; discovered that long-form algorithms reinforce partisan echo chambers by aligning with seed videos, while short-form algorithms prioritize engagement by exposing users to more right-leaning content. Published at \\textbf{WWW 2026}.",
+            "Co-designed and implemented a pipeline of seeds collecting, matching, recommendation collecting, and political assessing, leveraging Puppeteer to harvest recommendations, git-diff for video matching, and prompt-engineered GPTs and BERT for accurate political labeling.",
         ],
         "link": [
             { description: "Early stage metadata visualization", link: "https://information.1442334619.workers.dev/" }, 
@@ -56,9 +52,9 @@ const source = [
         "start_date": "April 2024",
         "end_date": "December 2024",
         "details": [
-            "Found that users assisted by LLM chatbots were less confident and more confused, while those using tutorials had a better understanding of the code structure but struggled with low-level coding challenges based on the survey.",
-            "A between-subjects study involving 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",
-            "Restructured the study, discussed, designed, and implemented an analysis plan with both qualitative and quantitative components, transcribed, coded, and utilized NLP to analyze the recordings, and wrote and submitted a paper to \\textbf{Plateau 2025}."
+            "Evaluated the impact of AI assistance on code comprehension among 15 experienced engineers, finding that LLM chatbots increased user confusion, while traditional tutorials improved high-level structural understanding but lacked low-level coding support; published at \\textbf{Plateau 2025}.",
+            // "A between-subjects study with 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",
+            // "Restructured the study, discussed, designed, and implemented an analysis plan with both qualitative and quantitative components, transcribed, coded, and utilized NLP to analyze the recordings, and wrote and submitted ."
         ],
         "link": [{ description: "Accepted paper", link: "https://resume.shaokang.me/papers/chatbotvstutorial.pdf" }]
     },
@@ -69,11 +65,9 @@ const source = [
         "start_date": "January 2023",
         "end_date": "September 2023",
         "details": [
-            "Found that autocomplete speeds up information acquisition but may not increase productivity. Published and presented the paper at \\textbf{FSE 2024}.",
-            "Assessed the costs and benefits of IDE-based autocomplete for programmers working with an unfamiliar API.",
-            "Designed and executed a between-subject experiment with 32 participants using an eye tracker.",
-            "Found that participants who used autocomplete learned more while spending less time reading documentation, although autocomplete did not significantly reduce the number of keystrokes required to complete tasks.",
-            "Developed an user interaction tracking platform for VSCode for the web, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
+            "Found that autocomplete speeds up information acquisition but may not increase productivity with 32 programmers working with an unfamiliar API. Published and presented the paper at \\textbf{FSE 2024}.",
+            "Found that participants who used autocomplete learned more while spending less time reading documentation.",
+            "Developed a web-based VSCode interaction and eye-tracking platform (JS/C\\#, Tobii Eye Tracker 5) to capture in-editor events, achieving a 90\\% latency reduction than previous solutions.",
             // "Designed and implemented a VSCode extension for running experiment."
         ],
         "link": [{
@@ -133,6 +127,28 @@ const source = [
         ]
     },
     // === TA
+    {
+        "position": "Teaching Assistant",
+        "institution": "University of California, Irvine",
+        "start_date": "March 2026",
+        "type": "TA",
+        "end_date": "now",
+        "details": [
+            "TA for information visualization (INF 143) with Alberto Krone-Martins.",
+            "Discussed course content, graded exams, homework, and projects. Provided suggestions for course content, held office hours, and hosted discussion sections. Managed course logistics."
+        ]
+    },
+    {
+        "position": "Teaching Assistant",
+        "institution": "University of California, Irvine",
+        "start_date": "September 2025",
+        "type": "TA",
+        "end_date": "March 2026",
+        "details": [
+            "TA for programming in Java (ICS 45J) with Emily Navarro.",
+            "Designed course components, created assignments, built grading scripts, made and graded exams, homework, and projects. Provided suggestions for course content and hold office hours. Managed course logistics."
+        ]
+    },
     {
         "position": "Teaching Assistant",
         "institution": "University of California San Diego",
@@ -239,7 +255,7 @@ const source_combined = {
             "institution": "University of California San Diego",
             "type": "Research",
             "start_date": "January 2023",
-            "end_date": "now",
+            "end_date": "May 2025",
             "details": [
                 "Worked with Michael Coblenz on the usability analysis of autocomplete, designed, executed an experiment with 32 participants and published on the Foundations of Software Engineering.",
                 "Worked with Michael Coblenz on the usability analysis of Copilot. Designed an experiment and executing it now.",
@@ -250,7 +266,7 @@ const source_combined = {
                 "Designed, implemented, tested, and deployed software using React, Firebase, Flask, GitHub Actions, Cloudflare, and Oracle Cloud, based on the weekly discussion results. Improved the product in a rapid process and assisted in designing the entire research workflow."
             ],
             "work_details": [
-                "Worked with professors and researchers on projects. Published paper at FSE 2024. Submitted to CSCW 2025.",
+                "Worked with professors and researchers on projects. Published paper at FSE 2024. Submitted to CI 2025.",
                 "Developed an universal user interaction tracking platform for VSCode, integrating Tobii Eye Tracker 5 to capture eye movement and user interactions across in-editor events, with a JavaScript frontend and C\\# backend; reduced frontend-backend communication latency to one-tenth of the existing solution, tested over 80 hours with 33 users.",
                 "Developed a high-accuracy algorithm in JavaScript and Python (using Hugging Face) to detect whether a video is a clip of another, outperforming existing solutions, and implemented a concurrent pool management tool to fully utilize a multicore cloud server.",
                 "Worked on and deployed an online meeting platform left by a previous team, adding separate interfaces for facilitators and participants, Firebase for real-time communication, Daily.js for meetings, Assembly AI for transcription and data analysis, and GPT-based cues, resolving critical bugs and enabling 86 meetings.",
@@ -261,15 +277,33 @@ const source_combined = {
     "TA": [
         {
             "position": "Teaching Assistant",
+            "institution": "University of California, Irvine",
+            "type": "TA",
+            "start_date": "September 2025",
+            "end_date": "now",
+            "details": [
+                "TA for programming in Java (ICS 45J) with Emily Navarro.",
+                "TA for information visualization (INF 143) with Alberto Krone-Martins.",
+                "Led discussions, graded assignments, and co-designed course content and logistics with faculty."
+            ],
+            "work_details": [
+                "Served as the sole or lead TA for several courses, including Java and Data Structures, Usability of Programming Languages, and Compilers. Received 'Excellent' ratings from instructors and a 90\\%+ student recommendation rate.",
+                "Developed several assignment and unit tests using JUnit on Docker, created templates with GitHub Actions, and helped students with the code merge process.",
+                "Developed an interactive shell with session management using JSP and Servlets deployed on Azure, allowing students to try solutions online without exposing the source code. Successfully supported 30+ users simultaneously.",
+            ]
+        },
+        {
+            "position": "Teaching Assistant",
             "institution": "University of California San Diego",
             "type": "TA",
             "start_date": "January 2023",
-            "end_date": "now",
+            "end_date": "March 2025",
             "details": [
-                "Major TA for Java and Data Structure courses (DSC30) with Soohyun Liao for two quarters.",
+                "Major TA for Java and Data Structure courses (DSC30) with Soohyun Liao for two quarters.", 
+                "Sole TA for the Antisocial Computing (CSE 291) with Kristen Vaccaro for one quarter.",
                 "Sole TA for the Usability of Programming Languages course (CSE291) with Michael Coblenz for one quarter and TA for the same course for another quarter.",
                 "Sole TA for Compilers (CSE 131) with Yufei Ding for one quarter, and Introduction to Data Visualization (DSC 106) with Sam Lau for another quarter.",
-                "Guided group projects on programming languages and software engineering topics, and proposed, designed, and developed innovative course assignments.", "Managed course logistics, graded assignments, and collaborated with the professor and team members to refine course content. Conducted office hours and discussion sections to assist students and deepen their understanding.",
+                "Designed and implemented course assignments and mentored students through group projects.", "Facilitated weekly discussion sections and office hours, collaborating with the lead instructor to refine course content, manage logistics, and evaluate student performance.",
                 "Received 'Excellent' ratings from instructors and a 90\\%+ student recommendation rate in course evaluations."
             ],
             "work_details": [

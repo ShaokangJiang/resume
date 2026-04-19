@@ -3,7 +3,7 @@ const { source, source_combined } = require('./experience-source');
 
 // === configuration
 const job = ["Research-combined", "TA-combined", "Work"];
-const research = ["Research-all", "TA", "Work"];
+const research = ["Research-all", "TA"];
 
 // add an additional field to only include certain text in certain settings
 function filterAndCombine(source, config, startTime) {
@@ -52,9 +52,9 @@ function convertToLatex(source, types) {
     return latexContent;
 }
 
-fs.writeFileSync('Experience_Other.tex', convertToLatex(filterAndCombine(source, research.slice(1), new Date("January 2021")), "Other"));
+fs.writeFileSync('Experience_Other.tex', convertToLatex(filterAndCombine(source, ["TA-combined"], new Date("January 2021")), "Other"));
 
-fs.writeFileSync('Experience_Research.tex', convertToLatex(filterAndCombine(source, ["Research", "Research-class"], new Date("January 2021")), "Research"));
+fs.writeFileSync('Experience_Research.tex', convertToLatex(filterAndCombine(source, ["Research"], new Date("January 2021")), "Research"));
 
 
 fs.writeFileSync('Experience_TA.tex', convertToLatex(filterAndCombine(source, ["Research-combined", "TA"], new Date("January 2020")), ""));
