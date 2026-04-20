@@ -31,7 +31,7 @@ const projects_all = [
     ]
   }, {
     "title": "Youtube Recommendation Analysis",
-    "technologies": ["JavaScript", "Puppeteer", "Node.js", "Torch", "Transformers"],
+    "technologies": ["JavaScript", "Selenium", "Node.js", "Torch", "Transformers"],
     "level": "normal",
     "include": ["Research", "Job"],
     "loc": {

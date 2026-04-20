@@ -51,7 +51,7 @@ const source = [
         "end_date": "May 2025",
         "details": [
             "Audited YouTube's recommendation strategies for short and long-form content; discovered that long-form algorithms reinforce partisan echo chambers by aligning with seed videos, while short-form algorithms prioritize engagement by exposing users to more right-leaning content. Published at \\textbf{WWW 2026}.",
-            "Designed and implemented a pipeline of seeds collecting, matching, recommendation collecting, and political assessing, leveraging Puppeteer to harvest recommendations, git-diff for video matching, and prompt-engineered GPTs and BERT for political labeling.",
+            "Designed and implemented a pipeline of seeds collecting, matching, recommendation collecting, and political assessing, leveraging Selenium to harvest recommendations, git-diff for video matching, and prompt-engineered GPTs and BERT for political labeling.",
         ],
         "link": [
             { description: "Early stage metadata visualization", link: "https://information.1442334619.workers.dev/" }, 
