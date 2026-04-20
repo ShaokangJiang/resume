@@ -53,9 +53,19 @@
         "Contributed": 30
       },
       {
+        "title": "Youtube Recommendation Analysis-Puppet",
+        "loc": 1079,
+        "Contributed": 100
+      },
+      {
         "title": "Pullscription websites-pss-images-and-config",
         "loc": 540,
         "Contributed": 35
+      },
+      {
+        "title": "Youtube Recommendation Analysis-Political-analysis",
+        "loc": 233,
+        "Contributed": 100
       },
       {
         "title": "An economical computer-python-version",
@@ -71,128 +81,187 @@
   ],
   [
     "Total",
-    97159
+    106852
   ],
   [
     "All",
     [
       {
         "title": "Small course projects",
-        "loc": 14303
+        "loc": 14303,
+        "year": 2020
       },
       {
         "title": "Energy Simulator",
-        "loc": 10377
+        "loc": 10377,
+        "year": 2020
       },
       {
         "title": "CS 425 Website",
-        "loc": 9648
+        "loc": 9648,
+        "year": 2018
       },
       {
         "title": "Financial Tutoring website and app",
-        "loc": 9102
+        "loc": 9102,
+        "year": 2020
       },
       {
         "title": "HateFate Website",
-        "loc": 6613
+        "loc": 6613,
+        "year": 2017
       },
       {
         "title": "Eyetracker Monitoring Platform",
-        "loc": 5569
+        "loc": 5569,
+        "year": [
+          2023,
+          2024
+        ]
       },
       {
         "title": "A JavaFx program",
-        "loc": 5439
+        "loc": 5439,
+        "year": 2020
       },
       {
         "title": "Monitoring Extension",
-        "loc": 5379
+        "loc": 5379,
+        "year": 2026
       },
       {
         "title": "Cue Hub",
-        "loc": 4856
+        "loc": 4856,
+        "year": 2024
       },
       {
         "title": "Pullscription websites",
-        "loc": 3814
+        "loc": 3814,
+        "year": 2024
+      },
+      {
+        "title": "Youtube Recommendation Analysis",
+        "loc": 3770,
+        "year": 2025
       },
       {
         "title": "Java code style checker on gradescope",
-        "loc": 3687
+        "loc": 3687,
+        "year": 2023
       },
       {
         "title": "HealthCare Chatbot",
-        "loc": 3232
+        "loc": 3232,
+        "year": 2024
       },
       {
         "title": "Eye tracker analysis",
-        "loc": 2153
+        "loc": 2153,
+        "year": 2023
       },
       {
         "title": "Financial Organization App",
-        "loc": 2032
+        "loc": 2032,
+        "year": 2020
+      },
+      {
+        "title": "CursorRules",
+        "loc": 1696,
+        "year": 2025
+      },
+      {
+        "title": "CursorRules",
+        "loc": 1696,
+        "year": 2025
       },
       {
         "title": "Workshop Manager",
-        "loc": 1683
+        "loc": 1683,
+        "year": 2024
       },
       {
         "title": "Video matching and leaning rating system",
-        "loc": 1579
+        "loc": 1579,
+        "year": 2024
+      },
+      {
+        "title": "Rust Compiler",
+        "loc": 1413,
+        "year": 2023
       },
       {
         "title": "Online interactive shell",
-        "loc": 1304
+        "loc": 1304,
+        "year": 2023
       },
       {
         "title": "AutoCommenter",
-        "loc": 1263
+        "loc": 1263,
+        "year": 2019
       },
       {
         "title": "Covid data report",
-        "loc": 1257
+        "loc": 1257,
+        "year": 2021
+      },
+      {
+        "title": "Tiktok Recommendation Analysis",
+        "loc": 1118,
+        "year": 2025
       },
       {
         "title": "Cross platform Markdown app",
-        "loc": 721
+        "loc": 721,
+        "year": 2024
       },
       {
         "title": "Shopping store",
-        "loc": 720
+        "loc": 720,
+        "year": 2023
       },
       {
         "title": "Interactive Haskell Game",
-        "loc": 652
+        "loc": 652,
+        "year": 2023
       },
       {
         "title": "VSCode Experiment helper",
-        "loc": 439
+        "loc": 439,
+        "year": [
+          2022,
+          2024
+        ]
       },
       {
         "title": "An economical computer",
-        "loc": 337
+        "loc": 337,
+        "year": 2022
       },
       {
         "title": "Seat Arrangement Problem",
-        "loc": 300
+        "loc": 300,
+        "year": 2019
       },
       {
         "title": "Bitcoin Research",
-        "loc": 300
+        "loc": 300,
+        "year": 2018
       },
       {
         "title": "Wise grader",
-        "loc": 220
+        "loc": 220,
+        "year": 2021
       },
       {
         "title": "Screen Reader",
-        "loc": 180
+        "loc": 180,
+        "year": 2019
       }
     ]
   ],
   [
     "JavaScript",
-    24209
+    30889
   ],
   [
     "Java",
@@ -204,7 +273,7 @@
   ],
   [
     "HTML",
-    10737
+    11292
   ],
   [
     "JavaScript JSX",
@@ -219,8 +288,16 @@
     3354
   ],
   [
+    "Rust",
+    1798
+  ],
+  [
     "vue",
     1480
+  ],
+  [
+    "Python",
+    1294
   ],
   [
     "Markdown",
@@ -239,16 +316,8 @@
     652
   ],
   [
-    "Rust",
-    543
-  ],
-  [
     "Quick Basic",
     450
-  ],
-  [
-    "Python",
-    449
   ],
   [
     "TypeScript",
@@ -293,6 +362,10 @@
   [
     "Shell Script",
     174
+  ],
+  [
+    "Snek",
+    158
   ],
   [
     "Batch",

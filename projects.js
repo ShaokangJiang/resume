@@ -39,7 +39,8 @@ let totalLOC = source.reduce((acc, project) => {
     }
     acc["All"].push({
       "title": project.title,
-      "loc": mylines
+      "loc": mylines, 
+      "year": project.year
     });
   }
   return acc;

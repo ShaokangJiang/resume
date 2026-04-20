@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lines of Code (LOC) Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #2c3e50;
+            --card-bg: #ffffff;
+            --primary: #3498db;
+            --primary-hover: #2980b9;
+            --secondary: #95a5a6;
+            --border: #ecf0f1;
+            --tag-bg: #e1f0fa;
+            --tag-text: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--text-color);
+        }
+
+        /* Summary Cards */
+        .summary-cards {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            max-width: 320px;
+            border-top: 5px solid var(--primary);
+        }
+
+        .card h3 {
+            margin: 0;
+            color: var(--secondary);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card .number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--text-color);
+            margin: 10px 0 0;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-container {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .section-container h2 {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 15px;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        /* Chart Wrappers */
+        .charts-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .chart-box {
+            position: relative;
+            height: 400px;
+        }
+
+        .pie-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .bar-box {
+            flex: 2;
+            min-width: 400px;
+        }
+
+        @media (max-width: 900px) {
+            .charts-wrapper {
+                flex-direction: column;
+            }
+            .chart-box {
+                width: 100%;
+            }
+        }
+
+        /* Tables */
+        .table-wrapper {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #fafbfc;
+            color: var(--text-color);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Clickable Title Styling */
+        .clickable-title {
+            color: var(--primary);
+            cursor: pointer;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .clickable-title:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        /* Modal / Detail Panel */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: var(--card-bg);
+            width: 90%;
+            max-width: 800px;
+            max-height: 85vh;
+            border-radius: 12px;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: color 0.2s;
+        }
+
+        .close-btn:hover {
+            color: #e74c3c;
+        }
+
+        /* Modal Inner Formatting */
+        .detail-header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .detail-header h2 {
+            margin: 0 0 5px 0;
+            color: var(--primary);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .description-box {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .description-box p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .description-box p:last-child { margin-bottom: 0; }
+
+        .loc-section h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        .module-chart-wrapper {
+            height: 120px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Codebase Statistics Dashboard</h1>
+        <p>An overview of projects, languages, and lines of code (LOC).</p>
+    </header>
+
+    <div class="summary-cards">
+        <div class="card">
+            <h3>Total LOC</h3>
+            <div class="number" id="total-loc">Loading...</div>
+        </div>
+        <div class="card" style="border-top-color: #2ecc71;">
+            <h3>Total Projects</h3>
+            <div class="number" id="total-projects">-</div>
+        </div>
+        <div class="card" style="border-top-color: #e74c3c;">
+            <h3>Top Language</h3>
+            <div class="number" id="top-language">-</div>
+        </div>
+    </div>
+
+    <div class="grid" style="margin-bottom: 25px;">
+        <div class="section-container" style="grid-column: 1 / -1;">
+            <h2>Language & Timeline Breakdown</h2>
+            <div class="charts-wrapper">
+                <div class="chart-box pie-box">
+                    <canvas id="languageChart"></canvas>
+                </div>
+                <div class="chart-box bar-box">
+                    <canvas id="yearlyChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="section-container">
+            <h2>All Projects</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Lines of Code</th>
+                        </tr>
+                    </thead>
+                    <tbody id="all-projects-body">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <h2>Special / Collaboration Contributions</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Contributed</th>
+                            <th>Total Repo Size</th>
+                        </tr>
+                    </thead>
+                    <tbody id="special-projects-body">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-overlay">
+    <div class="modal-content">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <div id="modal-body">
+            </div>
+    </div>
+</div>
+
+<script src="./project-source.js"></script>
+
+<script>
+    // Color palette for charts
+    const chartColors = [
+        '#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6', '#1abc9c', '#34495e',
+        '#e67e22', '#7f8c8d', '#d35400', '#c0392b', '#8e44ad', '#2980b9', '#27ae60', '#16a085', '#bdc3c7'
+    ];
+
+    fetch('./LOC.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok. Ensure you are running this over a local server.');
+            }
+            return response.json();
+        })
+        .then(LOC_DATA => {
+            // Data Extraction
+            const specialProjects = LOC_DATA[0][1];
+            const totalLOC = LOC_DATA[1][1];
+            const allProjects = LOC_DATA[2][1];
+            const languages = LOC_DATA.slice(3);
+
+            // Update Summary Cards
+            document.getElementById('total-loc').innerText = totalLOC.toLocaleString();
+            document.getElementById('total-projects').innerText = allProjects.length;
+            document.getElementById('top-language').innerText = languages[0][0]; 
+
+            // Populate Tables
+            const allBody = document.getElementById('all-projects-body');
+            allProjects.forEach(proj => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td><span class="clickable-title">${proj.title}</span></td>
+                    <td>${proj.loc.toLocaleString()}</td>
+                `;
+                row.querySelector('.clickable-title').addEventListener('click', () => handleProjectClick(proj.title));
+                allBody.appendChild(row);
+            });
+
+            const specialBody = document.getElementById('special-projects-body');
+            specialProjects.forEach(proj => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td><span class="clickable-title">${proj.title}</span></td>
+                    <td style="font-weight: bold; color: #2ecc71;">+${proj.Contributed.toLocaleString()}</td>
+                    <td>${proj.loc.toLocaleString()}</td>
+                `;
+                row.querySelector('.clickable-title').addEventListener('click', () => handleProjectClick(proj.title));
+                specialBody.appendChild(row);
+            });
+
+            // Extract top languages for charting
+            const topLangs = languages.slice(0, 15);
+            const otherLangs = languages.slice(15).reduce((sum, lang) => sum + lang[1], 0);
+            
+            const chartLabels = topLangs.map(l => l[0]);
+            const chartData = topLangs.map(l => l[1]);
+            
+            if (otherLangs > 0) {
+                chartLabels.push('Other');
+                chartData.push(otherLangs);
+            }
+
+            // --- 1. Render Pie Chart --- //
+            new Chart(document.getElementById('languageChart').getContext('2d'), {
+                type: 'doughnut',
+                data: {
+                    labels: chartLabels,
+                    datasets: [{
+                        data: chartData,
+                        backgroundColor: chartColors,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { boxWidth: 15 } },
+                        title: { display: true, text: 'Overall Languages' }
+                    }
+                }
+            });
+
+            // --- 2. Render Yearly Stacked Bar Chart (Fixed Logic) --- //
+            if (typeof projects_all !== 'undefined') {
+                const yearlyData = {};
+                
+                // Aggregate data by year using your exact reduction logic
+                projects_all.forEach(p => {
+                    let yLabel = Array.isArray(p.year) ? Math.max(...p.year) : p.year;
+                    if (!yLabel) yLabel = "Unknown";
+                    
+                    if (!yearlyData[yLabel]) yearlyData[yLabel] = {};
+                    
+                    if (p.loc) {
+                        Object.values(p.loc).forEach(moduleObj => {
+                            // Check if this module is a special contribution to a large repo
+                            if (Object.keys(moduleObj).includes("Contributes")) {
+                                // Ignore original repo sizes, ONLY add contributed lines.
+                                // We assign this to a dummy key so it rolls into 'Other'.
+                                const contributedLOC = moduleObj["Contributes"].loc;
+                                // yearlyData[yLabel]["__Contributed__"] = (yearlyData[yLabel]["__Contributed__"] || 0) + contributedLOC;
+                            } else {
+                                // Normal project: Count all language statistics
+                                Object.entries(moduleObj).forEach(([lang, count]) => {
+                                    yearlyData[yLabel][lang] = (yearlyData[yLabel][lang] || 0) + count;
+                                });
+                            }
+                        });
+                    }
+                });
+
+                // Get sorted years for the X-axis
+                const sortedYears = Object.keys(yearlyData).sort((a, b) => String(a).localeCompare(String(b)));
+                
+                // Construct datasets aligning with top languages used in Pie Chart
+                const yearlyDatasets = [];
+                const topLangsNames = topLangs.map(l => l[0]);
+
+                topLangsNames.forEach((lang, index) => {
+                    const dataPoint = sortedYears.map(year => yearlyData[year][lang] || 0);
+                    // Only add dataset if this language has LOC in at least one year
+                    if (dataPoint.some(v => v > 0)) {
+                        yearlyDatasets.push({
+                            label: lang,
+                            data: dataPoint,
+                            backgroundColor: chartColors[index % chartColors.length]
+                        });
+                    }
+                });
+
+                // Consolidate non-top languages AND "__Contributed__" into the "Other" stack element per year
+                const otherDataPoints = sortedYears.map(year => {
+                    let otherSum = 0;
+                    Object.entries(yearlyData[year]).forEach(([lang, count]) => {
+                        if (!topLangsNames.includes(lang)) {
+                            otherSum += count;
+                        }
+                    });
+                    return otherSum;
+                });
+
+                if (otherDataPoints.some(v => v > 0)) {
+                    yearlyDatasets.push({
+                        label: 'Other',
+                        data: otherDataPoints,
+                        backgroundColor: '#bdc3c7' // Matches the fallback grey in the pie chart
+                    });
+                }
+
+                new Chart(document.getElementById('yearlyChart').getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: sortedYears,
+                        datasets: yearlyDatasets
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: { stacked: true },
+                            y: { stacked: true }
+                        },
+                        plugins: {
+                            legend: { display: false },
+                            title: { display: true, text: 'LOC Per Year' },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.dataset.label + ': ' + context.raw.toLocaleString() + ' lines';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error loading LOC.json:', error);
+            document.getElementById('total-loc').innerText = 'Error';
+            alert('Failed to load LOC.json. Please see the console for more details. (Are you running a local server?)');
+        });
+
+    // --- Interaction and Modal Logic --- //
+
+    function handleProjectClick(requestedTitle) {
+        if (typeof projects_all === 'undefined') {
+            alert('Detailed project data could not be loaded. Please ensure project-source.js is properly linked.');
+            return;
+        }
+
+        let matchedProject = projects_all.find(p => p.title === requestedTitle);
+        
+        if (!matchedProject && requestedTitle.includes('-')) {
+            const baseTitle = requestedTitle.split('-')[0].trim();
+            matchedProject = projects_all.find(p => p.title === baseTitle);
+        }
+
+        if (matchedProject) {
+            openModal(matchedProject);
+        } else {
+            alert(`Detailed breakdown for "${requestedTitle}" was not found in the data source.`);
+        }
+    }
+
+    const modalOverlay = document.getElementById('modal-overlay');
+    const closeBtn = document.getElementById('close-btn');
+    const modalBody = document.getElementById('modal-body');
+    let activeModalCharts = []; 
+
+    function openModal(project) {
+        const yearText = Array.isArray(project.year) ? project.year.join(' - ') : (project.year || 'N/A');
+        
+        let tagsHtml = '';
+        if (project.technologies && project.technologies.length > 0) {
+            tagsHtml = '<div class="tags">' + project.technologies.map(tech => `<span class="tag">${tech}</span>`).join('') + '</div>';
+        }
+
+        let descHtml = '<div class="description-box">';
+        if (project.description && project.description.length > 0) {
+            project.description.forEach(p => { descHtml += `<p>${p}</p>`; });
+        } else {
+            descHtml += '<p>No description provided.</p>';
+        }
+        descHtml += '</div>';
+
+        let locHtml = '<div class="loc-section">';
+        let chartsToInit = []; 
+
+        if (project.loc) {
+            let moduleIndex = 0;
+            for (const [moduleName, languages] of Object.entries(project.loc)) {
+                locHtml += `<h3>Module: <code>${moduleName}</code></h3>`;
+                
+                const actualLanguages = Object.entries(languages).filter(([k]) => k !== 'Contributes');
+                
+                if (actualLanguages.length >= 3) {
+                    const canvasId = `chart-module-${moduleIndex}`;
+                    locHtml += `<div class="module-chart-wrapper"><canvas id="${canvasId}"></canvas></div>`;
+                    
+                    const datasets = actualLanguages.map(([lang, count], i) => {
+                        return {
+                            label: lang,
+                            data: [count],
+                            backgroundColor: chartColors[i % chartColors.length]
+                        };
+                    });
+
+                    chartsToInit.push({
+                        id: canvasId,
+                        config: {
+                            type: 'bar',
+                            data: {
+                                labels: [moduleName],
+                                datasets: datasets
+                            },
+                            options: {
+                                indexAxis: 'y', 
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: { display: true, position: 'bottom', labels: { boxWidth: 10 } },
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(context) {
+                                                return context.dataset.label + ': ' + context.raw.toLocaleString() + ' lines';
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    x: { stacked: true, display: false },
+                                    y: { stacked: true, display: false }
+                                }
+                            }
+                        }
+                    });
+                }
+
+                locHtml += `<table>
+                                <thead>
+                                    <tr>
+                                        <th>Language / Type</th>
+                                        <th>Lines of Code</th>
+                                    </tr>
+                                </thead>
+                                <tbody>`;
+                
+                for (const [lang, count] of Object.entries(languages)) {
+                    if (lang === 'Contributes') {
+                        locHtml += `<tr>
+                                        <td><strong>Total Contributed</strong></td>
+                                        <td style="color: #27ae60; font-weight: bold;">+${count.loc.toLocaleString()}</td>
+                                    </tr>`;
+                    } else {
+                        locHtml += `<tr>
+                                        <td>${lang}</td>
+                                        <td>${count.toLocaleString()}</td>
+                                    </tr>`;
+                    }
+                }
+                locHtml += `</tbody></table>`;
+                moduleIndex++;
+            }
+        }
+        locHtml += '</div>';
+
+        modalBody.innerHTML = `
+            <div class="detail-header">
+                <h2>${project.title}</h2>
+                <p style="color: var(--secondary); margin: 0;"><strong>Year:</strong> ${yearText} | <strong>Level:</strong> ${project.level}</p>
+            </div>
+            ${tagsHtml}
+            ${descHtml}
+            ${locHtml}
+        `;
+
+        // Initialize Module Charts
+        chartsToInit.forEach(chartData => {
+            const moduleCtx = document.getElementById(chartData.id).getContext('2d');
+            activeModalCharts.push(new Chart(moduleCtx, chartData.config));
+        });
+
+        modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    function closeModal() {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+        
+        activeModalCharts.forEach(chart => chart.destroy());
+        activeModalCharts = [];
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) closeModal();
+    });
+
+</script>
+
+</body>
+</html>
