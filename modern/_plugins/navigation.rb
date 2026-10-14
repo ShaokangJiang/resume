@@ -5,7 +5,7 @@ module AcademicNavigation
     def initialize(site, entry, order)
       super(site, site.source, '', "navigation-#{order}.html")
       self.data = { 'title' => entry['title'], 'nav' => true,
-                    'nav_order' => order, 'permalink' => entry['url'],
+                    'nav_order' => entry.fetch('order', order), 'permalink' => entry['url'],
                     'sitemap' => false, 'search' => false }
     end
 

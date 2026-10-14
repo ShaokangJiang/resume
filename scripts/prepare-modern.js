@@ -18,12 +18,8 @@ const config = {
   keywords: 'end-user programming, personal software, developer tools, human-computer interaction, software engineering',
   icon: 'favicon.ico', navbar_fixed: true, footer_fixed: false,
   homepage_navigation: [
-    { title: 'blog', url: 'https://shaokangjiang.github.io/' },
-    { title: 'publications', url: '/#publications' },
-    { title: 'projects', url: '/#projects' },
-    { title: 'repositories', url: 'https://github.com/ShaokangJiang?tab=repositories' },
-    { title: 'CV', url: '/pdf.html' },
-    { title: 'experience', url: '/#experience' }
+    { title: 'publications', url: '/#publications', order: 1 },
+    { title: 'cv', url: '/pdf.html', order: 4 }
   ],
   footer_text: 'Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.',
   contact_note: '', theme: 'al_folio_core', plugins,

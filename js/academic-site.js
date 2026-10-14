@@ -2,7 +2,9 @@
   'use strict';
   const profile = academicProfile;
   const byId = id => document.getElementById(id);
-  const usesAlFolio = Boolean(document.querySelector('[data-al-folio-home]'));
+  const usesAlFolio = Boolean(document.querySelector('[data-al-folio-home], [data-al-folio-page]'));
+  const scriptUrl = document.querySelector('script[src*="/js/academic-site.js"]').src;
+  const siteRoot = usesAlFolio ? new URL('../', scriptUrl) : new URL('./', window.location.href);
   if (usesAlFolio) {
     document.querySelectorAll('#navbar a[href*="#"]').forEach(anchor => {
       anchor.addEventListener('click', () => {
@@ -26,7 +28,9 @@
   function link(label, href) {
     const a = node('a', label);
     // Data may contain local paths, HTTP links, or email links; never executable URLs.
-    if (/^(https?:\/\/|mailto:|\.\.?\/|#)/i.test(href || '')) a.setAttribute('href', href);
+    if (/^(https?:\/\/|mailto:|\.\.?\/|#)/i.test(href || '')) {
+      a.setAttribute('href', usesAlFolio && /^\.\.?\//.test(href) ? new URL(href, siteRoot).href : href);
+    }
     return a;
   }
   function links(items, className = 'entry-links') {
@@ -77,7 +81,7 @@
       const head = node('div', undefined, 'entry-heading');
       head.append(node('h3', entry.institution), node('span', entry.dates, 'entry-date'));
       article.append(head, node('p', entry.degree, 'entry-subtitle'));
-      details(entry.details, article);
+      if (!byId('education-entries').hasAttribute('data-compact')) details(entry.details, article);
       byId('education-entries').append(article);
     });
   }
@@ -96,7 +100,7 @@
     });
   }
   async function loadText(path) {
-    const response = await fetch(path);
+    const response = await fetch(new URL(path, siteRoot));
     if (!response.ok) throw new Error(`Could not load ${path}`);
     return response.text();
   }
@@ -230,6 +234,11 @@
   }
   renderProfile();
   if (byId('experience-entries')) {
+    if (document.querySelector('[data-al-folio-page="experience"]')) {
+      const heading = document.querySelector('.post-title');
+      heading.id = 'experience-title';
+      heading.textContent = 'research experience';
+    }
     initExperienceFilters(document.querySelector('[data-experience-filters]'), types => renderExperience('experience-entries', types));
   }
   renderProjects();

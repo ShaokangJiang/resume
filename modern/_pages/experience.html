@@ -1,0 +1,20 @@
+---
+layout: page
+title: experience
+permalink: /experience/
+nav: true
+nav_order: 2
+---
+
+<link rel="stylesheet" href="{{ '/css/al-folio-content.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/css/experience-filters.css' | relative_url }}">
+<div data-al-folio-page="experience">
+  <div class="experience-filters" data-experience-filters="experience-entries" role="group" aria-label="Filter experience"></div>
+  <div id="experience-entries"></div>
+</div>
+<noscript><p><a href="{{ '/pdf.html' | relative_url }}">Read the PDF résumé</a> for research, teaching, and industry experience.</p></noscript>
+
+<script defer src="{{ '/experience-source.js' | relative_url }}"></script>
+<script defer src="{{ '/js/site-data.js' | relative_url }}"></script>
+<script defer src="{{ '/js/experience-filters.js' | relative_url }}"></script>
+<script defer src="{{ '/js/academic-site.js' | relative_url }}"></script>

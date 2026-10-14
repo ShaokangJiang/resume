@@ -13,28 +13,14 @@
   "footer_fixed": false,
   "homepage_navigation": [
     {
-      "title": "blog",
-      "url": "https://shaokangjiang.github.io/"
-    },
-    {
       "title": "publications",
-      "url": "/#publications"
+      "url": "/#publications",
+      "order": 1
     },
     {
-      "title": "projects",
-      "url": "/#projects"
-    },
-    {
-      "title": "repositories",
-      "url": "https://github.com/ShaokangJiang?tab=repositories"
-    },
-    {
-      "title": "CV",
-      "url": "/pdf.html"
-    },
-    {
-      "title": "experience",
-      "url": "/#experience"
+      "title": "cv",
+      "url": "/pdf.html",
+      "order": 4
     }
   ],
   "footer_text": "Built with <a href=\"https://jekyllrb.com/\">Jekyll</a> and <a href=\"https://github.com/alshedivat/al-folio\">al-folio</a>.",

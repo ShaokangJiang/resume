@@ -14,7 +14,6 @@ latest_posts:
 
 <!-- The layout, title treatment, fonts, and publication cards are al-folio's own. -->
 <link rel="stylesheet" href="{{ '/css/al-folio-content.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/css/experience-filters.css' | relative_url }}">
 <div data-al-folio-home>
   <p id="profile-focus"></p>
   <div id="profile-biography"></div>
@@ -30,15 +29,8 @@ latest_posts:
   </div>
 </section>
 
-<section id="education" aria-labelledby="education-title"><h2 id="education-title">education</h2><div id="education-entries"></div></section>
-<section id="experience" aria-labelledby="experience-title"><h2 id="experience-title">research experience</h2><div class="experience-filters" data-experience-filters="experience-entries" role="group" aria-label="Filter experience"></div><div id="experience-entries"></div></section>
-<section id="projects" aria-labelledby="projects-title"><h2 id="projects-title">projects</h2><div id="project-entries"></div></section>
-<section id="skills" aria-labelledby="skills-title"><h2 id="skills-title">technical skills</h2><dl id="skill-entries"></dl></section>
-<section id="contact" aria-labelledby="contact-title"><h2 id="contact-title">contact</h2><p><a href="mailto:huangsk100@gmail.com">huangsk100@gmail.com</a> · Irvine, California</p><p><a href="{{ '/pdf.html' | relative_url }}">Read the PDF résumé</a> · <a href="{{ '/final/research/Shaokang_Jiang_Resume.pdf' | relative_url }}" download>Download PDF</a></p></section>
+<section id="education" aria-labelledby="education-title"><h2 id="education-title">education</h2><div id="education-entries" data-compact></div></section>
 
-<script defer src="{{ '/experience-source.js' | relative_url }}"></script>
-<script defer src="{{ '/project-source.js' | relative_url }}"></script>
 <script defer src="{{ '/js/site-data.js' | relative_url }}"></script>
 <script defer src="{{ '/js/bibtex.js' | relative_url }}"></script>
-<script defer src="{{ '/js/experience-filters.js' | relative_url }}"></script>
 <script defer src="{{ '/js/academic-site.js' | relative_url }}"></script>

@@ -6,6 +6,8 @@
 section:not(.publications) { margin-top: 2.5rem; }
 section { scroll-margin-top: 5rem; }
 .resume-entry { margin-bottom: 1.5rem; }
+#education-entries[data-compact] .resume-entry { margin-bottom: .75rem; }
+#education-entries[data-compact] .entry-subtitle { margin-bottom: 0; }
 .entry-heading { display: flex; gap: 1.5rem; align-items: baseline; justify-content: space-between; }
 .entry-heading h3 { font-size: 1rem; font-weight: 400; margin-bottom: .25rem; }
 .entry-date { font-size: .875rem; white-space: nowrap; color: var(--global-text-color-light); }
