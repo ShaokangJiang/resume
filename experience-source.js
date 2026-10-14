@@ -54,13 +54,7 @@ const source = [
             "Designed and implemented a pipeline of seeds collecting, matching, recommendation collecting, and political assessing, leveraging Selenium to harvest recommendations, git-diff for video matching, and prompt-engineered GPTs and BERT for political labeling.",
         ],
         "link": [
-            { description: "Early stage metadata visualization", link: "https://information.1442334619.workers.dev/" }, 
-            {
-                description: "Manually labelling system", link: "https://yt.shaokang.me/"
-            },
-            {
-                description: "Sample matched pairs", link: "https://yt.shaokang.me/0612"
-            }
+            { description: "Early stage metadata visualization", link: "https://information.1442334619.workers.dev/" }
         ]
     },
     {
@@ -74,7 +68,7 @@ const source = [
             // "A between-subjects study with 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",
             // "Restructured the study, discussed, designed, and implemented an analysis plan with both qualitative and quantitative components, transcribed, coded, and utilized NLP to analyze the recordings, and wrote and submitted ."
         ],
-        "link": [{ description: "Accepted paper", link: "https://resume.shaokang.me/papers/chatbotvstutorial.pdf" }]
+        "link": [{ description: "Accepted paper", link: "https://shaokangjiang.github.io/resume/papers/chatbotvstutorial.pdf" }]
     },
     {
         "position": "Graduate Student Researcher",
@@ -90,13 +84,13 @@ const source = [
         ],
         "link": [{
             description: "Blog post - paper",
-            link: "https://shaokang.me/2023/Usability-analysis-of-autocomplete/"
+            link: "https://shaokangjiang.github.io/2023/Usability-analysis-of-autocomplete/"
         }, {
             description: "Blog post - fixation algorithm",
-            link: "https://shaokang.me/2023/Eye-tracking-fixation-algorithm/"
+            link: "https://shaokangjiang.github.io/2023/Eye-tracking-fixation-algorithm/"
         }, {
             description: "Blog post - VSCode extension",
-            link: "https://shaokang.me/2022/Build-VSCode-extension/"
+            link: "https://shaokangjiang.github.io/2022/Build-VSCode-extension/"
         }, {
             description: "Published paper",
             link: "https://dl.acm.org/doi/abs/10.1145/3660765"
@@ -105,7 +99,7 @@ const source = [
             link: "https://dl.acm.org/do/10.1145/3580435/full/"
         }, {
             description: "Poster",
-            link: "https://resume.shaokang.me/papers/autocomplete-poster.pdf"
+            link: "https://shaokangjiang.github.io/resume/papers/autocomplete-poster.pdf"
         }]
     },
     {
@@ -120,7 +114,7 @@ const source = [
             "Found that Python type hints were not significantly more useful for competitive programmers in terms of task completion time and debugging time. Open coded of interview results and transcripts indicated programmers feel adding type hints and the popped out autocomplete suggestions to be annoying."
         ],
         "link": [
-            { description: "Blog post", link: "https://shaokang.me/2022/Whether-Python-Type-Hints-are-helpful-for-competitive-programmers-CP/" }
+            { description: "Blog post", link: "https://shaokangjiang.github.io/2022/Whether-Python-Type-Hints-are-helpful-for-competitive-programmers-CP/" }
         ]
     },
     {
@@ -132,7 +126,7 @@ const source = [
         "details": [
             "Investigated whether an avatar appearing in the ChatGPT interface would help create a better communication environment between humans and machines, particularly in terms of alleviating loneliness. Added an avatar to the ChatGPT interface and found no significant difference in a 10 people pilot study. ",
         ],
-        "link": [{ description: "Blog post", link: "https://shaokang.me/2023/Fighting-loneliness-using-generative-AI-with-avatar/" }]
+        "link": [{ description: "Blog post", link: "https://shaokangjiang.github.io/2023/Fighting-loneliness-using-generative-AI-with-avatar/" }]
     },
     {
         "position": "Research Assistant",
@@ -214,7 +208,7 @@ const source = [
             "A 90\\%+ student recommendation rate, while the professor rating was not applicable.", 
             "Designed and developed an interactive shell with session management using JSP and Servlets deployed on Azure, allowing students to try solutions online without exposing the source code. Successfully supported 30+ users simultaneously."
         ],
-        "link": [{ description: "Interactive shell", link: "https://shaokang.me/2023/JSP-java-emulator/" }]
+        "link": [{ description: "Interactive shell", link: "https://shaokangjiang.github.io/2023/JSP-java-emulator/" }]
     },
     {
         "position": "Volunteer Tutor",
@@ -333,4 +327,6 @@ const source_combined = {
     ]
 }
 
-module.exports = { source, source_combined };
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { source, source_combined };
+}

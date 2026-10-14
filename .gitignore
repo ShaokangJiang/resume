@@ -27,3 +27,13 @@ Shaokang_Jiang_Resume__old.pdf
 Resume-TA.pdf
 *.bcf
 *.run.xml
+
+# al-folio compiler dependencies and intermediate files
+modern/.bundle/
+modern/vendor/
+modern/_site/
+modern/.jekyll-cache/
+modern/.jekyll-metadata
+modern/_bibliography/papers.bib
+modern/assets/pdf/
+modern/assets/img/favicon.ico

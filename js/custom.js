@@ -13,55 +13,36 @@ $(window).load(function() {
 $(document).ready(function() {
     "use strict";
 
-    // scroll menu
-    var sections = $('.section'),
-        nav = $('.navbar-fixed-top,footer'),
-        nav_height = nav.outerHeight();
-
-    $(window).on('scroll', function() {
-        var cur_pos = $(this).scrollTop();
-
-        sections.each(function() {
-            var top = $(this).offset().top - nav_height,
-                bottom = top + $(this).outerHeight();
-
-            if (cur_pos >= top && cur_pos <= bottom) {
-                nav.find('a').removeClass('active');
-                sections.removeClass('active');
-
-                $(this).addClass('active');
-                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-            }
+    // Original rabbit navigation: section highlighting, smooth scrolling, and header background.
+    var navigation = $('header.navbar-fixed-top');
+    var sectionLinks = navigation.find('a[href^="#"]');
+    var navigationHeight = navigation.outerHeight() || 0;
+    function updateNavigation() {
+        var position = $(window).scrollTop();
+        navigation.toggleClass('bg-nav', position > 80);
+        var navHeight = navigationHeight;
+        var activeSection = null;
+        $('.section').each(function() {
+            var top = $(this).offset().top - navHeight;
+            if (position >= top && position < top + $(this).outerHeight()) activeSection = this.id;
         });
-    });
-
-    nav.find('a').on('click', function() {
-        var $el = $(this),
-            id = $el.attr('href');
-
-        $('html, body').animate({
-            scrollTop: $(id).offset().top - nav_height + 2
-        }, 600);
-
-        return false;
-    });
-
-
-    // Menu opacity
-    if ($(window).scrollTop() > 80) {
-        $(".navbar-fixed-top").addClass("bg-nav");
-    } else {
-        $(".navbar-fixed-top").removeClass("bg-nav");
+        sectionLinks.removeClass('active');
+        if (activeSection) sectionLinks.filter('[href="#' + activeSection + '"]').addClass('active');
     }
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 80) {
-            $(".navbar-fixed-top").addClass("bg-nav");
-        } else {
-            $(".navbar-fixed-top").removeClass("bg-nav");
-        }
+    $(window).on('scroll', updateNavigation);
+    $(window).on('resize', function() {
+        navigationHeight = navigation.outerHeight() || 0;
+        updateNavigation();
     });
-
-
+    updateNavigation();
+    sectionLinks.on('click', function(event) {
+        var target = document.getElementById(this.hash.slice(1));
+        if (!target) return;
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: $(target).offset().top - navigationHeight + 2
+        }, 600);
+    });
 
     // Parallax
     var parallax = function() {
@@ -80,13 +61,6 @@ $(document).ready(function() {
     });
 
     
-    $('.portfolio_filter1 a').click(function() {
-        $('.portfolio_filter1 .active').removeClass('active');
-        $(this).addClass('active');
-
-        return false;
-    });
-
     //  isotope
     $('#projects').waitForImages(function() {
         var $container = $('.portfolio_container');
@@ -94,34 +68,16 @@ $(document).ready(function() {
             filter: '*',
         });
 
-        $('.portfolio_filter a').click(function() {
-            var selector = $(this).attr('data-filter');
-            console.log(selector); 
-            if (selector == '.all') {
-                $('html, body').animate({
-                    scrollTop: $('#allprojects').offset().top - nav_height + 2
-                }, 600);
-                return false;
-            }
-
-            $('.portfolio_filter .active').removeClass('active');
-            $(this).addClass('active');
-
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 500,
-                    animationEngine: "jquery"
-                }
-            });
-            return false;
-        });
-        
 
     });
 
     //animatedModal
-    $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
+    var projectDialogs = $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09");
+    // This legacy plugin reads href during initialization. The visible controls
+    // are buttons, and the compatibility attribute is removed immediately.
+    projectDialogs.attr('href', '#animatedModal');
+    projectDialogs.animatedModal();
+    projectDialogs.removeAttr('href');
 
     // Contact Form 	
 

@@ -1,0 +1,40 @@
+/* A small reading layout; native serif type, blue links, and no theme framework. */
+html { scroll-padding-top: 15px; }
+body { max-width: 850px; margin: 25px auto; padding: 0 18px; color: #111; background: white; font: 16px/1.4 Georgia, "Times New Roman", serif; }
+a { color: #0000c0; text-underline-offset: 2px; }
+a:visited { color: #551a8b; }
+a:focus-visible { outline: 2px solid #0000c0; outline-offset: 3px; }
+.profile-links, .entry-links, .pub-links { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+h1 { font-size: 29px; margin: 19px 0 2px; }
+h2 { font-size: 21px; margin: 23px 0 10px; border-bottom: 1px solid #ccc; padding-bottom: 3px; }
+h3 { font-size: 16px; line-height: 1.35; margin: 0; }
+p { margin: 7px 0; }
+.profile-role { margin-top: 0; }
+.profile-focus { font-style: italic; margin: 5px 0 12px; }
+.profile-links { margin: 12px 0 19px; }
+.publication-list { list-style: none; padding: 0; }
+.pub-item { margin: 0 0 14px; }
+.pub-authors, .pub-venue { font-size: 14px; margin: 2px 0; }
+.pub-venue { font-style: italic; }
+.pub-links, .entry-links { font-size: 13px; margin-top: 3px; }
+.resume-entry { margin-bottom: 17px; }
+.entry-heading { display: flex; justify-content: space-between; gap: 15px; align-items: baseline; }
+.entry-date { font-size: 13px; white-space: nowrap; }
+.entry-subtitle { margin: 2px 0 4px; font-style: italic; font-size: 14px; }
+.entry-details { margin: 4px 0; padding-left: 21px; font-size: 14px; }
+.entry-details li { margin: 2px 0; }
+dl { margin: 10px 0; font-size: 14px; }
+dt { font-weight: bold; float: left; clear: left; margin-right: 6px; }
+dt::after { content: ':'; }
+dd { margin: 0 0 7px; }
+footer { border-top: 1px solid #aaa; margin-top: 23px; padding-top: 7px; font-size: 13px; }
+@media (max-width: 600px) {
+  body { margin-top: 15px; padding: 0 14px; }
+  .entry-heading { display: block; }
+  .entry-date { display: block; white-space: normal; margin: 2px 0; }
+}
+@media print {
+  footer { display: none; }
+  body { margin: 0; max-width: none; }
+  .resume-entry, .pub-item { break-inside: avoid; }
+}

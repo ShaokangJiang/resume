@@ -1,0 +1,142 @@
+{
+  "title": "blank",
+  "first_name": "Shaokang",
+  "middle_name": "",
+  "last_name": "Jiang",
+  "url": "https://shaokangjiang.github.io",
+  "baseurl": "/resume",
+  "lang": "en",
+  "description": "Shaokang Jiang — end-user programming, personal software, and developer tools.",
+  "keywords": "end-user programming, personal software, developer tools, human-computer interaction, software engineering",
+  "icon": "favicon.ico",
+  "navbar_fixed": true,
+  "footer_fixed": false,
+  "homepage_navigation": [
+    {
+      "title": "blog",
+      "url": "https://shaokangjiang.github.io/"
+    },
+    {
+      "title": "publications",
+      "url": "/#publications"
+    },
+    {
+      "title": "projects",
+      "url": "/#projects"
+    },
+    {
+      "title": "repositories",
+      "url": "https://github.com/ShaokangJiang?tab=repositories"
+    },
+    {
+      "title": "CV",
+      "url": "/pdf.html"
+    },
+    {
+      "title": "experience",
+      "url": "/#experience"
+    }
+  ],
+  "footer_text": "Built with <a href=\"https://jekyllrb.com/\">Jekyll</a> and <a href=\"https://github.com/alshedivat/al-folio\">al-folio</a>.",
+  "contact_note": "",
+  "theme": "al_folio_core",
+  "plugins": [
+    "jekyll-3rd-party-libraries",
+    "jekyll-cache-bust",
+    "jekyll-minifier",
+    "jekyll-regex-replace",
+    "jekyll/scholar",
+    "jekyll-socials",
+    "al_folio_core",
+    "al_icons",
+    "al_search",
+    "al_citations",
+    "al_folio_upgrade"
+  ],
+  "shared_bibliography_hash": "c194c56e42d59fddb32c2e188d6595624ae9bc7200a538cd90d45ea3ac375383",
+  "al_folio": {
+    "api_version": 1,
+    "style_engine": "tailwind",
+    "compat": {
+      "bootstrap": {
+        "enabled": false
+      }
+    },
+    "features": {
+      "cv": {
+        "enabled": false
+      },
+      "distill": {
+        "enabled": false
+      }
+    }
+  },
+  "scholar": {
+    "last_name": [
+      "Jiang"
+    ],
+    "first_name": [
+      "Shaokang"
+    ],
+    "source": "./_bibliography",
+    "bibliography": "papers.bib",
+    "bibliography_template": "bib",
+    "query": "@*",
+    "group_by": "year",
+    "group_order": "descending",
+    "sort_by": "none",
+    "bibtex_filters": [
+      "latex",
+      "smallcaps",
+      "superscript"
+    ],
+    "replace_strings": true,
+    "join_strings": true
+  },
+  "max_author_limit": 1000,
+  "enable_publication_thumbnails": true,
+  "enable_publication_badges": {
+    "altmetric": false,
+    "dimensions": false,
+    "google_scholar": false,
+    "inspirehep": false
+  },
+  "enable_darkmode": true,
+  "enable_masonry": false,
+  "enable_math": false,
+  "enable_medium_zoom": false,
+  "enable_progressbar": false,
+  "search_enabled": true,
+  "bib_search": false,
+  "back_to_top": false,
+  "external_sources": [],
+  "newsletter": {
+    "enabled": false
+  },
+  "imagemagick": {
+    "enabled": false
+  },
+  "external_links": {
+    "enabled": false
+  },
+  "third_party_libraries": {
+    "google_fonts": {
+      "url": {
+        "fonts": "/resume/fonts/roboto/roboto.css"
+      }
+    }
+  },
+  "include": [
+    "_pages"
+  ],
+  "exclude": [
+    "Gemfile",
+    "Gemfile.lock",
+    "LICENSE",
+    "upstream-config.yml",
+    "vendor",
+    ".bundle",
+    "_site",
+    ".al-folio-overrides.yml"
+  ]
+}

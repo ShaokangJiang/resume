@@ -1,0 +1,27 @@
+/* Only the existing data-rendered resume sections need site-specific layout.
+   Typography, colors, titles, bibliography cards, and buttons are al-folio defaults. */
+[data-al-folio-home] #profile-focus { margin-bottom: 1rem; }
+.profile-links, .entry-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+.profile-links { margin-bottom: 1.5rem; }
+section:not(.publications) { margin-top: 2.5rem; }
+section { scroll-margin-top: 5rem; }
+.resume-entry { margin-bottom: 1.5rem; }
+.entry-heading { display: flex; gap: 1.5rem; align-items: baseline; justify-content: space-between; }
+.entry-heading h3 { font-size: 1rem; font-weight: 400; margin-bottom: .25rem; }
+.entry-date { font-size: .875rem; white-space: nowrap; color: var(--global-text-color-light); }
+.entry-subtitle { margin-bottom: .5rem; }
+.entry-details { padding-left: 1.25rem; margin-bottom: .5rem; }
+.entry-details li { margin-bottom: .25rem; }
+.entry-links { font-size: .875rem; }
+#skill-entries { display: grid; grid-template-columns: 150px 1fr; gap: .75rem 1.25rem; }
+#skill-entries dt { font-weight: 400; }
+#skill-entries dd { margin: 0; }
+@media (max-width: 575px) {
+  .entry-heading { display: block; }
+  .entry-date { display: block; white-space: normal; margin-bottom: .25rem; }
+  #skill-entries { display: block; }
+  #skill-entries dd { margin-bottom: .75rem; }
+}
+@media print {
+  .resume-entry, .publications ol.bibliography li { break-inside: avoid; }
+}

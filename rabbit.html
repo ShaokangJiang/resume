@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shaokang Jiang — end-user programming, personal software, and developer tools.">
+    <meta name="keywords" content="Resume, Shaokang Jiang, Skills, Projects, Experience">
+    <title>Shaokang's Resume</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/experience-filters.css" rel="stylesheet">
+    <script src="./experience-source.js"></script>
+    <script src="./js/experience-filters.js"></script>
+    <script src="./project-source.js"></script>
+    <script defer src="./js/site-data.js"></script>
+    <script defer src="./js/bibtex.js"></script>
+    <script defer src="./js/academic-site.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        button.portfolio_item { border: 0; padding: 0; background: transparent; width: 100%; text-align: inherit; }
+
+        #profile-links a, .pub-links a { display: inline-block; margin-right: 12px; }
+        .pub-title { margin: 0 0 6px; }
+        .pub-authors, .pub-venue { margin: 0 0 5px; }
+        .scrolldown {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            transform: translateY(-80px) translateX(-50%) rotate(45deg);
+        }
+
+        .scrolldown span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-bottom: 5px solid #EADBBE;
+            border-right: 5px solid #EADBBE;
+            animation: animate1 2s linear infinite;
+            opacity: 0;
+        }
+
+        .scrolldown span:nth-child(1) {
+            transform: translate(-15px, -15px);
+            animation-delay: -0.4s;
+        }
+
+        .scrolldown span:nth-child(2) {
+            transform: translate(0px, 0px);
+            animation-delay: -0.2s;
+        }
+
+        .scrolldown span:nth-child(3) {
+            transform: translate(15px, 15px);
+            animation-delay: 0s;
+        }
+
+        @keyframes animate1 {
+            0% {
+                top: -5px;
+                left: -5px;
+                opacity: 0;
+            }
+
+            25% {
+                top: 0px;
+                left: 0px;
+                opacity: 1;
+            }
+
+            50%,
+            100% {
+                top: 5px;
+                left: 5px;
+                opacity: 0;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212129;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .btn-lg,
+        .btn-group-lg>.btn {
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            border-radius: 0.3rem;
+        }
+
+        .btn-outline-primary {
+            color: #425BB5;
+            border-color: #425BB5;
+        }
+
+        .btn-outline-primary:hover {
+            color: #f3f3f3;
+            background-color: #425BB5;
+            border-color: #425BB5;
+        }
+
+        .btn-outline-primary:focus,
+        .btn-outline-primary.focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+        }
+
+        .btn-outline-primary.disabled,
+        .btn-outline-primary:disabled {
+            color: #425BB5;
+            background-color: transparent;
+        }
+
+        .btn-outline-primary:not(:disabled):not(.disabled):active,
+        .btn-outline-primary:not(:disabled):not(.disabled).active,
+        .show>.btn-outline-primary.dropdown-toggle {
+            color: #f3f3f3;
+            background-color: #425BB5;
+            border-color: #425BB5;
+        }
+
+        .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+        .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+        .show>.btn-outline-primary.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            background-color: #818181;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        #publications {
+            padding-top: 100px;
+            background: #f3f3f3;
+        }
+
+        li:not(:last-child) {
+            padding-bottom: 20px;
+        }
+    </style>
+    <style>
+
+        .publication-list {
+            list-style-type: none; /* Removes the default 1. 2. numbers */
+            padding-left: 40px;    /* Makes room on the left for the [1] */
+            max-width: 1500px;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            
+            /* Start a custom counter for the brackets */
+            counter-reset: pub-counter; 
+        }
+
+        .pub-item {
+            position: relative; /* Allows us to absolutely position the number */
+            
+            /* Increase the counter by 1 for each item */
+            counter-increment: pub-counter; 
+        }
+
+        /* This magically injects the [1], [2] before each item */
+        .pub-item::before {
+            content: "[" counter(pub-counter) "]";
+            position: absolute;
+            left: -40px; /* Pulls the number into the padding space */
+            top: 0;
+            width: 30px; /* Keeps multi-digit numbers like [10] neatly aligned */
+            text-align: right;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            font-size: 1.05em;
+            color: #222;
+            display: inline;
+            /* Forces the text to flow naturally */
+        }
+
+        .pub-links {
+            display: inline;
+            /* Keeps links on the same text line */
+        }
+
+        .pub-links a {
+            display: inline-block;
+            margin-left: 6px;
+            /* Space between last word and button */
+            font-size: 0.85em;
+            color: #007bff;
+            text-decoration: none;
+            border: 1px solid #007bff;
+            padding: 1px 6px;
+            border-radius: 4px;
+            transition: all 0.2s;
+
+            /* The magic to align buttons perfectly with inline text */
+            vertical-align: baseline;
+            position: relative;
+            top: -1px;
+            /* Tiny micro-adjustment to align the box bottom with text baseline */
+            white-space: nowrap;
+            /* Prevents the button text itself from splitting */
+        }
+
+        .pub-authors {
+            margin: 4px 0;
+            color: #444;
+        }
+
+        /* Automatically bolds your name */
+        .me {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .pub-venue {
+            font-style: italic;
+            color: #555;
+            margin: 0 0 8px 0;
+        }
+
+        .pub-note {
+            font-style: italic;
+            color: #555;
+            margin: 0 0 8px 0;
+        }
+
+        .pub-links a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        if (window.ActiveXObject || "ActiveXObject" in window) {
+
+            //alert("ie")
+            alert("This site doesn't support IE. It Will direct you to the pdf version to download.")
+            window.location.href = './Resume_research.pdf'
+
+
+        } else {
+
+            //alert("not ie")
+
+        }
+    </script>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+
+            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+            </div>
+
+        </div>
+    </div>
+    <!-- ./Preloader -->
+
+    <!-- header -->
+    <header class="navbar-fixed-top">
+        <div id="mySidenav" class="sidenav">
+            <button type="button" class="closebtn" onclick="closeNav()" aria-label="Close menu">&times;</button>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#education" onclick="closeNav()">education</a>
+            <a href="#experience" onclick="closeNav()">experience</a>
+            <a href="#publications" onclick="closeNav()">publications</a>
+            <a href="#skills" onclick="closeNav()">skill</a>
+            <a href="#projects" onclick="closeNav()">projects</a>
+            <a href="#contact" onclick="closeNav()">contact</a>
+        </div>
+        <nav>
+            <div style="display: flex;flex-direction: row;justify-content: space-around;">
+                <div id="touch_menu" class="visible-xs"
+                    style="display: flex;align-items: center;min-height: 40px;margin-top: 20px;">
+                    <button type="button" aria-label="Open menu" aria-controls="mySidenav" aria-expanded="false"
+                        style="font-size:30px;cursor:pointer;background:none;border:0;padding:0;" onclick="openNav()">&#9776;</button>
+                </div>
+                <div style="display: flex;align-items: center;min-height: 70px;">
+                    <button type="button" class="btn btn-outline-primary btn-lg" style="margin-top: -2rem;"
+                        onclick="window.location.href='https://shaokangjiang.github.io'">⬅️ To My Blog</button>
+                </div>
+                <ul class="hidden-xs">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">education</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#publications">publications</a></li>
+                    <li><a href="#skills">skill</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <div style="display: flex;align-items: center;min-height: 70px;">
+                    <button type="button" class="btn btn-outline-primary btn-lg" style="margin-top: -2rem;"
+                        onclick="window.location.href='./pdf.html'">PDF version ➡️</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ./header -->
+
+    <!-- home -->
+    <div class="section" id="home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="disply-table">
+                <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
+                    <h4>Shaokang Jiang</h4>
+                    <h1>Resume</h1>
+                    <b>Researcher in end-user programming, personal software, and developer tools. </b><br>
+                    Scroll down to see more.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrolldown">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- ./home -->
+
+    <!-- about -->
+    <div class="section" id="about">
+        <div class="container">
+            <div class="col-md-6" data-aos="fade-up">
+                <h4>01</h4>
+                <h1 class="size-50">About me</h1>
+                <div class="h-50"></div>
+                <div id="profile-biography"></div>
+                <div id="profile-links"></div>
+            </div>
+            <div class="col-md-6 about-img-div hidden-xs">
+                <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
+                <img src="./img/bg/2.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right"
+                    data-aos-delay="0" />
+            </div>
+        </div>
+    </div>
+    <!-- ./about -->
+
+    <!-- education  -->
+    <div class="section" id="education">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>02</h4>
+                <h1 class="size-50">Education Experience</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <li class="timeline-event" data-aos="fade-up">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Sept 2025 - June 2030 (expected)</p>
+                            <h3>University of California, Irvine</h3>
+                            <h4>Ph.D. in Software Engineering</h4>
+                            <p><b>Irvine, CA</b>
+                                <br>Advised by Daye Nam
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Sept 2022 - March 2025</p>
+                            <h3>University of California San Diego</h3>
+                            <h4>M.S. in Computer Science and Engineering</h4>
+                            <p><b>San Diego, CA</b><br>Thesis: "Usability Analysis of Programming Assistants"
+                                <br>Advised by Michael Coblenz
+                                <br>Also supervised by Kristen Vaccaro, Deepak Kumar, and Steven Dow
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Aug 2019 - May 2021</p>
+                            <h3>University of Wisconsin-Madison</h3>
+                            <h4>B.S. in Computer Science</h4>
+                            <p><strong>GPA: 4.00/4.00, Madison, WI</strong>
+                                <br>Dean's List of College of Letters & Science at UW-Madison, <strong>Fall 2019 - Fall
+                                    2020</strong>
+                            </p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ./education -->
+
+
+    <!-- experience  -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>03</h4>
+                <h1 class="size-50" id="experience-title">Research Experience</h1>
+                <div class="experience-filters rabbit-experience-filters" data-experience-filters="experience-timeline" role="group" aria-label="Filter experience"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline" id="experience-timeline">
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ./experience -->
+
+    <div class="section" id="publications">
+        <div class="container">
+            <h4>04</h4>
+            <h1 class="size-50">Publications</h1>
+            <div class="h-50"></div>
+
+            <ol id="publication-container" class="publication-list">
+                <li>Loading publications...</li>
+            </ol>
+
+
+        </div>
+    </div>
+
+
+    <!-- skills -->
+    <div class="section" id="skills">
+        <div class="container" style="padding-bottom: 100px;">
+            <h4>05</h4>
+            <h1 class="size-50">Skills</h1>
+            <h5>Proficient in the following skills, but know more than this. And I could adjust and learn new skills
+                fast. </h5>
+            <div class="h-50"></div>
+            <div class="col-md-6" data-aos="fade-up">
+
+                <h3>Languages</h3>
+                <div>
+                    <img src="https://api.iconify.design/logos:java.svg" width="50px" alt="Java" title="Java">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:python.svg" width="50px" alt="Python" title="Python">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/teenyicons/rust-outline.svg" width="50px" alt="Rust"
+                        title="Rust"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-c.svg" width="50px" alt="C" title="C">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-cpp.svg" width="50px" alt="C++"
+                        title="C++"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-csharp.svg" width="50px" alt="C#"
+                        title="C#"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:html-5.svg" width="50px" alt="HTML" title="HTML">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/el:css.svg" width="50px" alt="CSS" title="CSS"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/ion:logo-javascript.svg" width="50px" alt="JavaScript"
+                        title="JavaScript"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:typescript-icon.svg" width="50px" alt="TypeScript"
+                        title="TypeScript"> &nbsp;&nbsp;
+                    <img src="./img/MATLAB.svg" width="50px" alt="Matlab" title="Matlab">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/file-icons:latex.svg" width="50px" alt="LaTeX" title="LaTeX">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/file-icons:gams.svg" width="50px" alt="GAMS" title="GAMS">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/ion:logo-markdown.svg" width="50px" alt="Markdown"
+                        title="Markdown"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:haskell.svg" width="50px" alt="Haskell" title="Haskell">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/carbon:sql.svg" width="50px" alt="SQL" title="SQL">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/file-icons:ejs.svg" width="50px" alt="Embedded JavaScript"
+                        title="Embedded JavaScript"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/simple-icons:blogger.svg" width="50px"
+                        alt="Blogger Template Language" title="Blogger Template Language"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/mdi:bash.svg" width="50px" alt="Shell" title="Shell">
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+                <h3>Frameworks</h3>
+                <div>
+                    <img src="https://camo.githubusercontent.com/2905ec919ee215233fc90a7fa9303c96f4526e9e25d9f0cd1d0cd590f4a6a5e1/68747470733a2f2f6d6963726f736f66742e6769746875622e696f2f6175746f67656e2f302e322f696d672f61672e737667"
+                        width="50px" alt="AutoGen" title="AutoGen">
+                    <img src="https://api.iconify.design/logos:react.svg" width="50px" alt="React" title="React">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:nuxt-icon.svg" width="50px" alt="Nuxt" title="Nuxt">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:nodejs-icon.svg" width="50px" alt="Node.js"
+                        title="Node.js"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:vue.svg" width="50px" alt="Vue" title="Vue"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:jest.svg" width="50px" alt="Jest" title="Jest">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:vitest.svg" width="50px" alt="Vitest" title="Vitest">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-jsp.svg" width="50px"
+                        alt="JavaServer Pages" title="JavaServer Pages"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:flask.svg" width="50px" alt="Flask" title="Flask">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/vscode-icons:file-type-light-expo.svg" width="50px" alt="Expo"
+                        title="Expo"> &nbsp;&nbsp;
+                    <img src="./img/JUnit.svg" width="50px" alt="JUnit" title="JUnit">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:svelte-icon.svg" width="50px" alt="Svelte"
+                        title="Svelte"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:vitejs.svg" width="50px" alt="VitePress"
+                        title="VitePress"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:hexo.svg" width="50px" alt="Hexo" title="Hexo">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:electron.svg" width="50px" alt="Electron"
+                        title="Electron"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:chrome.svg" width="50px" alt="Chrome Extensions"
+                        title="Chrome Extensions"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:visual-studio-code.svg" width="50px"
+                        alt="VSCode Extensions" title="VSCode Extensions"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:puppeteer.svg" width="50px" alt="Puppeteer"
+                        title="Puppeteer"> &nbsp;&nbsp;
+                    <img src="./img/tamper.png" width="50px" alt="Tampermonkey" title="Tampermonkey"> &nbsp;&nbsp;
+                    <img src="./img/javafx.png" width="50px" alt="JavaFX" title="JavaFX">
+                    &nbsp;&nbsp;
+                    <img src="./img/servletslogo.webp" width="50px" alt="Servlets" title="Servlets">
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+
+                <h3>Platforms/Tools</h3>
+                <div>
+                    <img src="https://api.iconify.design/logos:git-icon.svg" width="50px" alt="Git" title="Git">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:docker-icon.svg" width="50px" alt="Docker"
+                        title="Docker"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:github-icon.svg" width="50px" alt="GitHub"
+                        title="GitHub"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:google-cloud.svg" width="50px" alt="Google Cloud"
+                        title="Google Cloud"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:azure-icon.svg" width="50px" alt="Azure" title="Azure">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:cloudflare.svg" width="50px" alt="Cloudflare"
+                        title="Cloudflare"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:firebase.svg" width="50px" alt="Firebase"
+                        title="Firebase"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:oracle.svg" width="50px" alt="Oracle Cloud"
+                        title="Oracle Cloud"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:visual-studio-code.svg" width="50px" alt="VS Code"
+                        title="VS Code"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:visual-studio.svg" width="50px" alt="Visual Studio"
+                        title="Visual Studio"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:intellij-idea.svg" width="50px" alt="IntelliJ"
+                        title="IntelliJ"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:eclipse.svg" width="50px" alt="Eclipse" title="Eclipse">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:nginx.svg" width="50px" alt="Nginx" title="Nginx">
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+                <h3>Other Platforms</h3>
+                <div>
+                    <img src="https://api.iconify.design/logos:microsoft-windows.svg" width="50px" alt="Windows"
+                        title="Windows"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:linux-tux.svg" width="50px" alt="Linux" title="Linux">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:jira.svg" width="50px" alt="JIRA" title="JIRA">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:trello.svg" width="50px" alt="Trello" title="Trello">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/simple-icons:azuredevops.svg" width="50px" alt="DevOps"
+                        title="DevOps"> &nbsp;&nbsp;
+                    <img src="./img/agility.png" width="50px" alt="Agile" title="Agile">
+                    &nbsp;&nbsp;
+                    <img src="./img/JMP.svg" width="50px" alt="JMP" title="JMP"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:figma.svg" width="50px" alt="Figma" title="Figma">
+                    &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:adobe-photoshop.svg" width="50px" alt="Photoshop"
+                        title="Photoshop"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:adobe-premiere.svg" width="50px" alt="Premiere"
+                        title="Premiere"> &nbsp;&nbsp;
+                    <img src="./img/adobeaudition.svg" width="50px" alt="Audition" title="Audition"> &nbsp;&nbsp;
+                    <img src="https://api.iconify.design/logos:blender.svg" width="50px" alt="Blender" title="Blender">
+                    &nbsp;&nbsp;
+                    <img src="./img/icons8-excel.svg" width="50px" alt="Excel" title="Excel"> &nbsp;&nbsp;
+                    <img src="./img/icons8-word.svg" width="50px" alt="Word" title="Word">
+                    &nbsp;&nbsp;
+                    <img src="./img/icons8-powerpoint.svg" width="50px" alt="PowerPoint" title="PowerPoint">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./skills -->
+
+
+    <!-- projects -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>06</h4>
+                <h1 class="size-50">Projects</h1>
+                <h5>The following projects represent my self-learning journey in programming. Most of them are not
+                    related to any course. To view the code, visit my
+                    <a href="https://github.com/shaokangJiang/" target="_blank">GitHub</a>. <br />Click each
+                    widget to see the details.
+                </h5>
+            </div>
+            <!-- main container -->
+            <div class="main-container portfolio-inner clearfix">
+                <!-- portfolio div -->
+                <div class="portfolio-div">
+                    <div class="portfolio">
+                        <!-- portfolio_filter -->
+                        <!-- portfolio_filter -->
+
+
+
+
+                        <!-- portfolio_container -->
+                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 website">
+                                <button type="button" id="demo01" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/01.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Financial Web App</span>
+                                                <em>(HTML/ejs/Worker/Hexo, 2020)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 mobile">
+                                <button type="button" id="demo02" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/02.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Financial Organization App</span>
+                                                <em>(Expo/NLP.js, 2020)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 mobile">
+                                <button type="button" id="demo03" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/03.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Simple Chat App</span>
+                                                <em>(Expo/NLP.js, 2020)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 website">
+                                <button type="button" id="demo04" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/04.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Energy Simulator Website App</span>
+                                                <em>(HTML/WebGL/AR.js, 2020)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 desktop">
+                                <button type="button" id="demo05" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/05.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Energy Simulator Java</span>
+                                                <em>(JFoenix/choco-solver/JavaFx, 2020)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 desktop">
+                                <button type="button" id="demo06" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/06.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>An Auto Comment Writer</span>
+                                                <em>(Java, 2019)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 website">
+                                <button type="button" id="demo07" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/07.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>HateFate Website</span> <em>(Azure/Jsp/SQL,
+                                                    2017)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 desktop">
+                                <button type="button" id="demo08" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/08.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Library Management Software</span> <em>(Java,
+                                                    2017)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 desktop">
+                                <button type="button" id="demo09" class="portfolio_item" aria-haspopup="dialog"> <img
+                                        src="img/portfolio/09.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>A computer manage program</span> <em>(C,
+                                                    2018)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- end single work -->
+                        </div>
+                        <!-- end portfolio_container -->
+                    </div>
+                    <!-- portfolio -->
+                </div>
+                <!-- end portfolio div -->
+            </div>
+            <!-- end main container -->
+        </div>
+    </div>
+
+    <div class="section" id="allprojects">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="size-50">All projects</h1>
+                <h5>The following projects are nearly all projects I have done. Some of them are course related
+                    projects.</h5>
+                <div class="h-50"></div>
+
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline" id="project-timeline">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="section" id="contact" style="padding-bottom: 20px;">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>07</h4>
+                <h1 class="size-50">Contact Me</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-4">
+
+                <h3>Phone Number</h3>
+                <p>(858)-319-7385</p>
+                <h3>Email</h3>
+                <p>shj@uci.edu </p>
+                <h3>GitHub</h3>
+                <p>ShaokangJiang</p>
+
+                <h3>Network</h3>
+
+                <ul class="social">
+                    <li><a href="https://github.com/shaokangJiang/" title="Github"><i class="ion-social-github"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/shaokang-jiang-0a66461a2/" title="LinkedIn"><i
+                                class="ion-social-linkedin"></i></a></li>
+                    <li><a href="https://shaokangjiang.github.io" title="Blog"><i class="ion-ios-book"></i></a></li>
+                    <li><a href="https://shaokangjiang.github.io/rss2.xml" title="Rss"><i
+                                class="ion-social-rss"></i></a></li>
+                    <li><a href="mailto:huangsk100@gmail.com" title="Email"><i class="ion-email"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-8">
+                <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" />
+                    <input type="email" name="email" class="form-control" placeholder="Your E-mail" />
+                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
+                    <textarea name="message" class="form-control" placeholder="Your Message"
+                        style="height:120px"></textarea>
+                    <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
+                    <div id="success">
+                        <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I
+                            can. </p>
+                    </div>
+                    <div id="error">
+                        <p> Something went wrong, try refreshing and submitting the form again. </p>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 h-50" style="font-size: 9px;color: #929292;">*Certain works, including art and icons
+                displayed on this screen, are created and owned by third parties. I do not claim any ownership of these
+                materials. They are presented solely for informational purposes.
+            </div>
+        </div>
+
+    </div>
+    <!-- ./contact -->
+
+    <!--animatedModal1-->
+    <div id="animatedModal" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div id="model-custom-content" class="modal-content">
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!--  plugins  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!--  main script  -->
+    <script src="js/custom.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById('mySidenav').style.width = '250px';
+            document.querySelector('[aria-controls="mySidenav"]').setAttribute('aria-expanded', 'true');
+        }
+        function closeNav() {
+            document.getElementById('mySidenav').style.width = '0';
+            document.querySelector('[aria-controls="mySidenav"]').setAttribute('aria-expanded', 'false');
+        }
+        const width = window.innerWidth || document.documentElement.clientWidth ||
+            document.body.clientWidth;
+        const height = window.innerHeight || document.documentElement.clientHeight ||
+            document.body.clientHeight;
+
+        $(document).ready(function () {
+            document.getElementById("model-custom-content").style.height = height + "px";
+            document.getElementById("demo01").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2020/projects/Publication-of-Financial-website/" style="border:none;" title="Financial web app"></iframe>'
+            });
+            document.getElementById("demo02").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2020/Financial-organization-phone-application/" style="border:none;"></iframe>'
+            });
+            document.getElementById("demo03").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2021/projects/Simple-Chat-App/" style="border:none;"></iframe>'
+            });
+            document.getElementById("demo04").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2020/Energy-smulation-website/" style="border:none;"></iframe>'
+            });
+            document.getElementById("demo05").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2020/projects/Energy-simulation-JavaFx-ver/" style="border:none;"></iframe>'
+            });
+            document.getElementById("demo06").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2019/projects/AutoCommenter/" style="border:none;"></iframe>'
+            });
+            document.getElementById("demo07").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2017/projects/Website%20for%20CS100%20project/" style="border:none;"></iframe>'
+            });
+
+            document.getElementById("demo08").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2021/projects/Additional-Work/index.html#LibraryManagementSoftware" style="border:none;"></iframe>'
+                //id=
+            });
+            document.getElementById("demo09").addEventListener("click", function () {
+                document.getElementById("animatedModal").style.overflowY = "hidden"
+                document.getElementById("model-custom-content").innerHTML = ""
+                document.getElementById("model-custom-content").innerHTML = '<iframe width="100%" height="100%" src="https://shaokangjiang.github.io/2018/projects/A-computer-manage-program/" style="border:none;"></iframe>'
+            });
+        });
+
+        function filterAndCombine(source, config, startTime) {
+            let combined = [];
+            for (let i of config) {
+                if (i.includes("-combined")) {
+                    combined = combined.concat(source_combined[i.split("-")[0]]);
+                } else {
+                    combined = combined.concat(source.filter(entry => entry.type === i && new Date(entry.start_date) >= startTime));
+                }
+            }
+            combined.sort((a, b) => {
+                const startDateComparison = new Date(b.start_date) - new Date(a.start_date);
+                if (startDateComparison !== 0) {
+                    return startDateComparison;
+                }
+                if (b.end_date === "now") return 1;
+                if (a.end_date === "now") return -1;
+                return new Date(b.end_date) - new Date(a.end_date);
+            });
+            return combined;
+        }
+
+
+        function render(category) {
+            document.getElementById('experience-timeline').innerHTML = '';
+
+            let count = 0;
+            filterAndCombine(source, category, new Date(0)).forEach(entry => {
+                const formattedDetails = entry.details.map(detail => {
+                    return detail
+                        .replace(/\\textbf{([^}]*)}/g, '<b>$1</b>')
+                        .replace(/\\textit{([^}]*)}/g, '<i>$1</i>')
+                        .replace(/\\underline{([^}]*)}/g, '<u>$1</u>')
+                        .replace(/\\section{([^}]*)}/g, '<h2>$1</h2>')
+                        .replace(/\\subsection{([^}]*)}/g, '<h3>$1</h3>')
+                        .replace(/\\subsubsection{([^}]*)}/g, '<h4>$1</h4>')
+                        .replace(/\\emph{([^}]*)}/g, '<em>$1</em>')
+                        .replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1">$2</a>')
+                        .replace(/\\url{([^}]*)}/g, '<a href="$1">$1</a>')
+                        .replace(/\\texttt{([^}]*)}/g, '<code>$1</code>')
+                        .replace("\\%", "%")
+                        .replace("\\#", "#");
+                });
+
+                const li = document.createElement('li');
+                li.className = 'timeline-event';
+                li.setAttribute('data-aos', 'fade-up');
+                li.setAttribute('data-aos-delay', `${parseInt(count / 2) * 0.2}`);
+
+                const label = document.createElement('label');
+                label.className = 'timeline-event-icon';
+                li.appendChild(label);
+
+                const div = document.createElement('div');
+                div.className = 'timeline-event-copy';
+
+                const p = document.createElement('p');
+                p.className = 'timeline-event-thumbnail';
+                p.textContent = `${entry.start_date} - ${entry.end_date}`;
+                div.appendChild(p);
+
+                const h3 = document.createElement('h3');
+                h3.textContent = entry.position;
+                div.appendChild(h3);
+
+                const h4 = document.createElement('h4');
+                h4.textContent = entry.institution;
+                div.appendChild(h4);
+
+                const ul = document.createElement('ul');
+                formattedDetails.forEach(detail => {
+                    const liDetail = document.createElement('li');
+                    liDetail.innerHTML = detail;
+                    ul.appendChild(liDetail);
+                });
+
+                // if the item contains a link, add it to the end of the details
+                if (entry.link) {
+                    const liDetail = document.createElement('li');
+                    entry.link.forEach(link => {
+                        const a = document.createElement('a');
+                        a.href = link.link;
+                        a.textContent = `[${link.description}] `;
+                        liDetail.appendChild(a);
+                    });
+                    ul.appendChild(liDetail);
+                }
+
+                div.appendChild(ul);
+
+                li.appendChild(div);
+                document.getElementById('experience-timeline').appendChild(li);
+                count++;
+            });
+            if (window.AOS) AOS.refreshHard();
+        }
+        initExperienceFilters(document.querySelector('[data-experience-filters]'), render);
+
+
+        function fillProjects(source) {
+            console.log(source);
+            document.getElementById('project-timeline').innerHTML = '';
+
+            source.sort((a, b) => {
+                const yearA = Array.isArray(a.year) ? a.year[0] : a.year;
+                const yearB = Array.isArray(b.year) ? b.year[0] : b.year;
+                return yearB - yearA;
+            });
+
+            source.forEach(project => {
+                project.description = project.description.map(detail => {
+                    return detail
+                        .replace(/\\textbf{([^}]*)}/g, '<b>$1</b>')
+                        .replace(/\\textit{([^}]*)}/g, '<i>$1</i>')
+                        .replace(/\\underline{([^}]*)}/g, '<u>$1</u>')
+                        .replace(/\\section{([^}]*)}/g, '<h2>$1</h2>')
+                        .replace(/\\subsection{([^}]*)}/g, '<h3>$1</h3>')
+                        .replace(/\\subsubsection{([^}]*)}/g, '<h4>$1</h4>')
+                        .replace(/\\emph{([^}]*)}/g, '<em>$1</em>')
+                        .replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1">$2</a>')
+                        .replace(/\\url{([^}]*)}/g, '<a href="$1">$1</a>')
+                        .replace(/\\texttt{([^}]*)}/g, '<code>$1</code>')
+                        .replace("\\%", "%")
+                        .replace("\\#", "#");
+                });
+                const li = document.createElement('li');
+                li.className = 'timeline-event';
+
+                const label = document.createElement('label');
+                label.className = 'timeline-event-icon';
+                li.appendChild(label);
+
+                const div = document.createElement('div');
+                div.className = 'timeline-event-copy';
+
+                const p = document.createElement('p');
+                p.className = 'timeline-event-thumbnail';
+                p.textContent = project.year;
+                div.appendChild(p);
+
+                const h3 = document.createElement('h3');
+                h3.textContent = project.title;
+                div.appendChild(h3);
+
+                const h4 = document.createElement('h4');
+                h4.textContent = project.technologies.join(', ');
+                div.appendChild(h4);
+
+                const ul = document.createElement('ul');
+                project.description.forEach(detail => {
+                    const liDetail = document.createElement('li');
+                    liDetail.textContent = detail;
+                    ul.appendChild(liDetail);
+                });
+
+                div.appendChild(ul);
+                li.appendChild(div);
+                document.getElementById('project-timeline').appendChild(li);
+            });
+        }
+
+        fillProjects(projects_all);
+
+    </script>
+</body>
+
+</html>
