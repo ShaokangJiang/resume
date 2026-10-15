@@ -13,11 +13,6 @@
   "footer_fixed": false,
   "homepage_navigation": [
     {
-      "title": "publications",
-      "url": "/#publications",
-      "order": 1
-    },
-    {
       "title": "cv",
       "url": "/pdf.html",
       "order": 4
@@ -39,7 +34,7 @@
     "al_citations",
     "al_folio_upgrade"
   ],
-  "shared_bibliography_hash": "c194c56e42d59fddb32c2e188d6595624ae9bc7200a538cd90d45ea3ac375383",
+  "shared_bibliography_hash": "3b3a69618ee43e48bcebe23b779e5ed41f6f1a177c44084356dec046ef3c19fa",
   "al_folio": {
     "api_version": 1,
     "style_engine": "tailwind",

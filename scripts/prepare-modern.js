@@ -6,6 +6,7 @@ const crypto = require('crypto');
 const root = path.resolve(__dirname, '..');
 const modern = path.join(root, 'modern');
 const parser = require(path.join(root, 'js/bibtex.js'));
+const publicationPolicy = require(path.join(root, 'js/publication-policy.js'));
 const profile = vm.runInNewContext(fs.readFileSync(path.join(root, 'js/site-data.js'), 'utf8') + '\nacademicProfile');
 const bibliography = fs.readFileSync(path.join(root, 'pub.bib'), 'utf8');
 const papers = parser.toJSON(bibliography);
@@ -18,7 +19,6 @@ const config = {
   keywords: 'end-user programming, personal software, developer tools, human-computer interaction, software engineering',
   icon: 'favicon.ico', navbar_fixed: true, footer_fixed: false,
   homepage_navigation: [
-    { title: 'publications', url: '/#publications', order: 1 },
     { title: 'cv', url: '/pdf.html', order: 4 }
   ],
   footer_text: 'Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.',
@@ -42,12 +42,13 @@ fs.mkdirSync(path.join(modern, '_bibliography'), { recursive: true });
 // JSON is a YAML subset accepted by Jekyll and by al-folio's override auditor.
 fs.writeFileSync(path.join(modern, '_config.yml'), JSON.stringify(config, null, 2) + '\n');
 function venue(tags) {
+  if (tags.archiveprefix === 'arXiv' || /arxiv/i.test(tags.journal || '')) return 'arXiv';
   const text = tags.booktitle || tags.journal || '';
   return ['MSR', 'TOSEM', 'WWW', 'CI', 'PLATEAU', 'FSE'].find(abbr => new RegExp(`\\b${abbr}\\b`, 'i').test(text)) || 'Paper';
 }
 const generatedBib = papers.map(entry => {
   // Omit DOI and abstract controls from the theme while retaining the source metadata.
-  const tags = { ...Object.fromEntries(Object.entries(entry.entryTags).filter(([key, value]) => value.trim() && !['doi', 'abstract'].includes(key))), abbr: venue(entry.entryTags) };
+  const tags = { ...Object.fromEntries(Object.entries(entry.entryTags).filter(([key, value]) => value.trim() && !['doi', 'abstract'].includes(key))), abbr: venue(entry.entryTags), homepage: String(publicationPolicy.isHomepagePaper(entry, profile.name)) };
   if (tags.url) tags.html = tags.url;
   // The theme's local poster convention is /assets/pdf/<filename>.
   if (tags.poster && tags.poster.startsWith('./')) {

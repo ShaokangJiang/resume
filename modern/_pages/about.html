@@ -20,12 +20,12 @@ latest_posts:
   <div id="profile-links"></div>
 </div>
 
-<noscript><p><a href="{{ '/pdf.html' | relative_url }}">Read the PDF résumé</a> for experience, education, and projects. The complete paper list appears below.</p></noscript>
+<noscript><p><a href="{{ '/pdf.html' | relative_url }}">Read the PDF résumé</a> for experience, education, and projects. First-author papers that are not under review appear below; <a href="{{ '/publications/' | relative_url }}">see all publications</a> for the complete list.</p></noscript>
 
 <section id="publications" aria-labelledby="publications-title" class="publications">
-  <h2 id="publications-title">publications</h2>
-  <div id="publication-container" data-compiler="jekyll-scholar" data-bibliography-hash="{{ site.shared_bibliography_hash }}">
-    {% bibliography %}
+  <h2 id="publications-title">selected publications</h2>
+  <div id="publication-container" data-publication-scope="published-first-author" data-compiler="jekyll-scholar" data-bibliography-hash="{{ site.shared_bibliography_hash }}">
+    {% bibliography --query @*[homepage=true] %}
   </div>
 </section>
 
@@ -33,4 +33,5 @@ latest_posts:
 
 <script defer src="{{ '/js/site-data.js' | relative_url }}"></script>
 <script defer src="{{ '/js/bibtex.js' | relative_url }}"></script>
+<script defer src="{{ '/js/publication-policy.js' | relative_url }}"></script>
 <script defer src="{{ '/js/academic-site.js' | relative_url }}"></script>

@@ -4,7 +4,7 @@ const path = require('path');
 const crypto = require('crypto');
 const root = path.resolve(__dirname, '..');
 const built = path.join(root, 'modern/_site');
-const pages = ['index.html', 'experience/index.html', 'projects/index.html'];
+const pages = ['index.html', 'publications/index.html', 'experience/index.html', 'projects/index.html'];
 for (const page of pages) {
   if (!fs.existsSync(path.join(built, page))) throw new Error(`Run the Jekyll build first: ${page} is missing.`);
 }
@@ -36,4 +36,4 @@ for (const page of pages) {
 }
 fs.copyFileSync(path.join(root, 'modern/LICENSE'), path.join(root, 'assets/al-folio-LICENSE.txt'));
 fs.writeFileSync(path.join(root, '.nojekyll'), '');
-console.log('Published the compiled al-folio homepage, experience and projects pages, and theme assets.');
+console.log('Published the compiled al-folio homepage, publications, experience and projects pages, and theme assets.');

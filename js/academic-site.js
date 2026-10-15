@@ -100,7 +100,7 @@
     });
   }
   async function loadText(path) {
-    const response = await fetch(new URL(path, siteRoot));
+    const response = await fetch(new URL(path, siteRoot), { cache: 'no-cache' });
     if (!response.ok) throw new Error(`Could not load ${path}`);
     return response.text();
   }
@@ -109,7 +109,10 @@
     if (!el) return;
     try {
       const bibliography = await loadText('./pub.bib');
-      const papers = bibtexParse.toJSON(bibliography);
+      const allPapers = bibtexParse.toJSON(bibliography);
+      const papers = usesAlFolio && el.dataset.publicationScope === 'published-first-author'
+        ? allPapers.filter(paper => AcademicPublicationPolicy.isHomepagePaper(paper, profile.name))
+        : allPapers;
       if (usesAlFolio) {
         // Keep the actual Jekyll Scholar output when the shared bibliography matches.
         // If the source changes between builds, update the same theme card markup live.
@@ -188,7 +191,7 @@
         const row = node('div', undefined, 'row');
         const badgeColumn = node('div', undefined, 'col col-sm-2 abbr');
         const venue = tags.booktitle || tags.journal || 'Manuscript';
-        const abbreviation = ['MSR', 'TOSEM', 'WWW', 'CI', 'PLATEAU', 'FSE'].find(text => new RegExp(`\\b${text}\\b`, 'i').test(venue)) || 'Paper';
+        const abbreviation = /arxiv/i.test(venue) ? 'arXiv' : ['MSR', 'TOSEM', 'WWW', 'CI', 'PLATEAU', 'FSE'].find(text => new RegExp(`\\b${text}\\b`, 'i').test(venue)) || 'Paper';
         const badge = node('abbr', abbreviation, 'badge rounded w-100');
         badge.title = plain(venue);
         badgeColumn.append(badge);
