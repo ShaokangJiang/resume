@@ -20,11 +20,14 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 \usepackage{import}
-\usepackage[backend=biber,style=ieee,url=false,doi=false,isbn=false,eprint=false,maxbibnames=99,sorting=none,dashed=false]{biblatex}
+\usepackage[backend=biber,style=ieee,url=false,doi=false,isbn=false,eprint=false,maxbibnames=99,sorting=none,dashed=false,defernumbers=true]{biblatex}
 \AtEveryBibitem{%
   \clearname{editor}
 }
 \addbibresource{pub.bib}
+\defbibcheck{researchPublications}{%
+  \iffieldequalstr{note}{Under review}{\skipentry}{}%
+}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -152,39 +155,26 @@
 
 
   
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\nocite{*}
+\hspace*{8pt}\begin{minipage}{\dimexpr\textwidth-8pt\relax}
+\printbibliography[heading=none,check=researchPublications]
+\end{minipage}
+
 %-----------EXPERIENCE-----------
 \import{}{Experience_Research.tex}
-
-% 
-% %-----------PUBLICATIONS-----------
-\import{}{Publications.tex}
-
-
-
-%-----------EXPERIENCE-----------
-\import{}{Experience_Other.tex}
 
 %
 %-----------PROGRAMMING SKILLS-----------
 \import{}{Skills.tex}
 
-%-----------PROJECTS-----------
-\section{Projects}
-
-Highlighted below are selected projects. For a comprehensive portfolio, visit \href{https://shaokangjiang.github.io/resume/}{\underline{shaokangjiang.github.io/resume/}}.
-\vspace{0.5em}
-\import{}{Projects_.tex}
-
-
-
-
 %-----------AWARDS-----------
 \section{Awards and Activities}
 
 \resumeItemListStart
+\resumeItem{Junior PC, MSR 2027 \hfill 2027}
 \resumeItem{Student volunteer at FSE 2024 \hfill July 2024}
-\resumeItem{Graduated from UW-Madison with distinction in the Major \hfill Spring 2021}
-\resumeItem{Dean's List of College of Letters \& Science at UW-Madison for each quarter}
 \resumeItemListEnd
 
 

@@ -42,7 +42,8 @@ function convertToLatex(source, types) {
 
     let latexContent = `\\section{${types} Experience}\n  \\resumeSubHeadingListStart\n`;
     source.forEach(entry => {
-        latexContent += `\n    \\resumeSubheading\n      {${entry.position}}{${entry.start_date} -- ${entry.end_date}}\n      {${entry.institution}}{}\n      \\resumeItemListStart\n`;
+        latexContent += `\n    \\resumeSubheading\n      {${entry.position}}{${entry.start_date} -- ${entry.end_date}}\n      {${entry.institution}}{}\n`;
+        latexContent += "      \\resumeItemListStart\n";
         entry.details.forEach(task => {
             latexContent += `        \\resumeItem{${task}}\n`;
         });
@@ -52,9 +53,14 @@ function convertToLatex(source, types) {
     return latexContent;
 }
 
-fs.writeFileSync('Experience_Other.tex', convertToLatex(filterAndCombine(source, ["TA-combined"], new Date("January 2021")), "Other"));
+const researchOnly = process.argv.includes('--research-only');
+if (!researchOnly) {
+    fs.writeFileSync('Experience_Other.tex', convertToLatex(filterAndCombine(source, ["TA-combined"], new Date("January 2021")), "Other"));
+}
 
 fs.writeFileSync('Experience_Research.tex', convertToLatex(filterAndCombine(source, ["Research"], new Date("January 2021")), "Research"));
 
 
-fs.writeFileSync('Experience_TA.tex', convertToLatex(filterAndCombine(source, ["Research-combined", "TA"], new Date("January 2020")), ""));
+if (!researchOnly) {
+    fs.writeFileSync('Experience_TA.tex', convertToLatex(filterAndCombine(source, ["Research-combined", "TA"], new Date("January 2020")), ""));
+}

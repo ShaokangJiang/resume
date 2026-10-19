@@ -4,13 +4,25 @@ const source = [
     {
         "position": "Graduate Student Researcher",
         "type": "Research",
+        "institution": "University of California, Irvine (supervised by Daye Nam and Emerson Murphy-Hill)",
+        "start_date": "June 2026",
+        "end_date": "now",
+        "details": [
+            "Conducted a mixed-methods study of personal software built with AI coding agents, combining thematic analysis of 6,168 web and Reddit accounts with observation of eight people building tools for their own needs and a seven-day follow-up completed by six participants.",
+            "Developed LLM-assisted analysis workflows for relevance filtering, qualitative coding, functionality evolution, and screen-recorded activity, with human validation; synthesized 17 themes describing creators' needs, development practices, and engineering challenges.",
+            "Found that personal software requirements emerged through iteration: 68\\% of functionality arose during building. Creators' effort centered on verification, with 47\\% of building time spent testing or reading outputs and only 0.2\\% editing code."
+        ]
+    },
+    {
+        "position": "Graduate Student Researcher",
+        "type": "Research",
         "institution": "University of California, Irvine (supervised by Daye Nam)",
         "start_date": "August 2025",
         "end_date": "now",
         "details": [
             "Analyzed human-AI collaboration using Cursor rules as a proxy, identifying four primary categories (Project, Convention, Guideline, LLM Directive) and revealing that developers adapt context types by programming language while applying traditional human-to-human documentation strategies to instruct AI. Published at \\textbf{MSR 2026}.",
             "Designed and implemented a pipeline to collect and analyze Cursor rules from 401 GitHub repositories, leveraging prompted LLMs to scale up the qualitative coding process.",
-            "Developed an ambient automation discovery system utilizing LLMs to passively observe web behavior and generate personalized programs, validated via an 8-person empirical study, revealing users inherently fail to recognize over 94\\% of their own automatable actions. Submitted to \\textbf{UIST 2026}.",
+            "Developed an ambient automation discovery system utilizing LLMs to passively observe web behavior and generate personalized programs, validated via an 8-person empirical study, revealing users inherently fail to recognize over 94\\% of their own automatable actions. Submitted to \\textbf{CHI 2027}.",
             "Designed and implemented an asynchronous, natively cross-platform multimodal discovery agent (Rust, JavaScript, Chrome APIs) utilizing contextual memory and different LLM reasoning (e.g.,chain-of-thought, self-reflection, programming-as-reasoning, planning, and cross-verification) to mine web interactions into patterns. The system designs and generates scripts following human feedback, showing a 93\\% usefulness rating for all viewed patterns."
         ],
         "link": [
@@ -26,21 +38,9 @@ const source = [
         "start_date": "April 2024",
         "end_date": "May 2025",
         "details": [
-            "Found Copilot helps users focus on learning while increasing productivity; revealed developers prefer analyzing generated code over explanations, yet still rely on search engines for conceptual questions. Submitted to \\textbf{TOSEM}.",
+            "Found Copilot helps users focus on learning while increasing productivity; revealed developers prefer analyzing generated code over explanations, yet still rely on search engines for conceptual questions. Submitted to \\textbf{EMSE}.",
             "Designed an eye-tracking experiment to evaluate the costs and benefits of Copilot for novice programmers, developing a universal eye-tracking platform for native VSCode to capture user interaction data across in-editor events.",
             // "Developed VSCode extensions utilizing prompt-engineered GPTs that integrates static security analysis, user background, and project structure as inputs, producing two visual interfaces to assist novice programmers in detecting and understanding OWASP risks in code. The extension is undergoing iterative internal design.",
-        ]
-    },
-    {
-        "position": "Graduate Student Researcher",
-        "institution": "University of California San Diego (supervised by Steven Dow)",
-        "type": "Research",
-        "start_date": "April 2024",
-        "end_date": "October 2024",
-        "details": [
-            "Found LLM-driven conversational cues significantly increased the topical diversity of generated ideas and conversations. Published at \\textbf{CI 2025}.",
-            "Designed and deployed a meeting platform with prompt-engineered GPT conversational cues, Firebase and Daily.js.",
-            "Led quantitative analysis evaluating the impact of AI-generated cues in a 172-participant 2x2 experiment, authoring the design, implementation, and data analysis sections for publication.",
         ]
     },
     {

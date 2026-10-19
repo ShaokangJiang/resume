@@ -29,3 +29,5 @@ The local BibTeX reader in `js/bibtex.js` supports braced and quoted fields, nes
 Serve the repository over HTTP so the browser can load the bibliography and skills, for example `python -m http.server 8000`. Open `http://localhost:8000/`, `/publications/`, `/experience/`, `/projects/`, `/pure.html`, or `/rabbit.html`. The same files also work under `/resume/` on GitHub Pages. Opening files directly with `file://` prevents browsers from fetching the content sources.
 
 The content updates from the shared sources on page load. Rebuild the modern page after changing its template, theme configuration, or dependencies. PDF files are separate generated artifacts; linking them does not regenerate them.
+
+Research experience is maintained in `experience-source.js`. Run `node experience-research.js --research-only` to regenerate `Experience_Research.tex` without changing the teaching résumé sections, then run `latexmk -pdf Resume_research.tex` and copy the PDF to `final/research/Shaokang_Jiang_Resume.pdf` for the site's CV download.
