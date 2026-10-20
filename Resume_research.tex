@@ -14,6 +14,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
+\usepackage{needspace}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
@@ -27,6 +28,13 @@
 \addbibresource{pub.bib}
 \defbibcheck{researchPublications}{%
   \iffieldequalstr{note}{Under review}{\skipentry}{}%
+}
+\renewbibmacro*{finentry}{%
+  \iffieldundef{url}{}{%
+    \setunit{\addspace}%
+    \printtext{\href{\thefield{url}}{\underline{\mkbibbrackets{Paper}}}}%
+  }%
+  \finentry
 }
 
 %----------FONT OPTIONS----------
@@ -77,6 +85,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
+  \Needspace{5\baselineskip}
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
@@ -165,9 +174,8 @@
 %-----------EXPERIENCE-----------
 \import{}{Experience_Research.tex}
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\import{}{Skills.tex}
+%-----------TEACHING EXPERIENCE-----------
+\import{}{Experience_Teaching_Short.tex}
 
 %-----------AWARDS-----------
 \section{Awards and Activities}

@@ -59,6 +59,7 @@ if (!researchOnly) {
 }
 
 fs.writeFileSync('Experience_Research.tex', convertToLatex(filterAndCombine(source, ["Research"], new Date("January 2021")), "Research"));
+fs.writeFileSync('Experience_Teaching_Short.tex', convertToLatex(filterAndCombine(source, ["TA"], new Date("January 2020")), "Teaching"));
 
 
 if (!researchOnly) {
