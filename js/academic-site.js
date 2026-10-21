@@ -73,7 +73,13 @@
     if (byId('profile-focus')) byId('profile-focus').textContent = profile.focus;
     if (byId('profile-biography')) {
       const el = byId('profile-biography');
-      profile.biography.forEach(text => el.append(node('p', text)));
+      profile.biography.forEach(text => {
+        const paragraph = node('p');
+        plain(text).split(/(Daye Nam)/).forEach(part => {
+          paragraph.append(part === 'Daye Nam' ? link(part, 'https://dayenam.com/') : part);
+        });
+        el.append(paragraph);
+      });
     }
     if (byId('profile-links')) byId('profile-links').append(links(profile.links, 'profile-links'));
     if (byId('education-entries')) profile.education.forEach(entry => {
