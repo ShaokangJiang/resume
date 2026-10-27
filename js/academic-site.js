@@ -151,7 +151,7 @@
         const underReview = /under review/i.test(tags.note || '');
         item.append(node('p', `${tags.booktitle || tags.journal || 'Manuscript'}${tags.year ? ', ' + tags.year : ''}${tags.note ? ' · ' + plain(tags.note) : ''}`, 'pub-venue'));
         if (underReview) item.classList.add('under-review');
-        const resources = ['url', 'video', 'code', 'slides', 'demo', 'poster', 'artifact'].filter(key => tags[key]).map(key => [key === 'url' ? 'Paper' : key[0].toUpperCase() + key.slice(1), tags[key]]);
+        const resources = ['url', 'html', 'video', 'code', 'slides', 'demo', 'poster', 'artifact'].filter(key => tags[key]).map(key => [key === 'url' ? 'Paper' : key === 'html' ? 'HTML' : key[0].toUpperCase() + key.slice(1), tags[key]]);
         if (resources.length) item.append(links(resources, 'pub-links'));
         fragment.append(item);
       });
@@ -178,8 +178,8 @@
       citation.append('.');
       if (tags.note) citation.append(` ${plain(tags.note).replace(/\.$/, '')}.`);
       if (/under review/i.test(tags.note || '')) citation.classList.add('under-review');
-      ['url', 'video', 'code', 'slides', 'demo', 'poster', 'artifact'].filter(key => tags[key]).forEach(key => {
-        const label = key === 'url' ? 'Paper' : key[0].toUpperCase() + key.slice(1);
+      ['url', 'html', 'video', 'code', 'slides', 'demo', 'poster', 'artifact'].filter(key => tags[key]).forEach(key => {
+        const label = key === 'url' ? 'Paper' : key === 'html' ? 'HTML' : key[0].toUpperCase() + key.slice(1);
         citation.append(' ', link(`[${label}]`, tags[key]));
       });
       fragment.append(citation);
@@ -212,7 +212,7 @@
         const periodical = node('div', undefined, 'periodical');
         periodical.append(node('em', venue), document.createTextNode(`, ${year}`));
         content.append(periodical, node('div', tags.note, 'periodical'));
-        const resources = ['url', 'video', 'code', 'slides', 'demo', 'poster', 'artifact'].filter(key => tags[key]).map(key => [key === 'url' ? 'Paper' : key[0].toUpperCase() + key.slice(1), tags[key]]);
+        const resources = ['url', 'html', 'video', 'code', 'slides', 'demo', 'poster', 'artifact'].filter(key => tags[key]).map(key => [key === 'url' ? 'Paper' : key === 'html' ? 'HTML' : key[0].toUpperCase() + key.slice(1), tags[key]]);
         if (resources.length) {
           const buttons = links(resources, 'links');
           buttons.querySelectorAll('a').forEach(a => { a.className = 'btn btn-sm z-depth-0'; });

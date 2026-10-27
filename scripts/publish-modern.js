@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const root = path.resolve(__dirname, '..');
+const paperUrls = new Set(require('../js/bibtex.js').toJSON(fs.readFileSync(path.join(root, 'pub.bib'), 'utf8')).map(paper => paper.entryTags.url).filter(Boolean));
 const built = path.join(root, 'modern/_site');
 const pages = ['index.html', 'publications/index.html', 'experience/index.html', 'projects/index.html'];
 for (const page of pages) {
@@ -27,6 +28,9 @@ function portableUrl(url, prefix) {
 for (const page of pages) {
   const prefix = '../'.repeat(page.split('/').length - 1) || './';
   let html = fs.readFileSync(path.join(built, page), 'utf8');
+  // Keep the theme's project HTML button and label bibliography URL buttons as Paper.
+  html = html.replace(/(<a\b[^>]*\bhref=(["'])([^"']+)\2[^>]*>)(?:HTML|Website)(<\/a>)/g,
+    (original, opening, quote, url, closing) => paperUrls.has(url) ? `${opening}Paper${closing}` : original);
   html = html.replace(/\b(href|src)=(["'])(\/[^"']*)\2/g, (_, name, quote, url) => `${name}=${quote}${portableUrl(url, prefix)}${quote}`);
   // The official search menu also emits navigation destinations in inline handlers.
   html = html.replace(/(window\.location\.href\s*=\s*)(["'])(\/[^"']*)\2/g, (_, assignment, quote, url) => `${assignment}${quote}${portableUrl(url, prefix)}${quote}`);

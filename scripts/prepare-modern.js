@@ -49,7 +49,10 @@ function venue(tags) {
 const generatedBib = papers.map(entry => {
   // Omit DOI and abstract controls from the theme while retaining the source metadata.
   const tags = { ...Object.fromEntries(Object.entries(entry.entryTags).filter(([key, value]) => value.trim() && !['doi', 'abstract'].includes(key))), abbr: venue(entry.entryTags), homepage: String(publicationPolicy.isHomepagePaper(entry, profile.name)) };
-  if (tags.url) tags.html = tags.url;
+  if (tags.url) {
+    if (tags.html) tags.website = tags.url;
+    else tags.html = tags.url;
+  }
   // The theme's local poster convention is /assets/pdf/<filename>.
   if (tags.poster && tags.poster.startsWith('./')) {
     const filename = path.basename(tags.poster);
