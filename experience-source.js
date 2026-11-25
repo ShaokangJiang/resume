@@ -8,9 +8,9 @@ const source = [
         "start_date": "June 2026",
         "end_date": "now",
         "details": [
-            "Conducted a mixed-methods study of personal software built with AI coding agents, combining thematic analysis of 6,168 web and Reddit accounts with observation of eight people building tools for their own needs and a seven-day follow-up completed by six participants.",
-            "Developed LLM-assisted analysis workflows for relevance filtering, qualitative coding, functionality evolution, and screen-recorded activity, with human validation; synthesized 17 themes describing creators' needs, development practices, and engineering challenges.",
-            "Found that personal software requirements emerged through iteration: 68\\% of functionality arose during building. Creators' effort centered on verification, with 47\\% of building time spent testing or reading outputs and only 0.2\\% editing code."
+            "Conducted a mixed-methods study of personal software, combining a large scale grey-literature review study and observation study of eight people building software for their own needs with AI coding agents.",
+            "Developed LLM-assisted filtering and coding workflows, validated them against human labels, and finalized 17 themes across five topics through group discussions.",
+            "Found that personal software is motivated by individual or community needs. 68\\% of functionality emerged during building, and intrinsic motivation can sustain its continued development."
         ]
     },
     {
@@ -22,7 +22,7 @@ const source = [
         "details": [
             "Analyzed human-AI collaboration using Cursor rules as a proxy, identifying four primary categories (Project, Convention, Guideline, LLM Directive) and revealing that developers adapt context types by programming language while applying traditional human-to-human documentation strategies to instruct AI. Published at \\textbf{MSR 2026}.",
             "Designed and implemented a pipeline to collect and analyze Cursor rules from 401 GitHub repositories, leveraging prompted LLMs to scale up the qualitative coding process.",
-            "Developed an ambient automation discovery system utilizing LLMs to passively observe web behavior and generate personalized programs, validated via an 8-person empirical study, revealing users inherently fail to recognize over 94\\% of their own automatable actions. Submitted to \\textbf{CHI 2027}.",
+            "Developed an ambient automation discovery system utilizing LLMs to passively observe web behavior and generate personalized programs, validated via an 8-person empirical study, revealing users inherently fail to recognize over 94\\% of their own automatable actions.",
             "Designed and implemented an asynchronous, natively cross-platform multimodal discovery agent (Rust, JavaScript, Chrome APIs) utilizing contextual memory and different LLM reasoning (e.g.,chain-of-thought, self-reflection, programming-as-reasoning, planning, and cross-verification) to mine web interactions into patterns. The system designs and generates scripts following human feedback, showing a 93\\% usefulness rating for all viewed patterns."
         ],
         "link": [
@@ -139,6 +139,16 @@ const source = [
         ]
     },
     // === TA
+    {
+        "position": "Teaching Assistant",
+        "institution": "University of California, Irvine",
+        "start_date": "September 2026",
+        "type": "TA",
+        "end_date": "December 2026",
+        "details": [
+            "TA for Data Structures (SWE 240P) and Network Programming (SWE 242P) with Mohammad Moshirpour."
+        ]
+    },
     {
         "position": "Teaching Assistant",
         "institution": "University of California, Irvine",
@@ -294,8 +304,9 @@ const source_combined = {
             "start_date": "September 2025",
             "end_date": "now",
             "details": [
-                "TA for programming in Java (ICS 45J) with Emily Navarro.",
+                "TA for Data Structures (SWE 240P) and Network Programming (SWE 242P) with Mohammad Moshirpour.",
                 "TA for information visualization (INF 143) with Alberto Krone-Martins.",
+                "TA for programming in Java (ICS 45J) with Emily Navarro.",
                 "Led discussions, graded assignments, and co-designed course content and logistics with faculty."
             ],
             "work_details": [

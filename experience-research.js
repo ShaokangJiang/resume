@@ -59,7 +59,8 @@ if (!researchOnly) {
 }
 
 fs.writeFileSync('Experience_Research.tex', convertToLatex(filterAndCombine(source, ["Research"], new Date("January 2021")), "Research"));
-fs.writeFileSync('Experience_Teaching_Short.tex', convertToLatex(filterAndCombine(source, ["TA"], new Date("January 2020")), "Teaching"));
+// Research résumé uses the compact TA entries (source_combined.TA); the full per-course list stays in Experience_TA.tex.
+fs.writeFileSync('Experience_Teaching_Short.tex', convertToLatex(filterAndCombine(source, ["TA-combined"], new Date("January 2020")), "Teaching"));
 
 
 if (!researchOnly) {
