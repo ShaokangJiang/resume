@@ -43,6 +43,13 @@ latest_posts:
   {%- endfor %}
 </div></section>
 
+<!-- Awards and Activities come from Resume_research.tex through scripts/prepare-modern.js. -->
+<section id="awards" aria-labelledby="awards-title"><h2 id="awards-title">awards and activities</h2><ul id="award-entries">
+  {%- for award in home_profile.awards %}
+  <li><span>{{ award.text | escape }}</span>{% if award.date != '' %}<span class="entry-date">{{ award.date | escape }}</span>{% endif %}</li>
+  {%- endfor %}
+</ul></section>
+
 <script defer src="{{ '/js/site-data.js' | relative_url }}"></script>
 <script defer src="{{ '/js/bibtex.js' | relative_url }}"></script>
 <script defer src="{{ '/js/publication-policy.js' | relative_url }}"></script>

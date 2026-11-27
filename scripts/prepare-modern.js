@@ -58,12 +58,23 @@ function linkData(label, href) {
 const { source: experienceSource } = require(path.join(root, 'experience-source.js'));
 const { projects_all: projectSource } = require(path.join(root, 'project-source.js'));
 const latestYear = project => Math.max(...(String(project.year).match(/\d{4}/g) || ['0']).map(Number));
+// The homepage lists the research résumé's own Awards and Activities, so the résumé stays the one place to edit them.
+function researchAwards() {
+  const tex = fs.readFileSync(path.join(root, 'Resume_research.tex'), 'utf8').replace(/(^|[^\\])%.*$/gm, '$1');
+  const section = tex.match(/\\section\{Awards and Activities\}([\s\S]*?)\\resumeItemListEnd/);
+  if (!section) throw new Error('Resume_research.tex has no "Awards and Activities" item list.');
+  return [...section[1].matchAll(/\\resumeItem\{(.*)\}[ \t]*$/gm)].map(([, item]) => {
+    const [text, date = ''] = item.split(/\\hfill/);
+    return { text: plain(text), date: plain(date) };
+  });
+}
 const academic = {
   profile: {
     focus: plain(profile.focus),
     biography_html: profile.biography.map(text => escapeHtml(plain(text)).replace(/Daye Nam/g, '<a href="https://dayenam.com/">Daye Nam</a>')),
     links: profile.links.map(([label, href]) => linkData(label, href)),
-    education: profile.education.map(({ institution, degree, dates }) => ({ institution: plain(institution), degree: plain(degree), dates: plain(dates) }))
+    education: profile.education.map(({ institution, degree, dates }) => ({ institution: plain(institution), degree: plain(degree), dates: plain(dates) })),
+    awards: researchAwards()
   },
   // Every entry is compiled; the experience filter buttons show or hide them by type.
   experience: [...experienceSource].sort((a, b) => Date.parse(b.start_date) - Date.parse(a.start_date)).map(entry => ({

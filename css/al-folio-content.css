@@ -8,7 +8,9 @@ section { scroll-margin-top: 5rem; }
 .resume-entry { margin-bottom: 1.5rem; }
 #education-entries[data-compact] .resume-entry { margin-bottom: .75rem; }
 #education-entries[data-compact] .entry-subtitle { margin-bottom: 0; }
-.entry-heading { display: flex; gap: 1.5rem; align-items: baseline; justify-content: space-between; }
+.entry-heading, #award-entries li { display: flex; gap: 1.5rem; align-items: baseline; justify-content: space-between; }
+#award-entries { list-style: none; padding-left: 0; }
+#award-entries li { margin-bottom: .5rem; }
 .entry-heading h3 { font-size: 1rem; font-weight: 400; margin-bottom: .25rem; }
 .entry-date { font-size: .875rem; white-space: nowrap; color: var(--global-text-color-light); }
 .entry-subtitle { margin-bottom: .5rem; }
@@ -19,7 +21,7 @@ section { scroll-margin-top: 5rem; }
 #skill-entries dt { font-weight: 400; }
 #skill-entries dd { margin: 0; }
 @media (max-width: 575px) {
-  .entry-heading { display: block; }
+  .entry-heading, #award-entries li { display: block; }
   .entry-date { display: block; white-space: normal; margin-bottom: .25rem; }
   #skill-entries { display: block; }
   #skill-entries dd { margin-bottom: .75rem; }
