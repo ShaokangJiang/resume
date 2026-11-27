@@ -1,13 +1,16 @@
 # LaTeX build files
 *.aux
 *.bbl
+*.bbl-SAVE-ERROR
 *.blg
+*.bcf
 *.log
 *.out
 *.toc
 *.gz
 *.fdb_latexmk
 *.fls
+*.run.xml
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
@@ -20,13 +23,9 @@
 *.dvi
 *.ps
 *.spl
-*.aux
 Shaokang_Jiang_Resume__old.pdf
 resume-shaokangjiang.pdf
-Shaokang_Jiang_Resume__old.pdf
 Resume-TA.pdf
-*.bcf
-*.run.xml
 
 # al-folio compiler dependencies and intermediate files
 modern/.bundle/
@@ -38,3 +37,10 @@ modern/_bibliography/papers.bib
 modern/_data/academic.json
 modern/assets/pdf/
 modern/assets/img/favicon.ico
+
+# Local tool, editor, and system files (the repository root is published, so keep these out)
+.claude/
+._*
+.DS_Store
+Thumbs.db
+desktop.ini

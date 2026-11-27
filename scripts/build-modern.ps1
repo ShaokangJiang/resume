@@ -46,6 +46,8 @@ try {
 
     & node (Join-Path $PSScriptRoot 'publish-modern.js')
     if ($LASTEXITCODE -ne 0) { throw 'Copying the compiled homepage failed.' }
+    & node (Join-Path $PSScriptRoot 'markdown-modern.js')
+    if ($LASTEXITCODE -ne 0) { throw 'Writing the Markdown copies failed.' }
 } finally {
     $env:JEKYLL_ENV = $previousJekyllEnvironment
     Pop-Location

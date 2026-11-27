@@ -72,6 +72,7 @@ const academic = {
   profile: {
     focus: plain(profile.focus),
     biography_html: profile.biography.map(text => escapeHtml(plain(text)).replace(/Daye Nam/g, '<a href="https://dayenam.com/">Daye Nam</a>')),
+    biography_markdown: profile.biography.map(text => plain(text).replace(/Daye Nam/g, '[Daye Nam](https://dayenam.com/)')),
     links: profile.links.map(([label, href]) => linkData(label, href)),
     education: profile.education.map(({ institution, degree, dates }) => ({ institution: plain(institution), degree: plain(degree), dates: plain(dates) })),
     awards: researchAwards()
@@ -93,7 +94,26 @@ const academic = {
     links: (project.link || []).map(item => linkData(item.description, item.link))
   })),
   skills: [...fs.readFileSync(path.join(root, 'Skills.tex'), 'utf8').matchAll(/\\resumeItem\{\\textbf\{([^}]+)\}\{: ([\s\S]*?)\}\}/g)]
-    .map(([, name, text]) => ({ name: plain(name), text: plain(text) }))
+    .map(([, name, text]) => ({ name: plain(name), text: plain(text) })),
+  // Papers as the theme lists them (newest year first, pub.bib order within a year), for the Markdown copies.
+  publications: [...papers].sort((a, b) => Number(b.entryTags.year || 0) - Number(a.entryTags.year || 0)).map(entry => {
+    const tags = entry.entryTags;
+    // Button order and labels match the theme cards after publish-modern.js relabels paper URLs.
+    const extras = [['pdf', 'PDF'], ['supp', 'Supp'], ['video', 'Video'], ['code', 'Code'], ['poster', 'Poster'], ['slides', 'Slides']]
+      .filter(([key]) => tags[key])
+      .map(([key, label]) => ({ label, href: key === 'poster' && tags.poster.startsWith('./') ? `/assets/pdf/${path.basename(tags.poster)}` : tags[key] }));
+    const paper = tags.url ? [{ label: 'Paper', href: tags.url }] : [];
+    return {
+      year: plain(tags.year),
+      title: plain(tags.title),
+      authors: String(tags.author || '').split(/\s+and\s+/).map(author => plain(author.includes(',') ? author.split(',').reverse().join(' ') : author)),
+      venue: tags.booktitle ? `In ${plain(tags.booktitle)}` : plain(tags.journal),
+      badge: venue(tags),
+      note: plain(tags.note),
+      homepage: publicationPolicy.isHomepagePaper(entry, profile.name),
+      links: tags.html ? [{ label: 'HTML', href: tags.html }, ...extras, ...paper] : [...paper, ...extras]
+    };
+  })
 };
 fs.mkdirSync(path.join(modern, '_data'), { recursive: true });
 fs.rmSync(path.join(modern, '_data/academic_profile.json'), { force: true });

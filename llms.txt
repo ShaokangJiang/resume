@@ -1,0 +1,21 @@
+# Shaokang Jiang
+
+> Ph.D. student in Software Engineering · UC Irvine. End-user programming · Personal software · Developer tools.
+
+I am a Ph.D. student in Software Engineering at the University of California, Irvine, advised by [Daye Nam](https://dayenam.com/). My research focuses on end-user programming and personal software: helping people create and adapt software to fit their own needs. I build and study AI-assisted tools that help people recognize opportunities for automation and turn everyday activities into personalized programs. I explore what personal software can be and seek to define it. I investigate how to extend its possibilities and build tools that support people in creating, adapting, and using it.
+
+## Pages
+
+- [About](https://resume.shaokang.me/index.html.md): Introduction, selected first-author publications, education, and awards and activities
+- [Publications](https://resume.shaokang.me/publications/index.html.md): Complete publication list, including manuscripts under review
+- [Experience](https://resume.shaokang.me/experience/index.html.md): Research, teaching, and work experience
+- [Projects](https://resume.shaokang.me/projects/index.html.md): Projects and technical skills
+
+## Optional
+
+- [CV (PDF)](https://resume.shaokang.me/final/research/Shaokang_Jiang_Resume.pdf): Research résumé
+- [Email](mailto:huangsk100@gmail.com)
+- [Google Scholar](https://scholar.google.com/citations?user=9hn9QpwAAAAJ&hl=en)
+- [GitHub](https://github.com/shaokangJiang/)
+- [Blog](https://shaokangjiang.github.io)
+- [LinkedIn](https://www.linkedin.com/in/shaokang-jiang-0a66461a2/)

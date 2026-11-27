@@ -34,6 +34,9 @@ for (const page of pages) {
   html = html.replace(/\b(href|src)=(["'])(\/[^"']*)\2/g, (_, name, quote, url) => `${name}=${quote}${portableUrl(url, prefix)}${quote}`);
   // The official search menu also emits navigation destinations in inline handlers.
   html = html.replace(/(window\.location\.href\s*=\s*)(["'])(\/[^"']*)\2/g, (_, assignment, quote, url) => `${assignment}${quote}${portableUrl(url, prefix)}${quote}`);
+  // Point agents to the Markdown copy that scripts/markdown-modern.js writes beside each page.
+  if (!html.includes('</head>')) throw new Error(`${page} has no </head> for the Markdown link.`);
+  html = html.replace('</head>', '<link rel="alternate" type="text/markdown" href="index.html.md"> </head>');
   const target = path.join(root, page);
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, html);
