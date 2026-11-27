@@ -35,5 +35,6 @@ modern/_site/
 modern/.jekyll-cache/
 modern/.jekyll-metadata
 modern/_bibliography/papers.bib
+modern/_data/academic.json
 modern/assets/pdf/
 modern/assets/img/favicon.ico

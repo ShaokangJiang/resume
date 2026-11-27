@@ -1,0 +1,6 @@
+{%- comment -%} One link from site.data.academic; local paths go through relative_url like the theme's own links. {%- endcomment -%}
+{%- if include.item.href -%}
+<a href="{% if include.item.local %}{{ include.item.href | relative_url | escape }}{% else %}{{ include.item.href | escape }}{% endif %}">{{ include.item.label | escape }}</a>
+{%- else -%}
+<a>{{ include.item.label | escape }}</a>
+{%- endif -%}

@@ -68,7 +68,7 @@ const source = [
             // "A between-subjects study with 15 experienced software engineers that compared the effectiveness of tutorials and LLM chatbots in helping users learn an unfamiliar codebase.",
             // "Restructured the study, discussed, designed, and implemented an analysis plan with both qualitative and quantitative components, transcribed, coded, and utilized NLP to analyze the recordings, and wrote and submitted ."
         ],
-        "link": [{ description: "Accepted paper", link: "https://shaokangjiang.github.io/resume/papers/chatbotvstutorial.pdf" }]
+        "link": [{ description: "Accepted paper", link: "https://resume.shaokang.me/papers/chatbotvstutorial.pdf" }]
     },
     {
         "position": "Graduate Student Researcher",
@@ -99,7 +99,7 @@ const source = [
             link: "https://dl.acm.org/do/10.1145/3580435/full/"
         }, {
             description: "Poster",
-            link: "https://shaokangjiang.github.io/resume/papers/autocomplete-poster.pdf"
+            link: "https://resume.shaokang.me/papers/autocomplete-poster.pdf"
         }]
     },
     {
