@@ -12,7 +12,7 @@ for (const page of pages) {
 fs.cpSync(path.join(built, 'assets'), path.join(root, 'assets'), { recursive: true });
 const config = JSON.parse(fs.readFileSync(path.join(root, 'modern/_config.yml'), 'utf8'));
 const baseurl = config.baseurl.replace(/\/$/, '');
-// Preserve theme output and canonical URLs while supporting both / and /resume/.
+// Preserve theme output and canonical URLs while making local links relative, so pages work at any path.
 function portableUrl(url, prefix) {
   if (!url.startsWith('//') && url.startsWith(`${baseurl}/`)) {
     let resource = url.slice(baseurl.length + 1);

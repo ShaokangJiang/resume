@@ -14,7 +14,7 @@ const name = profile.name.split(' ');
 const plugins = ['jekyll-3rd-party-libraries', 'jekyll-cache-bust', 'jekyll-minifier', 'jekyll-regex-replace', 'jekyll/scholar', 'jekyll-socials', 'al_folio_core', 'al_icons', 'al_search', 'al_citations', 'al_folio_upgrade'];
 const config = {
   title: 'blank', first_name: name.shift(), middle_name: '', last_name: name.join(' '),
-  url: 'https://shaokangjiang.github.io', baseurl: '/resume', lang: 'en',
+  url: 'https://resume.shaokang.me', baseurl: '', lang: 'en',
   description: `${profile.name} — end-user programming, personal software, and developer tools.`,
   keywords: 'end-user programming, personal software, developer tools, human-computer interaction, software engineering',
   icon: 'favicon.ico', navbar_fixed: true, footer_fixed: false,
@@ -35,12 +35,58 @@ const config = {
   enable_medium_zoom: false, enable_progressbar: false, search_enabled: true,
   bib_search: false, back_to_top: false, external_sources: [], newsletter: { enabled: false },
   imagemagick: { enabled: false }, external_links: { enabled: false },
-  third_party_libraries: { google_fonts: { url: { fonts: '/resume/fonts/roboto/roboto.css' } } },
+  third_party_libraries: { google_fonts: { url: { fonts: '/fonts/roboto/roboto.css' } } },
   include: ['_pages'], exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'upstream-config.yml', 'vendor', '.bundle', '_site', '.al-folio-overrides.yml']
 };
 fs.mkdirSync(path.join(modern, '_bibliography'), { recursive: true });
 // JSON is a YAML subset accepted by Jekyll and by al-folio's override auditor.
 fs.writeFileSync(path.join(modern, '_config.yml'), JSON.stringify(config, null, 2) + '\n');
+// Compile the shared résumé content into the static pages so crawlers do not depend on JavaScript.
+// plain, shortDate, and link rules mirror js/academic-site.js, which still renders pure.html and rabbit.html.
+const escapeHtml = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const plain = value => String(value || '').replace(/\\(?:textbf|textit|emph)\{([^{}]*)\}/g, '$1')
+  .replace(/\\LaTeX\b/g, 'LaTeX').replace(/\\([%#&_])/g, '$1')
+  .replace(/[{}]/g, '').replace(/\s+/g, ' ').trim();
+const shortDate = value => value === 'now' ? 'Present' : value.replace(/^([A-Za-z]+) /, (_, month) => month.slice(0, 3) + ' ');
+// Site-relative links become root paths that the theme's relative_url and publish-modern.js make portable.
+function linkData(label, href) {
+  const target = String(href || '');
+  if (/^\.\.?\//.test(target)) return { label: plain(label), href: '/' + target.replace(/^(\.\.?\/)+/, ''), local: true };
+  if (/^(https?:\/\/|mailto:|#)/i.test(target)) return { label: plain(label), href: target, local: false };
+  return { label: plain(label), href: null, local: false };
+}
+const { source: experienceSource } = require(path.join(root, 'experience-source.js'));
+const { projects_all: projectSource } = require(path.join(root, 'project-source.js'));
+const latestYear = project => Math.max(...(String(project.year).match(/\d{4}/g) || ['0']).map(Number));
+const academic = {
+  profile: {
+    focus: plain(profile.focus),
+    biography_html: profile.biography.map(text => escapeHtml(plain(text)).replace(/Daye Nam/g, '<a href="https://dayenam.com/">Daye Nam</a>')),
+    links: profile.links.map(([label, href]) => linkData(label, href)),
+    education: profile.education.map(({ institution, degree, dates }) => ({ institution: plain(institution), degree: plain(degree), dates: plain(dates) }))
+  },
+  // Every entry is compiled; the experience filter buttons show or hide them by type.
+  experience: [...experienceSource].sort((a, b) => Date.parse(b.start_date) - Date.parse(a.start_date)).map(entry => ({
+    type: entry.type,
+    position: plain(entry.position),
+    dates: plain(`${shortDate(entry.start_date)} – ${shortDate(entry.end_date)}`),
+    institution: plain(entry.institution),
+    details: (entry.details || []).map(plain),
+    links: (entry.link || []).map(item => linkData(item.description, item.link))
+  })),
+  projects: projectSource.filter(project => project.level === 'normal').sort((a, b) => latestYear(b) - latestYear(a)).map(project => ({
+    title: plain(project.title),
+    year: plain(project.year),
+    technologies: plain((project.technologies || []).join(' · ')),
+    details: (project.description || []).map(plain),
+    links: (project.link || []).map(item => linkData(item.description, item.link))
+  })),
+  skills: [...fs.readFileSync(path.join(root, 'Skills.tex'), 'utf8').matchAll(/\\resumeItem\{\\textbf\{([^}]+)\}\{: ([\s\S]*?)\}\}/g)]
+    .map(([, name, text]) => ({ name: plain(name), text: plain(text) }))
+};
+fs.mkdirSync(path.join(modern, '_data'), { recursive: true });
+fs.rmSync(path.join(modern, '_data/academic_profile.json'), { force: true });
+fs.writeFileSync(path.join(modern, '_data/academic.json'), JSON.stringify(academic, null, 2) + '\n');
 function venue(tags) {
   if (tags.archiveprefix === 'arXiv' || /arxiv/i.test(tags.journal || '')) return 'arXiv';
   const text = tags.booktitle || tags.journal || '';

@@ -8,11 +8,16 @@ nav_order: 2
 
 <link rel="stylesheet" href="{{ '/css/al-folio-content.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/css/experience-filters.css' | relative_url }}">
+<!-- Entries come from experience-source.js through scripts/prepare-modern.js, so they are in the static HTML.
+     The filter buttons show or hide them by data-type. -->
 <div data-al-folio-page="experience">
   <div class="experience-filters" data-experience-filters="experience-entries" role="group" aria-label="Filter experience"></div>
-  <div id="experience-entries"></div>
+  <div id="experience-entries" data-prerendered>
+    {%- for entry in site.data.academic.experience %}
+    {% include academic-entry.liquid type=entry.type title=entry.position date=entry.dates subtitle=entry.institution details=entry.details links=entry.links %}
+    {%- endfor %}
+  </div>
 </div>
-<noscript><p><a href="{{ '/pdf.html' | relative_url }}">Read the PDF résumé</a> for research, teaching, and industry experience.</p></noscript>
 
 <script defer src="{{ '/experience-source.js' | relative_url }}"></script>
 <script defer src="{{ '/js/site-data.js' | relative_url }}"></script>

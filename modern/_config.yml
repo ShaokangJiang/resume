@@ -3,8 +3,8 @@
   "first_name": "Shaokang",
   "middle_name": "",
   "last_name": "Jiang",
-  "url": "https://shaokangjiang.github.io",
-  "baseurl": "/resume",
+  "url": "https://resume.shaokang.me",
+  "baseurl": "",
   "lang": "en",
   "description": "Shaokang Jiang — end-user programming, personal software, and developer tools.",
   "keywords": "end-user programming, personal software, developer tools, human-computer interaction, software engineering",
@@ -34,7 +34,7 @@
     "al_citations",
     "al_folio_upgrade"
   ],
-  "shared_bibliography_hash": "ef607343d437cf5a544bd954ab58971b56b0b0382bd3a828e215a30d74676d4f",
+  "shared_bibliography_hash": "2820ab53d366efe4c6e3b055eaef66dc1ab74c6c71e451ae9576606e05bcf192",
   "al_folio": {
     "api_version": 1,
     "style_engine": "tailwind",
@@ -103,7 +103,7 @@
   "third_party_libraries": {
     "google_fonts": {
       "url": {
-        "fonts": "/resume/fonts/roboto/roboto.css"
+        "fonts": "/fonts/roboto/roboto.css"
       }
     }
   },

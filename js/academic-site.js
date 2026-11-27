@@ -56,6 +56,11 @@
   function renderExperience(id, types) {
     const container = byId(id);
     if (!container) return;
+    // The modern Experience page compiles every entry into the HTML; filters only show or hide them.
+    if (container.hasAttribute('data-prerendered')) {
+      container.querySelectorAll('[data-type]').forEach(entry => { entry.hidden = !types.includes(entry.dataset.type); });
+      return;
+    }
     container.replaceChildren();
     sorted(source.filter(entry => types.includes(entry.type))).forEach(entry => {
       const article = node('article', undefined, 'resume-entry');
@@ -67,11 +72,17 @@
       container.append(article);
     });
   }
+  // The modern pages compile this content into the HTML at build time; pure.html and rabbit.html leave the
+  // containers empty, so fill only empty ones.
+  function emptyTarget(id) {
+    const el = byId(id);
+    return el && !el.textContent.trim() ? el : null;
+  }
   function renderProfile() {
     if (byId('profile-name')) byId('profile-name').textContent = profile.name;
     if (byId('profile-role')) byId('profile-role').textContent = profile.role;
-    if (byId('profile-focus')) byId('profile-focus').textContent = profile.focus;
-    if (byId('profile-biography')) {
+    if (emptyTarget('profile-focus')) byId('profile-focus').textContent = profile.focus;
+    if (emptyTarget('profile-biography')) {
       const el = byId('profile-biography');
       profile.biography.forEach(text => {
         const paragraph = node('p');
@@ -81,8 +92,8 @@
         el.append(paragraph);
       });
     }
-    if (byId('profile-links')) byId('profile-links').append(links(profile.links, 'profile-links'));
-    if (byId('education-entries')) profile.education.forEach(entry => {
+    if (emptyTarget('profile-links')) byId('profile-links').append(links(profile.links, 'profile-links'));
+    if (emptyTarget('education-entries')) profile.education.forEach(entry => {
       const article = node('article', undefined, 'resume-entry');
       const head = node('div', undefined, 'entry-heading');
       head.append(node('h3', entry.institution), node('span', entry.dates, 'entry-date'));
@@ -92,7 +103,7 @@
     });
   }
   function renderProjects() {
-    const el = byId('project-entries');
+    const el = emptyTarget('project-entries');
     if (!el) return;
     const latestYear = project => Math.max(...(String(project.year).match(/\d{4}/g) || ['0']).map(Number));
     [...projects_all].filter(project => project.level === 'normal').sort((a, b) => latestYear(b) - latestYear(a)).forEach(project => {
@@ -227,7 +238,7 @@
     container.replaceChildren(fragment);
   }
   async function renderSkills() {
-    const el = byId('skill-entries');
+    const el = emptyTarget('skill-entries');
     if (!el) return;
     try {
       const text = await loadText('./Skills.tex');

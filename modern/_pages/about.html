@@ -14,13 +14,21 @@ latest_posts:
 
 <!-- The layout, title treatment, fonts, and publication cards are al-folio's own. -->
 <link rel="stylesheet" href="{{ '/css/al-folio-content.css' | relative_url }}">
+<!-- Introduction and education come from js/site-data.js through scripts/prepare-modern.js, so they are in the static HTML. -->
+{%- assign home_profile = site.data.academic.profile %}
 <div data-al-folio-home>
-  <p id="profile-focus"></p>
-  <div id="profile-biography"></div>
-  <div id="profile-links"></div>
+  <p id="profile-focus">{{ home_profile.focus | escape }}</p>
+  <div id="profile-biography">
+    {%- for paragraph in home_profile.biography_html %}
+    <p>{{ paragraph }}</p>
+    {%- endfor %}
+  </div>
+  <div id="profile-links"><div class="profile-links">
+    {%- for item in home_profile.links %}
+    {% include academic-link.liquid item=item %}
+    {%- endfor %}
+  </div></div>
 </div>
-
-<noscript><p><a href="{{ '/pdf.html' | relative_url }}">Read the PDF résumé</a> for experience, education, and projects. First-author papers that are not under review appear below; <a href="{{ '/publications/' | relative_url }}">see all publications</a> for the complete list.</p></noscript>
 
 <section id="publications" aria-labelledby="publications-title" class="publications">
   <h2 id="publications-title">selected publications</h2>
@@ -29,7 +37,11 @@ latest_posts:
   </div>
 </section>
 
-<section id="education" aria-labelledby="education-title"><h2 id="education-title">education</h2><div id="education-entries" data-compact></div></section>
+<section id="education" aria-labelledby="education-title"><h2 id="education-title">education</h2><div id="education-entries" data-compact>
+  {%- for entry in home_profile.education %}
+  <article class="resume-entry"><div class="entry-heading"><h3>{{ entry.institution | escape }}</h3><span class="entry-date">{{ entry.dates | escape }}</span></div><p class="entry-subtitle">{{ entry.degree | escape }}</p></article>
+  {%- endfor %}
+</div></section>
 
 <script defer src="{{ '/js/site-data.js' | relative_url }}"></script>
 <script defer src="{{ '/js/bibtex.js' | relative_url }}"></script>
