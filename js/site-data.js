@@ -8,6 +8,7 @@ const academicProfile = {
   ],
   links: [
     ['Email', 'mailto:huangsk100@gmail.com'],
+    ['Google Scholar', 'https://scholar.google.com/citations?user=9hn9QpwAAAAJ&hl=en'],
     ['GitHub', 'https://github.com/shaokangJiang/'],
     ['Blog', 'https://shaokangjiang.github.io'],
     ['LinkedIn', 'https://www.linkedin.com/in/shaokang-jiang-0a66461a2/'],
